@@ -1,4 +1,7 @@
 ---
+# Un pas de clic : le « next » lance la génération (télécommande OK).
+# Le bouton reste cliquable en secours (souris, répétition).
+clicks: 1
 ---
 
 <!-- Section 3 — Lancement de la génération live + démarrage du compte à

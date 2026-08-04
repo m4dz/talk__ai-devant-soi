@@ -1,7 +1,18 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, watch } from 'vue'
+import { useSlideContext } from '@slidev/client'
 import { session, start, startTicker } from '../lib/session'
 import { generate } from '../lib/genClient'
+
+// Déclenchement à la télécommande : un pas de clic Slidev (le « next »)
+// lance la génération, comme le clic souris. Idempotent via le latch.
+const { $clicks } = useSlideContext()
+watch(
+  () => $clicks.value,
+  (c) => {
+    if (c >= 1) onTrigger()
+  },
+)
 
 // Durée du countdown (partagée avec Countdown.vue) — VITE_COUNTDOWN_MINUTES,
 // défaut 35. Le trigger la pose dans le store au lancement.
