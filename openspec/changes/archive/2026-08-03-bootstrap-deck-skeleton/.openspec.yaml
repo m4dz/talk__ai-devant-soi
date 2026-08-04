@@ -1,0 +1,4 @@
+schema: spec-driven
+created: 2026-08-03
+goal: Deck Slidev buildable et hors-ligne, thème dual-mode fonctionnel, prouvé
+  par 1 slide testée en dark et light

@@ -1,0 +1,5 @@
+schema: spec-driven
+created: 2026-08-04
+goal: ChapterReader affiche le chapitre du store, pilote l'audio avec scroll
+  suivant la lecture et départ clavier à un paragraphe ; fixtures mock (texte +
+  audio) pour répéter la section 7 sans machine distante

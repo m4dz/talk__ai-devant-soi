@@ -1,0 +1,32 @@
+/* Éléments propres au wireframe (jalon 2) — placeholders inertes.
+   À retirer/remplacer quand les composants live (jalon 3) et le contenu
+   définitif arrivent. Tokens uniquement. */
+
+/* Emplacement d'un composant live non encore câblé (sections 3, 7). */
+.slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 6rem;
+  padding: var(--space-md);
+  border: 2px dashed var(--color-rule);
+  border-radius: 6px;
+  color: var(--color-muted);
+  font-family: var(--font-body);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: var(--text-base);
+}
+
+/* Marqueur de contenu bloqué (citation Goncourt à intégrer). */
+.todo {
+  display: inline-block;
+  padding: 0.1em 0.5em;
+  background: var(--color-accent);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 3px;
+}

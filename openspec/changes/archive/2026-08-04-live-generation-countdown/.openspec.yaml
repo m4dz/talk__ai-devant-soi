@@ -1,0 +1,5 @@
+schema: spec-driven
+created: 2026-08-04
+goal: Trigger idempotent + countdown autonome fonctionnels en mock (zéro
+  réseau), countdown discret persistant 3→6, contrat client 4 endpoints prêt
+  pour le réel (jalon 4)

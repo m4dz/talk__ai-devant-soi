@@ -1,0 +1,54 @@
+/* Mapping des tokens vers les éléments Slidev.
+   Rien de codé en dur ici non plus : tout référence les custom properties. */
+
+/* Le fond « papier » couvre toute la slide, quelle que soit la hauteur
+   du contenu du layout (évite une bande blanche sous les layouts courts).
+   var(--color-paper) bascule seul entre dark et light. */
+.slidev-page {
+  background-color: var(--color-paper);
+}
+
+.slidev-layout {
+  min-height: 100%;
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading);
+  padding: var(--space-xl);
+}
+
+/* Titres & exergues → Sinzano. Jamais de corps en titre. */
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3,
+.slidev-layout .title {
+  font-family: var(--font-title);
+  color: var(--color-ink);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+}
+
+.slidev-layout h1 { font-size: var(--title-1); margin-bottom: var(--space-md); }
+.slidev-layout h2 { font-size: var(--title-2); margin-bottom: var(--space-sm); }
+.slidev-layout h3 { font-size: var(--title-3); margin-bottom: var(--space-sm); }
+
+.slidev-layout p,
+.slidev-layout li { max-width: 60ch; }
+
+.slidev-layout a { color: var(--color-accent); }
+
+/* Accent partagé aux deux modes */
+.slidev-layout strong,
+.slidev-layout .accent { color: var(--color-accent); }
+
+.slidev-layout em { font-style: italic; }
+
+/* Filet décoratif réutilisable */
+.rule {
+  border: none;
+  border-top: 2px solid var(--color-rule);
+  width: 4rem;
+  margin: var(--space-md) 0;
+}

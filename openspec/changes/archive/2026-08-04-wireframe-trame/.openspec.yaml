@@ -1,0 +1,5 @@
+schema: spec-driven
+created: 2026-08-03
+goal: Deck navigable de bout en bout, 8 sections en fichiers séparés, layouts
+  sobres pilotés par tokens, slots des composants live marqués, blocages
+  Goncourt isolés

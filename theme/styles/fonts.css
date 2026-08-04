@@ -1,0 +1,42 @@
+/* Polices auto-hébergées — contrainte hors-ligne, aucun CDN.
+   Servies depuis public/fonts/ (résolu à la racine au runtime). */
+
+/* Titrage / exergue — Sinzano Regular (licence commerciale, cf. CREDITS.md).
+   Jamais utilisée pour du corps de texte. */
+@font-face {
+  font-family: 'Sinzano';
+  src: url('/fonts/sinzano-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Corps — Atkinson Hyperlegible (SIL OFL), lisibilité max en projection. */
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('/fonts/atkinson-hyperlegible-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('/fonts/atkinson-hyperlegible-400-italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('/fonts/atkinson-hyperlegible-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Atkinson Hyperlegible';
+  src: url('/fonts/atkinson-hyperlegible-700-italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

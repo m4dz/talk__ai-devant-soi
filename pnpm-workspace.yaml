@@ -1,0 +1,9 @@
+# playwright-chromium doit builder : télécharge Chromium pour `slidev export`
+# (support PDF distribué après le talk, jalon 5).
+allowBuilds:
+  playwright-chromium: true
+minimumReleaseAgeExclude:
+  - '@slidev/cli@52.19.0'
+  - '@slidev/client@52.19.0'
+  - '@slidev/parser@52.19.0'
+  - '@slidev/types@52.19.0'
