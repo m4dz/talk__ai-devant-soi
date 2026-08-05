@@ -256,9 +256,18 @@ Questions à poser au speaker au démarrage — ne pas improviser :
    (la machine est en Apple Silicon — vérifier ce qui tourne
    confortablement, ex. familles SDXL/Flux via des runtimes compatibles
    MPS).
-6. **Citation officielle de l'Académie Goncourt** : le libellé exact et
-   sourcé est un bloquant connu pour la section 2 et le beat 7 du cold
-   open. À obtenir avant de finaliser ces slides.
+6. ~~**Citation officielle de l'Académie Goncourt**~~ — **TRANCHÉ** : il
+   n'en existe aucune. L'Académie n'a rien annoncé, rien interdit sur
+   l'IA. La pièce à conviction est un **dossier de sources** (Télérama
+   n°3981, 29/04/2026) : les propos de **Pierre Assouline** (juré depuis
+   2012 — « affaire Ajar 2.0 », « aucun d'entre nous n'est armé pour
+   repérer une utilisation de ChatGPT ») et la **clause d'originalité**
+   du groupe Madrigall (l'œuvre cédée « doit être produite par l'auteur,
+   et non par une machine »).
+   **Garde-fou non négociable** : ne jamais écrire ni dire que l'Académie
+   « annonce », « refuse » ou « interdit » — uniquement des propos
+   attribués nominativement, avec la source affichée à l'écran (layout
+   `citation-sourcee`). Voir spec `deck-content`.
 
 ## Jalons proposés
 

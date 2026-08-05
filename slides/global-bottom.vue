@@ -4,13 +4,17 @@ import { useNav } from '@slidev/client'
 import { session } from './lib/session'
 
 // Rappel discret et persistant du compte à rebours sur les sections 3→6
-// (design D5). BORNES DÉRIVÉES DE LA TRAME (jalon 2, 25 slides) :
-//   S3 lancement = 8 · S4 seuil = 9–15 · S5 murs = 16–19 · S6 résolution = 20–23
-// La slide de lancement (8) porte déjà le countdown PLEIN ÉCRAN → le rappel
-// discret commence à 9. ⚠ FRAGILE : si le nombre de beats change, réajuster
-// ces bornes et revérifier au navigateur.
-const DISCREET_FROM = 9
-const DISCREET_TO = 23
+// (design D5). BORNES DÉRIVÉES DE LA TRAME (36 slides après intégration des
+// scripts sections 1-3) :
+//   S1 cold-open = 1–8 · S2 pivot = 9–14 · S3 allumage = 15–19
+//   S4 seuil = 20–26 · S5 murs = 27–30 · S6 résolution = 31–34
+//   S7 lecture = 35 · S8 clôture = 36
+// La slide de lancement (18) porte le countdown PLEIN ÉCRAN → le rappel
+// discret commence à 19 (slide du contrat) et court jusqu'à la fin de S6.
+// ⚠ FRAGILE : si le nombre de beats change, réajuster ces bornes et
+// revérifier au navigateur.
+const DISCREET_FROM = 19
+const DISCREET_TO = 34
 
 const { currentPage } = useNav()
 
