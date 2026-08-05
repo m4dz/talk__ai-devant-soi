@@ -6,7 +6,7 @@ const { $frontmatter } = useSlideContext()
 </script>
 
 <template>
-  <div class="slidev-layout case-card">
+  <div class="slidev-layout case-card pulp-bg">
     <p class="case-card__balance">{{ $frontmatter.balance }}</p>
     <h2 class="case-card__name">{{ $frontmatter.name }}</h2>
     <p class="case-card__work">{{ $frontmatter.work }}</p>

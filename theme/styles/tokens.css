@@ -31,6 +31,12 @@
   --space-xl: 5rem;
 
   --leading: 1.5;
+
+  /* Textures pulp (couche de fond) — mode clair */
+  --texture-dot: #1c1712;      /* couleur des points de trame (halftone) */
+  --texture-opacity: 0.05;     /* discrète : la lisibilité prime */
+  --texture-size: 9px;         /* pas de la trame */
+  --grain-opacity: 0.04;       /* grain papier léger */
 }
 
 html.dark {
@@ -40,4 +46,9 @@ html.dark {
   --color-muted: #9a8d78;
   --color-accent: #e11d1d;
   --color-rule: #33291c;
+
+  /* Textures pulp — mode sombre (trame claire sur fond d'encre) */
+  --texture-dot: #ede3d0;
+  --texture-opacity: 0.045;
+  --grain-opacity: 0.05;
 }

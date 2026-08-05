@@ -6,12 +6,12 @@ const { $frontmatter } = useSlideContext()
 </script>
 
 <template>
-  <div class="slidev-layout exergue">
+  <div class="slidev-layout exergue pulp-bg">
     <blockquote class="exergue__quote">
       <slot />
     </blockquote>
     <p v-if="$frontmatter.source" class="exergue__source">
-      {{ $frontmatter.source }}
+      <span class="cartouche">{{ $frontmatter.source }}</span>
     </p>
   </div>
 </template>

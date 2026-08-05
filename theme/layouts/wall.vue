@@ -6,7 +6,7 @@ const { $frontmatter } = useSlideContext()
 </script>
 
 <template>
-  <div class="slidev-layout wall">
+  <div class="slidev-layout wall pulp-bg">
     <div class="wall__n">Mur {{ $frontmatter.n }} / 4</div>
     <h2 class="wall__problem">{{ $frontmatter.problem }}</h2>
     <hr class="rule" />

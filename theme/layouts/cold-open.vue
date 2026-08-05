@@ -1,7 +1,7 @@
 <!-- Récit noir plein cadre — section 1. Texte court centré verticalement,
      aucun chrome de titre de section. Tokens uniquement. -->
 <template>
-  <div class="slidev-layout cold-open">
+  <div class="slidev-layout cold-open pulp-bg">
     <div class="cold-open__body">
       <slot />
     </div>
