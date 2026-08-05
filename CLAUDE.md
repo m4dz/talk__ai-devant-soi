@@ -252,10 +252,14 @@ Questions à poser au speaker au démarrage — ne pas improviser :
 4. **Où tourne Qwen3-TTS** : sur la machine de génération (recommandé :
    GPU déjà là, le deck ne fait que récupérer l'audio) ou sur la machine
    de présentation ?
-5. **Modèle de génération d'images local** pour les illustrations
-   (la machine est en Apple Silicon — vérifier ce qui tourne
-   confortablement, ex. familles SDXL/Flux via des runtimes compatibles
-   MPS).
+5. ~~**Modèle de génération d'images local**~~ — **TRANCHÉ** :
+   **FLUX.2 Klein 4B** (Black Forest Labs, Apache 2.0) via **mflux**
+   (MLX, Apple Silicon), quantifié 4 bits. FLUX.1 schnell écarté (bug de
+   résolution du vae). Prompt de style figé, motifs et workflow dans
+   [`docs/visuels-pulp.md`](docs/visuels-pulp.md) ; assets tracés dans
+   `CREDITS.md`. **Attention** : un seed ne reproduit un tirage qu'à
+   résolution identique — générer les seeds de sélection directement à la
+   résolution finale.
 6. ~~**Citation officielle de l'Académie Goncourt**~~ — **TRANCHÉ** : il
    n'en existe aucune. L'Académie n'a rien annoncé, rien interdit sur
    l'IA. La pièce à conviction est un **dossier de sources** (Télérama

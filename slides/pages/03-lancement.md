@@ -47,8 +47,8 @@ Et ce soir, elle est ici.</p>
 
 # Chapitre 7
 
-<p class="objectif">L'anniversaire qu'elle a décidé de ne pas fêter :
-plus elle efface les traces de ce jour, plus la maison s'obstine à le
+<p class="objectif">L’anniversaire qu’elle a décidé de ne pas fêter :
+plus elle efface les traces de ce jour, plus la maison s’obstine à le
 célébrer.</p>
 
 <p class="muted">Le plan de scènes a été généré par la fabrique, à partir de

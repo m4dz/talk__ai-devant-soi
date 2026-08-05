@@ -24,7 +24,7 @@ Elle n'a rien annoncé.
 
 **Elle attend.**
 
-<p class="muted">Pendant ce temps, d'autres écrivent la frontière — dans les contrats.</p>
+<p class="muted">Pendant ce temps, d’autres écrivent la frontière — dans les contrats.</p>
 
 <style scoped>
 .muted { color: var(--color-muted); font-size: var(--text-lg); margin-top: var(--space-md); }
@@ -63,16 +63,16 @@ Peut-on tracer la limite entre une œuvre et sa fabrique ?
 
 <!-- BEAT 3 — La signature. Minimale. -->
 
-# m4dz
+# Matthias « m4dz » Dugué
 
 Head of Engineering chez Zenika.
 
 Mes journées sur des systèmes d'IA en production.
 Mes nuits sur ce dont on va parler ce soir.
 
-<p class="accent-line">Ce talk n'est pas une opinion. C'est un rapport d'expérience.</p>
+<p class="accent-line">Ce talk n’est pas une opinion. C’est un rapport d’expérience.</p>
 
-<p class="muted">J'écris un roman. Et je ne l'écris pas seul.</p>
+<p class="muted">J’écris un roman. Et je ne l’écris pas seul.</p>
 
 <style scoped>
 .accent-line { color: var(--color-accent); margin-top: var(--space-md); }

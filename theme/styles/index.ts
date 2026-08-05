@@ -2,5 +2,4 @@
 import './fonts.css'
 import './tokens.css'
 import './base.css'
-import './wireframe.css'
 import './pulp.css'
