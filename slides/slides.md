@@ -7,6 +7,12 @@ title: L'IA devant soi
 favicon: /favicon.svg
 # Les deux modes sont citoyens de première classe. Touche `d` = toggle.
 colorSchema: both
+# Support distribué : PDF en mode papier/light, une slide par page, local.
+exportFilename: ia-devant-soi-support
+export:
+  format: pdf
+  dark: false
+  withClicks: false
 # provider:none → aucun fetch Google Fonts. Toutes les polices sont
 # auto-hébergées (public/fonts/) et déclarées en @font-face dans le thème.
 fonts:

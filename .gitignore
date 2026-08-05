@@ -4,6 +4,9 @@ node_modules/
 # build output
 dist/
 
+# PDF de support exporté (régénérable via `pnpm export`)
+/ia-devant-soi-support.pdf
+
 # Slidev cache & generated
 .slidev/
 components.d.ts
