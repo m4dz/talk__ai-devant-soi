@@ -15,8 +15,9 @@ watch(
 )
 
 // Durée du countdown (partagée avec Countdown.vue) — VITE_COUNTDOWN_MINUTES,
-// défaut 35. Le trigger la pose dans le store au lancement.
-const minutes = Number(import.meta.env.VITE_COUNTDOWN_MINUTES ?? 35) || 35
+// défaut 28 (gravé par le script : zéro au début de la section 7).
+// Le trigger la pose dans le store au lancement.
+const minutes = Number(import.meta.env.VITE_COUNTDOWN_MINUTES ?? 28) || 28
 const durationSeconds = minutes * 60
 
 const statusLabel: Record<string, string> = {

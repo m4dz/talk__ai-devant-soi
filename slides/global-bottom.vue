@@ -3,27 +3,23 @@ import { computed } from 'vue'
 import { useNav } from '@slidev/client'
 import { session } from './lib/session'
 
-// Rappel discret et persistant du compte à rebours sur les sections 3→6
-// (design D5). BORNES DÉRIVÉES DE LA TRAME (36 slides après intégration des
-// scripts sections 1-3) :
-//   S1 cold-open = 1–8 · S2 pivot = 9–14 · S3 allumage = 15–19
-//   S4 seuil = 20–26 · S5 murs = 27–30 · S6 résolution = 31–34
-//   S7 lecture = 35 · S8 clôture = 36
-// La slide de lancement (18) porte le countdown PLEIN ÉCRAN → le rappel
-// discret commence à 19 (slide du contrat) et court jusqu'à la fin de S6.
-// ⚠ FRAGILE : si le nombre de beats change, réajuster ces bornes et
-// revérifier au navigateur.
-const DISCREET_FROM = 19
-const DISCREET_TO = 34
+// Rappel discret et persistant du compte à rebours (design D5).
+//
+// Gating SANS numéros de page : le pill s'affiche dès que la session tourne
+// et se cache sur les slides qui le demandent (`noCountdown: true` en
+// frontmatter). Conséquences voulues :
+//   · sections 1-2 : la session n'a pas démarré → rien à afficher ;
+//   · slide de lancement : porte le countdown en grand → s'exclut ;
+//   · section 8 : après la récolte → s'exclut.
+// Réécrire ou redimensionner une section ne peut plus casser l'affichage
+// (les anciennes bornes 19→34 le faisaient à chaque fois).
+const { currentSlideRoute } = useNav()
 
-const { currentPage } = useNav()
-
-const visible = computed(
-  () =>
-    session.running &&
-    currentPage.value >= DISCREET_FROM &&
-    currentPage.value <= DISCREET_TO,
+const optedOut = computed(
+  () => currentSlideRoute.value?.meta?.slide?.frontmatter?.noCountdown === true,
 )
+
+const visible = computed(() => session.running && !optedOut.value)
 
 const time = computed(() => {
   const s = Math.max(0, session.remaining)

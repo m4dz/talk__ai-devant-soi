@@ -63,6 +63,8 @@ tout ce qui précède.</p>
 # Un pas de clic : le « next » lance la génération (télécommande OK).
 # Le bouton reste cliquable en secours (souris, répétition).
 clicks: 1
+# Cette slide porte le compte à rebours EN GRAND → pas de rappel discret.
+noCountdown: true
 ---
 
 <!-- BEAT 2 (suite) — Le lancement. Composants live (jalon 3A) : trigger

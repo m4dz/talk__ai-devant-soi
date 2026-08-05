@@ -3,7 +3,7 @@ import { computed, onMounted } from 'vue'
 import { session, startTicker } from '../lib/session'
 
 // Durée initiale (aperçue avant lancement) — même source que le trigger.
-const minutes = Number(import.meta.env.VITE_COUNTDOWN_MINUTES ?? 35) || 35
+const minutes = Number(import.meta.env.VITE_COUNTDOWN_MINUTES ?? 28) || 28
 const initialSeconds = minutes * 60
 
 // Affichage : source de vérité = session.remaining (dans le store, survit

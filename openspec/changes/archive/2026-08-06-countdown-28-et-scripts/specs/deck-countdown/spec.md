@@ -1,23 +1,4 @@
-# deck-countdown Specification
-
-## Purpose
-Décrit le comportement du compte à rebours de la génération : un timer
-autonome côté deck, à durée configurable, affiché en grand au lancement
-puis rappelé en discret et persistant sur les sections suivantes, enrichi
-par le statut réel quand il est disponible.
-## Requirements
-### Requirement: Compte à rebours autonome
-
-Le compte à rebours SHALL avancer de façon autonome côté deck, sans
-dépendre d'une réponse réseau pour progresser. Une perte de connectivité
-ou un statut distant indisponible NE SHALL PAS bloquer ni figer le compte
-à rebours.
-
-#### Scenario: Progression sans réseau
-
-- **WHEN** le compte à rebours est démarré et qu'aucun statut distant
-  n'arrive
-- **THEN** il continue de décompter normalement, seul, jusqu'à zéro
+## MODIFIED Requirements
 
 ### Requirement: Durée configurable
 
@@ -34,29 +15,7 @@ accéléré.
 - **AND WHEN** une durée est fournie par configuration
 - **THEN** le compte à rebours démarre à cette durée
 
-### Requirement: Démarrage lié au déclenchement
-
-Le compte à rebours SHALL démarrer au déclenchement de la génération et
-refléter le même état de session (il ne tourne pas tant que la génération
-n'est pas lancée).
-
-#### Scenario: Démarrage au lancement
-
-- **WHEN** la génération est déclenchée
-- **THEN** le compte à rebours démarre depuis sa durée initiale
-
-### Requirement: Enrichissement par le statut réel
-
-Quand un statut réel de génération est disponible, le compte à rebours
-SHALL pouvoir l'intégrer (par exemple ajuster l'estimation ou signaler la
-fin), sans jamais laisser l'absence de statut le bloquer.
-
-#### Scenario: Intégration non bloquante du statut
-
-- **WHEN** un statut réel indiquant l'avancement ou la fin devient
-  disponible
-- **THEN** le compte à rebours peut le refléter, mais son absence ne
-  l'empêche jamais d'avancer
+## ADDED Requirements
 
 ### Requirement: Affichage plein écran puis rappel discret persistant
 
@@ -96,3 +55,16 @@ redimensionner une section NE SHALL PAS altérer l'affichage.
 - **THEN** l'affichage du rappel discret reste correct sans modification de
   configuration
 
+## REMOVED Requirements
+
+### Requirement: Double affichage plein écran puis discret
+
+**Reason** : l'exigence était formulée en termes de « sections 3 à 6 » et
+son implémentation reposait sur des bornes de numéros de slide, cassées à
+chaque réécriture de section. Remplacée par « Affichage plein écran puis
+rappel discret persistant », qui couvre les sections 3 à 7 et s'appuie sur
+l'état de session plus une exclusion explicite portée par les slides.
+
+**Migration** : le rappel discret n'est plus configuré par bornes ; les
+slides qui ne doivent pas l'afficher déclarent `noCountdown: true` dans
+leur frontmatter (slide de lancement, section 8).

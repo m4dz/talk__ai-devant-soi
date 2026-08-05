@@ -31,31 +31,43 @@ clonée du speaker) sur une slide dédiée en fin de présentation.
 
 ## Trame
 
-8 sections, structure « descente par strates ». Le détail scénique est
-dans les scripts de la keynote (hors scope de ce repo) ; le deck suit :
+8 sections, structure « descente par strates ». **Les scripts de la
+keynote sont la source de vérité du contenu** : ils sont versionnés dans
+[`docs/scripts/`](docs/scripts/) (un fichier par section, texte mot à mot
++ indications scéniques + notes de préparation). En cas d'écart entre une
+slide et le script, le script gagne. Le deck suit :
 
 1. **Cold open** — l'affaire Gary/Ajar racontée en thriller noir, in
-   medias res. Pas de slide de titre, pas d'introduction.
-2. Position de l'Académie Goncourt (citation officielle sourcée — voir
-   « À trancher »).
-3. Lancement de la génération live + démarrage du compte à rebours.
-4. **Jeu du seuil** — interaction mains levées, 6 cas historiques par
+   medias res, 7 beats. Pas de slide de titre : le titre tombe au beat 7,
+   sur le pivot vers l'IA.
+2. **Le pivot** — propos sourcés (Assouline / Télérama), clause
+   d'originalité des éditeurs, la question centrale du talk, signature.
+3. **L'allumage** — le roman, le lancement de la génération, le contrat du
+   compte à rebours.
+4. **Jeu du seuil** — interaction mains levées, 6 stations par
    intervention humaine décroissante : Dumas/Maquet, Carver/Lish,
    Vian/Vernon Sullivan, Ern Malley, Oulipo (livre physique apporté sur
-   scène), Racter.
-5. **Descente technique** — 4 murs rencontrés en construisant la stack :
-   le modèle ignore le lore → perd l'intention narrative → qualité
-   littéraire pauvre → crash sous modèles plus lourds. Chaque solution
-   ouvre le mur suivant.
-6. Résolution architecturale (mémoire externe partagée, RAG dynamique,
-   deux rôles de modèle : auteur / acteur).
-7. **Lecture du chapitre généré** — commence par la voix du speaker,
-   bascule vers sa voix clonée qui continue sans lui.
-8. Clôture. Dernière ligne : « Je me suis bien amusé. Au revoir et
-   merci. » (derniers mots écrits de Gary).
+   scène), Racter — puis le **renversement** (« il n'existe pas de
+   seuil ») et le pont vers la fabrique.
+5. **La descente dans la fabrique** (~14 min) — 4 strates, chacune sur le
+   battement *ce qu'on a tenté → le mur → ce que le mur a forcé à
+   construire* : le lore (→ bibliothèque indexée), l'intention (→ atelier
+   orchestré, plan de scènes), la qualité (→ fiche de style + correcteur),
+   la puissance (→ le crash, et l'architecture plutôt que le muscle).
+   Puis la remontée : « la fabrique reste à notre main ».
+6. **Le mode personnage** — l'acteur : on ne demande plus à la machine
+   d'écrire *sur* le personnage mais de le *devenir*. Entretien rejoué,
+   émergence (un élément né d'un entretien, entré au roman), retournement
+   sur la question de Le Tellier.
+7. **La récolte** — le compte à rebours atteint zéro, le chapitre naît,
+   lecture à voix haute qui bascule vers la voix clonée.
+8. **La chute** — dernier vote à main levée, verdict, sortie sur « Je me
+   suis bien amusé. Au revoir et merci. » (derniers mots écrits de Gary).
 
-Le **compte à rebours** de la génération reste visible (ou rappelable)
-tout au long des sections 3 à 6.
+Le **compte à rebours** est de **28 minutes, gravé** : lancé en section 3
+(~minute 13), il atteint zéro au début de la section 7 (~minute 41). Il
+reste visible (en grand au lancement, puis en rappel discret) des sections
+3 à 7.
 
 ## Stack du deck
 
@@ -195,9 +207,14 @@ slides/
   vite.config.ts          # publicDir → ../public
 theme/                    # design system : tokens, layouts, styles
 public/
-  images/                 # assets (voir CREDITS.md)
-  fallback/               # chapitre.md + chapitre.mp3 pré-générés
+  images/                 # illustrations pulp générées (voir CREDITS.md)
+  fallback/               # chapitre.md + chapitre.wav pré-générés
   fonts/                  # polices auto-hébergées
+docs/
+  scripts/                # SCRIPTS DE LA KEYNOTE = source de vérité du contenu
+  visuels-pulp.md         # prompt de style figé + workflow des illustrations
+tools/
+  inverser_mode.py        # dérivations dark des visuels (inversion / calage noir)
 CREDITS.md                # source et licence de chaque asset
 .env.example              # VITE_GEN_HOST, VITE_TTS_HOST, VITE_MOCK, VITE_COUNTDOWN_MINUTES
 openspec/                 # géré par OpenSpec (voir workflow ci-dessous)
