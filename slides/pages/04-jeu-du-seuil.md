@@ -14,6 +14,7 @@ Six cas. Mains levées : jusqu'où **acceptez-vous** encore de dire « auteur »
 ---
 layout: case-card
 name: Dumas / Maquet
+figure: /images/cas-01-dumas-maquet-s500.png
 work: Les Trois Mousquetaires
 balance: Auteur █████████░ Dispositif
 ---
@@ -24,6 +25,7 @@ Dumas signe seul, et la postérité l'oublie.
 ---
 layout: case-card
 name: Carver / Lish
+figure: /images/cas-02-carver-lish-s43.png
 work: Tais-toi, je t'en prie
 balance: Auteur ███████░░░ Dispositif
 ---
@@ -34,6 +36,7 @@ Le style « Carver » est-il de Carver ?
 ---
 layout: case-card
 name: Vian / Vernon Sullivan
+figure: /images/cas-03-vian-sullivan-s600.png
 work: J'irai cracher sur vos tombes
 balance: Auteur ██████░░░░ Dispositif
 ---
@@ -44,6 +47,7 @@ Le succès est à un fantôme.
 ---
 layout: case-card
 name: Ern Malley
+figure: /images/cas-04-ern-malley-s45.png
 work: The Darkening Ecliptic
 balance: Auteur ████░░░░░░ Dispositif
 ---
@@ -54,6 +58,7 @@ pour piéger l'avant-garde. Le canular devient un vrai poème.
 ---
 layout: case-card
 name: Oulipo
+figure: /images/cas-05-oulipo-s46.png
 work: (livre apporté sur scène)
 balance: Auteur ██░░░░░░░░ Dispositif
 ---
@@ -63,6 +68,7 @@ La contrainte écrit à votre place. Le texte est la sortie d'une règle.
 ---
 layout: case-card
 name: Racter
+figure: /images/cas-06-racter-s47.png
 work: The Policeman's Beard Is Half Constructed
 balance: Auteur ░░░░░░░░░░ Dispositif
 ---

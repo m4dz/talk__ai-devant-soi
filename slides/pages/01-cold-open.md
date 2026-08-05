@@ -1,11 +1,14 @@
 ---
-layout: cold-open
+layout: ambiance
+light: /images/coldopen-05-rue-pluie-s700.png
+dark: /images/coldopen-05-rue-pluie-s700-cale.png
 ---
 
 <!-- Section 1 — COLD OPEN (Gary/Ajar, thriller noir, in medias res).
      Pas de slide de titre. Contenu PROVISOIRE : la prose définitive vient
      des scripts de keynote. Ordre des beats et wording ajustables (une
-     petite proposal par ajustement, cf. design D5). -->
+     petite proposal par ajustement, cf. design D5).
+     Ambiance rue-pluie en fond perdu (light crème / dark calé). -->
 
 Paris, 1975.
 
@@ -32,8 +35,12 @@ Déjà Goncourt en 1956. Et le règlement est formel —
 on ne reçoit le Goncourt **qu'une seule fois**.
 
 ---
-layout: cold-open
+layout: ambiance
+light: /images/coldopen-02-presence-s303-patch.png
+dark: /images/coldopen-02-presence-s303-patch-dark.png
 ---
+
+<!-- Ambiance « la présence derrière » : Ajar en surplomb de Gary. -->
 
 Alors il fabrique un auteur.
 

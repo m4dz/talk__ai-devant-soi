@@ -42,5 +42,26 @@ auto-hébergé (aucun CDN au runtime).
 
 ## Illustrations
 
-<!-- À compléter au jalon 5 : générées en local (esthétique pulp) et/ou
-     domaine public. Une entrée par asset : fichier, source, licence. -->
+**Toutes générées en local** (cohérent avec la thèse du talk), esthétique
+couverture pulp homogène. Modèle : **FLUX.2 Klein 4B** (Black Forest Labs,
+licence Apache 2.0) via **mflux** (MLX, Apple Silicon). Prompt de style
+figé + workflow : [`docs/visuels-pulp.md`](docs/visuels-pulp.md). On ne
+génère qu'en crème (source canonique) ; les modes dark sont des
+dérivations (`tools/inverser_mode.py`). Seed consigné dans le nom de
+fichier (traçabilité, pas reproductibilité — cf. §0bis du doc).
+
+Assets dans `public/images/` :
+
+| fichier | cas / beat | dérivation dark |
+|---|---|---|
+| `cas-01-dumas-maquet-s500.png` | Dumas / Maquet | objet A |
+| `cas-02-carver-lish-s43.png` | Carver / Lish | objet A |
+| `cas-03-vian-sullivan-s600.png` | Vian / Sullivan | objet A |
+| `cas-04-ern-malley-s45.png` | Ern Malley | objet A |
+| `cas-05-oulipo-s46.png` | Oulipo | objet A |
+| `cas-06-racter-s47.png` | Racter | objet A |
+| `coldopen-05-rue-pluie-s700{,-cale}.png` | cold-open (Paris nuit) | `--cale-noir` |
+| `coldopen-02-presence-s303-patch{,-dark}.png` | cold-open (Ajar/Gary) | négatif B (patché) |
+
+Note : `presence` a été retouchée numériquement (patch du bandeau de
+chapeau rouge surnuméraire, cf. doc §4bis) avant dérivation dark.

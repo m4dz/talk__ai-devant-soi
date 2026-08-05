@@ -1,0 +1,4 @@
+# Dépendances de tools/inverser_mode.py (outil hors build du deck).
+# Usage : python -m venv .venv && source .venv/bin/activate && pip install -r tools/requirements.txt
+pillow
+numpy

@@ -100,6 +100,14 @@ peuvent porter une illustration façon couverture pulp.
 
 ## Illustrations
 
+> **Référence de génération** : le prompt de style figé, les 5 motifs, les
+> règles négatives, les stratégies d'intégration (objet crème / inversion
+> sérigraphique) et le nommage sont documentés dans
+> [`docs/visuels-pulp.md`](docs/visuels-pulp.md). Principe : **on ne génère
+> qu'en crème** (source canonique) ; les modes sont des dérivations.
+> Composant : `slides/components/PulpFigure.vue`. Outil :
+> `tools/inverser_mode.py`.
+
 **Sources : mix, au cas par cas.**
 
 - **Générées en local** (cohérent avec la thèse — et ça peut se dire sur

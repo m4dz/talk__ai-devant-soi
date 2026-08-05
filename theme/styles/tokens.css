@@ -37,6 +37,11 @@
   --texture-opacity: 0.05;     /* discrète : la lisibilité prime */
   --texture-size: 9px;         /* pas de la trame */
   --grain-opacity: 0.04;       /* grain papier léger */
+
+  /* Illustrations pulp (PulpFigure) — l'objet reste crème dans les DEUX
+     modes (source canonique). Le mat NE flippe pas ; seule l'ombre s'adapte. */
+  --pulp-mat: #f2e7d0;         /* marge papier crème, fixe */
+  --pulp-shadow: 6px 6px 0 rgba(28, 23, 18, 0.25); /* ombre douce sur clair */
 }
 
 html.dark {
@@ -51,4 +56,7 @@ html.dark {
   --texture-dot: #ede3d0;
   --texture-opacity: 0.045;
   --grain-opacity: 0.05;
+
+  /* Illustrations : mat crème inchangé ; ombre dure marquée sur le noir. */
+  --pulp-shadow: 6px 6px 0 rgba(0, 0, 0, 0.35);
 }
