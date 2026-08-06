@@ -4,6 +4,9 @@
   "private": true,
   "description": "Deck Slidev — keynote « L'IA devant soi »",
   "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24"
+  },
   "scripts": {
     "dev": "slidev slides/slides.md --open",
     "build": "slidev build slides/slides.md",

@@ -71,6 +71,12 @@ reste visible (en grand au lancement, puis en rappel discret) des sections
 
 ## Stack du deck
 
+- **Runtime : Node 24** (épinglé par `.node-version`), gestionnaire **pnpm**
+  (épinglé par `packageManager`). ⚠ Ne pas repasser sous Node 22 : son
+  corepack (0.30) ne connaît pas pnpm 11, ignore le `packageManager` pinné,
+  tente de résoudre « latest stable » en ligne et échoue sur des clés de
+  signature périmées — le build meurt. Le `.node-version` du repo surcharge
+  celui du dossier parent `talks/`, qui force Node 22.
 - **Slidev** (dernière version stable), thème custom local — pas de thème
   npm tiers comme base, on construit un design system dédié.
 - Composants Vue custom pour les éléments interactifs (voir plus bas).
