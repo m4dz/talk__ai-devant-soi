@@ -34,10 +34,13 @@ const { $frontmatter } = useSlideContext()
 .wall__problem {
   max-width: 26ch;
 }
+/* Les solutions des strates portent plusieurs paragraphes : on reste en
+   corps de base pour que tout tienne sans débordement vertical. */
 .wall__solution {
   margin-top: var(--space-sm);
-  max-width: 52ch;
-  font-size: var(--text-lg);
+  max-width: 58ch;
+  font-size: var(--text-base);
+  line-height: 1.5;
 }
 .wall__label {
   display: block;
