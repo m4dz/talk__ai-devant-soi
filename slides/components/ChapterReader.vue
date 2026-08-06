@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { useSlideContext } from '@slidev/client'
+import { useSlideContext, onSlideLeave } from '@slidev/client'
 import { session } from '../lib/session'
 
 // Départ de la lecture = pas de clic Slidev ($clicks), JAMAIS un raccourci
@@ -42,6 +42,17 @@ function onTimeUpdate() {
   const ratio = a.currentTime / a.duration
   el.scrollTop = ratio * (el.scrollHeight - el.clientHeight)
 }
+
+// Coupe propre en scène : quitter la slide arrête la lecture. Le chapitre
+// peut être trop long pour le temps restant ; le « next » (télécommande)
+// devient la coupe, sans geste visible. Remise à zéro pour qu'un retour sur
+// la slide reprenne au début (et pas au milieu d'une phrase).
+onSlideLeave(() => {
+  const a = audio.value
+  if (!a) return
+  a.pause()
+  a.currentTime = 0
+})
 
 // V-click : au franchissement du seuil (clic 1), démarrer l'audio depuis 0.
 // Idempotent : on ne relance pas si déjà en lecture.
