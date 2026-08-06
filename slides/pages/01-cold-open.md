@@ -90,7 +90,7 @@ On ne rend pas un Goncourt.
 
 ---
 layout: citation-sourcee
-author: Pierre Assouline, juré de l'Académie Goncourt depuis 2012
+author: Pierre Assouline, juré de l’Académie Goncourt depuis 2012
 reference: Télérama n°3981 — 29 avril 2026
 ---
 

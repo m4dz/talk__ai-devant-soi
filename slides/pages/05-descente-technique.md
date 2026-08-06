@@ -14,7 +14,7 @@ mais plus le récit avance, plus il perd le fil.
 ---
 layout: wall
 n: 2
-problem: Il perd l'intention narrative
+problem: Il perd l’intention narrative
 ---
 
 On structure l'objectif de chapitre…

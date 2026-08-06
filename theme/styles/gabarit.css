@@ -1,0 +1,27 @@
+/* Marqueur de contenu EN ATTENTE (« gabarit »).
+   Une slide dont le contenu authentique n'existe pas encore le dit —
+   plutôt que d'afficher un faux extrait / une fausse mesure qui passerait
+   pour du réel. Inventaire : rechercher « GABARIT » dans les sources.
+   Distinct de l'ancien `.todo` (blocage factuel Goncourt, clos). */
+
+.gabarit {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  border: 2px dashed var(--color-accent);
+  border-radius: 3px;
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: 0.75em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Bloc de contenu en attente : garde la place du vrai contenu pour que la
+   mise en page soit représentative en répétition. */
+.gabarit-bloc {
+  border: 2px dashed var(--color-rule);
+  border-radius: 6px;
+  padding: var(--space-md);
+  color: var(--color-muted);
+  font-family: var(--font-body);
+}

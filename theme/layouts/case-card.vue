@@ -20,6 +20,10 @@ const { $frontmatter } = useSlideContext()
       <div class="case-card__context">
         <slot />
       </div>
+      <!-- La question du jeu : c'est elle qui fait lever les mains. -->
+      <p v-if="$frontmatter.question" class="case-card__question">
+        {{ $frontmatter.question }}
+      </p>
     </div>
 
     <PulpFigure
@@ -50,9 +54,24 @@ const { $frontmatter } = useSlideContext()
   flex: 0 0 auto;
 }
 /* px = unités canvas (fiables). L'objet tient dans la hauteur de slide,
-   le texte garde sa colonne. */
+   le texte garde sa colonne. Avec les textes du script + la question, la
+   colonne de gauche est chargée : on resserre l'objet et les corps. */
 .case-card--with-figure .case-card__figure :deep(img) {
-  max-height: 430px;
+  max-height: 380px;
+}
+.case-card--with-figure .case-card__context,
+.case-card--with-figure .case-card__question {
+  font-size: var(--text-base);
+}
+.case-card--with-figure .case-card__work,
+.case-card--with-figure .case-card__balance {
+  font-size: var(--text-base);
+}
+.case-card--with-figure .case-card__question {
+  margin-top: var(--space-sm);
+}
+.case-card--with-figure .case-card__name {
+  font-size: var(--title-3);
 }
 .case-card__balance {
   font-family: var(--font-body);
@@ -72,5 +91,12 @@ const { $frontmatter } = useSlideContext()
 .case-card__context {
   margin-top: var(--space-sm);
   max-width: 52ch;
+}
+.case-card__question {
+  margin-top: var(--space-md);
+  max-width: 52ch;
+  color: var(--color-accent);
+  font-size: var(--text-lg);
+  line-height: 1.3;
 }
 </style>
