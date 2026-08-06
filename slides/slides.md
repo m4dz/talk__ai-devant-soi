@@ -41,7 +41,7 @@ src: ./pages/05-descente-technique.md
 ---
 
 ---
-src: ./pages/06-resolution.md
+src: ./pages/06-mode-personnage.md
 ---
 
 ---
