@@ -1,21 +1,14 @@
 ---
+layout: propos
+variant: question
 ---
 
-<!-- Section 4 — LE JEU DU SEUIL (script docs/scripts/03-…).
-     6 stations, intervention humaine DÉCROISSANTE, une par slide.
-     La question de chaque carte déclenche le vote à main levée.
-     Puis renversement + clause pulvérisée + pont. -->
+<!-- Section 4 — LE JEU DU SEUIL. L’installation du jeu.
+     Variante question : le vide sous la phrase porte l’attente. -->
 
-# Le jeu du seuil
+# À partir de quand l’œuvre n’est-elle plus la vôtre ?
 
-À partir de quand l'œuvre n'est-elle plus la vôtre ?
-
-<p class="regle">Six histoires. Six fois la même question.
-Et de <strong>vraies</strong> mains levées.</p>
-
-<style scoped>
-.regle { max-width: 52ch; font-size: var(--text-lg); margin-top: var(--space-md); }
-</style>
+Six histoires. Six fois la même question. Et de **vraies** mains levées.
 
 <!--
 [Installation du jeu, une seule fois, avec insistance.]
@@ -23,8 +16,8 @@ Et de <strong>vraies</strong> mains levées.</p>
 Alors, question. Et je veux de vraies mains levées, on va jouer à ce jeu
 toute la soirée.
 
-[Ensuite, deux mots suffisent : « Les mains. » Dire ce qu'on VOIT, jamais ce
-qu'on espérait voir. Si la salle ne joue pas, le silence après chaque
+[Ensuite, deux mots suffisent : « Les mains. » Dire ce qu’on VOIT, jamais ce
+qu’on espérait voir. Si la salle ne joue pas, le silence après chaque
 question fait le même travail.]
 -->
 
@@ -44,29 +37,29 @@ Dumas réécrit par-dessus : le rythme, les dialogues, la voix.
 Une vingtaine de romans comme ça, *Monte-Cristo* compris.
 
 **1858. Maquet attaque en justice** pour obtenir son nom sur la couverture.
-Il perd. Le tribunal lui accorde de l'argent. Jamais le nom.
+Il perd. Le tribunal lui accorde de l’argent. Jamais le nom.
 
 <!--
 [Slide : portrait de Dumas.]
 
 1844. *Les Trois Mousquetaires* paraissent en feuilleton. La France entière
 dévore. Ce que la France ignore : derrière Dumas, il y a un homme. Auguste
-Maquet, professeur d'histoire. Il documente, il structure, il rédige des
+Maquet, professeur d’histoire. Il documente, il structure, il rédige des
 premiers jets entiers. Dumas réécrit par-dessus : le rythme, les dialogues,
 la voix. Une vingtaine de romans comme ça. *Monte-Cristo* compris.
 
 1858. Maquet attaque Dumas en justice. Il veut son nom sur la couverture. Il
-perd. Le tribunal lui accorde de l'argent. Jamais le nom. La justice
-française vient de trancher, il y a plus d'un siècle et demi : l'œuvre
+perd. Le tribunal lui accorde de l’argent. Jamais le nom. La justice
+française vient de trancher, il y a plus d’un siècle et demi : l’œuvre
 appartient à la voix, pas à la fabrique.
 
 *Les Trois Mousquetaires*, premiers jets écrits par un autre : est-ce encore
-l'œuvre de Dumas ? Qui dit oui ?
+l’œuvre de Dumas ? Qui dit oui ?
 
 [Mains. Compter. « Beaucoup de mains. »]
 
-Gardez votre réponse en tête. Et gardez la clause : produite par l'auteur,
-et non par une machine. Maquet n'était pas une machine. Mais il produisait.
+Gardez votre réponse en tête. Et gardez la clause : produite par l’auteur,
+et non par une machine. Maquet n’était pas une machine. Mais il produisait.
 -->
 
 ---
@@ -80,21 +73,21 @@ question: Le minimalisme de Carver — est-ce encore l’œuvre de Carver ?
 
 <!-- Station 2 : le diptyque suit sur sa propre slide. -->
 
-Gordon Lish, son éditeur, coupe les nouvelles jusqu'à la moitié, parfois
+Gordon Lish, son éditeur, coupe les nouvelles jusqu’à la moitié, parfois
 davantage. Il réécrit des fins entières. Il change les titres.
 
 Carver le supplie par lettre : *si ce livre sort dans cette version, je ne
-m'en remettrai pas.* Le livre sort. Dans la version Lish.
+m’en remettrai pas.* Le livre sort. Dans la version Lish.
 
 <!--
 Raymond Carver. Le maître de la nouvelle américaine, le style le plus
-enseigné des ateliers d'écriture : le minimalisme. Des phrases sèches, des
+enseigné des ateliers d’écriture : le minimalisme. Des phrases sèches, des
 fins suspendues.
 
 Ce style a un deuxième père. Gordon Lish, son éditeur. Il coupe les
-nouvelles de Carver jusqu'à la moitié, parfois davantage. Il réécrit des
+nouvelles de Carver jusqu’à la moitié, parfois davantage. Il réécrit des
 fins entières. Il change les titres. Carver le supplie par lettre : si ce
-livre sort dans cette version, je ne m'en remettrai pas. Le livre sort. Dans
+livre sort dans cette version, je ne m’en remettrai pas. Le livre sort. Dans
 la version Lish.
 -->
 
@@ -127,14 +120,14 @@ Extrait à sourcer : la même fin, version publiée.
 </template>
 
 Les deux versions ont été publiées côte à côte par le *New Yorker* en 2007.
-La voix la plus imitée d'Amérique est, pour partie, celle de son éditeur.
+La voix la plus imitée d’Amérique est, pour partie, celle de son éditeur.
 
 <!--
 On le sait avec certitude depuis 2007 : le *New Yorker* a publié une
 nouvelle dans les deux versions, côte à côte. La voix la plus imitée
-d'Amérique est, pour partie, celle de son éditeur.
+d’Amérique est, pour partie, celle de son éditeur.
 
-Le minimalisme de Carver : est-ce encore l'œuvre de Carver ?
+Le minimalisme de Carver : est-ce encore l’œuvre de Carver ?
 
 Les mains.
 
@@ -154,28 +147,28 @@ question: Un roman signé par un homme qui n’existe pas, écrit par un homme q
 
 Vian écrit le roman en quinze jours et le signe **Vernon Sullivan** :
 un écrivain américain, noir, censuré dans son propre pays. Vian se présente
-comme son traducteur. Un des plus gros succès de l'après-guerre.
+comme son traducteur. Un des plus gros succès de l’après-guerre.
 
-Tout est de Vian : le texte, l'auteur, la censure, la biographie.
-Quand la vérité sort, ce n'est pas un triomphe posthume comme pour Gary.
-C'est un procès, une interdiction, une condamnation.
+Tout est de Vian : le texte, l’auteur, la censure, la biographie.
+Quand la vérité sort, ce n’est pas un triomphe posthume comme pour Gary.
+C’est un procès, une interdiction, une condamnation.
 
 <!--
 1946. Boris Vian écrit un roman en quinze jours. Il le signe Vernon
 Sullivan : un écrivain américain, noir, censuré dans son propre pays. Vian se
-présente comme son traducteur. *J'irai cracher sur vos tombes* devient un des
-plus gros succès de l'après-guerre.
+présente comme son traducteur. *J’irai cracher sur vos tombes* devient un des
+plus gros succès de l’après-guerre.
 
-Sullivan n'existe pas. Tout est de Vian : le texte, l'auteur, la censure, la
-biographie. Quand la vérité sort, ce n'est pas un triomphe posthume comme
-pour Gary. C'est un procès pour outrage aux bonnes mœurs, une interdiction,
+Sullivan n’existe pas. Tout est de Vian : le texte, l’auteur, la censure, la
+biographie. Quand la vérité sort, ce n’est pas un triomphe posthume comme
+pour Gary. C’est un procès pour outrage aux bonnes mœurs, une interdiction,
 une condamnation. La fabrique se retourne contre lui et le dévore.
 
-Un roman signé par un homme qui n'existe pas, écrit par un homme qui jure ne
-pas l'avoir écrit : c'est l'œuvre de qui ? Est-ce que c'est une œuvre de
+Un roman signé par un homme qui n’existe pas, écrit par un homme qui jure ne
+pas l’avoir écrit : c’est l’œuvre de qui ? Est-ce que c’est une œuvre de
 Vian ? Les mains.
 
-[« Vous hésitez sur le nom, plus sur l'œuvre. Intéressant. »]
+[« Vous hésitez sur le nom, plus sur l’œuvre. Intéressant. »]
 -->
 
 ---
@@ -187,31 +180,31 @@ balance: Auteur ████░░░░░░ Dispositif
 question: Des textes fabriqués sans intention, devenus littérature par la lecture — est-ce que ce sont des œuvres ?
 ---
 
-<!-- Station 4 : l'intention absente, le sens quand même. -->
+<!-- Station 4 : l’intention absente, le sens quand même. -->
 
-Deux poètes conservateurs détestent l'avant-garde. En un après-midi, avec
+Deux poètes conservateurs détestent l’avant-garde. En un après-midi, avec
 un dictionnaire, un recueil de citations et un rapport sur le drainage des
-marécages, ils fabriquent l'œuvre complète d'un poète mort inventé.
+marécages, ils fabriquent l’œuvre complète d’un poète mort inventé.
 Plus sa biographie. Plus une sœur fictive qui envoie les manuscrits.
 
-La revue d'avant-garde tombe amoureuse. Numéro spécial. Puis la révélation.
+La revue d’avant-garde tombe amoureuse. Numéro spécial. Puis la révélation.
 
-**Ces poèmes sont aujourd'hui dans les anthologies.** Étudiés. Aimés.
+**Ces poèmes sont aujourd’hui dans les anthologies.** Étudiés. Aimés.
 
 <!--
-1943, Australie. Deux poètes conservateurs détestent l'avant-garde. Un
+1943, Australie. Deux poètes conservateurs détestent l’avant-garde. Un
 après-midi, avec un dictionnaire, un recueil de citations et un rapport sur
-le drainage des marécages, ils fabriquent l'œuvre complète d'un poète mort
+le drainage des marécages, ils fabriquent l’œuvre complète d’un poète mort
 inventé : Ern Malley. Plus sa biographie. Plus une sœur fictive qui envoie
 les manuscrits.
 
-La revue d'avant-garde tombe amoureuse. Numéro spécial. Puis la révélation :
+La revue d’avant-garde tombe amoureuse. Numéro spécial. Puis la révélation :
 canular. Humiliation nationale.
 
-Sauf que l'histoire ne s'arrête pas là. Ces poèmes, écrits pour être
-mauvais, écrits pour ne rien dire : ils sont aujourd'hui dans les
+Sauf que l’histoire ne s’arrête pas là. Ces poèmes, écrits pour être
+mauvais, écrits pour ne rien dire : ils sont aujourd’hui dans les
 anthologies. Étudiés. Aimés. Des lecteurs y ont trouvé quelque chose que
-leurs auteurs n'y avaient pas mis.
+leurs auteurs n’y avaient pas mis.
 
 Des textes fabriqués sans intention, devenus littérature par la lecture.
 Est-ce que ce sont des œuvres ? Les mains.
@@ -229,40 +222,40 @@ question: Ce livre-machine — est-ce une œuvre ?
 ---
 
 <!-- Station 5 : le livre est apporté sur scène et manipulé face à la salle.
-     Le script n'y met pas de slide ; on garde l'illustration, l'objet
+     Le script n’y met pas de slide ; on garde l’illustration, l’objet
      physique reste la vraie pièce à conviction. -->
 
 Dix sonnets, découpés vers par vers en bandelettes. Chaque vers est
 interchangeable : cent mille milliards de combinaisons. Deux cents millions
-d'années pour tout lire.
+d’années pour tout lire.
 
-**Queneau n'a écrit aucun de ces poèmes.** Il a écrit la machine qui les
-génère. Le générateur, c'est le livre. L'exécutant, c'est vous.
+**Queneau n’a écrit aucun de ces poèmes.** Il a écrit la machine qui les
+génère. Le générateur, c’est le livre. L’exécutant, c’est vous.
 
 <!--
-[SORTIR L'EXEMPLAIRE de *Cent mille milliards de poèmes*. Le manipuler
-face à la salle : c'est la vraie pièce à conviction de la station. Prévoir
-l'exemplaire accessible sans fouiller, et répéter la manipulation des
-bandelettes — plus capricieuse qu'il n'y paraît. Main libre obligatoire.]
+[SORTIR L’EXEMPLAIRE de *Cent mille milliards de poèmes*. Le manipuler
+face à la salle : c’est la vraie pièce à conviction de la station. Prévoir
+l’exemplaire accessible sans fouiller, et répéter la manipulation des
+bandelettes — plus capricieuse qu’il n’y paraît. Main libre obligatoire.]
 
 1961. Raymond Queneau publie ceci. Dix sonnets, découpés vers par vers en
 bandelettes. Chaque vers est interchangeable. Cent mille milliards de
-combinaisons possibles. Il faudrait deux cents millions d'années pour tout
+combinaisons possibles. Il faudrait deux cents millions d’années pour tout
 lire.
 
-Queneau n'a écrit aucun de ces cent mille milliards de poèmes. Il a écrit
-autre chose : la machine qui les génère. Le générateur, c'est ce livre.
-L'exécutant, c'est vous.
+Queneau n’a écrit aucun de ces cent mille milliards de poèmes. Il a écrit
+autre chose : la machine qui les génère. Le générateur, c’est ce livre.
+L’exécutant, c’est vous.
 
 [Feuilleter, composer une combinaison devant la salle.]
 
 Là, maintenant, je viens de faire exister un sonnet que personne, jamais,
-n'a lu avant nous. Qui en est l'auteur ? Queneau, qui ne l'a jamais vu ?
+n’a lu avant nous. Qui en est l’auteur ? Queneau, qui ne l’a jamais vu ?
 Moi, qui ai tourné des bandelettes ?
 
 Son ami Perec écrira tout un roman sans la lettre e, par pure contrainte
-algorithmique. La France a mis ces gens au programme scolaire. Personne n'a
-exigé de bannir l'Oulipo des prix littéraires.
+algorithmique. La France a mis ces gens au programme scolaire. Personne n’a
+exigé de bannir l’Oulipo des prix littéraires.
 
 Ce livre-machine : est-ce une œuvre ? Les mains.
 -->
@@ -282,27 +275,27 @@ Premier livre revendiqué comme écrit par un programme, sur un
 micro-ordinateur. Réaction du monde littéraire : curiosité amusée.
 Pas de tribunal, pas de clause, pas de commission.
 
-Et la seule controverse de l'époque portait sur l'inverse : on soupçonnait
-l'auteur du programme d'avoir trop sélectionné, trop édité les sorties.
-**On accusait un livre de machine d'être trop humain.**
+Et la seule controverse de l’époque portait sur l’inverse : on soupçonnait
+l’auteur du programme d’avoir trop sélectionné, trop édité les sorties.
+**On accusait un livre de machine d’être trop humain.**
 
 <!--
-1984. Il y a plus de quarante ans. *The Policeman's Beard Is Half
+1984. Il y a plus de quarante ans. *The Policeman’s Beard Is Half
 Constructed* : premier livre revendiqué comme écrit par un programme.
-Racter, tournant sur un micro-ordinateur de l'époque.
+Racter, tournant sur un micro-ordinateur de l’époque.
 
 Réaction du monde littéraire : curiosité amusée. Pas de tribunal. Pas de
 clause. Pas de commission.
 
-Et le détail délicieux : la seule controverse de l'époque portait sur
-l'inverse. On soupçonnait l'auteur du programme d'avoir trop sélectionné,
+Et le détail délicieux : la seule controverse de l’époque portait sur
+l’inverse. On soupçonnait l’auteur du programme d’avoir trop sélectionné,
 trop assemblé, trop édité les sorties. On accusait un livre de machine
-d'être trop humain.
+d’être trop humain.
 
 [Temps.]
 
-La littérature française avait d'ailleurs prévu le coup avec trente ans
-d'avance : en 1954, Robert Escarpit publie *Le Littératron*, un roman sur une
+La littérature française avait d’ailleurs prévu le coup avec trente ans
+d’avance : en 1954, Robert Escarpit publie *Le Littératron*, un roman sur une
 machine construite pour écrire, je cite le programme, le prochain prix
 Goncourt.
 
@@ -316,57 +309,67 @@ layout: exergue
 
 <!-- LE RENVERSEMENT — pivot argumentatif de tout le talk. La phrase seule. -->
 
-Il n'existe pas de seuil à partir duquel l'œuvre cesse d'être la vôtre.
+Il n’existe pas de seuil à partir duquel l’œuvre cesse d’être la vôtre.
 
 <!--
-Six histoires. Six fois la même question. Et vos mains n'ont pas arrêté de
+Six histoires. Six fois la même question. Et vos mains n’ont pas arrêté de
 bouger.
 
-Vous venez de passer dix minutes à chercher un seuil. L'endroit exact où
-l'œuvre cesse d'appartenir à son auteur. Vous ne l'avez pas trouvé. Les
-tribunaux ne l'ont pas trouvé en 1858. L'Académie ne l'a pas trouvé en 1975.
+Vous venez de passer dix minutes à chercher un seuil. L’endroit exact où
+l’œuvre cesse d’appartenir à son auteur. Vous ne l’avez pas trouvé. Les
+tribunaux ne l’ont pas trouvé en 1858. L’Académie ne l’a pas trouvé en 1975.
 
 [Slide : la phrase, seule.]
 
-Il n'existe pas de seuil à partir duquel l'œuvre cesse d'être la vôtre.
+Il n’existe pas de seuil à partir duquel l’œuvre cesse d’être la vôtre.
 
 [Temps.]
 -->
 
 ---
+layout: propos
+variant: inventaire
+clicks: 5
 ---
 
-<!-- La clause de la section 2, pulvérisée par la galerie. -->
+<!-- La clause de la section 2, pulvérisée par la galerie.
+     NON SCINDÉE (décision de cadrage) : question en titre, inventaire en
+     corps — la variante ne contraint que le corps.
+     Les quatre verbes se révèlent un à un : la répétition EST l’argument. -->
 
 # Et la clause ?
 
-<p class="clause">« Produite par l'auteur, et non par une machine. »</p>
+<p class="clause">« Produite par l’auteur, et non par une machine. »</p>
 
-<div class="verdict">
+<div v-click class="entree">Maquet <strong>produisait</strong>.</div>
 
-Maquet **produisait**. Lish **produisait**. Pavlowitch **incarnait**.
-Le lecteur de Queneau **génère**.
+<div v-click class="entree">Lish <strong>produisait</strong>.</div>
 
-</div>
+<div v-click class="entree">Pavlowitch <strong>incarnait</strong>.</div>
+
+<div v-click class="entree">Le lecteur de Queneau <strong>génère</strong>.</div>
+
+<div v-click>
 
 <p class="chute">Cette clause ne décrit correctement aucun des livres que
 vous aimez.</p>
 
+</div>
+
 <style scoped>
-.clause { font-family: var(--font-title); font-size: var(--title-3); margin-top: var(--space-sm); }
-.verdict { margin-top: var(--space-md); font-size: var(--text-lg); max-width: 54ch; }
-.chute { margin-top: var(--space-md); color: var(--color-accent); font-size: var(--text-lg); }
+.clause { font-family: var(--font-title); font-size: var(--text-xl);
+          margin-bottom: var(--space-md); }
 </style>
 
 <!--
 Et la clause, celle que je vous ai demandé de retenir ? Produite par
-l'auteur, et non par une machine.
+l’auteur, et non par une machine.
 
 Maquet produisait. Lish produisait. Pavlowitch incarnait. Le lecteur de
 Queneau génère. Cette clause ne décrit correctement aucun des livres que
 vous aimez.
 
-[« Pavlowitch incarnait » est la SEULE mention de l'affaire Gary entre le
+[« Pavlowitch incarnait » est la SEULE mention de l’affaire Gary entre le
 cold open et la section 6. Un seul mot, sans développer : la salle fait le
 pont seule.]
 -->
@@ -375,20 +378,20 @@ pont seule.]
 layout: cold-open
 ---
 
-<!-- LE PONT vers la section 5. « La mienne tourne depuis un quart d'heure. » -->
+<!-- LE PONT vers la section 5. « La mienne tourne depuis un quart d’heure. » -->
 
-Si la frontière est introuvable de l'extérieur, il ne reste qu'une démarche
-honnête : ouvrir la fabrique, et regarder ce qu'il y a dedans.
+Si la frontière est introuvable de l’extérieur, il ne reste qu’une démarche
+honnête : ouvrir la fabrique, et regarder ce qu’il y a dedans.
 
-La mienne tourne depuis un quart d'heure.
+La mienne tourne depuis un quart d’heure.
 
 **Descendons.**
 
 <!--
-Alors si la frontière est introuvable de l'extérieur, il ne reste qu'une
-seule démarche honnête : ouvrir la fabrique, et regarder ce qu'il y a dedans.
+Alors si la frontière est introuvable de l’extérieur, il ne reste qu’une
+seule démarche honnête : ouvrir la fabrique, et regarder ce qu’il y a dedans.
 
-Ça tombe bien. La mienne tourne depuis un quart d'heure.
+Ça tombe bien. La mienne tourne depuis un quart d’heure.
 
 [Regard vers le compte à rebours.]
 
