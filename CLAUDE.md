@@ -102,7 +102,9 @@ slide et le script, le script gagne. Le deck suit :
    puis l'aveu. C'est la seule strate du talk qui piège la salle, et elle
    le fait avec l'erreur du speaker.
 6. **Le mode personnage** (~3'20) — l'acteur : on ne demande plus à la
-   machine d'écrire *sur* le personnage mais de le *devenir*. Entretien
+   machine d'écrire *sur* le personnage mais de le *devenir*. Le personnage
+   est **Judith**, la même qu'à l'étage 2 du dernier mur : elle y était
+   l'objet de l'échec, elle est ici le sujet qu'on interroge. Entretien
    rejoué à **deux** questions (factuelle, interprétative), puis **l'aveu**
    — rien n'a émergé, tout a été composé — puis le retournement sur la
    question de Le Tellier.

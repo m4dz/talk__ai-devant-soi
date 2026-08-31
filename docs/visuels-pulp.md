@@ -17,7 +17,7 @@
 |---|---|---|---|
 | cas-01-dumas-maquet | **re-tirer (hi-res)** | s42 rejeté : deux plumes | objet A (négatif B possible) |
 | cas-02-carver-lish | **gardé** | `cas-02-carver-lish-s43.png` | objet A (négatif B possible) |
-| cas-03-vian-sullivan | **re-tirer (hi-res)** | s103-hi-res rejeté : masque souriant | objet A (négatif B possible) |
+| ~~cas-03-vian-sullivan~~ | **asset supprimé** — station retirée du deck (2026-08-31) | — | — |
 | cas-04-ern-malley | **gardé — référence de série** | `cas-04-ern-malley-s45.png` | objet A ; **négatif B validé** |
 | cas-05-oulipo | **gardé** | `cas-05-oulipo-s46.png` (voir note §0ter) | objet A (négatif B possible) |
 | cas-06-racter | **gardé** | `cas-06-racter-s47.png` | objet A (négatif B possible) |
@@ -157,7 +157,7 @@ fold creases » dans 2b uniquement.
 - **cas-01-dumas-maquet** : `a distinguished 19th century writer in a black
   tailcoat and bow tie, bust portrait, a massive featureless dark silhouette
   looming behind him, holding one single red quill feather`
-- **cas-03-vian-sullivan** : `a confident man in a plain black suit and white
+- ~~**cas-03-vian-sullivan**~~ *(asset supprimé le 2026-08-31 — station retirée ; prompt conservé comme trace de workflow)* : `a confident man in a plain black suit and white
   shirt with a single red tie, holding a blank white expressionless theater
   mask with empty black eyes and no mouth beside his face, bust portrait,
   plain background`

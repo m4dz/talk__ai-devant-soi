@@ -52,11 +52,15 @@ fichier (traçabilité, pas reproductibilité — cf. §0bis du doc).
 
 Assets dans `public/images/` :
 
+> `cas-03-vian-sullivan-s600.png` a été **supprimé** avec la station Vian
+> (changement `refonte-trame-figures-murs`, 2026-08-31). Le prompt de tirage
+> reste consigné dans `docs/visuels-pulp.md` comme trace du workflow.
+
+
 | fichier | cas / beat | dérivation dark |
 |---|---|---|
 | `cas-01-dumas-maquet-s500.png` | Dumas / Maquet | objet A |
 | `cas-02-carver-lish-s43.png` | Carver / Lish | objet A |
-| ~~`cas-03-vian-sullivan-s600.png`~~ | Vian / Sullivan — **station retirée** (`refonte-trame-figures-murs`) ; fichier conservé, plus référencé par le deck | objet A |
 | `cas-04-ern-malley-s45.png` | Ern Malley | objet A |
 | `cas-05-oulipo-s46.png` | Oulipo | objet A |
 | `cas-06-racter-s47.png` | Racter | objet A |

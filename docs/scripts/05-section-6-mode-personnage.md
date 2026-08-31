@@ -12,9 +12,13 @@ Tout à l'heure, dans l'atelier, je vous ai dit qu'il n'y avait que deux rôles.
 
 Même fabrique. Même bibliothèque, mêmes fiches, même mémoire. Une seule chose change : on ne demande plus à la machine d'écrire sur le personnage. On lui demande de le devenir.
 
-[Slide : la fiche du personnage. PLACEHOLDER : nom, une ligne d'identité, choisis parmi les personnages principaux du roman. Le personnage doit avoir un secret ou un angle mort connu de la salle de rien : c'est ce qui rendra l'entretien lisible sans contexte.]
+[Slide : la fiche du personnage. C'est **Judith** — la même qu'à la section 5, où elle était l'objet de l'échec ; elle est ici le sujet qu'on interroge.]
 
-Je vous présente [NOM]. [Une phrase de présentation : qui il/elle est dans le roman, sans spoiler.] Depuis quelques mois, quand une scène résiste, je ne la réécris pas. Je vais lui parler.
+Vous la connaissez déjà. Judith, correctrice, quinze ans de métier. Celle dont je vous montrais la fiche il y a quatre minutes.
+
+Chaque soir, elle relit l'entrée de la veille de son carnet, pour vérifier qu'elle se souvient bien.
+
+Depuis quelques mois, quand une scène résiste, je ne la réécris pas. Je vais lui parler.
 
 ---
 
@@ -66,7 +70,8 @@ Et pendant que je vous parlais, là-bas, quelqu'un a fini d'écrire.
 
 - **Live ou rejeu : rejeu, et ce n'est plus un choix.** La page de roleplay et la génération du chapitre partagent le même modèle de 13 Go, et la machine n'en tient qu'un. `POST /chat` répond 409 pendant toute la génération. La section 6 tombant entre le lancement et la récolte, l'entretien **doit** être un rejeu. C'était de la prudence dans le premier jet ; c'est désormais la seule option physiquement possible.
 - **L'aveu du beat 3 est une exigence, pas une concession.** Vérification faite candidat par candidat : la seconde assiette était matériau imposé (`briefs/protocole-calibration-ch2.md` §1) ; « Romane » et « Judith » sont des noms de la bible, donc des violations d'interdit, pas des inventions ; la percée du 31-08 a été obtenue par rejet en code, pas par le modèle. **Rien n'a émergé, nulle part.** Ne jamais reconstruire une émergence pour combler ce beat — c'est explicitement interdit par la spec `deck-content`.
-- **Le choix du personnage** : privilégier celui dont l'entretien est le plus lisible sans connaître le roman. Le critère : la question 2 doit être savoureuse même pour quelqu'un qui découvre le personnage à l'instant.
+- **Le personnage est Judith — tranché le 31 août.** C'est la même qu'à l'étage 2 du dernier mur : elle y était l'objet de l'échec, elle est ici le sujet qu'on interroge. L'arc est meilleur que deux personnages distincts, et il économise une présentation. **Ne pas la présenter comme nouvelle** : « vous la connaissez déjà » fait le lien. Sa ligne d'identité dit le métier et le rituel, jamais ce qu'elle ignore — le dispositif du roman ne se spoile pas ici.
+- **Les deux questions doivent rester lisibles sans le roman** : la factuelle sur son monde, l'interprétative sur son biais. Le critère n'a pas changé, seul le personnage est fixé.
 - **Slot fermé.** Le run `xp-resolution` du 31 août a tranché H3-brief (12/12) : la machine tenait le doute, c'est le brief qui la poussait. H4 existe mais reste faible — l'identité de verdict affleure sans conclure. Le verbatim qui le prouve (« mon réflexe de correctrice… mais pour l'instant, je reste là ») vit au dernier mur de la section 5, où il porte le renversement. **Il ne se redit pas ici** : la même citation à cinq minutes d'intervalle userait les deux. La section 6 garde son aveu et rien de plus.
 - **Interdit maintenu** : aucun rapprochement explicite avec Pavlowitch. Le mot « incarner » du beat 1 (« on lui demande de le devenir ») et la mécanique de l'entretien suffisent : la salle a déjà tous les fils.
 - **Le compte à rebours comme partenaire de jeu** : c'est la seule section où on le regarde deux fois (beat 4, et implicitement pendant l'entretien). L'urgence de fin de section doit être physique : « quelqu'un a fini d'écrire » se dit en marchant vers l'écran.

@@ -41,29 +41,33 @@ intitule: La fiche du personnage
 commentaire: Quand une scène résiste, je ne la réécris pas. Je vais lui parler.
 ---
 
-<!-- GABARIT : nom + une ligne d’identité, choisis parmi les personnages
-     principaux. Critère du script : le personnage doit avoir un secret ou
-     un angle mort qui rende l’entretien lisible sans connaître le roman. -->
+<!-- C’EST JUDITH — décision du 31 août, et c’est la même qu’à la section 5.
+     Elle y était l’OBJET de l’échec ; elle est ici le SUJET qu’on interroge.
+     La salle a son nom depuis quatre minutes : ne pas le représenter comme
+     une nouveauté. Aucun spoiler du dispositif du roman : la ligne
+     d’identité dit le métier et le rituel, jamais ce qu’elle ignore. -->
 
-<div class="gabarit-bloc">
-<span class="gabarit">GABARIT</span>
+**Judith**, correctrice. Quinze ans de métier.
 
-Nom du personnage + une ligne d’identité (sans spoiler), à choisir dans la
-bible du roman.
-</div>
+Chaque soir, elle relit l’entrée de la veille pour vérifier qu’elle se
+souvient bien.
 
 <!--
 [Slide : la fiche du personnage.]
 
-Je vous présente [NOM]. [Une phrase de présentation : qui il/elle est dans le
-roman, sans spoiler.]
+Vous la connaissez déjà. Judith, correctrice, quinze ans de métier. Celle
+dont je vous montrais la fiche il y a quatre minutes.
+
+Chaque soir, elle relit l’entrée de la veille de son carnet, pour vérifier
+qu’elle se souvient bien.
 
 Depuis quelques mois, quand une scène résiste, je ne la réécris pas. Je vais
 lui parler.
 
-[CHOIX DU PERSONNAGE : privilégier celui dont l’entretien est le plus lisible
-sans connaître le roman. La question 2 doit être savoureuse même pour
-quelqu’un qui découvre le personnage à l’instant.]
+[NE PAS la présenter comme nouvelle : la salle a son nom depuis la section 5.
+Le « vous la connaissez déjà » fait le lien et vaut mieux qu’une
+re-présentation. La ligne d’identité dit le métier et le rituel, jamais ce
+qu’elle ignore — le dispositif du roman ne se spoile pas ici.]
 -->
 
 ---
