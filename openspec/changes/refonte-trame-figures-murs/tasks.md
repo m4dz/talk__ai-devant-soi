@@ -84,20 +84,23 @@
       Sullivan », ni d'affirmation d'émergence dans les sources du deck
 - [x] 5.5 Inventaire des gabarits : le dernier mur y figure
 
-## 6. Bloqué sur la stack (hors périmètre, à suivre)
+## 6. Le run de falsification — clos
 
-- [x] 6.1 Provenance de `_BEAT_RESOUT` confirmée par la stack : « Je n'ai pas
-      rêvé » récidive dans **4 entrées du journal**, sur toutes les sessions
-      (ch2 → S4 → S6 → ch7). Attracteur stable, pas phrase isolée. La pièce à
-      conviction tient sous n'importe quelle hypothèse
-- [ ] 6.2 C5-complet tiré côté stack sur les sujets correctrice / neutre
-      (et 3ᵉ sujet à identité forte non résolutive, si retenu)
-- [ ] 6.3 Récupérer de la stack : texte brut des variants (gagnant + perdants),
-      verdict de lecture debout, hypothèse survivante
-- [ ] 6.4 Récupérer les **lignes exactes de la fiche** portant l'identité de
-      verdict de Judith, verbatim + chemin — moitié gauche de la slide du
-      dernier mur
-- [ ] 6.5 Décision cloud, **après** C5 seulement (caduque sous H4). Inclination
-      actée : borner au local et annoncer la borne sur scène
-- [ ] 6.6 Une fois le run tombé : figer le 3ᵉ battement du dernier mur, ajuster
-      sa durée, et rouvrir une proposal si l'issue est H3
+- [x] 6.1 Provenance de `_BEAT_RESOUT` confirmée : « Je n'ai pas rêvé » récidive
+      dans 4 entrées du journal, sur toutes les sessions
+- [x] 6.2 C5 complet tiré côté stack, quatre conditions, modèle nu, `BEATS_N=1`
+- [x] 6.3 Résultat : **H3-brief, 12/12**. La machine tenait le doute ; c'est le
+      brief qui la poussait. H2 et la question du cloud sont sans objet
+- [x] 6.4 Lignes de la fiche récupérées (`bible/fiche-judith.md`, chunk voix
+      L23-27, plus L124 / L135 / L181) et intégrées à la slide de l'étage 2
+- [x] 6.5 Décision cloud : **sans objet**
+- [x] 6.6 Dernier mur figé — accusation → renversement → aveu. La prédiction
+      « H3 = refonte » était fausse : la structure a tenu, le mur a gagné
+
+## 7. Suites, hors périmètre
+
+- [ ] 7.1 Suivre le fix racine côté stack. Sans conséquence pour le deck : le
+      renversement tient sur « c'était mon brief », et Lish a été ré-ancré au
+      retrait
+- [ ] 7.2 Jouer le dernier mur à voix haute — l'étage 2 doit être crédible sans
+      ironie, sinon l'étage 3 ne renverse rien

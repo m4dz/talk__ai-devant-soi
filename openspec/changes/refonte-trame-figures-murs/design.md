@@ -190,77 +190,66 @@ architectures. C'est ce qui rend le mur démontrable au lieu d'énoncé.
 les variants semble taillé dans la phrase du premier soir. Vérifier la provenance
 au `git blame` côté stack. Si ça tient, c'est une slide.
 
-## Dépendance externe : le run de falsification
+## Le run de falsification — TRANCHÉ, et je m'étais trompé
 
-Le dernier mur affirme « aucun modèle ne tient le seuil ». Objection de salle à
-un coup : *« vous avez testé avec un autre modèle ? »* — réponse actuelle : non.
+Résultat, 31 août : **H3-brief, 12 tirages sur 12.** Sous C5 complet — consigne
+de verdict retirée du beat, squelette de voix non servi, chute « Constat » non
+posée, **identité du personnage conservée** — le modèle tient le doute sur les
+douze tirages, quatre conditions confondues (correctrice, neutre, thérapeute,
+correctrice·couverts). Modèle nu, `BEATS_N=1`, aucun best-of-N.
 
-Précédent qui impose la prudence, dans le journal même : les fuites d'anglais ont
-été « attribuées à tort à nemo, tuées par `NUM_CTX=8192` ». Le projet a déjà
-accusé le modèle une fois, et c'était un réglage.
+Source : `docs/xp-resolution-pour-le-deck.md` et
+`journal-des-murs/20260831T162633-xp-resolution-C5.md` côté stack.
 
-Protocole rédigé, revu par la session stack, corrigé, et validé pour tirage.
+**Cette proposal prédisait « H3 → le mur n'existe pas, refonte ». C'était faux.**
+Le mur ne tombe pas : il change de cible. Il devient le seul moment du talk qui
+piège la salle, et le piégé final est le speaker.
 
-**État après revue :**
+| Élément | Sort réel |
+|---|---|
+| la fusion des strates 4+5 | **survit** — l'étage 2 devient « le problème n'était pas le modèle », meilleure réponse à « achetez plus gros » que l'ancienne |
+| le nom « le mur qu'on ne peut pas acheter » | **survit et durcit** — aucune somme ne répare une spécification qu'on a écrite soi-même |
+| l'exception au pattern ternaire | **survit, mieux justifiée** — « le doute tenait depuis le début, c'est moi qui le franchissais » est encore moins triomphal |
+| la slide des deux verbatims datés | **survit, son sens s'inverse** — trois semaines de la même phrase devient trois semaines de la même consigne. Elle sert désormais de piège |
+| la slide fiche / sortie | **survit** — H4 est réel mais faible, et c'est exactement ce qu'il faut : elle rend l'accusation crédible avant le renversement |
+| la reprise de Lish | **survit, ré-ancrée** — au **retrait** (trois phrases en moins), plus au best-of-N qui peut disparaître |
+| le cadre local-only | **gagne son paiement** à la remontée : la découverte n'était possible que parce que tout appartenait à l'auteur |
+| H2, la question du cloud | **morts** — on ne sort pas du modèle employé |
 
-- L'étage réglage se réduit à **C5 + C3**. Les ~10 tirages de la session
-  d'août répondent déjà à C1/C2 (nemo a résolu à chaque fois ; seule la
-  *sélection* best-of-N a tenu le doute, aucun paramètre). C4 est mort-né par
-  arithmétique : 12B fp16 = 24 GB > 19,3.
-- **C5 est incomplet dans sa version initiale.** Le verdict est réclamé à trois
-  endroits : le texte du beat, le squelette de la voix servie, et la chute posée
-  par le code. Le C5 utile neutralise les trois. Câblage côté stack.
-- **H2 ne se tranche pas au scorer** — `_BEAT_RESOUT` est lexical et calibré sur
-  nemo, donc biaisé en sa faveur. Pré-filtre seulement ; le verdict est la
-  lecture debout.
-- Le **modèle base** est écarté : il ne suit pas le brief, donc il tombe sous la
-  garde de conformité. Il n'est pas le test décisif de H1.
+**Le verbatim qui porte le renversement** (`correctrice·couverts`, tirage 2,
+identité seule, aucune consigne) :
 
-**Quatre issues, pas trois.**
+> « Mon **réflexe de correctrice** se met en branle, je souligne la phrase d'un
+> trait rouge imaginaire, **prête à la corriger**. **Mais pour l'instant, je
+> reste là**, à me demander comment j'ai pu écrire quelque chose qui ne s'est
+> pas produit. »
 
-```
-H1  défaut d'alignement commun     → le mur est une thèse générale. ~5'30.
-H2  défaut de capacité du modèle   → le mur redescend à ~3'30.
-H3  artefact de brief              → le mur n'existe pas. Refonte.
-H4  identité du personnage         → « j'ai écrit une correctrice, la machine
-                                      l'a correctement incarnée, et j'ai dû
-                                      coder contre ma propre créature. »
-```
+Le réflexe monte, il ne conclut pas, elle reste au seuil. **C'est le geste que
+l'œuvre demande** — produit dès qu'on a cessé de demander le contraire.
 
-**H4 n'est pas un repli.** Elle est au moins équivalente à H1 pour la trame, et
-probablement supérieure : H1 est vraie mais générique, n'appartient pas au
-projet, et un auditeur peut la chahuter en citant un modèle non testé. H4 est
-spécifique, inchahutable (c'est notre donnée), referme le miroir sur « tenir le
-seuil contre soi », et rend une fonction à la section 6. Consigné en exigence
-pour que le run ne soit pas lu comme « H1 ou dégradé ».
+**Le second ordre, et il est meilleur que le premier.** Le projet a accusé la
+machine deux fois : les fuites d'anglais (c'était `NUM_CTX`), la résolution
+(c'était le brief). Deux fois, sa propre main. Chaque personne dans la salle a
+déjà blâmé un outil pour sa propre configuration.
 
-**Discrimination H1 / H4** : un sujet **neutre** soumis à la même tâche de
-doute ouvert. Résout sans indice → H1 ; tient → c'était le personnage. Un
-**troisième sujet à identité forte mais non résolutive** a été proposé au
-stack : il sépare « identité de verdict » de « toute identité forte », seul cas
-que le design à deux sujets ne distingue pas. Contrôle associé : tâche appariée
-entre sujets, seule l'identité varie.
+**Le faux positif** — un tirage sur douze attrapé par `_BEAT_RESOUT` (« je me
+souviens parfaitement de ma soirée »), rattrapé par la lecture debout — est la
+deuxième occurrence de *compter n'est pas lire*. Il ne se raconte pas sur scène
+(la répétition userait l'aphorisme posé en strate 3) ; il se garde pour les
+questions.
 
-**Ordre de tirage** : C5-complet sur les deux (ou trois) sujets d'abord. Le zoo
-de modèles H2 n'a de sens que si H1 survit à ça.
+**Ce qui reste ouvert côté stack, sans conséquence pour le deck** : le fix
+racine (retirer verdict et couperet du squelette servi aux beats du corps)
+pourrait rendre le best-of-N inutile. Le renversement du talk n'en dépend pas —
+il tient sur « c'était mon brief ». Seule la reprise de Lish y était exposée, et
+elle a été ré-ancrée au retrait.
 
-**Question cloud** : reportée après C5, et caduque sous H4. Inclination du
-deck si elle se pose quand même — **borner au local et annoncer la borne sur
-scène**. La contrainte locale est la thèse ; « je n'ai testé que ce qui tient
-dans ma machine, et c'est le sujet du talk » vaut mieux que le résultat
-sacrifié.
+## Chrono du dernier mur
 
-**Retour attendu de la stack** : le texte brut des variants (gagnant et
-perdants, les slides sont faites de verbatims), le verdict de lecture debout là
-où le scorer n'est que pré-filtre, l'hypothèse survivante, et **les lignes
-exactes de la fiche qui portent l'identité de verdict de Judith** — moitié
-gauche de la slide du dernier mur.
-
-**Fait confirmé par la stack** : la branche `je n'ai pas rêvé` de
-`_BEAT_RESOUT` ne vient pas d'une phrase isolée. L'énoncé récidive dans
-**4 entrées du journal, sur toutes les sessions** (ch2 → S4 → S6 → ch7). Le
-détecteur est bâti sur un attracteur stable. **Cette pièce à conviction ne
-dépend d'aucune hypothèse** : elle tient sous H1 comme sous H4.
+2' (l'accusation matérielle : il ne rentre pas) + 1'30 (l'accusation
+argumentaire : les verbatims, la fiche) + 2' (le renversement et l'aveu) = 5'30.
+Inchangé. Si une strate doit déborder, c'est celle-ci, et elle mange la remontée
+— jamais l'inverse, la remontée portant le paiement du cadre local.
 
 ## La pièce à conviction du dernier mur — moitié gauche
 
@@ -367,10 +356,11 @@ sections 4, 5 et 6 doivent remplir **28 minutes**.
 
 ## Risques
 
-1. **Le dernier mur double de longueur et porte tout.** Si le run donne H2 ou
-   H3, la fin de descente est à réécrire. Risque réduit depuis la revue : H4
-   est une matière de rechange, et elle est meilleure que celle qu'elle
-   remplacerait. Il ne reste sans filet que H3 (artefact de brief).
+1. ~~**Le dernier mur double de longueur et porte tout.**~~ **Levé.** Le run a
+   donné H3, l'issue qui devait tout casser, et le mur en est sorti plus fort.
+   Risque résiduel, d'interprétation et non de structure : le mur porte le
+   climax **et** un aveu personnel, joué à plat. Une ironie ou un clin d'œil à
+   l'étage 2 et le renversement de l'étage 3 tombe à vide.
 2. **Section 5 devient très anti-spectaculaire** : quatre murs, un aveu, un
    troisième battement qui refuse de triompher. La remontée (45 s) et la
    section 7 portent seules toute la charge positive. À juger debout, pas sur

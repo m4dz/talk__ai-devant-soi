@@ -468,7 +468,7 @@ que j’aurais eu le roman avec le gros modèle ?
 ---
 layout: piece-a-conviction
 intitule: Trois semaines, cinq architectures, la même phrase
-commentaire: 09-08, premier soir, sans mémoire. 31-08, tout l’outillage branché.
+commentaire: 9 août, premier soir, sans mémoire. 31 août, tout l’outillage branché.
 ---
 
 <!-- ÉTAGE 2 — ET S’IL RENTRAIT ? 2’30. NON GABARIT : ces deux verbatims
@@ -524,8 +524,99 @@ Droite : la sortie du modèle qui rend ce verdict.
 </div>
 
 <!--
-[Ne rien commenter pendant trois secondes. La salle doit voir seule que le
-défaut de la machine est une citation de la fiche.]
+J’ai même fini par comprendre pourquoi. Regardez.
+
+Cette femme, dans ma bible, est correctrice. Son métier, c’est de rendre des
+verdicts. C’est écrit noir sur blanc dans sa fiche, et cette fiche, la machine
+la lit avant chaque paragraphe.
+
+[Temps. Ne rien commenter pendant trois secondes : la salle doit voir seule
+que le défaut de la machine est une citation de la fiche.]
+
+Le défaut de la machine était une citation du personnage.
+
+J’étais très content de moi. J’avais mon coupable.
+
+[À PLAT. Sans ironie, sans clin d’œil. La salle doit croire qu’on est arrivé
+à la conclusion, sinon le renversement de la slide suivante n’a rien à
+renverser. C’est la seule mise en scène du talk qui demande au speaker de
+jouer sa propre erreur au présent.]
+-->
+
+---
+layout: piece-a-conviction
+intitule: L’expérience — 12 tirages, 12 fois le doute tient
+commentaire: On lui a retiré trois phrases. Pas le personnage. Trois phrases.
+---
+
+<!-- ÉTAGE 3 — LE RENVERSEMENT. 2'. Run `xp-resolution` du 31 août :
+     C5 complet (consigne de verdict retirée du beat, squelette de voix non
+     servi, chute « Constat » non posée, identité du personnage CONSERVÉE),
+     modèle nu, BEATS_N=1, quatre conditions.
+     Source : docs/xp-resolution-pour-le-deck.md côté stack. -->
+
+Retiré du brief — « elle amorce **un verdict** »
+
+Retiré du squelette de voix — « 5. Le **verdict** de correction »
+
+Retiré du code — la chute « **Constat** »
+
+## 12 / 12
+
+Le personnage reste correctrice. Le doute tient.
+
+<!--
+Sauf que j’ai fait une dernière expérience. Avant-hier.
+
+Je lui ai retiré trois choses. Pas le personnage — le personnage reste,
+correctrice, avec son métier. Trois phrases que je lui servais sans y penser.
+
+Dans le brief : « elle amorce un verdict ». Dans le squelette de sa voix,
+servi avant chaque paragraphe, une étape numérotée : « le verdict de
+correction ». Et derrière, posé par mon propre code : le mot « Constat ».
+
+Trois phrases. Je les ai enlevées. J’ai relancé douze fois.
+
+Douze fois sur douze, elle tient le doute.
+
+[Temps. Long.]
+
+Elle tenait depuis le début. C’est moi qui la poussais à franchir.
+-->
+
+---
+layout: piece-a-conviction
+intitule: Avec l’identité seule, sans aucune consigne
+commentaire: Le réflexe monte. Il ne conclut pas. Elle reste au seuil.
+---
+
+<!-- Le verbatim qui retourne tout : la machine a produit le geste que le
+     roman demande — la pulsion de clore, refusée — dès qu’on a cessé de lui
+     demander le contraire. Source : correctrice·couverts, tirage 2. -->
+
+> Mon **réflexe de correctrice** se met en branle, je souligne la phrase d’un
+> trait rouge imaginaire, **prête à la corriger**.
+>
+> **Mais pour l’instant, je reste là**, à me demander comment j’ai pu écrire
+> quelque chose qui ne s’est pas produit.
+
+<!--
+Et voilà le meilleur. Avec l’identité seule, sans aucune consigne, elle écrit
+ceci. [Lire.]
+
+Le réflexe monte. Il ne conclut pas. Elle reste au seuil.
+
+C’est exactement ce que mon roman demande. La machine a écrit le geste que je
+n’arrivais pas à lui arracher — à la seconde où j’ai cessé de lui demander le
+contraire.
+
+[Temps.]
+
+Et ce n’est pas la première fois. Au premier soir du projet, elle glissait des
+mots anglais dans un texte français. J’ai accusé le modèle pendant des jours.
+C’était un réglage de fenêtre de contexte. Le mien.
+
+Deux fois j’ai accusé la machine. Deux fois c’était ma main.
 -->
 
 ---
@@ -534,20 +625,23 @@ n: 4
 problem: Le mur qu’on ne peut pas acheter
 ---
 
-Le gros modèle **ne rentre pas**. Et s’il rentrait, il ne tiendrait pas
-davantage le doute qu’il faut tenir.
+Le gros modèle **ne rentre pas**. Et s’il rentrait, il n’y aurait rien à
+réparer chez lui.
 
-Il n’y a rien à acheter. Chaque phrase est tirée trois fois, et le **code**
-garde celle qui ne tranche pas.
+Le mur n’était pas dans la machine. Il était dans ce que je lui servais.
+
+Ce correctif, au fait : **trois phrases en moins**.
 
 <!--
-[ÉTAGE 3 — LE BATTEMENT QUI NE TRIOMPHE PAS. 1’.]
+Ce correctif, au fait : trois phrases en moins.
 
-Ce que fait ce code, un homme l’a fait à la main sur les nouvelles de Carver.
-Gordon Lish n’a pas écrit le minimalisme américain : il l’a coupé. Le style
-de Carver, c’est ce que Lish a jeté.
+Gordon Lish n’a rien ajouté aux nouvelles de Carver. Il a coupé. Le style de
+Carver, c’est ce que Lish a jeté.
 
-Ma voix, ce sont mes rejets.
+Ma voix, ce sont mes retraits.
+
+[LISH est désormais ancré au RETRAIT, plus au best-of-N — le fix racine peut
+faire disparaître ce dernier, l’ancrage tient quand même.]
 -->
 
 ---
@@ -555,45 +649,18 @@ layout: exergue
 ---
 
 <!-- APHORISME de la strate 4 — L’EXCEPTION AU PATTERN TERNAIRE.
-     Il ne célèbre AUCUNE construction : il constate qu’il a fallu
-     EMPÊCHER. Un talk dont la thèse est que résoudre est le défaut de la
-     machine ne peut pas offrir quatre résolutions de forme sur quatre.
-     Cette exception est attachée à la strate 4 et la suit en permutation.
+     Il ne célèbre AUCUNE construction : la strate se referme sur un aveu, et
+     sa cible est le speaker. Un talk dont la thèse est que résoudre est le
+     défaut de la machine ne peut pas offrir quatre résolutions de forme sur
+     quatre. Attaché à la strate 4, la suit en permutation.
+     FIGÉ depuis le run xp-resolution du 31 août (H3-brief, 12/12). -->
 
-     GABARIT — le texte définitif dépend du run de falsification.
-     Voir CLAUDE.md « À trancher » point 7 et docs/scripts/04-… étage 3.
-     H4 (identité du personnage) est la version écrite ci-dessous ;
-     H1 / H2 / H3 changent le texte, jamais la structure. -->
-
-<div class="gabarit-bloc">
-<span class="gabarit">GABARIT — dépend du run</span>
-
-Ce n’est pas une victoire. C’est le constat qu’il a fallu l’empêcher.
-</div>
+Le doute tenait depuis le début. C’est moi qui le franchissais.
 
 <!--
-[Version H4 — l’identité du personnage, la plus probable et la plus forte.]
+[L’aphorisme, seul.]
 
-Pendant trois semaines, j’ai cru que la machine ratait mon personnage.
-
-Elle le réussissait.
-
-Ma fiche dit que cette femme est correctrice. Son métier, c’est de rendre
-des verdicts. Et ma propre fiche programme l’extinction de ses verdicts au
-chapitre huit. On teste au chapitre sept.
-
-Au moment où je la mesure, trancher est son comportement correct.
-
-Je lui demandais de désobéir à ce que j’avais écrit.
-
-[Temps.]
-
-Aucune instruction ne fait ça. Le code, si.
-
-Le doute tient. Pas parce que le modèle a tenu : parce que je lui ai interdit
-de résoudre.
-
-Ce n’est pas une victoire. C’est le constat qu’il a fallu l’empêcher.
+Le doute tenait depuis le début. C’est moi qui le franchissais.
 
 [NE PAS CONCLURE. Ne pas remonter d’un ton, ne pas marquer de silence de
 conclusion. Enchaîner directement sur la remontée : cette strate est la seule
@@ -616,6 +683,11 @@ comprendre. Je l’ai fermée moi-même, avant de descendre.
 
 Pas par vertu. Parce que la contrainte était le voyage : chaque mur m’a forcé
 à comprendre une chose que j’aurais payée pour ignorer.
+
+Et il y a une chose que je n’aurais jamais découverte autrement. Le fautif,
+c’était moi. Il a fallu que tout m’appartienne — le modèle, le brief, la
+fiche, le code — pour que je puisse le prouver. Derrière une API, on ne sait
+jamais que le coupable était son propre prompt.
 
 C’est le mur qui rend honnête.
 -->

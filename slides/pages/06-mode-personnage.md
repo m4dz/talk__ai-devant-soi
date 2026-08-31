@@ -148,11 +148,13 @@ Tout ce qui est bon dans ce livre a été composé. Rien n’a poussé tout seul
 
 [Temps. Ne pas rattraper, ne pas adoucir, ne pas enchaîner trop vite.]
 
-[SLOT EN ATTENTE — si le run de falsification désigne l’issue H4 (identité
-du personnage), un beat de 20 s s’ajoute ici : la strate 4 a posé le FAIT
-(elle est correctrice, elle tranche), la section 6 révèle le MÉCANISME (on
-lui a demandé de la devenir, elle l’est devenue). Ne rien écrire avant le
-run.]
+[SLOT FERMÉ — le run xp-resolution du 31 août a tranché H3-brief (12/12).
+H4 existe mais reste faible : l’identité de verdict affleure sans jamais
+conclure. Le verbatim qui le montre (« mon réflexe de correctrice… mais
+pour l’instant, je reste là ») est utilisé au dernier mur de la section 5,
+où il porte le renversement. Il ne se redit PAS ici : la même citation à
+cinq minutes d’intervalle userait les deux. La section 6 garde son aveu et
+rien de plus.]
 -->
 
 ---

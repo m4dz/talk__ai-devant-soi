@@ -93,13 +93,14 @@ slide et le script, le script gagne. Le deck suit :
    résoudre est le défaut de la machine ne peut pas offrir quatre
    résolutions de forme sur quatre.
 
-   > **Réserve.** La fusion et le contenu du dernier mur dépendent du run
-   > de falsification décrit au point 7 de « À trancher ». Les issues *H1*
-   > (défaut d'alignement), *H2* (capacité du modèle) et *H4* (identité du
-   > personnage) laissent cette structure intacte et ne changent que le
-   > texte du troisième battement et sa durée. Seule l'issue *H3*
-   > (artefact de brief) la casse : retour à quatre murs dont *puissance*
-   > redevient autonome.
+   **Le dernier mur est un renversement, et sa cible est le speaker.** Le
+   run de falsification (point 7 de « À trancher ») a tranché : la machine
+   tenait le doute ; c'est le brief qui la poussait à le franchir. Le mur
+   se joue donc en trois temps — l'accusation (les verbatims, la fiche du
+   personnage : la salle conclut que le modèle est incapable), puis
+   l'expérience qui casse cette conclusion (12 tirages sur 12 tiennent),
+   puis l'aveu. C'est la seule strate du talk qui piège la salle, et elle
+   le fait avec l'erreur du speaker.
 6. **Le mode personnage** (~3'20) — l'acteur : on ne demande plus à la
    machine d'écrire *sur* le personnage mais de le *devenir*. Entretien
    rejoué à **deux** questions (factuelle, interprétative), puis **l'aveu**
@@ -410,26 +411,24 @@ Questions à poser au speaker au démarrage — ne pas improviser :
    attribués nominativement, avec la source affichée à l'écran (layout
    `citation-sourcee`). Voir spec `deck-content`.
 
-7. **La résolution est-elle un défaut de modèle ?** — **PRÉALABLE
-   BLOQUANT** du troisième battement du dernier mur (section 5). Le mur
-   affirme que le modèle ne tient pas un doute ouvert ; l'objection de
-   salle est « vous avez testé un autre modèle ? », et la réponse est
-   aujourd'hui non. Précédent qui impose la prudence : les fuites
-   d'anglais ont été *attribuées à tort au modèle* avant d'être tuées par
-   `NUM_CTX=8192`. Quatre issues :
-   **H1** défaut d'alignement commun à tout modèle instruit ;
-   **H2** défaut de capacité du modèle employé ;
-   **H3** artefact du brief servi (il demande explicitement « Elle amorce
-   un verdict ») ; **H4** conséquence de l'**identité du personnage** — la
-   narratrice est une correctrice dont le métier servi est de rendre des
-   verdicts, et sa fiche programme l'extinction du verdict au chapitre 8,
-   donc au chapitre 7 testé **résoudre est son comportement correct**.
-   **H4 n'est pas un repli** : elle est au moins équivalente à H1 pour la
-   trame, et probablement supérieure — H1 est vraie mais générique et
-   chahutable, H4 est spécifique et dit que l'auteur a dû coder contre sa
-   propre créature. Le protocole (contrôle sans indice, sujets appariés
-   correctrice / thérapeute / neutre) est tiré côté stack. Reporter la
-   réponse ici au retour du run.
+7. ~~**La résolution est-elle un défaut de modèle ?**~~ — **TRANCHÉ**
+   (run `xp-resolution` du 2026-08-31, 12 tirages, `journal-des-murs/
+   20260831T162633-xp-resolution-C5.md`) : **c'était le brief, pas le
+   modèle.** Sous C5 complet — consigne de verdict retirée du beat,
+   squelette de voix non servi, chute « Constat » non posée, l'identité du
+   personnage seule conservée — nemo **tient le doute 12 fois sur 12**,
+   sur quatre conditions (correctrice, neutre, thérapeute,
+   correctrice·couverts). Modèle nu, `BEATS_N=1`, aucun best-of-N.
+   L'identité de verdict **affleure sans conclure** : « Mon réflexe de
+   correctrice se met en branle… prête à la corriger. Mais pour l'instant,
+   je reste là. » — c'est-à-dire exactement le geste que le roman demande.
+   H2 (autres modèles) et la question du cloud deviennent sans objet : on
+   ne sort pas de nemo.
+   **Ce que le talk en dit** : le projet a accusé la machine deux fois — les
+   fuites d'anglais (c'était `NUM_CTX`), la résolution (c'était le brief) —
+   et deux fois c'était sa propre main. Le seul détecteur qui a « vu » une
+   résolution dans le lot était un faux positif, corrigé par la lecture
+   debout : deuxième occurrence de *compter n'est pas lire*.
 
 ## Jalons proposés
 

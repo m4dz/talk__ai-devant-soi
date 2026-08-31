@@ -208,42 +208,58 @@ clé d'API) SHALL être servi à l'intérieur du dernier mur, comme premier
 - **THEN** aucune n'a la contrainte locale pour aphorisme ou pour intitulé
   de mur
 
-### Requirement: Le contenu du dernier mur est gelé sous condition
+### Requirement: Le dernier mur est un renversement dont la cible est le speaker
 
-Le dernier mur SHALL rester en **gabarit** tant que le run de falsification
-mené côté stack n'a pas tranché entre ses **quatre** issues : la résolution est
-un défaut d'alignement commun à tout modèle instruit, un défaut de capacité du
-modèle employé, un artefact du brief servi, ou **une conséquence de l'identité
-du personnage** — la narratrice est une correctrice dont le métier servi est de
-rendre des verdicts, et la machine résout parce qu'elle l'incarne correctement.
+Le dernier mur SHALL se jouer en trois temps et NE SHALL PAS présenter la
+résolution comme un défaut de la machine :
 
-Le deck NE SHALL PAS traiter cette dernière issue comme un repli : elle est
-**au moins équivalente** aux autres pour la thèse, puisqu'elle dit que l'auteur
-a dû coder contre sa propre créature. L'issue retenue SHALL être celle que le
-run désigne, sans préférence par défaut pour l'énoncé le plus général.
+1. **l'accusation** — les verbatims datés et la fiche du personnage, servis de
+   sorte que la salle conclue que le modèle est incapable de tenir le doute ;
+2. **le renversement** — l'expérience qui casse cette conclusion : les trois
+   sources de la consigne de verdict retirées, le personnage conservé, et le
+   doute qui tient sur la totalité des tirages ;
+3. **l'aveu** — le constat que le mur était dans ce que l'auteur servait à la
+   machine, pas dans la machine.
 
-Le deck SHALL porter la structure du mur (pièce à conviction, intitulé,
-troisième battement non résolutif) sans figer son texte, et le gabarit SHALL
-être repérable par l'inventaire des gabarits.
+Le deuxième temps SHALL montrer que l'identité du personnage **affleure sans
+conclure** — le réflexe de trancher, visible et refusé — c'est-à-dire le geste
+même que l'œuvre demande.
 
-#### Scenario: Gabarit repérable tant que le run n'a pas tranché
+Le premier temps SHALL être joué **sans ironie ni signal** : la salle doit
+adhérer à la conclusion fausse, sinon le renversement n'a rien à renverser.
 
-- **WHEN** on recherche les marqueurs de gabarit dans les sources
-- **THEN** le contenu du dernier mur figure dans l'inventaire des slides en
-  attente
+#### Scenario: Les trois temps dans l'ordre
 
-#### Scenario: La structure existe sans le texte
+- **WHEN** on parcourt le dernier mur
+- **THEN** les pièces d'accusation précèdent la pièce d'expérience, qui précède
+  l'aphorisme, et aucune slide antérieure n'annonce le renversement
 
-- **WHEN** on parcourt le dernier mur avant le run
-- **THEN** ses trois battements sont présents et navigables, le texte
-  définitif étant marqué en attente
+#### Scenario: Aucune imputation à la machine
 
-#### Scenario: L'issue « identité du personnage » n'est pas dégradée
+- **WHEN** le dernier mur se termine
+- **THEN** son aphorisme impute le franchissement du seuil à l'auteur, et non
+  au modèle
 
-- **WHEN** le run désigne l'identité du personnage comme cause de la
-  résolution
-- **THEN** le dernier mur est écrit sur cette issue à pleine longueur, sans
-  formulation qui la présente comme un résultat par défaut ou amoindri
+#### Scenario: Le réflexe visible et refusé
+
+- **WHEN** la pièce d'expérience est affichée
+- **THEN** elle montre une sortie où le réflexe de trancher est nommé puis non
+  suivi d'effet
+
+### Requirement: La contrainte locale se paie à la remontée
+
+La remontée SHALL énoncer que la contrainte locale est **ce qui a rendu la
+découverte possible** : l'auteur n'a pu établir que la faute venait de lui que
+parce que le modèle, le brief, la fiche et le code lui appartenaient tous.
+
+Cet énoncé SHALL rester à la remontée et NE SHALL PAS être déplacé dans une
+strate : c'est le paiement du cadre posé à l'entrée de la section.
+
+#### Scenario: Le cadre est payé, pas répété
+
+- **WHEN** on atteint la remontée
+- **THEN** elle relie la contrainte locale à la possibilité même du
+  renversement du dernier mur, sans réénoncer l'argument posé à l'entrée
 
 ### Requirement: Aucune émergence affirmée nulle part dans le deck
 

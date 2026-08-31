@@ -146,8 +146,10 @@ Alors je sais ce que la moitié d'entre vous pense depuis deux minutes. Tout ce 
 ## Strate 4 — Le mur qu'on ne peut pas acheter (5'30)
 
 > Fusion des anciennes strates *puissance* et *seuil*. Les deux répondaient à la
-> même objection à deux étages. **Le troisième battement est en gabarit** : son
-> texte dépend du run de falsification (CLAUDE.md, « À trancher » point 7).
+> même objection à deux étages. **Le contenu est figé depuis le run
+> `xp-resolution` du 31 août** (12/12 — CLAUDE.md « À trancher » point 7, tranché).
+> Structure : accusation → preuve apparente → renversement. C'est la seule
+> strate du talk qui piège la salle, et sa cible est le speaker.
 
 ### Étage 1 — il ne rentre pas (2')
 
@@ -167,9 +169,9 @@ Je vous ai dit en entrant ce qu'il en était.
 
 Alors la question honnête, celle que vous êtes en train de vous poser : est-ce que j'aurais eu le roman avec le gros modèle ?
 
-### Étage 2 — et s'il rentrait ? (2'30)
+### Étage 2 — l'accusation (1'30)
 
-Non.
+Non. Et pour vous le prouver, je vais d'abord vous montrer ce que j'ai cru pendant trois semaines.
 
 [Slide : PIÈCE À CONVICTION — les deux verbatims datés, côte à côte.]
 
@@ -189,56 +191,71 @@ Mon roman tient sur un doute. Une femme relit son propre carnet et ne se reconna
 
 Et la machine, à chaque fois, lui donne la réponse.
 
-[Slide : la fiche à gauche, la sortie à droite. PLACEHOLDER — les lignes exactes de la fiche du personnage à récupérer, verbatim.]
+[Temps.]
 
-À gauche, ce que j'ai écrit d'elle. À droite, ce qu'elle a produit.
+J'ai même fini par comprendre pourquoi. Regardez.
 
-[Ne rien commenter pendant trois secondes. La salle doit voir que le défaut de la machine est une citation de la fiche.]
+[Slide : la fiche à gauche, la sortie à droite. PLACEHOLDER — les lignes exactes de la fiche, à intégrer verbatim.]
 
-### Étage 3 — le battement qui ne triomphe pas (1')
-
-[GABARIT. Le texte définitif dépend du run de falsification : quatre issues,
-quatre versions. Structure fixée, verdict non figé. Ne rien répéter à voix
-haute avant que le run soit tombé — c'est le seul endroit du talk où une
-affirmation peut être démontée par quelqu'un de la salle.]
-
-[Version H4 — l'identité du personnage, la plus probable et la plus forte :]
-
-Pendant trois semaines, j'ai cru que la machine ratait mon personnage.
-
-Elle le réussissait.
-
-Ma fiche dit que cette femme est correctrice. Son métier, c'est de rendre des verdicts. Et ma propre fiche programme l'extinction de ses verdicts au chapitre huit. On teste au chapitre sept.
-
-Au moment où je la mesure, trancher est son comportement correct.
-
-Je lui demandais de désobéir à ce que j'avais écrit.
+Cette femme, dans ma bible, est correctrice. Son métier, c'est de rendre des verdicts. C'est écrit noir sur blanc dans sa fiche, et cette fiche, la machine la lit avant chaque paragraphe.
 
 [Temps.]
 
-Aucune instruction ne fait ça. Le code, si. Chaque phrase est tirée trois fois, et le code garde celle qui ne tranche pas.
+Le défaut de la machine était une citation du personnage.
+
+J'étais très content de moi. J'avais mon coupable.
+
+[Ne pas ironiser sur « content de moi ». Le dire à plat. Le piège ne fonctionne que si la salle croit qu'on est arrivé à la conclusion.]
+
+### Étage 3 — le renversement (2')
+
+Sauf que j'ai fait une dernière expérience. Avant-hier.
+
+Je lui ai retiré trois choses. Pas le personnage — le personnage reste, correctrice, avec son métier. Trois phrases que je lui servais sans y penser.
+
+Dans le brief : « elle amorce un verdict ».
+
+Dans le squelette de sa voix, servi avant chaque paragraphe, une étape numérotée : « le verdict de correction ».
+
+Et derrière, posé par mon propre code : le mot « Constat ».
+
+Trois phrases. Je les ai enlevées. J'ai relancé douze fois.
+
+[Slide : 12 / 12.]
+
+Douze fois sur douze, elle tient le doute.
+
+[Temps. Long.]
+
+Elle tenait depuis le début. C'est moi qui la poussais à franchir.
 
 [Temps.]
 
-Ce que fait ce code, un homme l'a fait à la main sur les nouvelles de Carver. Gordon Lish n'a pas écrit le minimalisme américain : il l'a coupé. Le style de Carver, c'est ce que Lish a jeté.
+Et voilà le meilleur. Avec l'identité seule, sans aucune consigne, elle écrit ceci :
 
-Ma voix, ce sont mes rejets.
+« Mon réflexe de correctrice se met en branle, je souligne la phrase d'un trait rouge imaginaire, prête à la corriger. Mais pour l'instant, je reste là. »
 
-Le doute tient. Pas parce que le modèle a tenu : parce que je lui ai interdit de résoudre.
+Le réflexe monte. Il ne conclut pas. Elle reste au seuil.
 
-Ce n'est pas une victoire. C'est le constat qu'il a fallu l'empêcher.
+C'est exactement ce que mon roman demande. La machine a écrit le geste que je n'arrivais pas à lui arracher — à la seconde où j'ai cessé de lui demander le contraire.
 
-[Slide : l'aphorisme, seul. PLACEHOLDER — dépend de l'issue.]
+[Temps.]
 
-[Ne pas conclure. Ne pas remonter d'un ton. Enchaîner directement sur la remontée : cette strate est la seule qui ne se referme pas.]
+Et ce n'est pas la première fois. Au premier soir du projet, elle glissait des mots anglais dans un texte français. J'ai accusé le modèle pendant des jours. C'était un réglage de fenêtre de contexte. Le mien.
 
-[Autres issues, si le run les désigne :
- — H1 (alignement) : « aucun modèle ne tient ce doute. Le plus gros le franchit
-   avec plus de style, c'est tout. » Durée conservée, 5'30.
- — H2 (capacité du modèle) : la strate redescend à ~3'30 et l'étage 2 se dit
-   « avec ce modèle-là, ce mur-là ». Il faut retrouver 2' ailleurs.
- — H3 (artefact de brief) : l'étage 2 tombe. Retour à quatre murs dont
-   *puissance* redevient autonome. Refonte de la fin de descente.]
+Deux fois j'ai accusé la machine. Deux fois c'était ma main.
+
+[Temps.]
+
+Ce correctif, au fait : trois phrases en moins. Gordon Lish n'a rien ajouté aux nouvelles de Carver. Il a coupé.
+
+Ma voix, ce sont mes retraits.
+
+[Slide : l'aphorisme, seul.]
+
+Le doute tenait depuis le début. C'est moi qui le franchissais.
+
+[NE PAS CONCLURE. Ne pas remonter d'un ton, ne pas marquer de silence de conclusion. Enchaîner directement sur la remontée : cette strate est la seule qui ne se referme pas.]
 
 ---
 
@@ -251,6 +268,8 @@ Quatre murs. Et à chaque étage, la même porte de sortie : sous-traiter, prend
 Elle était ouverte à chaque étage. Je l'ai fermée moi-même, avant de descendre.
 
 Pas par vertu. Parce que la contrainte était le voyage : chaque mur m'a forcé à comprendre une chose que j'aurais payée pour ignorer.
+
+Et il y a une chose que je n'aurais jamais découverte autrement. Le fautif, c'était moi. Il a fallu que tout m'appartienne — le modèle, le brief, la fiche, le code — pour que je puisse le prouver. Derrière une API, on ne sait jamais que le coupable était son propre prompt.
 
 [Slide : la règle, seule.]
 
@@ -274,18 +293,22 @@ Ne répondez pas tout de suite. Il me reste quelqu'un à vous présenter.
 
 ## Notes de préparation
 
-- **Placeholders à remplir depuis le journal des murs** : extrait raté n°1 (contradiction de lore), n°2 (scène qui dérive), n°3 (plat correct), extrait qui casse le lint (avec la règle en cause), la grille verte et l'extrait qu'elle laisse passer, les deux chiffres du chronomètre qui dort, les chiffres du crash (étage 1), et **les lignes exactes de la fiche du personnage** pour la slide de l'étage 2. Chaque extrait doit être authentique et daté : la salle sent la reconstruction.
+- **Placeholders à remplir depuis le journal des murs** : extrait raté n°1 (contradiction de lore), n°2 (scène qui dérive), n°3 (plat correct), extrait qui casse le lint (avec la règle en cause), la grille verte et l'extrait qu'elle laisse passer, les deux chiffres du chronomètre qui dort, les chiffres du crash (étage 1), et **les lignes exactes de la fiche du personnage** pour la slide de l'étage 2 — celles-ci sont livrées : `bible/fiche-judith.md`, chunk voix L23-27, plus L124 / L135 / L181. Chaque extrait doit être authentique et daté : la salle sent la reconstruction.
 - **Les deux verbatims datés de l'étage 2 sont acquis**, et ils ne dépendent d'aucune hypothèse : la phrase « Je n'ai pas rêvé » récidive dans quatre entrées du journal, sur toutes les sessions (ch2 → S4 → S6 → ch7). C'est un attracteur stable, pas une coïncidence. La slide tient quelle que soit l'issue du run.
-- **L'étage 3 ne se répète pas à voix haute avant le run.** C'est le seul endroit du talk où une affirmation peut être démontée par quelqu'un de la salle en rentrant chez lui. Les quatre versions sont dans le corps du script ; une seule survivra.
+- **L'étage 3 est le climax du talk, et c'est un aveu.** Il repose sur le run `xp-resolution` du 31 août : C5 complet (consigne de verdict retirée du beat, squelette de voix non servi, chute « Constat » non posée, identité du personnage conservée), modèle nu, `BEATS_N=1`, quatre conditions, **12 tirages sur 12 tiennent le doute**. Chiffres et verbatims dans `docs/xp-resolution-pour-le-deck.md` côté stack.
+- **Le piège de l'étage 2 ne fonctionne que joué à plat.** « J'étais très content de moi, j'avais mon coupable » se dit sans ironie et sans clin d'œil : la salle doit croire qu'on est arrivé à la conclusion, sinon le renversement de l'étage 3 n'a rien à renverser. C'est la seule mise en scène du talk qui demande au speaker de jouer sa propre erreur au présent.
+- **Les deux accusations** — les fuites d'anglais (c'était `NUM_CTX`), la résolution (c'était le brief) — se disent l'une après l'autre, sans commentaire. La salle fait la somme.
+- **Ne jamais dire que le best-of-N était inutile** tant que le fix racine n'est pas vérifié sur le vrai pipeline côté stack. L'étage 3 n'en a pas besoin : son renversement tient sur « c'était mon brief », pas sur ce qui a remplacé le correctif.
+- **Le faux positif du détecteur** (un tirage sur douze, rattrapé par la lecture debout) est la deuxième occurrence de *compter n'est pas lire*, posé en strate 3. Ne pas le raconter sur scène — la répétition userait l'aphorisme. Le garder en réserve pour les questions.
 - **La contrainte locale se dit deux fois, pas trois** : à l'entrée de la descente et à la remontée. L'étage 1 y fait un rappel d'**une phrase** (« je vous ai dit en entrant ce qu'il en était ») et n'argumente pas. Si la répétition revient à la rédaction, c'est l'étage 1 qui coupe.
 - **Les reprises de figures**, une par strate, jamais annoncées :
   Maquet en strate 1 (il fournit la matière, il faut la lui apporter) ;
   Queneau en strate 2 (il a écrit la machine, pas les poèmes) ;
   Malley en strate 3 (ses poèmes passaient tous les critères — *compter n'est pas lire*) ;
-  Lish à l'étage 3 du dernier mur (le style est ce qu'il a jeté ; ma voix, ce sont mes rejets).
+  Lish à l'étage 3 du dernier mur — **ancré au retrait, plus au best-of-N** : le correctif, ce sont trois phrases en moins, et Lish n'a rien ajouté à Carver, il a coupé.
   Racter ne revient pas ici : il revient au verdict de la section 8.
 - **L'exception au pattern ternaire** est portée par le dernier mur seul, et elle est structurelle : un talk dont la thèse est que résoudre est le défaut de la machine ne peut pas offrir quatre résolutions de forme sur quatre. L'étage 3 constate qu'il a fallu *empêcher*, il ne célèbre pas. Ne pas remonter d'un ton à la fin de cette strate, ne pas marquer de silence de conclusion : enchaîner sur la remontée.
 - **Le pont Gary de la strate 3** : « on a déjà rencontré quelqu'un, ce soir » est la deuxième et dernière allusion entre le cold open et la section 6 (avec « incarnait » au renversement de la 4). Ne jamais prononcer les noms ici.
 - **La charnière strate 3 / dernier mur** : l'objection d'économie (« tout ce travail alors qu'un gros modèle aurait suffi ») doit être déroulée avec son raisonnement complet avant le [Temps], pour que « On a pris un modèle plus gros » tombe comme une réponse. Si une strate déborde, couper ailleurs, jamais cette charnière.
-- **Chrono interne** : 15" + 3' + 3' + 4' + 5'30 + 45" = 16'30. Le dernier mur est la seule strate autorisée à bouger, et il bougera : sa durée dépend de l'issue du run (5'30 sous H1 ou H4, ~3'30 sous H2, refonte sous H3).
+- **Chrono interne** : 15" + 3' + 3' + 4' + 5'30 + 45" = 16'30. Le dernier mur se répartit en 2' + 1'30 + 2'. Si une strate doit déborder, c'est lui, et il mange la remontée — jamais l'inverse : la remontée porte le paiement du cadre local.
 - **Cohérence d'accessoires** : trois objets scéniques dans le talk, le livre de Queneau (section 4), le compte à rebours (permanent), la voix clonée (section 7). La section 5 n'introduit aucun objet nouveau : ses slides d'extraits ratés sont ses pièces à conviction.
