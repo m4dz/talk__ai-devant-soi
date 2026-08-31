@@ -20,12 +20,17 @@ watch(
 const minutes = Number(import.meta.env.VITE_COUNTDOWN_MINUTES ?? 28) || 28
 const durationSeconds = minutes * 60
 
+// AUCUNE UI D'ERREUR. `error` porte le MÊME libellé que `generating` — pas une
+// chaîne vide, qui retomberait sur « En cours… » et changerait donc le texte à
+// l'écran. La fenêtre de relance (moins de 3 min de décompte écoulé) place
+// l'opérateur sur ou juste après cette slide : un échec suivi de sa reprise
+// silencieuse doit être rigoureusement invisible ici.
 const statusLabel: Record<string, string> = {
   idle: '',
   generating: 'Génération en cours…',
   tts: 'Synthèse vocale…',
   ready: 'Chapitre prêt',
-  error: 'Erreur',
+  error: 'Génération en cours…',
 }
 
 const label = computed(() =>

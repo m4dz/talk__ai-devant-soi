@@ -153,14 +153,27 @@ Composants à développer :
 - **`<GenerationTrigger>`** (section 3) : bouton scénique qui déclenche
   la génération du chapitre. Feedback visuel immédiat (la salle doit
   *voir* que ça part). Idempotent : un double-clic ne relance pas.
-- **`<Countdown>`** : compte à rebours ~35 min, affiché en grand sur la
-  slide de lancement puis rappelable en discret (coin de slide ou layer)
-  sur les sections suivantes. Autonome côté deck (ne dépend pas du
-  réseau pour avancer), enrichi par le statut réel quand il est
-  disponible.
+- **`<Countdown>`** : compte à rebours de 28 min, affiché en grand sur la
+  slide de lancement puis rappelable en discret (pilule de coin) sur les
+  sections suivantes. Autonome côté deck (ne dépend pas du réseau pour
+  avancer). **Porte les étapes en direct** : étape, sous-étape et récit des
+  événements marquants de la machine, pour que la salle la voie travailler
+  et se corriger. En grand : étape + récit. Dans la pilule : l'étiquette
+  seule — les sections 4 à 6 portent l'argumentation, un récit défilant dans
+  le coin y ferait concurrence au propos.
 - **`<ChapterReader>`** (section 7) : affiche le texte du chapitre
   récupéré, pilote la lecture audio (voir TTS), avec défilement suivant
   la lecture.
+
+**Contrainte matérielle structurante** : la page de roleplay du mode acteur
+et la génération du chapitre **partagent le même modèle de 13 GB**, et la
+machine n'en tient qu'un (les deux demanderaient 17,8 Go sur 19,3).
+`POST /chat` répond `409` pendant toute la génération. Une démo d'acteur en
+direct ne peut donc se jouer qu'**avant le lancement** (section 3) ou
+**après la récolte** (section 7), jamais entre les deux. La section 6
+tombant dans l'intervalle, son entretien **doit** rester un rejeu : ce
+n'était qu'un choix de prudence dans son script, c'est désormais la seule
+option physiquement possible.
 
 Principes d'implémentation :
 
@@ -169,13 +182,42 @@ Principes d'implémentation :
   sans la machine distante.
 - **CORS** : l'API distante devra autoriser l'origine du deck — à
   configurer côté serveur de génération (noter dans le repo de la stack).
-- **Fallback silencieux** : si le trigger échoue ou si le statut ne
-  répond plus, le deck bascule sur le chapitre pré-généré embarqué
-  (`public/fallback/chapitre.md` + `public/fallback/chapitre.mp3`) sans
-  aucun signal visible. Le composant expose un raccourci clavier discret
-  pour forcer le fallback manuellement.
+- **Étapes en direct via SSE** (`${VITE_GEN_HOST}/events`, pas de variable
+  dédiée) : le flux est un **enrichissement**, jamais une dépendance. Le
+  sondage `/status` reste la source d'autorité de l'état — détection d'échec,
+  règle de reprise, arrivée du chapitre — pour qu'aucun mécanisme de
+  rattrapage ne dépende d'une connexion longue. L'`EventSource` vit dans
+  `genClient`, jamais dans un composant : le compteur se démonte entre slides.
+  Une seule source alimente l'affichage à la fois (le flux quand il vit, le
+  sondage à défaut) : mêler les deux fenêtres de notes fait repartir le récit
+  en arrière à l'écran.
+- **Le mode mock émet un récit d'étapes scripté**, sinon la répétition hors
+  ligne ne montrerait jamais cet écran-là.
+- **Aucune réplique du script ne doit pointer les notes** (« regardez, la
+  machine vient de refuser son plan ») : sur le chemin de repli il n'y a ni
+  étape ni récit, et le speaker ne sait pas sur quel chemin il est. Ce serait
+  la seule phrase du talk capable de révéler la bascule. À commenter en
+  improvisation ou pas du tout.
+- **Fallback silencieux** : à tout échec (trigger, statut, ressource non
+  prête, marqueur manquant), le deck bascule sur le chapitre pré-généré
+  embarqué (`public/fallback/chapitre.md` + `public/fallback/chapitre.wav`)
+  sans aucun signal visible. **Bascule atomique** : texte ET audio viennent
+  de la même source — une voix qui ne dit pas ce qui est à l'écran serait
+  pire que le repli complet. Raccourci opérateur `Ctrl+Alt+F` pour forcer
+  le repli à la main.
+- **Le repli s'arme sans se montrer** : un échec en début de talk ne fait
+  pas passer le compte à rebours en « chapitre prêt » pendant vingt-cinq
+  minutes ; le chapitre embarqué se matérialise à zéro du décompte, ou à
+  l'entrée en section 7.
+- **Relance unique en fenêtre haute** : un échec survenu à moins de
+  3 minutes de décompte écoulé déclenche **un seul** nouveau
+  `POST /generate`, silencieux (cycle complet ~21 min, budget 28 min).
+  Au-delà, repli direct. Jamais de boucle — la machine n'accepte qu'un run
+  par démarrage.
 - Timeout courts et retries silencieux sur tous les appels réseau : le
-  deck ne doit jamais bloquer ni afficher une erreur en plein talk.
+  deck ne doit jamais bloquer ni afficher une erreur en plein talk. Aucun
+  état d'échec ne produit de texte à l'écran, y compris sur le bouton de
+  lancement.
 
 ## Slide TTS (section 7)
 
@@ -189,9 +231,26 @@ Principes d'implémentation :
   texte**, pas au moment de la slide 7 : la 1.7B est lente sur la
   narration longue, on ne fait pas attendre la salle. Le deck récupère
   un fichier audio prêt (ou un flux) au moment de la lecture.
+- **La lecture clonée est bornée à 2'45** (`AUDIO_SECONDES=165` côté
+  machine, ≈ 522 mots au débit mesuré de **190 mots/min**) : le chapitre
+  entier ferait 12,6 min d'écoute, injouable dans une keynote de cinquante.
+  La borne se règle **en secondes, jamais en mots** — une durée demandée en
+  mots se traduit de travers dès que le débit du clone bouge.
+  **Cet extrait est joué en entier** : la voix clonée va jusqu'au bout, elle
+  n'est plus coupée en cours de route. Le speaker ne lit à voix haute que
+  **les deux premières phrases** ; le marqueur de bascule tombe juste après.
+  La coupe par avance de slide reste un filet, pas le déroulé prévu.
+- **Budget mesuré** : génération 17,0 min + rendu clone ~1,8 min = **~19 min**
+  contre 28 au compteur, ~9 min de marge.
+- **Deux marqueurs, posés par le code du pipeline** (jamais par le
+  modèle) : `<!-- BASCULE -->` (relais speaker → voix clonée) et
+  `<!-- FIN AUDIO -->` (fin de la portion sonorisée). La section 7 ne rend
+  que `début → FIN AUDIO` ; le reste du chapitre n'entre pas dans la
+  slide, ce qui aligne le défilement sur le périmètre sonore. Un chapitre
+  distant sans ses deux marqueurs est traité comme non prêt → repli.
 - Mise en scène : le speaker lit le début à voix haute, l'audio cloné
-  prend le relais. Le composant doit permettre un départ de l'audio à un
-  timecode/paragraphe précis, déclenché par raccourci clavier.
+  prend le relais au marqueur de bascule, déclenché par un pas de clic
+  Slidev (télécommande) — jamais un raccourci clavier, jamais un timecode.
 - Fallback : audio pré-généré du chapitre de secours, même voix clonée,
   embarqué dans le deck.
 
@@ -222,7 +281,7 @@ docs/
 tools/
   inverser_mode.py        # dérivations dark des visuels (inversion / calage noir)
 CREDITS.md                # source et licence de chaque asset
-.env.example              # VITE_GEN_HOST, VITE_TTS_HOST, VITE_MOCK, VITE_COUNTDOWN_MINUTES
+.env.example              # VITE_GEN_HOST, VITE_MOCK, VITE_COUNTDOWN_MINUTES
 openspec/                 # géré par OpenSpec (voir workflow ci-dessous)
 CLAUDE.md                 # ce fichier
 ```
@@ -260,21 +319,24 @@ Règles :
 
 Questions à poser au speaker au démarrage — ne pas improviser :
 
-1. **Adresse de la machine distante** : IP fixe ou hostname mDNS
-   (`.local`) ? Recommandation : IP fixe le jour J (le mDNS est fragile
-   sur les réseaux de salles de conf), configurable via `.env`.
-2. **API de déclenchement** : OpenWebUI expose-t-il le pipeline, ou
-   attaque-t-on l'orchestrateur LangGraph via une petite API dédiée ?
-   Recommandation : une API HTTP minimale devant LangGraph
-   (`POST /generate`, `GET /status`, `GET /chapter`, `GET /audio`),
-   découplée d'OpenWebUI qui reste l'interface d'atelier — le deck n'a
-   besoin que de 4 endpoints stables.
-3. **Suivi de progression** : polling de `GET /status` (simple, robuste)
-   ou SSE (plus fin) ? Recommandation : polling toutes les 10-15 s, le
-   compte à rebours restant autonome côté deck.
-4. **Où tourne Qwen3-TTS** : sur la machine de génération (recommandé :
-   GPU déjà là, le deck ne fait que récupérer l'audio) ou sur la machine
-   de présentation ?
+1. ~~**Adresse de la machine distante**~~ — **TRANCHÉ** : **IP fixe**,
+   port **8420** (le service écoute sur `0.0.0.0:8420`). mDNS écarté :
+   fragile sur les réseaux de salles de conf. Configurable via
+   `VITE_GEN_HOST`.
+2. ~~**API de déclenchement**~~ — **TRANCHÉ** : une **API HTTP dédiée**
+   devant l'orchestrateur (`orchestrator/api.py` côté stack), découplée
+   d'OpenWebUI qui reste l'interface d'atelier. Les 4 endpoints
+   (`POST /generate`, `GET /status`, `GET /chapter`, `GET /audio`) sont
+   en service depuis le 2026-08-07.
+3. ~~**Suivi de progression**~~ — **TRANCHÉ** : **polling toutes les
+   10 s**, timeout 3 s, 2 retries silencieux. Le compte à rebours reste
+   autonome. `/status` livre aussi des champs riches (`progress`,
+   `label`, `notes`) : **non exploités pour l'instant** — les afficher
+   rendrait le fallback distinguable, ça fera l'objet d'un changement
+   dédié avec sa piste de notes de secours.
+4. ~~**Où tourne Qwen3-TTS**~~ — **TRANCHÉ** : sur la **machine de
+   génération**. Un seul host pour tout : `VITE_TTS_HOST` est supprimé,
+   `/chapter` et `/audio` sortent de `VITE_GEN_HOST`.
 5. ~~**Modèle de génération d'images local**~~ — **TRANCHÉ** :
    **FLUX.2 Klein 4B** (Black Forest Labs, Apache 2.0) via **mflux**
    (MLX, Apple Silicon), quantifié 4 bits. FLUX.1 schnell écarté (bug de

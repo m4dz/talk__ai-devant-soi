@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { computed, ref, watch } from 'vue'
-import { useSlideContext, onSlideLeave } from '@slidev/client'
-import { session } from '../lib/session'
+import { useSlideContext, onSlideEnter, onSlideLeave } from '@slidev/client'
+import { session, BASCULE, FIN_AUDIO } from '../lib/session'
+import { ensureChapter } from '../lib/genClient'
 
 // Départ de la lecture = pas de clic Slidev ($clicks), JAMAIS un raccourci
 // clavier (règle projet). La slide déclare `clicks: 1` en frontmatter :
@@ -10,37 +11,62 @@ const { $clicks } = useSlideContext()
 
 const audio = ref<HTMLAudioElement | null>(null)
 const scroller = ref<HTMLElement | null>(null)
+const clonedBlock = ref<HTMLElement | null>(null)
 
 // Chapitre prêt ?
 const ready = computed(() => session.status === 'ready' && !!session.chapter)
 
-// Découpage au marqueur BASCULE (posé après la 1ʳᵉ phrase par la writing
-// factory). Avant = lu par le speaker ; après = pris par la voix clonée.
-const BASCULE = '<!-- BASCULE -->'
+// Si le repli a été armé en silence pendant le talk, c'est ici qu'il se pose
+// (arrivée en section 7 avant zéro du compte à rebours).
+// PAS `onMounted` : Slidev monte toutes les slides au chargement du deck, donc
+// le montage a lieu bien avant l'armement. C'est l'ENTRÉE sur la slide qui fait
+// foi.
+onSlideEnter(ensureChapter)
+
+// Découpage aux DEUX marqueurs :
+//   début → BASCULE      : lu à voix haute par le speaker (affiché, hors audio)
+//   BASCULE → FIN AUDIO  : pris par la voix clonée (c'est ce que couvre le WAV)
+//   après FIN AUDIO      : hors périmètre — n'entre pas dans la slide.
+// Borner l'affichage à FIN AUDIO aligne la hauteur défilable sur le périmètre
+// sonore : sans ça, un chapitre entier affiché contre un extrait audio fait
+// courir le texte d'un ordre de grandeur trop vite.
 const parts = computed(() => {
   const text = session.chapter?.text ?? ''
-  const idx = text.indexOf(BASCULE)
-  if (idx === -1) return { before: text.trim(), after: '' }
+  const fin = text.indexOf(FIN_AUDIO)
+  const bounded = fin === -1 ? text : text.slice(0, fin)
+  const bascule = bounded.indexOf(BASCULE)
+  if (bascule === -1) return { before: bounded.trim(), cloned: '' }
   return {
-    before: text.slice(0, idx).trim(),
-    after: text.slice(idx + BASCULE.length).trim(),
+    before: bounded.slice(0, bascule).trim(),
+    cloned: bounded.slice(bascule + BASCULE.length).trim(),
   }
 })
 
 const beforeParas = computed(() => splitParas(parts.value.before))
-const afterParas = computed(() => splitParas(parts.value.after))
+const clonedParas = computed(() => splitParas(parts.value.cloned))
 
 function splitParas(s: string): string[] {
   return s.split(/\n{2,}/).map(p => p.replace(/\s+/g, ' ').trim()).filter(Boolean)
 }
 
-// Défilement suivant la lecture : ratio audio → scrollTop du conteneur.
+// Défilement suivant la lecture. L'audio ne couvre QUE la portion clonée : le
+// ratio se déroule donc de son sommet jusqu'au bas, pas depuis le haut du texte
+// (qui vient d'être lu à voix haute et n'est pas dans le WAV). Sans cet ancrage
+// il resterait un décalage constant, égal à la hauteur de la portion parlée.
 function onTimeUpdate() {
   const a = audio.value
   const el = scroller.value
   if (!a || !el || !a.duration) return
-  const ratio = a.currentTime / a.duration
-  el.scrollTop = ratio * (el.scrollHeight - el.clientHeight)
+  const max = el.scrollHeight - el.clientHeight
+  if (max <= 0) return
+  // Mesure par `offsetTop`, jamais par `getBoundingClientRect` : la slide est
+  // mise à l'échelle par un transform CSS, donc les rects sont en pixels écran
+  // tandis que `scrollTop` est en pixels de layout. Mélanger les deux fait
+  // dériver l'ancre avec la position de défilement. `offsetTop` est en pixels
+  // de layout et se rapporte au conteneur (`position: relative` ci-dessous).
+  const anchor = clonedBlock.value ? Math.min(clonedBlock.value.offsetTop, max) : 0
+  const ratio = Math.min(1, a.currentTime / a.duration)
+  el.scrollTop = anchor + ratio * (max - anchor)
 }
 
 // Coupe propre en scène : quitter la slide arrête la lecture. Le chapitre
@@ -52,6 +78,7 @@ onSlideLeave(() => {
   if (!a) return
   a.pause()
   a.currentTime = 0
+  if (scroller.value) scroller.value.scrollTop = 0
 })
 
 // V-click : au franchissement du seuil (clic 1), démarrer l'audio depuis 0.
@@ -79,9 +106,11 @@ watch(
         <p v-for="(p, i) in beforeParas" :key="'b' + i" class="reader__spoken">
           {{ p }}
         </p>
-        <p v-for="(p, i) in afterParas" :key="'a' + i" class="reader__cloned">
-          {{ p }}
-        </p>
+        <div ref="clonedBlock">
+          <p v-for="(p, i) in clonedParas" :key="'a' + i" class="reader__cloned">
+            {{ p }}
+          </p>
+        </div>
       </div>
 
       <audio
@@ -112,6 +141,8 @@ watch(
   font-style: italic;
 }
 .reader__text {
+  /* Référent d'`offsetTop` pour le bloc cloné (ancrage du défilement). */
+  position: relative;
   max-width: 60ch;
   max-height: 60vh;
   overflow-y: auto;

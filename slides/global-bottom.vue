@@ -1,7 +1,22 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted, onUnmounted } from 'vue'
 import { useNav } from '@slidev/client'
 import { session } from './lib/session'
+import { forceFallback } from './lib/genClient'
+
+// Escape hatch opérateur : Ctrl+Alt+F force le repli embarqué, à tout moment.
+// Le clavier est autorisé ICI et nulle part ailleurs — la règle « pas de
+// raccourci » vise les actions scéniques ; ceci est un filet technique, invisible
+// pour la salle. Posé sur le layer persistant : joignable depuis n'importe
+// quelle slide, y compris si le composant de lecture n'est pas monté.
+function onKeydown(e: KeyboardEvent) {
+  if (e.ctrlKey && e.altKey && !e.shiftKey && e.code === 'KeyF') {
+    e.preventDefault()
+    forceFallback()
+  }
+}
+onMounted(() => window.addEventListener('keydown', onKeydown))
+onUnmounted(() => window.removeEventListener('keydown', onKeydown))
 
 // Rappel discret et persistant du compte à rebours (design D5).
 //
@@ -35,6 +50,11 @@ const done = computed(() => session.status === 'ready' || session.remaining === 
   <div v-if="visible" class="cd-corner" :class="{ 'is-done': done }">
     <span class="cd-corner__dot" />
     <span class="cd-corner__time">{{ time }}</span>
+    <!-- Étape courante : l'ÉTIQUETTE SEULE, jamais le detail ni les notes.
+         Cette pilule est présente pendant les sections 4 à 6, c'est-à-dire
+         pendant l'argumentation : un récit défilant y ferait concurrence au
+         propos. Le compteur plein écran, lui, porte le feed complet. -->
+    <span v-if="session.step" class="cd-corner__step">{{ session.step.label }}</span>
   </div>
 </template>
 
@@ -62,6 +82,12 @@ const done = computed(() => session.status === 'ready' || session.remaining === 
   border-radius: 50%;
   background: var(--color-accent);
   animation: cd-pulse 1.2s ease-in-out infinite;
+}
+.cd-corner__step {
+  padding-left: 0.55em;
+  border-left: 1px solid var(--color-rule);
+  color: var(--color-muted);
+  font-variant-numeric: normal;
 }
 .cd-corner.is-done .cd-corner__dot { animation: none; }
 .cd-corner.is-done .cd-corner__time { color: var(--color-accent); }

@@ -32,13 +32,13 @@ On va le lire à voix haute.
 
 ### Beat 3 — La lecture (3'30")
 
-[Lire. À voix nue, sans commentaire, sans ironie de conférencier : on lit de la fiction à une salle, on la lit pour de vrai. Deux à trois paragraphes, jusqu'au point de couture.]
+[Lire. À voix nue, sans commentaire, sans ironie de conférencier : on lit de la fiction à une salle, on la lit pour de vrai. **Les deux premières phrases, pas davantage** — jusqu'au point de couture.]
 
-[PLACEHOLDER : le point de couture est défini dans le texte généré par le marqueur de bascule. Au marqueur : déclencher l'audio d'un geste invisible, enchaîner une phrase avec la voix clonée, puis s'écarter du micro pendant qu'elle continue. Ne pas la regarder. Regarder la salle.]
+[Le point de couture est défini dans le texte généré par le marqueur de bascule, posé après la deuxième phrase. Au marqueur : déclencher l'audio d'un geste invisible, enchaîner une phrase avec la voix clonée, puis s'écarter du micro pendant qu'elle continue. Ne pas la regarder. Regarder la salle.]
 
-[La voix continue seule, 45 secondes à 1 minute. Rester immobile, face à la salle. Le texte défile toujours. Laisser le temps du soupçon, puis de la certitude, se propager dans les rangs.]
+[La voix continue seule, **2'45** — elle va jusqu'au bout de l'extrait rendu, ce n'est plus un fragment qu'on coupe. Rester immobile, face à la salle. Le texte défile toujours. Laisser le temps du soupçon, puis de la certitude, se propager dans les rangs, et laisser passer le moment où la salle cesse de guetter la voix pour écouter l'histoire.]
 
-[Couper l'audio à la fin d'un paragraphe, proprement. Pas de fondu : une fin de phrase, un silence.]
+[La lecture s'arrête d'elle-même à la fin de l'extrait. Filet, si le temps manque : avancer d'une slide coupe l'audio — à faire en fin de phrase, sans fondu.]
 
 ### Beat 4 — Le retour au micro (1')
 
@@ -52,7 +52,7 @@ Question.
 
 Cette voix, c'est la mienne. Enregistrée, apprise, clonée par la fabrique. Elle a lu ce chapitre pendant qu'on parlait, dans la marge du compte à rebours. Le texte, la voix : tout ce que vous venez d'entendre est sorti de la machine.
 
-Et pendant une minute, vous étiez exactement là où l'Académie était en 1975.
+Et pendant près de trois minutes, vous étiez exactement là où l'Académie était en 1975.
 
 Vous écoutiez une voix. Vous ignoriez la fabrique.
 
@@ -109,7 +109,7 @@ Je me suis bien amusé. Au revoir et merci.
 ## Notes de préparation
 
 - **Protocole de bascule, version finale** : décision à la fin de la section 6, critère unique et fixé à l'avance (le chapitre live est complet ET le WAV est rendu, sinon secours). Les deux scénarios sont indistinguables : même script, même geste de déclenchement, WAV de secours pré-rendu du chapitre de secours prêt sur le même raccourci. « Personne dans cette salle ne l'a jamais lu » est vrai dans les deux cas ; dans le scénario live, « pas même moi » peut s'improviser en bonus, jamais se scripter.
-- **La couture vocale** : c'est le geste le plus répété du talk. Le déclenchement doit être invisible (raccourci clavier, télécommande), la phrase de reprise enchaînée sans respiration anormale, le retrait du micro exécuté deux ou trois secondes APRÈS le début de l'audio, pas au moment du déclenchement. Répéter avec le WAV de secours jusqu'à ce que la couture soit indétectable pour quelqu'un qui sait où elle est.
+- **La couture vocale** : c'est le geste le plus répété du talk. Le déclenchement doit être invisible — **un « next » de télécommande, jamais un raccourci clavier** (règle projet : toute action scénique passe par un pas de clic Slidev) —, la phrase de reprise enchaînée sans respiration anormale, le retrait du micro exécuté deux ou trois secondes APRÈS le début de l'audio, pas au moment du déclenchement. Répéter avec le WAV de secours jusqu'à ce que la couture soit indétectable pour quelqu'un qui sait où elle est.
 - **Le texte à l'écran pendant la lecture** : il reste affiché, défilement calé sur l'audio. C'est lui qui permet à la salle de vérifier que la voix ne triche pas, et c'est lui qui rend le retrait du micro visible : on voit un texte continuer d'être lu par personne.
 - **Le choix du passage lu** : le marqueur de bascule doit tomber dans un passage à tension moyenne, pas au climax du chapitre : la salle doit pouvoir écouter la voix au lieu de l'intrigue au moment de la couture. À vérifier sur le chapitre de secours, et à imposer au plan de scènes si besoin.
 - **Beat 2 de la chute** : « une voix qui tienne, et un lecteur qui tremble » est la seule phrase lyrique autorisée du talk. Elle tient parce que tout ce qui précède est sec. Si la rédaction finale ajoute du lyrisme ailleurs, celle-ci tombe.

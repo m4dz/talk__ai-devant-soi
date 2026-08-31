@@ -8,7 +8,8 @@ noCountdown: true
      c'est le silence le plus long du talk, à tenir jusqu'à l'inconfort. -->
 
 <div class="zero">
-  <Countdown />
+  <!-- Pas de récit ici : le script veut le compteur qui meurt SEUL à l'écran. -->
+  <Countdown :feed="false" />
 </div>
 
 <style scoped>
@@ -101,20 +102,22 @@ clicks: 1
 [BEAT 3 — LA LECTURE. 3'30.]
 
 [Lire. À voix nue, sans commentaire, sans ironie de conférencier : on lit de
-la fiction à une salle, on la lit pour de vrai. Deux à trois paragraphes,
-jusqu'au point de couture.]
+la fiction à une salle, on la lit pour de vrai. LES DEUX PREMIÈRES PHRASES,
+pas davantage — jusqu'au point de couture.]
 
-[AU MARQUEUR DE BASCULE : déclencher l'audio d'un « next » invisible,
-enchaîner une phrase avec la voix clonée, puis s'écarter du micro DEUX OU
-TROIS SECONDES APRÈS le début de l'audio — pas au moment du déclenchement. Ne
-pas la regarder. Regarder la salle.]
+[AU MARQUEUR DE BASCULE (posé après la deuxième phrase) : déclencher l'audio
+d'un « next » invisible, enchaîner une phrase avec la voix clonée, puis
+s'écarter du micro DEUX OU TROIS SECONDES APRÈS le début de l'audio — pas au
+moment du déclenchement. Ne pas la regarder. Regarder la salle.]
 
-[La voix continue seule, 45 secondes à 1 minute. Rester immobile, face à la
+[La voix continue seule, 2'45 : elle va jusqu'au bout de
+l'extrait, ce n'est plus un fragment qu'on coupe. Rester immobile, face à la
 salle. Le texte défile toujours. Laisser le temps du soupçon, puis de la
-certitude, se propager dans les rangs.]
+certitude, se propager dans les rangs — et laisser passer le moment où la
+salle cesse de guetter la voix pour écouter l'histoire.]
 
-[COUPE : avancer d'une slide arrête l'audio. À faire à la fin d'un
-paragraphe, proprement — pas de fondu : une fin de phrase, un silence.]
+[La lecture s'arrête d'elle-même à la fin de l'extrait. FILET si le temps
+manque : avancer d'une slide coupe l'audio — en fin de phrase, sans fondu.]
 -->
 
 ---
@@ -128,7 +131,7 @@ paragraphe, proprement — pas de fondu : une fin de phrase, un silence.]
 par la fabrique. Elle a lu ce chapitre pendant qu'on parlait, dans la marge
 du compte à rebours.</p>
 
-<p class="chute">Et pendant une minute, vous étiez exactement là où
+<p class="chute">Et pendant près de trois minutes, vous étiez exactement là où
 l'Académie était en 1975. Vous écoutiez une voix.
 <strong>Vous ignoriez la fabrique.</strong></p>
 
@@ -155,7 +158,7 @@ Elle a lu ce chapitre pendant qu'on parlait, dans la marge du compte à
 rebours. Le texte, la voix : tout ce que vous venez d'entendre est sorti de la
 machine.
 
-Et pendant une minute, vous étiez exactement là où l'Académie était en 1975.
+Et pendant près de trois minutes, vous étiez exactement là où l'Académie était en 1975.
 
 Vous écoutiez une voix. Vous ignoriez la fabrique.
 
