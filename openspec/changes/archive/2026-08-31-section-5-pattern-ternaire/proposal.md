@@ -43,8 +43,10 @@ pas un ajustement au cas par cas qui ne survivrait pas à une permutation.
   de style (« une voix reconnaissable entre mille ») et doit voyager avec
   elle, où qu'elle soit placée.
 
-Effets mesurés : 15 → 17 slides, disparition du désert de six slides, rythme
-ternaire régulier au lieu d'une alternance binaire irrégulière.
+Effets mesurés : 15 → 18 slides, disparition du désert de six slides, rythme
+ternaire régulier au lieu d'une alternance binaire irrégulière. (17 estimé à
+la proposal : la strate qualité porte deux pièces à conviction, pas une —
+l'extrait raté et la grille de relecture.)
 
 ## Risque assumé
 
@@ -54,6 +56,21 @@ Si cette strate passe en première position, la devise tombera en fin de
 section loin de ce qui la justifie. Elle tiendra — c'est une devise, pas une
 déduction — mais elle sera moins méritée. À réévaluer quand le nouvel ordre
 des strates sera arrêté.
+
+La relecture de permutation (tâche 5.4) a trouvé **trois attaches résiduelles**
+que le pattern ne peut pas absorber, parce qu'elles sont dans le texte parlé et
+non dans la structure. Elles sont désormais listées en tête de
+`05-descente-technique.md` :
+
+1. le champ `n:` des murs (badge « MUR n / 4 ») ;
+2. les ordinaux parlés en tête de note (« Voilà le premier mur », « Deuxième
+   mur, quelques soirs plus tard », « Troisième mur ») ;
+3. **l'ouverture de la strate puissance** — « On a pris un modèle plus gros »
+   répond à l'objection d'économie que fait naître le mur qualité. Si
+   puissance passe avant qualité, l'ouverture perd son amorce.
+
+Les deux premières sont mécaniques. La troisième demande une réécriture de
+deux phrases. Coût d'une permutation : réel mais borné, et connu d'avance.
 
 ## Capabilities
 

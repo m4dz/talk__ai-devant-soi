@@ -89,40 +89,6 @@ mise en échec de la clause d'originalité posée en section 2 — puis par un
   que la clause d'originalité ne décrit aucun des cas vus, et une dernière
   fait le pont vers la descente dans la fabrique
 
-### Requirement: Descente technique en quatre murs
-
-La section 5 SHALL présenter quatre strates techniques en cascade, dans cet
-ordre : (1) le modèle ignore le lore, (2) il perd l'intention narrative,
-(3) la qualité littéraire est pauvre, (4) crash sous modèles plus lourds.
-
-Chaque strate SHALL suivre le battement **ce qu'on a tenté → le mur → ce
-que le mur a forcé à construire**, et SHALL exposer une **pièce à
-conviction** : l'extrait raté, la grille de vérification ou les mesures qui
-prouvent le mur. Tant que ces pièces authentiques n'existent pas, elles
-SHALL apparaître en gabarit.
-
-La section SHALL se clore par la règle de la fabrique (« la fabrique reste
-à notre main ») puis par une **remontée** qui rouvre la boîte noire et
-énumère ce qu'elle contient, avant de relancer vers la section suivante.
-
-#### Scenario: Quatre murs enchaînés
-
-- **WHEN** on parcourt la section 5
-- **THEN** les quatre murs se succèdent dans l'ordre, chacun avec son
-  problème et sa solution
-
-#### Scenario: Chaque strate montre sa pièce à conviction
-
-- **WHEN** une strate est présentée
-- **THEN** une slide affiche la preuve du mur (extrait raté, grille ou
-  mesures), authentique ou marquée en gabarit si elle n'existe pas encore
-
-#### Scenario: Règle puis remontée
-
-- **WHEN** on atteint la fin de la section 5
-- **THEN** une slide énonce la règle de la fabrique, puis la remontée
-  détaille le contenu de la boîte noire et relance vers la suite
-
 ### Requirement: Slot de lecture du chapitre
 
 La section 7 SHALL contenir l'emplacement du lecteur de chapitre (slot de
@@ -332,4 +298,64 @@ La révélation SHALL être pilotée par l'avancée normale de la présentation
 
 - **WHEN** le speaker avance la présentation
 - **THEN** la révélation suivante se déclenche, sans autre commande
+
+### Requirement: Descente dans la fabrique en quatre strates ternaires
+
+La section 5 SHALL présenter quatre strates techniques : le modèle ignore le
+lore, il perd l'intention narrative, la qualité littéraire est pauvre, la
+machine s'effondre sous un modèle plus lourd.
+
+Chaque strate SHALL suivre le même **pattern ternaire**, dans cet ordre :
+
+1. une **pièce à conviction** — l'extrait raté, la grille de vérification ou
+   les mesures qui prouvent le mur (marquée en gabarit tant que le contenu
+   authentique n'existe pas) ;
+2. le **mur**, dont l'intitulé NOMME LE PROBLÈME rencontré, suivi de ce que
+   ce mur a forcé à construire ;
+3. l'**aphorisme** de la strate — sa phrase à emporter — **seul sur sa
+   slide**.
+
+Ce pattern SHALL être identique pour les quatre strates et **indépendant de
+leur ordre** : permuter des strates NE SHALL PAS exiger de retoucher leur
+composition. L'intitulé d'un mur NE SHALL PAS livrer l'aphorisme de sa
+strate : la conclusion n'apparaît qu'après la solution.
+
+La **devise de la section** SHALL être portée par la section elle-même et non
+par l'une des strates, afin de rester en place quel que soit l'ordre. Elle
+SHALL être suivie d'une **remontée** qui rouvre la boîte noire et énumère ce
+qu'elle contient, avant de relancer vers la section suivante.
+
+Les éléments qui dépendent du contenu d'une strate SHALL rester attachés à
+elle et la suivre en cas de permutation — en particulier le rappel implicite
+à l'affaire Gary, qui n'a de sens qu'après la strate de la qualité.
+
+#### Scenario: Quatre strates au même pattern
+
+- **WHEN** on parcourt la section 5
+- **THEN** chacune des quatre strates présente successivement sa pièce à
+  conviction, son mur et son aphorisme seul
+
+#### Scenario: Chaque strate montre sa pièce à conviction
+
+- **WHEN** une strate est présentée
+- **THEN** une slide affiche la preuve du mur (extrait raté, grille ou
+  mesures), authentique ou marquée en gabarit si elle n'existe pas encore
+
+#### Scenario: L'intitulé du mur ne livre pas la conclusion
+
+- **WHEN** un mur est affiché
+- **THEN** son intitulé nomme le problème rencontré, et l'aphorisme de la
+  strate n'apparaît qu'ensuite, sur sa propre slide
+
+#### Scenario: Permutation sans retouche
+
+- **WHEN** l'ordre des strates est modifié
+- **THEN** chaque strate conserve sa composition et ses éléments attachés,
+  et la devise de section reste en fin de section
+
+#### Scenario: Devise puis remontée
+
+- **WHEN** on atteint la fin de la section 5
+- **THEN** la devise de la section est énoncée, puis la remontée détaille le
+  contenu de la boîte noire et relance vers la suite
 

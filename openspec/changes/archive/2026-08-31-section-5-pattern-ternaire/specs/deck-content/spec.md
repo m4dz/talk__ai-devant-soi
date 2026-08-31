@@ -1,6 +1,18 @@
-## MODIFIED Requirements
+## REMOVED Requirements
 
 ### Requirement: Descente technique en quatre murs
+
+**Raison** : l'ordre des strates était gravé dans le requirement (« en
+cascade, dans cet ordre ») et son battement ne disait rien de la place de
+l'aphorisme de strate. Remplacé ci-dessous par un pattern ternaire uniforme
+et explicitement indépendant de l'ordre. Les scénarios « Quatre murs
+enchaînés » et « Règle puis remontée » disparaissent avec lui : le premier
+asseyait l'ordre fixe, le second nommait « règle » ce qui devient la devise
+de section.
+
+## ADDED Requirements
+
+### Requirement: Descente dans la fabrique en quatre strates ternaires
 
 La section 5 SHALL présenter quatre strates techniques : le modèle ignore le
 lore, il perd l'intention narrative, la qualité littéraire est pauvre, la

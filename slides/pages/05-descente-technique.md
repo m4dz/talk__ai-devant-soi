@@ -6,7 +6,19 @@ layout: cold-open
      14 minutes, 4 strates. Battement de chaque strate :
      ce qu’on a tenté → le mur → ce que le mur a forcé à construire.
      Registre : la langue de l’atelier ; le terme technique une seule fois,
-     entre parenthèses. -->
+     entre parenthèses.
+
+     PERMUTATION DES STRATES — le pattern ternaire (preuve / mur / aphorisme)
+     est insensible à l’ordre, mais trois attaches restent à défaire à la
+     main si l’ordre change :
+       1. le champ `n:` des quatre murs (badge « MUR n / 4 ») ;
+       2. les ordinaux parlés en tête de note (« Voilà le premier mur »,
+          « Deuxième mur, quelques soirs plus tard », « Troisième mur ») ;
+       3. l’ouverture de la strate PUISSANCE (« On a pris un modèle plus
+          gros ») qui répond à l’objection d’économie née du mur QUALITÉ :
+          si puissance passe avant qualité, cette ouverture perd son amorce.
+     Le pont Gary voyage avec la strate QUALITÉ (il dépend de la fiche de
+     style) ; la devise de fin appartient à la section, pas à une strate. -->
 
 <!-- STRATE 1 — LE LORE. Ce qu’on a tenté. -->
 
@@ -132,7 +144,7 @@ pas où elle va. Elle remplit la scène au lieu de la servir.
 ---
 layout: wall
 n: 2
-problem: La mémoire ne remplace pas le dessein
+problem: Elle ne sait pas où elle va
 ---
 
 **Arrêter de demander un chapitre.** On décompose.
@@ -145,8 +157,6 @@ d’orchestration, LangGraph pour les intimes)*. Deux rôles seulement :
 l’**auteur**, qui écrit — et l’**acteur**, que je vous présente plus tard.
 
 <!--
-La mémoire ne remplace pas le dessein.
-
 Ce que ce mur force à construire : arrêter de demander un chapitre. Plus
 jamais. On décompose. D’abord un plan de scènes : ce que chaque scène doit
 accomplir, ce qu’elle révèle, ce qu’elle retient. Puis scène par scène :
@@ -164,6 +174,25 @@ phrase ici, pas plus. Sinon supprimer. À trancher au gel du script.]
 
 Et ce plan de scènes que je vous ai montré tout à l’heure, avant de lancer la
 machine ? C’est cet atelier qui l’exécute. Là. Maintenant. Poste par poste.
+-->
+
+---
+layout: exergue
+---
+
+<!-- APHORISME de la strate INTENTION. Était le TITRE du mur : la
+     conclusion arrivait avant l’histoire. -->
+
+La mémoire ne remplace pas le dessein.
+
+<!--
+[L’aphorisme de la strate, seul. Il était en titre de mur — donc donné
+avant que la solution soit montrée.]
+
+Elle sait tout, et elle ne sait pas où elle va. Elle remplit la scène au
+lieu de la servir.
+
+La mémoire ne remplace pas le dessein.
 -->
 
 ---
@@ -198,7 +227,7 @@ vivant.
 ---
 layout: wall
 n: 3
-problem: Le style n’est pas dans le modèle
+problem: Juste, propre — et mauvais
 ---
 
 Le modèle contient **tous** les styles, c’est-à-dire aucun.
@@ -211,9 +240,6 @@ Et un **correcteur impitoyable** *(un lint de style, pour les intimes)* :
 des règles binaires. Ça passe, ou ça casse.
 
 <!--
-Et c’est la leçon la plus importante de toute la descente : le style n’est
-pas dans le modèle. Le modèle contient tous les styles, c’est-à-dire aucun.
-
 Alors on fait ce qu’aucun d’entre nous n’avait fait depuis le lycée : on
 définit ce qu’est bien écrire. Pas en général. Pour ce roman-là. Une fiche de
 style : la voix du narrateur, ses phrases courtes, ses obsessions, ce qu’elle
@@ -249,6 +275,23 @@ la mienne, ni celle du modèle. Une voix fabriquée, trait par trait, jusqu’à
 devenir reconnaissable entre mille.
 
 [Temps.]
+-->
+
+---
+layout: exergue
+---
+
+<!-- APHORISME de la strate QUALITÉ. Le pont Gary le suit immédiatement :
+     il est ATTACHÉ à cette strate et voyage avec elle. -->
+
+Le style n’est pas dans le modèle.
+
+<!--
+[L’aphorisme de la strate, seul. C’est la leçon la plus importante de
+toute la descente.]
+
+Le style n’est pas dans le modèle. Le modèle contient tous les styles,
+c’est-à-dire aucun.
 -->
 
 ---
@@ -309,7 +352,7 @@ moment où on se dirait au revoir.
 ---
 layout: wall
 n: 4
-problem: Le muscle des autres, dans le nuage des autres
+problem: La machine tombe à genoux
 ---
 
 La sortie de secours tient en une ligne : une clé d’API.
@@ -326,15 +369,29 @@ Et la sortie de secours, vous la connaissez tous. Elle tient en une ligne :
 une clé d’API, et tout devient facile. Le muscle des autres, dans le nuage
 des autres.
 
-Sauf que ce soir, rien ne sort de la pièce. Et ce n’est pas une posture.
-C’est le mur qui rend honnête.
-
 Parce que quand on ne peut pas acheter la qualité en muscle, il ne reste
 qu’une façon de l’obtenir : la construire en architecture. La bibliothèque,
 l’atelier, la fiche de style, le correcteur : tout ce que je viens de vous
 montrer existe parce que la solution de facilité était bouchée. Chaque point
 de qualité de ce roman a été gagné en comprenant quelque chose. Pas en payant
 quelqu’un.
+-->
+
+---
+layout: exergue
+---
+
+<!-- APHORISME de la strate PUISSANCE. Était noyé dans le corps du mur ;
+     chaque strate se referme désormais sur sa phrase à emporter. -->
+
+C’est le mur qui rend honnête.
+
+<!--
+[L’aphorisme de la strate, seul. Il était dans le corps du mur.]
+
+Sauf que ce soir, rien ne sort de la pièce. Et ce n’est pas une posture.
+
+C’est le mur qui rend honnête.
 -->
 
 ---
