@@ -505,30 +505,49 @@ Et la machine, à chaque fois, lui donne la réponse.
 -->
 
 ---
-layout: piece-a-conviction
-intitule: La fiche, et la sortie
-commentaire: Le défaut de la machine est une citation de la fiche.
+layout: diptyque
+titre: Judith, narratrice
+gauche: Sa fiche — ce que la machine lit avant chaque paragraphe
+droite: Ce qu’elle écrit
 ---
 
-<!-- ÉTAGE 2, seconde pièce. GABARIT : les lignes exactes de la fiche du
-     personnage (identité de verdict), à récupérer verbatim côté stack.
-     Moitié gauche = la fiche ; moitié droite = la sortie du modèle. -->
+<!-- ÉTAGE 2, seconde pièce. NON GABARIT depuis le 31 août : lignes exactes
+     de bible/fiche-judith.md (chunk 1 « Voix » L23-27 ; chunk 5 « Le métier
+     dans l’œil » L122 et « Les verdicts » L124 ; valeurs ch. 2 L181).
+     Sortie modèle : journal des murs, entrée 2 du chapitre 7.
+     LE PERSONNAGE EST NOMMÉ — décision du 31 août. L’interdit de nom propre
+     vaut pour le roman avant le chapitre 8, pas pour le deck. -->
 
-<div class="gabarit-bloc">
-<span class="gabarit">GABARIT</span>
+::gauche::
 
-Gauche : les lignes de la fiche qui portent l’identité de verdict du
-personnage, verbatim.
+« Elle ne peut pas lire autrement qu’en **correctrice**. »
 
-Droite : la sortie du modèle qui rend ce verdict.
-</div>
+« Squelette d’une entrée du carnet, dans l’ordre : […] 5. **Le verdict de
+correction** : coquille, faute de registre, ou fait établi. […] 7. Le
+couperet. »
+
+« Chaque écart relevé au carnet reçoit **son verdict**. Un constat, un
+verdict, une ligne. »
+
+::droite::
+
+« **Verdict : coquille.** Ma mémoire m’a joué un tour.
+
+Je n’ai pas rêvé. »
+
+::default::
+
+Le défaut de la machine est une citation de la fiche.
 
 <!--
 J’ai même fini par comprendre pourquoi. Regardez.
 
-Cette femme, dans ma bible, est correctrice. Son métier, c’est de rendre des
-verdicts. C’est écrit noir sur blanc dans sa fiche, et cette fiche, la machine
-la lit avant chaque paragraphe.
+Elle s’appelle Judith. Dans ma bible, elle est correctrice. Quinze ans de
+métier. Son travail, c’est de relever un écart et de rendre un verdict.
+
+Et ce squelette-là, à gauche — l’ordre exact d’une entrée de son carnet, avec
+son verdict en cinquième position — c’est ce que la machine lit avant chaque
+paragraphe qu’elle écrit.
 
 [Temps. Ne rien commenter pendant trois secondes : la salle doit voir seule
 que le défaut de la machine est une citation de la fiche.]

@@ -195,11 +195,13 @@ Et la machine, à chaque fois, lui donne la réponse.
 
 J'ai même fini par comprendre pourquoi. Regardez.
 
-[Slide : la fiche à gauche, la sortie à droite. PLACEHOLDER — les lignes exactes de la fiche, à intégrer verbatim.]
+[Slide : la fiche à gauche, la sortie à droite. Lignes exactes de `bible/fiche-judith.md`.]
 
-Cette femme, dans ma bible, est correctrice. Son métier, c'est de rendre des verdicts. C'est écrit noir sur blanc dans sa fiche, et cette fiche, la machine la lit avant chaque paragraphe.
+Elle s'appelle Judith. Dans ma bible, elle est correctrice. Quinze ans de métier. Son travail, c'est de relever un écart et de rendre un verdict.
 
-[Temps.]
+Et ce squelette-là, à gauche — l'ordre exact d'une entrée de son carnet, avec son verdict en cinquième position — c'est ce que la machine lit avant chaque paragraphe qu'elle écrit.
+
+[Temps. Ne rien commenter pendant trois secondes.]
 
 Le défaut de la machine était une citation du personnage.
 
@@ -293,10 +295,11 @@ Ne répondez pas tout de suite. Il me reste quelqu'un à vous présenter.
 
 ## Notes de préparation
 
-- **Placeholders à remplir depuis le journal des murs** : extrait raté n°1 (contradiction de lore), n°2 (scène qui dérive), n°3 (plat correct), extrait qui casse le lint (avec la règle en cause), la grille verte et l'extrait qu'elle laisse passer, les deux chiffres du chronomètre qui dort, les chiffres du crash (étage 1), et **les lignes exactes de la fiche du personnage** pour la slide de l'étage 2 — celles-ci sont livrées : `bible/fiche-judith.md`, chunk voix L23-27, plus L124 / L135 / L181. Chaque extrait doit être authentique et daté : la salle sent la reconstruction.
+- **Placeholders à remplir depuis le journal des murs** : extrait raté n°1 (contradiction de lore), n°2 (scène qui dérive), n°3 (plat correct), extrait qui casse le lint (avec la règle en cause), la grille verte et l'extrait qu'elle laisse passer, les deux chiffres du chronomètre qui dort, les chiffres du crash (étage 1), les chiffres du crash (étage 1). **La slide fiche/sortie de l'étage 2 n'est plus un gabarit** : elle est composée depuis les lignes réelles de `bible/fiche-judith.md` (chunk 1 « Voix » L23-27, chunk 5 L122 et L124). Chaque extrait doit être authentique et daté : la salle sent la reconstruction.
 - **Les deux verbatims datés de l'étage 2 sont acquis**, et ils ne dépendent d'aucune hypothèse : la phrase « Je n'ai pas rêvé » récidive dans quatre entrées du journal, sur toutes les sessions (ch2 → S4 → S6 → ch7). C'est un attracteur stable, pas une coïncidence. La slide tient quelle que soit l'issue du run.
 - **L'étage 3 est le climax du talk, et c'est un aveu.** Il repose sur le run `xp-resolution` du 31 août : C5 complet (consigne de verdict retirée du beat, squelette de voix non servi, chute « Constat » non posée, identité du personnage conservée), modèle nu, `BEATS_N=1`, quatre conditions, **12 tirages sur 12 tiennent le doute**. Chiffres et verbatims dans `docs/xp-resolution-pour-le-deck.md` côté stack.
 - **Le piège de l'étage 2 ne fonctionne que joué à plat.** « J'étais très content de moi, j'avais mon coupable » se dit sans ironie et sans clin d'œil : la salle doit croire qu'on est arrivé à la conclusion, sinon le renversement de l'étage 3 n'a rien à renverser. C'est la seule mise en scène du talk qui demande au speaker de jouer sa propre erreur au présent.
+- **Le personnage est nommé — décision du 31 août.** Judith apparaît à l'étage 2 du dernier mur, sur la slide de sa fiche. L'interdit de nom propre vaut pour le roman avant le chapitre 8, pas pour le deck : une fiche caviardée sur scène aurait l'air d'un document truqué, et le chapitre lu en section 7 gagne un nom qui résonne. C'est la **seule** occurrence du nom dans le talk — ne pas le réutiliser ailleurs par facilité.
 - **Les deux accusations** — les fuites d'anglais (c'était `NUM_CTX`), la résolution (c'était le brief) — se disent l'une après l'autre, sans commentaire. La salle fait la somme.
 - **Ne jamais dire que le best-of-N était inutile** tant que le fix racine n'est pas vérifié sur le vrai pipeline côté stack. L'étage 3 n'en a pas besoin : son renversement tient sur « c'était mon brief », pas sur ce qui a remplacé le correctif.
 - **Le faux positif du détecteur** (un tirage sur douze, rattrapé par la lecture debout) est la deuxième occurrence de *compter n'est pas lire*, posé en strate 3. Ne pas le raconter sur scène — la répétition userait l'aphorisme. Le garder en réserve pour les questions.
