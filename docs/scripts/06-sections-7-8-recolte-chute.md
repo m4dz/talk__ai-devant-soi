@@ -74,7 +74,7 @@ Les mains.
 
 [Compter. Dire ce qu'on voit, quoi qu'on voie. Si la salle est coupée en deux : « Regardez-vous. » Si elle vote massivement oui, ou massivement non : « Il y a une heure, vous n'auriez pas hésité. » Dans tous les cas, la phrase suivante tombe :]
 
-Votre hésitation, là, maintenant. C'est ça, la démonstration. Le seuil n'existe pas, et vous venez de le chercher une septième fois.
+Votre hésitation, là, maintenant. C'est ça, la démonstration. Le seuil n'existe pas, et vous venez de le chercher une sixième fois.
 
 ### Beat 2 — Le verdict (1')
 
@@ -86,7 +86,13 @@ Alors je vais le dire pour eux.
 
 L'Académie a déjà perdu. Elle ne le sait pas encore.
 
-Elle n'a pas perdu contre les machines. Elle a perdu contre sa propre histoire. Elle a couronné Dumas et sa fabrique. Elle a couronné Ajar et son fantôme. Elle a gardé le prix quand tout s'est su, parce qu'au fond, elle a toujours su ce qu'elle refuse d'admettre aujourd'hui :
+Elle n'a pas perdu contre les machines. Elle a perdu contre sa propre histoire. Elle a couronné Dumas et sa fabrique. Elle a couronné Ajar et son fantôme.
+
+Et en 1984, quand un programme a publié un livre, la seule accusation qu'on ait trouvée, c'était d'avoir trop sélectionné, trop assemblé, trop édité les sorties. On accusait un livre de machine d'être trop humain.
+
+Cette accusation-là, je la revendique. C'est exactement ce que j'ai fait ce soir devant vous.
+
+Elle a gardé le prix quand tout s'est su, parce qu'au fond, elle a toujours su ce qu'elle refuse d'admettre aujourd'hui :
 
 Une œuvre n'a jamais eu besoin d'un auteur pur. Elle a besoin d'une voix qui tienne, et d'un lecteur qui tremble.
 
@@ -112,6 +118,7 @@ Je me suis bien amusé. Au revoir et merci.
 - **La couture vocale** : c'est le geste le plus répété du talk. Le déclenchement doit être invisible — **un « next » de télécommande, jamais un raccourci clavier** (règle projet : toute action scénique passe par un pas de clic Slidev) —, la phrase de reprise enchaînée sans respiration anormale, le retrait du micro exécuté deux ou trois secondes APRÈS le début de l'audio, pas au moment du déclenchement. Répéter avec le WAV de secours jusqu'à ce que la couture soit indétectable pour quelqu'un qui sait où elle est.
 - **Le texte à l'écran pendant la lecture** : il reste affiché, défilement calé sur l'audio. C'est lui qui permet à la salle de vérifier que la voix ne triche pas, et c'est lui qui rend le retrait du micro visible : on voit un texte continuer d'être lu par personne.
 - **Le choix du passage lu** : le marqueur de bascule doit tomber dans un passage à tension moyenne, pas au climax du chapitre : la salle doit pouvoir écouter la voix au lieu de l'intrigue au moment de la couture. À vérifier sur le chapitre de secours, et à imposer au plan de scènes si besoin.
+- **Racter au verdict** : l'accusation de 1984 a été plantée sans commentaire à la station 5 de la section 4 ; elle se paie ici, et c'est le speaker qui plaide coupable. Ne pas rappeler qui était Racter — la salle a le nom depuis quarante minutes. Coût ≈ 20 s, à reprendre sur le beat 3.
 - **Beat 2 de la chute** : « une voix qui tienne, et un lecteur qui tremble » est la seule phrase lyrique autorisée du talk. Elle tient parce que tout ce qui précède est sec. Si la rédaction finale ajoute du lyrisme ailleurs, celle-ci tombe.
 - **La sortie** : les derniers mots de Gary se prononcent face salle, sans regarder l'écran, sans guillemets dans la voix. La salle du cold open les reconnaîtra seule. Vérifier une dernière fois le verbatim exact de la fin de *Vie et mort d'Émile Ajar* avant le gel.
 - **Pas de « merci » après** : le talk se termine sur celui de Gary. Saluer après le noir, sans reprendre le micro.

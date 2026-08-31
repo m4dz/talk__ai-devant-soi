@@ -68,13 +68,15 @@ quelqu’un qui découvre le personnage à l’instant.]
 
 ---
 layout: entretien
-clicks: 3
+clicks: 2
 ---
 
-<!-- BEAT 2 — L’ENTRETIEN. Rejeu d’une session réelle, question par
-     question (choix de principe du script : le rejeu est indistinguable du
-     direct et ne cumule pas les risques). Les trois questions montent :
-     factuelle → interprétative → celle qui déraille. -->
+<!-- BEAT 2 — L’ENTRETIEN. 1’30. Rejeu d’une session réelle, question par
+     question. LE REJEU N’EST PLUS UN CHOIX : la page de roleplay et la
+     génération partagent le même modèle de 13 Go, /chat répond 409 pendant
+     toute la génération, et la section 6 tombe dans cet intervalle.
+     DEUX questions, pas trois : « celle qui déraille » a été retirée,
+     aucune session n’en a produit une qui tienne. -->
 
 # L’entretien
 
@@ -95,20 +97,12 @@ mort. Ce n’est plus une base de données qui répond.
 </div>
 </div>
 
-<div v-click class="echange">
-<p class="role">La question qui déraille</p>
-<div class="gabarit-bloc"><span class="gabarit">GABARIT</span>
-
-Verbatim : la réponse qui n’était écrite nulle part.
-</div>
-</div>
-
 <!--
-[BEAT 2 — L’ENTRETIEN. 2’15. Rejeu d’une session réelle, affichée comme
+[BEAT 2 — L’ENTRETIEN. 1’30. Rejeu d’une session réelle, affichée comme
 elle s’est déroulée, question par question. Un « next » par question.]
 
-[Commentaire en direct : sobre, deux ou trois phrases maximum. Laisser
-l’échange se lire.]
+[Commentaire en direct : sobre, deux phrases maximum. Laisser l’échange se
+lire.]
 
 Question 1 — factuelle : le personnage connaît son monde, un détail précis
 vérifiable dans les fiches. La salle comprend que la mémoire tient.
@@ -117,80 +111,48 @@ Question 2 — interprétative : on l’interroge sur un autre personnage, sur u
 événement, et il répond avec son biais, sa mauvaise foi, son angle mort. La
 salle comprend que ce n’est plus une base de données qui répond.
 
-Question 3 — celle qui déraille : la question dont la réponse n’était écrite
-nulle part.
-
-[REJEU ET NON DIRECT — choix de principe : un direct cumule trois risques
-(latence, réponse faible le mauvais soir, chrono incontrôlable) pour un gain
-nul. Le rejeu d’une session authentique est indistinguable du direct.]
+[REJEU ET NON DIRECT — ce n’est plus un choix : le modèle de 13 Go est
+occupé par la génération, /chat répond 409, et la section 6 tombe entre le
+lancement et la récolte. Physiquement impossible en direct.]
 -->
 
 ---
 layout: exergue
 ---
 
-<!-- La phrase obligatoire du script, sur la question 3. -->
+<!-- BEAT 3 — L’AVEU. 20”. Remplace l’ancien beat « émergence », retiré :
+     AUCUNE émergence n’est documentée, et la spec deck-content interdit
+     d’en affirmer une. Vérification faite candidat par candidat — la
+     seconde assiette était MATÉRIAU IMPOSÉ dans le brief de calibration du
+     chapitre 2 ; « Romane » et « Judith » sont des noms de la bible, donc
+     des violations d’interdit ; la percée du 31-08 vient d’un rejet en
+     code. Ne jamais reconstruire une émergence pour combler ce beat. -->
 
-Cette réponse-là n’est écrite nulle part. Elle est cohérente avec tout,
-et elle ne vient de rien.
-
-<!--
-[Phrase OBLIGATOIRE, sur la question 3 :]
-
-Cette réponse-là, elle n’est écrite nulle part. Aucune fiche ne la contient.
-Elle est cohérente avec tout, et elle ne vient de rien.
--->
-
----
-layout: piece-a-conviction
-intitule: L’émergence
-commentaire: Je l’ai entendu, un soir, en interrogeant quelqu’un qui n’existe pas.
----
-
-<!-- BEAT 3 — L’ÉMERGENCE. GABARIT : anecdote réelle et datée, à consigner
-     dans le journal des murs dès qu’elle se produit. Schéma attendu : un
-     élément né d’un entretien (détail biographique, mensonge du
-     personnage, objet, réplique) qui est aujourd’hui dans le roman. -->
-
-<div class="gabarit-bloc">
-<span class="gabarit">GABARIT</span>
-
-Anecdote datée : l’élément né de l’entretien, et le chapitre où il se
-trouve aujourd’hui. Je ne l’ai pas inventé. Je ne l’ai pas écrit.
-</div>
+Rien n’a émergé. Tout a été composé.
 
 <!--
-[BEAT 3 — L’ÉMERGENCE. 1’15.]
+[BEAT 3 — L’AVEU. 20”.]
 
-Et voilà ce qui s’est passé ensuite.
+Vous attendez la suite. Je la connais, la suite : le moment où je vous
+raconte que la machine a inventé quelque chose, et que ce quelque chose est
+entré dans le roman.
 
-[L’anecdote réelle, datée : un élément né d’un entretien — un détail
-biographique, un mensonge du personnage, un objet, une réplique — qui est
-aujourd’hui dans le roman. Le raconter avec la date et le chapitre.]
+Je ne l’ai pas.
 
-Ce [détail] est aujourd’hui au chapitre [X]. Je ne l’ai pas inventé. Je ne
-l’ai pas écrit. Je l’ai entendu, un soir, en interrogeant quelqu’un qui
-n’existe pas.
+Rien n’a émergé. J’ai cherché, j’ai relu trente et un runs. Le seul objet
+dont j’étais sûr qu’elle l’avait inventé — une seconde assiette sur une
+table — était dans le brief que je lui avais servi. Elle ne l’a pas trouvé.
+Elle l’a exécuté.
 
-[Temps.]
--->
+Tout ce qui est bon dans ce livre a été composé. Rien n’a poussé tout seul.
 
----
-layout: propos
-variant: question
----
+[Temps. Ne pas rattraper, ne pas adoucir, ne pas enchaîner trop vite.]
 
-<!-- La question qui suit l’émergence. Variante question : le silence
-     appartient à la slide. -->
-
-# Qui l’a écrit ?
-
-Ce détail précis, dans ce chapitre précis.
-
-<!--
-Alors, celui-là. Ce détail précis, dans ce chapitre précis.
-
-Qui l’a écrit ?
+[SLOT EN ATTENTE — si le run de falsification désigne l’issue H4 (identité
+du personnage), un beat de 20 s s’ajoute ici : la strate 4 a posé le FAIT
+(elle est correctrice, elle tranche), la section 6 révèle le MÉCANISME (on
+lui a demandé de la devenir, elle l’est devenue). Ne rien écrire avant le
+run.]
 -->
 
 ---

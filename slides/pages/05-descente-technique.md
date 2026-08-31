@@ -1,10 +1,13 @@
 ---
-layout: cold-open
+layout: exergue
 ---
 
 <!-- Section 5 — LA DESCENTE DANS LA FABRIQUE (script docs/scripts/04-…).
-     14 minutes, 4 strates. Battement de chaque strate :
+     16’30, 4 strates. Battement de chaque strate :
      ce qu’on a tenté → le mur → ce que le mur a forcé à construire.
+     EXCEPTION VOULUE : la strate 4 ne résout pas — son aphorisme constate
+     qu’il a fallu EMPÊCHER le modèle, il ne célèbre aucune construction.
+     Cette exception est attachée à la strate 4 et la suit en permutation.
      Registre : la langue de l’atelier ; le terme technique une seule fois,
      entre parenthèses.
 
@@ -14,11 +17,34 @@ layout: cold-open
        1. le champ `n:` des quatre murs (badge « MUR n / 4 ») ;
        2. les ordinaux parlés en tête de note (« Voilà le premier mur »,
           « Deuxième mur, quelques soirs plus tard », « Troisième mur ») ;
-       3. l’ouverture de la strate PUISSANCE (« On a pris un modèle plus
-          gros ») qui répond à l’objection d’économie née du mur QUALITÉ :
-          si puissance passe avant qualité, cette ouverture perd son amorce.
+       3. l’ouverture de la strate 4 (« On a pris un modèle plus gros »)
+          qui répond à l’objection d’économie née du mur QUALITÉ : si la
+          strate 4 passe avant qualité, cette ouverture perd son amorce.
+     LA CONTRAINTE LOCALE n’est plus portée par une strate : elle est le
+     CADRE, posée à l’entrée de la section et reprise à la remontée. La
+     strate 4 n’y fait qu’un rappel d’une phrase.
      Le pont Gary voyage avec la strate QUALITÉ (il dépend de la fiche de
      style) ; la devise de fin appartient à la section, pas à une strate. -->
+
+<!-- L’ENTRÉE — LE CADRE. 15”. La contrainte locale se pose ici et se
+     reprend à la remontée. Nulle part entre les deux : le compte à rebours
+     est une machine locale qui travaille sous leurs yeux, il fait le rappel
+     tout seul. Elle ne s’argumente pas ici — elle se paie à la remontée. -->
+
+Rien de ce que vous allez voir ne sort de cette pièce.
+
+<!--
+Avant de descendre, une règle. Rien de ce que vous allez voir ne sort de
+cette pièce. Pas un appel, pas une clé d’API, pas un octet.
+
+Ce n’est pas une posture. C’est ce qui a construit tout ce qu’il y a en bas.
+
+[Descendre.]
+-->
+
+---
+layout: cold-open
+---
 
 <!-- STRATE 1 — LE LORE. Ce qu’on a tenté. -->
 
@@ -112,6 +138,13 @@ Un principe est né ce soir-là, et il ne bougera plus : la référence, c’est
 le papier. Mes fiches sont des fichiers texte que je peux lire, corriger,
 déchirer. La bibliothèque indexée n’est jamais qu’une copie. Le jour où elles
 se contredisent, c’est le papier qui a raison.
+
+[Temps.]
+
+Tout à l’heure je vous ai dit que dans ma fabrique, la machine était mon
+Maquet. Un Maquet, ça ne s’improvise pas : le vrai passait ses journées dans
+les archives avant d’écrire une ligne. Le mien a besoin qu’on les lui
+apporte.
 -->
 
 ---
@@ -169,6 +202,13 @@ L’acteur, je vous le présente plus tard.
 
 [PLACEHOLDER TOOLS : si la stack utilise des outils délégués le jour J, une
 phrase ici, pas plus. Sinon supprimer. À trancher au gel du script.]
+
+[Temps.]
+
+Queneau n’a écrit aucun de ses cent mille milliards de poèmes. Il a écrit la
+machine qui les fabrique, et il a laissé quelqu’un d’autre tourner les
+bandelettes. Ce plan de scènes, ces postes de travail : ce sont mes
+bandelettes. L’exécutant, ce soir, c’est elle.
 
 [Geste vers l’écran, vers le compte à rebours.]
 
@@ -269,6 +309,67 @@ règle en cause surlignée.
 Chaque sortie y passe. On calibre comme on règle un instrument : plusieurs
 runs, des réglages différents, un run de contrôle pour savoir si la voix
 vient de la fiche ou du hasard.
+-->
+
+---
+layout: piece-a-conviction
+intitule: La grille verte, et le texte mort
+commentaire: Le correcteur ne mesurait pas le geste. Il mesurait sa propre présence.
+---
+
+<!-- VEINE MESURE, absorbée par la strate QUALITÉ. Deux gifles de 20 s.
+     GABARIT : la grille tout au vert + l’extrait qu’elle a laissé passer,
+     puis les deux chiffres du chronomètre. -->
+
+<div class="gabarit-bloc">
+<span class="gabarit">GABARIT</span>
+
+La grille tout au vert, et l’extrait qu’elle a laissé passer.
+
+Puis les deux chiffres, seuls : durée de mur contre durée de calcul.
+</div>
+
+<!--
+Et puis un soir, la grille est verte. Tout au vert. Et le texte est mort.
+
+Le correcteur validait des règles que je lui avais apprises à valider. Il ne
+mesurait pas le geste, il mesurait sa propre présence. Une grille verte par
+construction.
+
+Et pendant qu’on y est, l’autre humiliation de la même semaine.
+
+[Slide : les deux chiffres.]
+
+La machine dormait. Le chronomètre comptait son sommeil comme du travail.
+J’ai passé des jours à optimiser une lenteur qui n’existait pas.
+
+[Temps.]
+
+1943. Deux poètes fabriquent Ern Malley un après-midi, avec un dictionnaire
+et un rapport sur le drainage des marécages. Ces poèmes passent tous les
+critères de la revue d’avant-garde. Tous. Ils sont publiés en numéro spécial.
+
+Personne n’avait mal compté. Ils avaient mal lu.
+-->
+
+---
+layout: exergue
+---
+
+<!-- APHORISME de la veine MESURE. Voyage avec la strate QUALITÉ. -->
+
+Compter n’est pas lire.
+
+<!--
+[L’aphorisme, seul.]
+
+Compter n’est pas lire.
+
+[Temps.]
+
+Alors on rouvre la grille, on la falsifie contre des textes qu’on sait
+mauvais, on la recalibre. Et cette fois on lit debout. Chaque sortie, à voix
+haute, sans la grille.
 
 Et un soir, ça tient. Une voix qui n’existe nulle part ailleurs. Qui n’est ni
 la mienne, ni celle du modèle. Une voix fabriquée, trait par trait, jusqu’à
@@ -323,13 +424,14 @@ de milliards de paramètres, plus de finesse native, moins de bricolage.
 
 ---
 layout: piece-a-conviction
-intitule: Pièce à conviction n°4 — la puissance
+intitule: Pièce à conviction n°4 — le muscle
 commentaire: La machine est tombée à genoux.
 ---
 
-<!-- STRATE 4 — LA PUISSANCE. L’objection d’économie a été déroulée à
-     l’oral juste avant : « il suffirait de prendre un modèle plus gros ».
-     GABARIT : chiffres réels mesurés aux runs de test. -->
+<!-- STRATE 4 — LE MUR QU’ON NE PEUT PAS ACHETER. 5’30, trois étages.
+     Fusion des anciennes strates PUISSANCE et SEUIL : elles répondaient à
+     la même objection d’économie à deux étages.
+     ÉTAGE 1 — il ne rentre pas. GABARIT : chiffres réels des runs de test. -->
 
 <div class="gabarit-bloc">
 <span class="gabarit">GABARIT</span>
@@ -339,7 +441,7 @@ projetée de génération d’un chapitre.
 </div>
 
 <!--
-[STRATE 4 — LA PUISSANCE. 2’30.]
+[STRATE 4, ÉTAGE 1 — IL NE RENTRE PAS. 2’.]
 
 On a pris un modèle plus gros.
 
@@ -347,49 +449,173 @@ La machine est tombée à genoux. [Commenter les chiffres réels : le débit qui
 s’effondre, le chapitre qui passerait de X minutes à X heures.] Ce compte à
 rebours, là-bas ? Avec le gros modèle, il afficherait encore des heures au
 moment où on se dirait au revoir.
+
+Et la sortie de secours, vous la connaissez tous. Elle tient en une ligne :
+une clé d’API, et tout devient facile.
+
+Je vous ai dit en entrant ce qu’il en était.
+
+[NE PAS DÉVELOPPER. La contrainte locale a été posée à l’entrée de la
+section, elle se paie à la remontée. Ici, un rappel d’une phrase, pas un
+argument. Si la répétition revient à la rédaction, c’est cet étage qui coupe.]
+
+[Temps.]
+
+Alors la question honnête, celle que vous êtes en train de vous poser : est-ce
+que j’aurais eu le roman avec le gros modèle ?
+-->
+
+---
+layout: piece-a-conviction
+intitule: Trois semaines, cinq architectures, la même phrase
+commentaire: 09-08, premier soir, sans mémoire. 31-08, tout l’outillage branché.
+---
+
+<!-- ÉTAGE 2 — ET S’IL RENTRAIT ? 2’30. NON GABARIT : ces deux verbatims
+     sont acquis et ne dépendent d’AUCUNE issue du run. « Je n’ai pas rêvé »
+     récidive dans quatre entrées du journal des murs, sur toutes les
+     sessions (ch2 → S4 → S6 → ch7). Attracteur stable, pas coïncidence. -->
+
+**9 août** — frappe directe, aucune mémoire, aucun outillage
+
+> Je n’ai pas rêvé.
+
+**31 août** — bibliothèque, atelier, fiche de style, correcteur
+
+> Verdict : coquille. Ma mémoire m’a joué un tour. Je n’ai pas rêvé.
+
+<!--
+Non.
+
+Neuf août. Premier soir du projet. Ma narratrice relit une ligne de son
+carnet qui la contredit, et elle écrit ceci. [Lire.]
+
+Trente et un août. Cinq architectures plus tard. Une bibliothèque, un
+atelier, une fiche de style, un correcteur. Et elle écrit ceci. [Lire.]
+
+[Temps. Laisser la salle lire les deux.]
+
+La même phrase. Trois semaines, cinq architectures, et le même mot. Elle
+revient dans quatre entrées de mon journal de bord, sur toutes les sessions.
+
+Mon roman tient sur un doute. Une femme relit son propre carnet et ne se
+reconnaît pas dedans. Tout le livre est là : elle ne doit pas comprendre.
+
+Et la machine, à chaque fois, lui donne la réponse.
+-->
+
+---
+layout: piece-a-conviction
+intitule: La fiche, et la sortie
+commentaire: Le défaut de la machine est une citation de la fiche.
+---
+
+<!-- ÉTAGE 2, seconde pièce. GABARIT : les lignes exactes de la fiche du
+     personnage (identité de verdict), à récupérer verbatim côté stack.
+     Moitié gauche = la fiche ; moitié droite = la sortie du modèle. -->
+
+<div class="gabarit-bloc">
+<span class="gabarit">GABARIT</span>
+
+Gauche : les lignes de la fiche qui portent l’identité de verdict du
+personnage, verbatim.
+
+Droite : la sortie du modèle qui rend ce verdict.
+</div>
+
+<!--
+[Ne rien commenter pendant trois secondes. La salle doit voir seule que le
+défaut de la machine est une citation de la fiche.]
 -->
 
 ---
 layout: wall
 n: 4
-problem: La machine tombe à genoux
+problem: Le mur qu’on ne peut pas acheter
 ---
 
-La sortie de secours tient en une ligne : une clé d’API.
+Le gros modèle **ne rentre pas**. Et s’il rentrait, il ne tiendrait pas
+davantage le doute qu’il faut tenir.
 
-Sauf que ce soir, **rien ne sort de la pièce**. Ce n’est pas une posture :
-c’est le mur qui rend honnête.
-
-Faute de pouvoir acheter la qualité en muscle, on la **construit en
-architecture**. Chaque point gagné en comprenant quelque chose —
-pas en payant quelqu’un.
+Il n’y a rien à acheter. Chaque phrase est tirée trois fois, et le **code**
+garde celle qui ne tranche pas.
 
 <!--
-Et la sortie de secours, vous la connaissez tous. Elle tient en une ligne :
-une clé d’API, et tout devient facile. Le muscle des autres, dans le nuage
-des autres.
+[ÉTAGE 3 — LE BATTEMENT QUI NE TRIOMPHE PAS. 1’.]
 
-Parce que quand on ne peut pas acheter la qualité en muscle, il ne reste
-qu’une façon de l’obtenir : la construire en architecture. La bibliothèque,
-l’atelier, la fiche de style, le correcteur : tout ce que je viens de vous
-montrer existe parce que la solution de facilité était bouchée. Chaque point
-de qualité de ce roman a été gagné en comprenant quelque chose. Pas en payant
-quelqu’un.
+Ce que fait ce code, un homme l’a fait à la main sur les nouvelles de Carver.
+Gordon Lish n’a pas écrit le minimalisme américain : il l’a coupé. Le style
+de Carver, c’est ce que Lish a jeté.
+
+Ma voix, ce sont mes rejets.
 -->
 
 ---
 layout: exergue
 ---
 
-<!-- APHORISME de la strate PUISSANCE. Était noyé dans le corps du mur ;
-     chaque strate se referme désormais sur sa phrase à emporter. -->
+<!-- APHORISME de la strate 4 — L’EXCEPTION AU PATTERN TERNAIRE.
+     Il ne célèbre AUCUNE construction : il constate qu’il a fallu
+     EMPÊCHER. Un talk dont la thèse est que résoudre est le défaut de la
+     machine ne peut pas offrir quatre résolutions de forme sur quatre.
+     Cette exception est attachée à la strate 4 et la suit en permutation.
+
+     GABARIT — le texte définitif dépend du run de falsification.
+     Voir CLAUDE.md « À trancher » point 7 et docs/scripts/04-… étage 3.
+     H4 (identité du personnage) est la version écrite ci-dessous ;
+     H1 / H2 / H3 changent le texte, jamais la structure. -->
+
+<div class="gabarit-bloc">
+<span class="gabarit">GABARIT — dépend du run</span>
+
+Ce n’est pas une victoire. C’est le constat qu’il a fallu l’empêcher.
+</div>
+
+<!--
+[Version H4 — l’identité du personnage, la plus probable et la plus forte.]
+
+Pendant trois semaines, j’ai cru que la machine ratait mon personnage.
+
+Elle le réussissait.
+
+Ma fiche dit que cette femme est correctrice. Son métier, c’est de rendre
+des verdicts. Et ma propre fiche programme l’extinction de ses verdicts au
+chapitre huit. On teste au chapitre sept.
+
+Au moment où je la mesure, trancher est son comportement correct.
+
+Je lui demandais de désobéir à ce que j’avais écrit.
+
+[Temps.]
+
+Aucune instruction ne fait ça. Le code, si.
+
+Le doute tient. Pas parce que le modèle a tenu : parce que je lui ai interdit
+de résoudre.
+
+Ce n’est pas une victoire. C’est le constat qu’il a fallu l’empêcher.
+
+[NE PAS CONCLURE. Ne pas remonter d’un ton, ne pas marquer de silence de
+conclusion. Enchaîner directement sur la remontée : cette strate est la seule
+qui ne se referme pas.]
+-->
+
+---
+layout: exergue
+---
+
+<!-- Le paiement de la contrainte posée à l’entrée de la section.
+     Cette phrase appartenait à l’ancienne strate PUISSANCE ; elle a suivi
+     la contrainte locale à la remontée. -->
 
 C’est le mur qui rend honnête.
 
 <!--
-[L’aphorisme de la strate, seul. Il était dans le corps du mur.]
+La porte était ouverte à chaque étage : sous-traiter, prendre la clé, ne rien
+comprendre. Je l’ai fermée moi-même, avant de descendre.
 
-Sauf que ce soir, rien ne sort de la pièce. Et ce n’est pas une posture.
+Pas par vertu. Parce que la contrainte était le voyage : chaque mur m’a forcé
+à comprendre une chose que j’aurais payée pour ignorer.
 
 C’est le mur qui rend honnête.
 -->

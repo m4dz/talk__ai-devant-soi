@@ -12,6 +12,19 @@ podman-compose sur Apple Silicon). Thèse : l'incohérence de la position de
 l'Académie Goncourt face aux œuvres assistées par IA, avec l'affaire
 Gary/Ajar comme colonne vertébrale narrative.
 
+**Thèse de l'auteur, issue du journal des murs.** Le talk définissait
+l'auteur par la négative (« il n'existe pas de seuil ») et par le labeur
+(« l'intelligence est partout où je suis passé ») — cette seconde définition
+étant réfutée par le talk lui-même, puisque Maquet aussi a labouré et a perdu
+en 1858. La définition retenue est positive : **l'auteur est celui qui refuse
+de résoudre.** Judith tient le seuil contre sa propre profession, Gary tient
+Ajar non résolu huit ans contre son propre intérêt, Lish coupe contre l'auteur
+qui le supplie de refermer, et le speaker tient contre le personnage qu'il a
+lui-même écrit. **Règle de mise en scène non négociable** : ce miroir se dit
+**une fois**, sur des verbatims datés, et ne s'explique jamais — c'est le point
+où le talk peut basculer dans la sur-figuration littéraire devant une salle de
+développeurs.
+
 Élément dramaturgique central : une **génération de chapitre en direct**
 est lancée depuis une slide en début de talk, tourne pendant ~35 minutes
 sur une machine distante, et le chapitre est **lu à voix haute** (voix
@@ -44,21 +57,60 @@ slide et le script, le script gagne. Le deck suit :
    d'originalité des éditeurs, la question centrale du talk, signature.
 3. **L'allumage** — le roman, le lancement de la génération, le contrat du
    compte à rebours.
-4. **Jeu du seuil** — interaction mains levées, 6 stations par
-   intervention humaine décroissante : Dumas/Maquet, Carver/Lish,
-   Vian/Vernon Sullivan, Ern Malley, Oulipo (livre physique apporté sur
-   scène), Racter — puis le **renversement** (« il n'existe pas de
-   seuil ») et le pont vers la fabrique.
-5. **La descente dans la fabrique** (~14 min) — 4 strates, chacune sur le
+4. **Jeu du seuil** — interaction mains levées, **5 stations** par
+   intervention humaine décroissante : Dumas/Maquet, Carver/Lish, Ern
+   Malley, Oulipo (livre physique apporté sur scène), Racter — puis le
+   **renversement** (« il n'existe pas de seuil ») et le pont vers la
+   fabrique. *Vian/Vernon Sullivan a été retiré* : Gary fait le même
+   travail en mieux pendant six minutes de cold open, et Vian cassait le
+   gradient (il écrit 100 % du texte lui-même — l'intervention humaine y
+   est maximale, seule l'attribution est fausse).
+   **Chaque figure nomme un mur de la section 5** et y est reprise
+   nominativement — sauf Racter, repris au verdict de la section 8. La
+   galerie plante, la descente récolte.
+5. **La descente dans la fabrique** (~16 min) — 4 strates, chacune sur le
    battement *ce qu'on a tenté → le mur → ce que le mur a forcé à
-   construire* : le lore (→ bibliothèque indexée), l'intention (→ atelier
-   orchestré, plan de scènes), la qualité (→ fiche de style + correcteur),
-   la puissance (→ le crash, et l'architecture plutôt que le muscle).
+   construire* : le lore (Maquet → bibliothèque indexée), l'intention
+   (Queneau → atelier orchestré, plan de scènes), la qualité **et la
+   mesure** (Malley → fiche de style + correcteur, et l'aveu *compter
+   n'est pas lire*), puis **le mur qu'on ne peut pas acheter** (Lish) —
+   fusion des anciennes strates *puissance* et *seuil*, qui répondaient à
+   la même objection à deux étages : le gros modèle ne rentre pas, et s'il
+   rentrait il ne tiendrait pas davantage le doute qu'il faut tenir.
    Puis la remontée : « la fabrique reste à notre main ».
-6. **Le mode personnage** — l'acteur : on ne demande plus à la machine
-   d'écrire *sur* le personnage mais de le *devenir*. Entretien rejoué,
-   émergence (un élément né d'un entretien, entré au roman), retournement
-   sur la question de Le Tellier.
+
+   **La contrainte locale n'est pas une strate, c'est le cadre.** Sans
+   elle aucun de ces murs n'existe : avec une clé d'API on ne construit ni
+   bibliothèque, ni fiche de style, ni sélection en code. Elle est énoncée
+   à l'entrée de la descente et reprise à la remontée, jamais comme l'un
+   des murs. Le rappel pendant les quinze minutes est assuré sans une
+   phrase : le compte à rebours *est* une machine locale qui travaille
+   sous les yeux de la salle.
+
+   **Le dernier mur casse le pattern ternaire, et c'est voulu.** Son
+   troisième battement ne célèbre aucune construction : il constate qu'il
+   a fallu *empêcher* le modèle de résoudre. Un talk dont la thèse est que
+   résoudre est le défaut de la machine ne peut pas offrir quatre
+   résolutions de forme sur quatre.
+
+   > **Réserve.** La fusion et le contenu du dernier mur dépendent du run
+   > de falsification décrit au point 7 de « À trancher ». Les issues *H1*
+   > (défaut d'alignement), *H2* (capacité du modèle) et *H4* (identité du
+   > personnage) laissent cette structure intacte et ne changent que le
+   > texte du troisième battement et sa durée. Seule l'issue *H3*
+   > (artefact de brief) la casse : retour à quatre murs dont *puissance*
+   > redevient autonome.
+6. **Le mode personnage** (~3'20) — l'acteur : on ne demande plus à la
+   machine d'écrire *sur* le personnage mais de le *devenir*. Entretien
+   rejoué à **deux** questions (factuelle, interprétative), puis **l'aveu**
+   — rien n'a émergé, tout a été composé — puis le retournement sur la
+   question de Le Tellier.
+   **Aucune émergence n'est affirmée, ici ni ailleurs dans le deck** :
+   aucune n'est documentée. Le candidat le plus cité, la « seconde
+   assiette », figurait en *matériau imposé* dans le brief de calibration
+   du chapitre 2 servi au modèle — la machine ne l'a pas inventée, elle
+   l'a exécutée. Ce que la machine apporte se présente comme **composé et
+   sélectionné**, jamais comme émergent.
 7. **La récolte** — le compte à rebours atteint zéro, le chapitre naît,
    lecture à voix haute qui bascule vers la voix clonée.
 8. **La chute** — dernier vote à main levée, verdict, sortie sur « Je me
@@ -357,6 +409,27 @@ Questions à poser au speaker au démarrage — ne pas improviser :
    « annonce », « refuse » ou « interdit » — uniquement des propos
    attribués nominativement, avec la source affichée à l'écran (layout
    `citation-sourcee`). Voir spec `deck-content`.
+
+7. **La résolution est-elle un défaut de modèle ?** — **PRÉALABLE
+   BLOQUANT** du troisième battement du dernier mur (section 5). Le mur
+   affirme que le modèle ne tient pas un doute ouvert ; l'objection de
+   salle est « vous avez testé un autre modèle ? », et la réponse est
+   aujourd'hui non. Précédent qui impose la prudence : les fuites
+   d'anglais ont été *attribuées à tort au modèle* avant d'être tuées par
+   `NUM_CTX=8192`. Quatre issues :
+   **H1** défaut d'alignement commun à tout modèle instruit ;
+   **H2** défaut de capacité du modèle employé ;
+   **H3** artefact du brief servi (il demande explicitement « Elle amorce
+   un verdict ») ; **H4** conséquence de l'**identité du personnage** — la
+   narratrice est une correctrice dont le métier servi est de rendre des
+   verdicts, et sa fiche programme l'extinction du verdict au chapitre 8,
+   donc au chapitre 7 testé **résoudre est son comportement correct**.
+   **H4 n'est pas un repli** : elle est au moins équivalente à H1 pour la
+   trame, et probablement supérieure — H1 est vraie mais générique et
+   chahutable, H4 est spécifique et dit que l'auteur a dû coder contre sa
+   propre créature. Le protocole (contrôle sans indice, sujets appariés
+   correctrice / thérapeute / neutre) est tiré côté stack. Reporter la
+   réponse ici au retour du run.
 
 ## Jalons proposés
 

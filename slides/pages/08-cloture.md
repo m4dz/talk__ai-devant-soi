@@ -43,7 +43,7 @@ Votre hésitation, là, maintenant. C’est ça, la démonstration.
 
 <!--
 Votre hésitation, là, maintenant. C’est ça, la démonstration. Le seuil
-n’existe pas, et vous venez de le chercher une septième fois.
+n’existe pas, et vous venez de le chercher une sixième fois.
 -->
 
 ---
@@ -65,6 +65,11 @@ Elle n’a pas perdu contre les machines. Elle a perdu contre sa propre
 histoire : elle a couronné Dumas et sa fabrique, Ajar et son fantôme, et
 elle a gardé le prix quand tout s’est su.
 
+Et en 1984, la seule accusation portée contre un livre de machine, c’était
+d’avoir **trop sélectionné, trop assemblé, trop édité**.
+
+Cette accusation-là, je la revendique.
+
 <!--
 [BEAT 2 — LE VERDICT. 1’. Slide noire : on termine comme on a commencé.]
 
@@ -80,8 +85,22 @@ L’Académie a déjà perdu. Elle ne le sait pas encore.
 
 Elle n’a pas perdu contre les machines. Elle a perdu contre sa propre
 histoire. Elle a couronné Dumas et sa fabrique. Elle a couronné Ajar et son
-fantôme. Elle a gardé le prix quand tout s’est su, parce qu’au fond, elle a
-toujours su ce qu’elle refuse d’admettre aujourd’hui :
+fantôme.
+
+Et en 1984, quand un programme a publié un livre, la seule accusation qu’on
+ait trouvée, c’était d’avoir trop sélectionné, trop assemblé, trop édité les
+sorties. On accusait un livre de machine d’être trop humain.
+
+Cette accusation-là, je la revendique. C’est exactement ce que j’ai fait ce
+soir devant vous.
+
+[RACTER. L’accusation a été plantée sans commentaire à la station 5 de la
+section 4 ; elle se paie ici, et c’est le speaker qui plaide coupable. Ne
+pas rappeler qui était Racter — la salle a le nom depuis quarante minutes.
+Coût ≈ 20 s, repris sur le beat 3.]
+
+Elle a gardé le prix quand tout s’est su, parce qu’au fond, elle a toujours
+su ce qu’elle refuse d’admettre aujourd’hui :
 -->
 
 ---

@@ -56,7 +56,7 @@ Assets dans `public/images/` :
 |---|---|---|
 | `cas-01-dumas-maquet-s500.png` | Dumas / Maquet | objet A |
 | `cas-02-carver-lish-s43.png` | Carver / Lish | objet A |
-| `cas-03-vian-sullivan-s600.png` | Vian / Sullivan | objet A |
+| ~~`cas-03-vian-sullivan-s600.png`~~ | Vian / Sullivan — **station retirée** (`refonte-trame-figures-murs`) ; fichier conservé, plus référencé par le deck | objet A |
 | `cas-04-ern-malley-s45.png` | Ern Malley | objet A |
 | `cas-05-oulipo-s46.png` | Oulipo | objet A |
 | `cas-06-racter-s47.png` | Racter | objet A |

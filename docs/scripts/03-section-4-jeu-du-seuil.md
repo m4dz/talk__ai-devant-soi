@@ -1,7 +1,7 @@
 # L'IA devant soi — Section 4 : le jeu du seuil (script)
 
 Enchaînement direct sur « Mais d'abord, il faut que je vous parle d'Alexandre Dumas. »
-Durée cible : 8 à 9 minutes (la marge dégagée par le cold open absorbe le dépassement).
+Durée cible : 8'15 (install 15" + 5 × 1'15 + renversement 1'30 + pont 30").
 Le compte à rebours tourne à l'écran pendant toute la section.
 
 ---
@@ -24,6 +24,16 @@ Qui dit oui ?
 
 Gardez votre réponse en tête. Et gardez la clause : produite par l'auteur, et non par une machine. Maquet n'était pas une machine. Mais il produisait.
 
+[Temps.]
+
+Et retenez la place de chacun. L'un fournit la matière. L'autre tient la voix. Le tribunal a tranché en faveur de la voix.
+
+Ce soir, dans ma fabrique, celui qui fournit la matière, c'est la machine.
+
+Je suis Dumas.
+
+[Ne rien ajouter. Enchaîner.]
+
 ---
 
 ## Station 2 — Carver et Lish (1'15")
@@ -44,21 +54,7 @@ Les mains.
 
 ---
 
-## Station 3 — Vian, Vernon Sullivan (1'15")
-
-1946. Boris Vian écrit un roman en quinze jours. Il le signe Vernon Sullivan : un écrivain américain, noir, censuré dans son propre pays. Vian se présente comme son traducteur. *J'irai cracher sur vos tombes* devient un des plus gros succès de l'après-guerre.
-
-Sullivan n'existe pas. Tout est de Vian : le texte, l'auteur, la censure, la biographie. Quand la vérité sort, ce n'est pas un triomphe posthume comme pour Gary. C'est un procès pour outrage aux bonnes mœurs, une interdiction, une condamnation. La fabrique se retourne contre lui et le dévore.
-
-Un roman signé par un homme qui n'existe pas, écrit par un homme qui jure ne pas l'avoir écrit : c'est l'œuvre de qui ?
-
-Est-ce que c'est une œuvre de Vian ? Les mains.
-
-[« Vous hésitez sur le nom, plus sur l'œuvre. Intéressant. »]
-
----
-
-## Station 4 — Ern Malley (1'15")
+## Station 3 — Ern Malley (1'15")
 
 1943, Australie. Deux poètes conservateurs détestent l'avant-garde. Un après-midi, avec un dictionnaire, un recueil de citations et un rapport sur le drainage des marécages, ils fabriquent l'œuvre complète d'un poète mort inventé : Ern Malley. Plus sa biographie. Plus une sœur fictive qui envoie les manuscrits.
 
@@ -74,7 +70,7 @@ Les mains.
 
 ---
 
-## Station 5 — L'Oulipo (1'30")
+## Station 4 — L'Oulipo (1'30")
 
 [Sortir l'exemplaire de *Cent mille milliards de poèmes*. Le manipuler face à la salle. C'est la seule « slide » de la station.]
 
@@ -92,7 +88,7 @@ Ce livre-machine : est-ce une œuvre ? Les mains.
 
 ---
 
-## Station 6 — Racter (1'15")
+## Station 5 — Racter (1'15")
 
 1984. Il y a plus de quarante ans. *The Policeman's Beard Is Half Constructed* : premier livre revendiqué comme écrit par un programme. Racter, tournant sur un micro-ordinateur de l'époque.
 
@@ -106,13 +102,15 @@ La littérature française avait d'ailleurs prévu le coup avec trente ans d'ava
 
 Le livre de Racter, machine curée par un humain : est-ce une œuvre ? Dernières mains.
 
+[Ne pas commenter l'accusation. Elle est plantée ici et se paie au verdict de la section 8 : c'est le speaker qui plaidera coupable.]
+
 ---
 
 ## Le renversement (1'30")
 
-Six histoires. Six fois la même question. Et vos mains n'ont pas arrêté de bouger.
+Cinq histoires. Cinq fois la même question. Et vos mains n'ont pas arrêté de bouger.
 
-Vous venez de passer dix minutes à chercher un seuil. L'endroit exact où l'œuvre cesse d'appartenir à son auteur. Vous ne l'avez pas trouvé. Les tribunaux ne l'ont pas trouvé en 1858. L'Académie ne l'a pas trouvé en 1975.
+Vous venez de passer huit minutes à chercher un seuil. L'endroit exact où l'œuvre cesse d'appartenir à son auteur. Vous ne l'avez pas trouvé. Les tribunaux ne l'ont pas trouvé en 1858. L'Académie ne l'a pas trouvé en 1975.
 
 [Slide : la phrase, seule.]
 
@@ -141,6 +139,23 @@ Descendons.
 ---
 
 ## Notes de préparation
+
+- **Chaque figure nomme un mur de la section 5**, et y est reprise
+  nominativement une fois. La galerie plante, la descente récolte. Rien n'est
+  annoncé ici : la reprise doit surprendre.
+
+  | Station | Reprise |
+  |---|---|
+  | Maquet | strate 1, le lore — il fournit la matière, la voix reste à l'autre |
+  | Lish | dernier mur — il fabrique le style par soustraction ; nous par rejet en code |
+  | Malley | strate 3, la qualité et la mesure — fabriqué sans intention, devenu littérature par la lecture : *compter n'est pas lire* |
+  | Queneau | strate 2, l'intention — il écrit le générateur, pas les poèmes |
+  | Racter | **section 8**, au verdict — « trop sélectionné, trop assemblé, trop édité » |
+
+- **L'inversion de rôle de la station 1** est le seul endroit du talk où le
+  speaker se nomme dans une figure historique. Une phrase, sans développement
+  (« Je suis Dumas »), et on enchaîne. Si elle est commentée, elle devient
+  vantardise ; si elle tombe nue, la salle la retient jusqu'à la section 5.
 
 - **Vérifications factuelles avant gel du script** : le jugement de 1858 (termes exacts du partage argent/nom) ; l'ampleur des coupes de Lish (« jusqu'à la moitié, parfois davantage » est la formulation sûre, la nouvelle du New Yorker 2007 est « Beginners » devenue « What We Talk About When We Talk About Love ») ; les détails Malley (noms des canulars : McAuley et Stewart, revue : Angry Penguins) ; la controverse d'édition autour de Racter ; l'année et le propos exacts du *Littératron* d'Escarpit.
 - **Mécanique des mains** : l'installer une seule fois, station 1, avec de l'insistance (« de vraies mains »). Ensuite, deux mots suffisent : « Les mains. » Les micro-commentaires entre crochets sont des exemples, à improviser selon la salle réelle : dire ce qu'on voit, jamais ce qu'on espérait voir. Si la salle ne joue pas, le silence après chaque question fait le même travail.

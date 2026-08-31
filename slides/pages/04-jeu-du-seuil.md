@@ -8,7 +8,7 @@ variant: question
 
 # À partir de quand l’œuvre n’est-elle plus la vôtre ?
 
-Six histoires. Six fois la même question. Et de **vraies** mains levées.
+Cinq histoires. Cinq fois la même question. Et de **vraies** mains levées.
 
 <!--
 [Installation du jeu, une seule fois, avec insistance.]
@@ -60,6 +60,18 @@ l’œuvre de Dumas ? Qui dit oui ?
 
 Gardez votre réponse en tête. Et gardez la clause : produite par l’auteur,
 et non par une machine. Maquet n’était pas une machine. Mais il produisait.
+
+[Temps.]
+
+Et retenez la place de chacun. L’un fournit la matière. L’autre tient la
+voix. Le tribunal a tranché en faveur de la voix.
+
+Ce soir, dans ma fabrique, celui qui fournit la matière, c’est la machine.
+
+Je suis Dumas.
+
+[Ne rien ajouter. Enchaîner. Cette phrase ne se commente pas — commentée
+elle devient vantardise, nue elle tient jusqu’à la section 5.]
 -->
 
 ---
@@ -136,43 +148,6 @@ Les mains.
 
 ---
 layout: case-card
-name: Vian / Vernon Sullivan
-work: J’irai cracher sur vos tombes, 1946
-figure: /images/cas-03-vian-sullivan-s600.png
-balance: Auteur ██████░░░░ Dispositif
-question: Un roman signé par un homme qui n’existe pas, écrit par un homme qui jure ne pas l’avoir écrit — c’est l’œuvre de qui ?
----
-
-<!-- Station 3 : la fabrique se retourne contre son auteur. -->
-
-Vian écrit le roman en quinze jours et le signe **Vernon Sullivan** :
-un écrivain américain, noir, censuré dans son propre pays. Vian se présente
-comme son traducteur. Un des plus gros succès de l’après-guerre.
-
-Tout est de Vian : le texte, l’auteur, la censure, la biographie.
-Quand la vérité sort, ce n’est pas un triomphe posthume comme pour Gary.
-C’est un procès, une interdiction, une condamnation.
-
-<!--
-1946. Boris Vian écrit un roman en quinze jours. Il le signe Vernon
-Sullivan : un écrivain américain, noir, censuré dans son propre pays. Vian se
-présente comme son traducteur. *J’irai cracher sur vos tombes* devient un des
-plus gros succès de l’après-guerre.
-
-Sullivan n’existe pas. Tout est de Vian : le texte, l’auteur, la censure, la
-biographie. Quand la vérité sort, ce n’est pas un triomphe posthume comme
-pour Gary. C’est un procès pour outrage aux bonnes mœurs, une interdiction,
-une condamnation. La fabrique se retourne contre lui et le dévore.
-
-Un roman signé par un homme qui n’existe pas, écrit par un homme qui jure ne
-pas l’avoir écrit : c’est l’œuvre de qui ? Est-ce que c’est une œuvre de
-Vian ? Les mains.
-
-[« Vous hésitez sur le nom, plus sur l’œuvre. Intéressant. »]
--->
-
----
-layout: case-card
 name: Ern Malley
 work: The Darkening Ecliptic, 1943
 figure: /images/cas-04-ern-malley-s45.png
@@ -180,7 +155,7 @@ balance: Auteur ████░░░░░░ Dispositif
 question: Des textes fabriqués sans intention, devenus littérature par la lecture — est-ce que ce sont des œuvres ?
 ---
 
-<!-- Station 4 : l’intention absente, le sens quand même. -->
+<!-- Station 3 : l’intention absente, le sens quand même. -->
 
 Deux poètes conservateurs détestent l’avant-garde. En un après-midi, avec
 un dictionnaire, un recueil de citations et un rapport sur le drainage des
@@ -221,7 +196,7 @@ balance: Auteur ██░░░░░░░░ Dispositif
 question: Ce livre-machine — est-ce une œuvre ?
 ---
 
-<!-- Station 5 : le livre est apporté sur scène et manipulé face à la salle.
+<!-- Station 4 : le livre est apporté sur scène et manipulé face à la salle.
      Le script n’y met pas de slide ; on garde l’illustration, l’objet
      physique reste la vraie pièce à conviction. -->
 
@@ -269,7 +244,7 @@ balance: Auteur ░░░░░░░░░░ Dispositif
 question: Le livre de Racter, machine curée par un humain — est-ce une œuvre ?
 ---
 
-<!-- Station 6 : la controverse INVERSE est le détail qui tue. -->
+<!-- Station 5 : la controverse INVERSE est le détail qui tue. -->
 
 Premier livre revendiqué comme écrit par un programme, sur un
 micro-ordinateur. Réaction du monde littéraire : curiosité amusée.
@@ -312,10 +287,10 @@ layout: exergue
 Il n’existe pas de seuil à partir duquel l’œuvre cesse d’être la vôtre.
 
 <!--
-Six histoires. Six fois la même question. Et vos mains n’ont pas arrêté de
+Cinq histoires. Cinq fois la même question. Et vos mains n’ont pas arrêté de
 bouger.
 
-Vous venez de passer dix minutes à chercher un seuil. L’endroit exact où
+Vous venez de passer huit minutes à chercher un seuil. L’endroit exact où
 l’œuvre cesse d’appartenir à son auteur. Vous ne l’avez pas trouvé. Les
 tribunaux ne l’ont pas trouvé en 1858. L’Académie ne l’a pas trouvé en 1975.
 
