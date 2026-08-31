@@ -67,6 +67,7 @@ quelqu’un qui découvre le personnage à l’instant.]
 -->
 
 ---
+layout: entretien
 clicks: 3
 ---
 
@@ -78,7 +79,7 @@ clicks: 3
 # L’entretien
 
 <div v-click class="echange">
-<p class="q">Question factuelle</p>
+<p class="role">Question factuelle</p>
 <div class="gabarit-bloc"><span class="gabarit">GABARIT</span>
 
 Verbatim : un détail précis, vérifiable dans les fiches. La mémoire tient.
@@ -86,7 +87,7 @@ Verbatim : un détail précis, vérifiable dans les fiches. La mémoire tient.
 </div>
 
 <div v-click class="echange">
-<p class="q">Question interprétative</p>
+<p class="role">Question interprétative</p>
 <div class="gabarit-bloc"><span class="gabarit">GABARIT</span>
 
 Verbatim : le personnage répond avec son biais, sa mauvaise foi, son angle
@@ -95,19 +96,12 @@ mort. Ce n’est plus une base de données qui répond.
 </div>
 
 <div v-click class="echange">
-<p class="q">La question qui déraille</p>
+<p class="role">La question qui déraille</p>
 <div class="gabarit-bloc"><span class="gabarit">GABARIT</span>
 
 Verbatim : la réponse qui n’était écrite nulle part.
 </div>
 </div>
-
-<style scoped>
-.echange { margin-top: var(--space-sm); max-width: 62ch; }
-.q { font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.1em;
-     font-size: 0.8rem; color: var(--color-accent); margin-bottom: 0.2em; }
-.echange :deep(.gabarit-bloc) { font-size: var(--text-base); padding: var(--space-sm); }
-</style>
 
 <!--
 [BEAT 2 — L’ENTRETIEN. 2’15. Rejeu d’une session réelle, affichée comme

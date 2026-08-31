@@ -1,15 +1,57 @@
 /* Design system — tokens en CSS custom properties.
-   DEUX jeux : light sur :root (défaut), dark surchargé sous html.dark
-   (Slidev bascule la classe `.dark` via la touche `d`).
-   Les slides ne consomment QUE ces variables — aucune valeur en dur. */
+
+   STRUCTURE EN DEUX ÉTAGES, et c'est volontaire :
+
+   1. Les DEUX PALETTES (`--pal-clair-*`, `--pal-sombre-*`) portent les seules
+      valeurs littérales du thème. Un hex ne s'écrit qu'ici, une seule fois.
+   2. Les MAPPINGS branchent une palette sur les tokens que consomment les
+      slides (`--color-*`, `--texture-*`). Quatre mappings : le mode clair, le
+      mode sombre, et l'inversion de chacun des deux.
+
+   L'inversion (`.negatif`) est ainsi RELATIVE au mode actif : sur fond papier
+   elle rend une slide d'encre, sur fond d'encre une slide papier. Elle ne
+   duplique aucune valeur — elle rebranche l'autre palette. C'est ce qui la
+   distingue de l'ancien layout `noir`, qui imposait un noir absolu et
+   devenait invisible en mode sombre.
+
+   Les slides ne consomment QUE les tokens du 2e étage — jamais une palette
+   directement, jamais une valeur en dur.
+
+   CE QUE L'INVERSION NE TRAVERSE PAS (vérifié à l'export, pas supposé) :
+   `--pulp-mat` est fixe par construction — l'objet pulp reste crème dans
+   tous les cas, c'est la source canonique du style figé. Conséquence
+   mesurée : une slide inversée SUR FOND D'ENCRE porte bien son
+   illustration (l'objet crème se lit comme une pièce d'archive éclairée) ;
+   inversée SUR FOND PAPIER, l'objet se fond et seule l'ombre le détache.
+   Donc : ne pas poser `negatif` sur une slide illustrée sans regarder le
+   résultat dans les deux modes. */
 
 :root {
-  /* Palette — light : papier jauni / crème, encre noire */
-  --color-paper: #f2e7d0;   /* fond « papier » */
-  --color-ink: #1c1712;     /* encre / texte */
-  --color-muted: #6b5f4e;   /* texte secondaire */
-  --color-accent: #b3141c;  /* rouge sang (à valider sur projecteur) */
-  --color-rule: #d8c8a8;    /* filets / séparateurs */
+  /* ---- ÉTAGE 1 : les deux palettes. Seules valeurs littérales du thème. -- */
+
+  /* Palette claire — papier jauni / crème, encre noire */
+  --pal-clair-paper: #f2e7d0;
+  --pal-clair-ink: #1c1712;
+  --pal-clair-muted: #6b5f4e;
+  --pal-clair-accent: #b3141c;   /* rouge sang (à valider sur projecteur) */
+  --pal-clair-rule: #d8c8a8;
+  --pal-clair-dot: #1c1712;      /* trame halftone : encre sur papier */
+  --pal-clair-dot-opacity: 0.05;
+  --pal-clair-grain-opacity: 0.04;
+  --pal-clair-shadow: 6px 6px 0 rgba(28, 23, 18, 0.25); /* ombre douce */
+
+  /* Palette sombre — noir d'encre, blanc cassé « papier » */
+  --pal-sombre-paper: #0f0d0b;
+  --pal-sombre-ink: #ede3d0;
+  --pal-sombre-muted: #9a8d78;
+  --pal-sombre-accent: #e11d1d;
+  --pal-sombre-rule: #33291c;
+  --pal-sombre-dot: #ede3d0;     /* trame claire sur fond d'encre */
+  --pal-sombre-dot-opacity: 0.045;
+  --pal-sombre-grain-opacity: 0.05;
+  --pal-sombre-shadow: 6px 6px 0 rgba(0, 0, 0, 0.35);   /* ombre dure */
+
+  /* ---- Tokens indépendants du mode ------------------------------------- */
 
   /* Typographie */
   --font-title: 'Sinzano', 'Playfair Display', Georgia, serif;
@@ -19,6 +61,7 @@
   --text-base: 1.15rem;
   --text-lg: 1.5rem;
   --text-xl: 2rem;
+  --title-display: 6.5rem;  /* le titre du talk, et lui seul */
   --title-1: 4.5rem;
   --title-2: 3rem;
   --title-3: 2rem;
@@ -32,31 +75,42 @@
 
   --leading: 1.5;
 
-  /* Textures pulp (couche de fond) — mode clair */
-  --texture-dot: #1c1712;      /* couleur des points de trame (halftone) */
-  --texture-opacity: 0.05;     /* discrète : la lisibilité prime */
-  --texture-size: 9px;         /* pas de la trame */
-  --grain-opacity: 0.04;       /* grain papier léger */
-
   /* Illustrations pulp (PulpFigure) — l'objet reste crème dans les DEUX
-     modes (source canonique). Le mat NE flippe pas ; seule l'ombre s'adapte. */
-  --pulp-mat: #f2e7d0;         /* marge papier crème, fixe */
-  --pulp-shadow: 6px 6px 0 rgba(28, 23, 18, 0.25); /* ombre douce sur clair */
+     modes ET sous inversion : c'est la source canonique du style figé
+     (docs/visuels-pulp.md). Le mat NE flippe jamais. */
+  --pulp-mat: #f2e7d0;
+
+  /* Pas de trame sur le pas de grille : indépendant du mode. */
+  --texture-size: 9px;
 }
 
-html.dark {
-  /* Palette — dark : noir d'encre, blanc cassé « papier » */
-  --color-paper: #0f0d0b;
-  --color-ink: #ede3d0;
-  --color-muted: #9a8d78;
-  --color-accent: #e11d1d;
-  --color-rule: #33291c;
+/* ---- ÉTAGE 2 : les quatre mappings ------------------------------------- */
 
-  /* Textures pulp — mode sombre (trame claire sur fond d'encre) */
-  --texture-dot: #ede3d0;
-  --texture-opacity: 0.045;
-  --grain-opacity: 0.05;
+/* Mode clair (défaut) — et l'inversion d'un mode sombre. */
+:root,
+html.dark .negatif {
+  --color-paper: var(--pal-clair-paper);
+  --color-ink: var(--pal-clair-ink);
+  --color-muted: var(--pal-clair-muted);
+  --color-accent: var(--pal-clair-accent);
+  --color-rule: var(--pal-clair-rule);
+  --texture-dot: var(--pal-clair-dot);
+  --texture-opacity: var(--pal-clair-dot-opacity);
+  --grain-opacity: var(--pal-clair-grain-opacity);
+  --pulp-shadow: var(--pal-clair-shadow);
+}
 
-  /* Illustrations : mat crème inchangé ; ombre dure marquée sur le noir. */
-  --pulp-shadow: 6px 6px 0 rgba(0, 0, 0, 0.35);
+/* Mode sombre (Slidev bascule la classe `.dark` via la touche `d`)
+   — et l'inversion d'un mode clair. */
+html.dark,
+.negatif {
+  --color-paper: var(--pal-sombre-paper);
+  --color-ink: var(--pal-sombre-ink);
+  --color-muted: var(--pal-sombre-muted);
+  --color-accent: var(--pal-sombre-accent);
+  --color-rule: var(--pal-sombre-rule);
+  --texture-dot: var(--pal-sombre-dot);
+  --texture-opacity: var(--pal-sombre-dot-opacity);
+  --grain-opacity: var(--pal-sombre-grain-opacity);
+  --pulp-shadow: var(--pal-sombre-shadow);
 }

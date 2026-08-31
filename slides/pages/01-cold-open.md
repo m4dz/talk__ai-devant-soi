@@ -261,9 +261,11 @@ Rien de tel n’existe. La pièce à conviction, c’est la peur et l’aveu.]
 
 ---
 layout: exergue
+variant: titre
 ---
 
-<!-- Le titre tombe. -->
+<!-- Le titre tombe. Variant `titre` : c'est LE titre de la keynote, il ne
+     doit pas se lire comme un aphorisme de plus. Un seul dans le deck. -->
 
 L’IA devant soi
 

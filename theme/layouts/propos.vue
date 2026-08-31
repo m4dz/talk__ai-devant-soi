@@ -7,6 +7,11 @@
      question    la question domine ; le VIDE sous la phrase est du matériau,
                  il rend la durée du silence visible
      inventaire  liste anaphorique aux entrées parallèles + chute optionnelle
+     declaration le verdict : peu de mots, gros corps, calés au centre.
+                 Reprend au trait près le corps de l'ancien layout `noir`
+                 (54ch, text-xl, centré) pour que la bascule vers le
+                 modificateur `negatif` ne change QUE la mécanique de
+                 palette, pas la composition.
 
      Tailles en px/rem (unités canvas) — jamais en vh. -->
 <script setup>
@@ -77,6 +82,21 @@ const { $frontmatter } = useSlideContext()
   font-size: var(--text-lg);
   color: var(--color-muted);
   max-width: 44ch;
+}
+
+/* ── declaration : le verdict, énoncé sans titre ───────────────────── */
+/* Pas de h1 : la phrase EST la slide. Se porte avec `class: negatif`, qui
+   inverse la valeur relativement au mode — c'est ce qui remplace l'ancien
+   layout `noir` à palette absolue, invisible en mode sombre. */
+.propos--declaration {
+  justify-content: center;
+}
+.propos--declaration .propos__corps {
+  max-width: 54ch;
+}
+.propos--declaration :deep(p) {
+  font-size: var(--text-xl);
+  line-height: 1.35;
 }
 
 /* ── inventaire : entrées parallèles, la répétition EST l'argument ─── */

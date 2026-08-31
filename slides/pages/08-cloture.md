@@ -47,12 +47,17 @@ n’existe pas, et vous venez de le chercher une septième fois.
 -->
 
 ---
-layout: noir
+layout: propos
+variant: declaration
+class: negatif
 noCountdown: true
 ---
 
 <!-- BEAT 2 — LE VERDICT. « Slide : noir. On termine comme on a commencé. »
-     Le layout `noir` impose sa palette dans les deux modes. -->
+     `class: negatif` inverse la valeur RELATIVEMENT au mode actif : slide
+     d'encre sur un deck papier, slide papier sur un deck d'encre. L'ancien
+     layout `noir` imposait un noir absolu et devenait donc invisible en
+     mode sombre — le verdict n'existait qu'en mode clair. -->
 
 L’Académie a déjà perdu. **Elle ne le sait pas encore.**
 
@@ -80,12 +85,15 @@ toujours su ce qu’elle refuse d’admettre aujourd’hui :
 -->
 
 ---
-layout: noir
+layout: propos
+variant: declaration
+class: negatif
 noCountdown: true
 ---
 
 <!-- La seule phrase lyrique autorisée du talk. Elle tient parce que tout
-     ce qui précède est sec. -->
+     ce qui précède est sec. Même inversion que la slide du verdict : les
+     deux slides du beat 2 forment un bloc de valeur inversée. -->
 
 Une œuvre n’a jamais eu besoin d’un auteur pur.
 
@@ -101,6 +109,7 @@ précède est sec.]
 
 ---
 layout: exergue
+variant: chute
 source: Romain Gary
 noCountdown: true
 ---

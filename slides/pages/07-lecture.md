@@ -1,4 +1,5 @@
 ---
+layout: scene
 # Le compte à rebours occupe l’écran SEUL. Pas de rappel discret ici.
 noCountdown: true
 ---
@@ -7,14 +8,8 @@ noCountdown: true
      BEAT 1 — ZÉRO. Le compteur meurt seul à l’écran, sans parler :
      c’est le silence le plus long du talk, à tenir jusqu’à l’inconfort. -->
 
-<div class="zero">
-  <!-- Pas de récit ici : le script veut le compteur qui meurt SEUL à l’écran. -->
-  <Countdown :feed="false" />
-</div>
-
-<style scoped>
-.zero { display: flex; align-items: center; justify-content: center; height: 100%; }
-</style>
+<!-- Pas de récit ici : le script veut le compteur qui meurt SEUL à l’écran. -->
+<Countdown :feed="false" />
 
 <!--
 [BEAT 1 — ZÉRO. 45".]
@@ -89,6 +84,8 @@ On va le lire à voix haute.
 -->
 
 ---
+layout: scene
+plein: true
 # Un pas de clic : le « next » lance la lecture clonée (télécommande OK).
 # Jamais de raccourci clavier. Départ de l’audio DEPUIS 0 (aucun timecode).
 clicks: 1
