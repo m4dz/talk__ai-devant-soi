@@ -8,12 +8,13 @@ plus vérification directe dans `briefs/`, `bible/` et `orchestrator/graph.py`.
 
 ## La thèse qu'on gagne
 
-Le talk définit aujourd'hui l'auteur deux fois, mal :
+Le talk définissait l'auteur deux fois, mal :
 
-- **par la négative** (section 4) : « il n'existe pas de seuil » ;
-- **par le labeur** (remontée section 5) : « l'intelligence est partout où je
-  suis passé » — réfutée par le talk lui-même à la station 1, puisque **Maquet
-  aussi a labouré**, et a perdu en 1858.
+- **par la négative** : « il n'existe pas de seuil » — **beat supprimé** par la
+  refonte de trame (voir « La fusion » ci-dessous) ;
+- **par le labeur** (remontée) : « l'intelligence est partout où je suis passé »
+  — réfutée par le talk lui-même au premier mur, puisque **Maquet aussi a
+  labouré**, et a perdu en 1858.
 
 Le journal en fournit une troisième, positive : **l'auteur est celui qui refuse
 de résoudre.** Elle a trois termes, pas deux :
@@ -50,6 +51,42 @@ technique.
 les verbatims, et ne s'explique jamais. C'est le point où le talk peut basculer
 dans la sur-figuration littéraire devant une salle de développeurs.
 
+## La fusion : ce que la refonte de trame tranche
+
+La version précédente gardait **deux blocs** : une galerie (section 4, cinq
+stations) puis une descente (section 5, quatre strates). Chaque figure y était
+dite deux fois — plantée en galerie, récoltée quinze minutes plus tard comme nom
+de mur. La salle voyait un **musée** puis un **chantier** et ne recollait jamais
+les deux. Le split plante/récolte **est** le défaut, pas une élégance.
+
+La refonte **fusionne** les deux en une seule descente, « La fabrique » : chaque
+figure ouvre le mur qu'elle nomme, dite **une fois**, et le fait éclaire la
+tentative dans le même souffle.
+
+**L'objection historique à cette fusion tombe.** Le design la rejetait ainsi :
+*« Fusionner tue le renversement, qui a besoin de dix minutes de votes sans
+réponse pour exister. »* Deux choses la levaient :
+
+- **Le renversement en question est supprimé.** « Il n'existe pas de seuil »
+  était une définition de l'auteur *par la négative*, que ce même document
+  classe parmi les mauvaises. La thèse positive (*l'auteur refuse de résoudre*)
+  et le **renversement du dernier mur** (Lish, cible = le speaker) la remplacent.
+  Un seul renversement dans le talk, le fort — et il ne dépend d'aucune
+  accumulation de votes, il tient sur une expérience.
+- **Le vote à main levée est retiré.** Le device d'« accumulation de dix minutes
+  de votes sans réponse » disparaît avec lui. Voté par station puis re-voté à la
+  chute, il rejouait la même question — « la même question aux cons ». Une
+  **accroche mains-levées unique**, tôt, installe la salle en jury ; la descente
+  parle seule ensuite ; la chute est **sèche**.
+
+**Le coût de la fusion — un trou de chrono.** Ne plus dire les figures deux fois
+libère ~4 à 5 minutes. Le milieu tombe de 28' à ~23'20 (voir « Chrono »), alors
+que le compte à rebours reste gravé à 28' et déclenche la récolte à la
+minute ~41. **Trou à recombler**, sinon le speaker atteint la récolte avant zéro.
+Piste retenue : approfondir Malley (la veine mesure) et le dernier mur (les
+verbatims datés, la fiche), là où la matière du journal est la plus dense — pas
+étirer les transitions. À juger debout.
+
 ## La cartographie figure ↔ mur
 
 | Figure | Geste historique | Mur (journal) | Ce que le code a dû faire |
@@ -66,11 +103,11 @@ le speaker fait le Dumas.** Il réécrit par-dessus, il tient la voix, son nom s
 sur la couverture. Et le tribunal a déjà tranché ce cas exact en 1858, contre la
 fabrique : l'argent, jamais le nom.
 
-**Racter n'est pas une strate, c'est la sentence.** Le script de la section 4
-porte déjà le détail : « On soupçonnait l'auteur du programme d'avoir **trop
-sélectionné, trop assemblé, trop édité** les sorties. On accusait un livre de
-machine d'être trop humain. » C'est mot pour mot ce que le journal prouve de
-cette stack. Racter revient donc au beat 2 de la section 8, en troisième item de
+**Racter n'est pas un mur, c'est la sentence.** Le script portait déjà le
+détail : « On soupçonnait l'auteur du programme d'avoir **trop sélectionné, trop
+assemblé, trop édité** les sorties. On accusait un livre de machine d'être trop
+humain. » C'est mot pour mot ce que le journal prouve de cette stack. Racter
+revient donc au verdict de la chute, en troisième item de
 l'énumération existante (« elle a couronné Dumas et sa fabrique, elle a couronné
 Ajar et son fantôme »), et le speaker plaide coupable. Coût ≈ 20 s, pris sur le
 beat 3 de la chute.
@@ -124,23 +161,24 @@ Formulation cible : *« Le doute tient. Pas parce que le modèle a tenu : parce 
 le code lui a interdit de résoudre. Ce n'est pas une victoire. C'est le constat
 qu'il a fallu l'empêcher. »*
 
-## Ce que H4 rend à la section 6
+## Ce que H4 rend au mode personnage
 
-Sous H4, la section 6 cesse d'être un pont ornemental sans cesser d'être
-courte. L'ordre du talk n'a pas à bouger :
+Sous H4, le mode personnage cesse d'être un pont ornemental sans cesser d'être
+court. Il est **collé au dernier mur**, comme sa culmination :
 
 ```
-strate 4 (section 5)   pose le FAIT : elle est correctrice, elle tranche.
-                       Le mur, sans son mécanisme.
+dernier mur (Lish)   pose le FAIT : Judith est correctrice, elle tranche.
+                     Le mur, sans son mécanisme.
 
-section 6              révèle le MÉCANISME : on ne lui a pas demandé d'écrire
-                       sur elle, on lui a demandé de la devenir. Elle l'est
-                       devenue. Le mur d'il y a cinq minutes change de nature
-                       rétroactivement.
+mode personnage      révèle le MÉCANISME : on ne lui a pas demandé d'écrire
+(culmination)        sur elle, on lui a demandé de la devenir. Elle l'est
+                     devenue. Le mur d'il y a cinq minutes change de nature
+                     rétroactivement.
 ```
 
-Elle reste à 3'20 et porte le retournement du mur précédent — sans avoir
-besoin d'aucune émergence.
+Il reste à 3'20 et porte le retournement du mur précédent — sans avoir besoin
+d'aucune émergence. Judith, objet de l'accusation au dernier mur, y devient le
+sujet qu'on interroge.
 
 ## Pourquoi l'émergence est retirée — et non remplacée
 
@@ -328,26 +366,30 @@ deviendrait C5 à l'envers.
 
 ## Chrono
 
-Fenêtre contrainte : compte à rebours lancé minute ~13, zéro minute ~41 → les
-sections 4, 5 et 6 doivent remplir **28 minutes**.
+Fenêtre contrainte : compte à rebours lancé minute ~13, zéro minute ~41 → la
+fabrique et le mode personnage doivent remplir **28 minutes**.
 
 | Bloc | Détail | Durée |
 |---|---|---|
-| Section 4 | install 15 s + 5 × 1'15 + renversement 1'30 + pont 30 s | 8'15 |
-| Section 5 — entrée | la contrainte locale posée en cadre | 0'15 |
-| strate 1 — le lore | Maquet | 3'00 |
-| strate 2 — l'intention | Queneau | 3'00 |
-| strate 3 — la qualité + la mesure | Malley | 4'00 |
-| strate 4 — le mur qu'on ne peut pas acheter | Lish ; **5'30 si H1, ~3'30 si H2** | 5'30 |
+| Entrée | accroche mains-levées unique + cadre local | 0'45 |
+| Mur 1 — le lore | Maquet | 4'00 |
+| Mur 2 — l'intention | Queneau | 4'00 |
+| Mur 3 — la qualité + la mesure | Malley | 4'30 |
+| Mur 4 — le mur qu'on ne peut pas acheter | Lish ; 3 temps | 6'00 |
 | remontée | la porte fermée de l'intérieur | 0'45 |
-| Section 6 | acteur 1' + entretien 1'30 + aveu 20 s + retournement 30 s | 3'20 |
-| | | **28'05** |
+| Mode personnage | acteur 1' + entretien 1'30 + aveu 20 s + retournement 30 s | 3'20 |
+| | | **23'20** |
+
+**Trou de ~4'40** contre les 28' de la fenêtre. Créé par la fusion : les figures
+ne sont plus dites deux fois. À recombler par approfondissement (Malley, dernier
+mur), pas par étirement des transitions. Chiffres provisoires — le speaker
+recompte debout, seul juge réel.
 
 ## Alternatives écartées
 
 | Alternative | Raison du rejet |
 |---|---|
-| Fusionner sections 4 et 5 en cinq mouvements figure→mur→construction | Tue le renversement, qui a besoin de dix minutes de votes sans réponse pour exister. C'est le meilleur beat de la première moitié. |
+| Garder la galerie autonome (plante/récolte) | Dit chaque figure deux fois ; la salle voit un musée puis un chantier sans recoller les deux. Le split **est** le défaut. Retenu jusqu'au 31-08, rejeté à la refonte de trame — l'objection « la fusion tue le renversement » tombe une fois le renversement faible et le vote supprimés (voir « La fusion »). |
 | Garder six stations et raccourcir chacune | Le gradient d'intervention décroissante était déjà cassé par Vian (il écrit 100 % du texte), et Gary fait le même travail en mieux pendant six minutes de cold open. |
 | Placer la « deuxième assiette » en clôture de la strate 1 | Faux sur le fond (matériau imposé) — et même si ce ne l'était pas, poser la révélation « les murs sont un gisement » à la première strate désamorce les trois suivantes. On ne met pas la consolation en haut de l'escalier. |
 | Garder *puissance* comme strate autonome pour porter le local-only | Le local-only n'est pas un mur mais leur cause commune ; il était déjà dit deux fois. Voir plus haut. |
@@ -361,12 +403,13 @@ sections 4, 5 et 6 doivent remplir **28 minutes**.
    Risque résiduel, d'interprétation et non de structure : le mur porte le
    climax **et** un aveu personnel, joué à plat. Une ironie ou un clin d'œil à
    l'étage 2 et le renversement de l'étage 3 tombe à vide.
-2. **Section 5 devient très anti-spectaculaire** : quatre murs, un aveu, un
+2. **La fabrique devient très anti-spectaculaire** : quatre murs, un aveu, un
    troisième battement qui refuse de triompher. La remontée (45 s) et la
-   section 7 portent seules toute la charge positive. À juger debout, pas sur
+   récolte portent seules toute la charge positive. À juger debout, pas sur
    le papier.
 3. **Le miroir Gary/Judith/machine peut sur-figurer.** Une seule occurrence,
    sur verbatims, sans explication — ou il tombe.
-4. **Cinq stations restent beaucoup à mémoriser** pour une récolte qui commence
-   sept minutes plus tard. Mitigé par le fait que chaque figure revient nommée,
-   pas allusive.
+4. **Le trou de chrono (~4'40).** La fusion raccourcit le milieu sous les 28' de
+   la fenêtre gravée. Non recomblé, le speaker atteint la récolte avant zéro du
+   décompte. À combler par approfondissement de Malley et du dernier mur — pas
+   par étirement. Seul le recomptage debout tranche.

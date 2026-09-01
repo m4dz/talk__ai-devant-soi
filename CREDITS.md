@@ -55,6 +55,12 @@ Assets dans `public/images/` :
 > `cas-03-vian-sullivan-s600.png` a été **supprimé** avec la station Vian
 > (changement `refonte-trame-figures-murs`, 2026-08-31). Le prompt de tirage
 > reste consigné dans `docs/visuels-pulp.md` comme trace du workflow.
+>
+> `cas-06-racter-s47.png` n'est plus référencé depuis la **fusion de trame**
+> (2026-09-01) : Racter est nommé en texte au verdict de la chute, resté
+> délibérément austère (slide d'encre, sans portrait). Le fichier est
+> **conservé** — Vian a été coupé du talk, Racter y reste, sans illustration —
+> au cas où une passe visuelle lui trouverait une place hors du verdict.
 
 
 | fichier | cas / beat | dérivation dark |
@@ -63,7 +69,7 @@ Assets dans `public/images/` :
 | `cas-02-carver-lish-s43.png` | Carver / Lish | objet A |
 | `cas-04-ern-malley-s45.png` | Ern Malley | objet A |
 | `cas-05-oulipo-s46.png` | Oulipo | objet A |
-| `cas-06-racter-s47.png` | Racter | objet A |
+| `cas-06-racter-s47.png` | Racter — **non référencé** (fusion de trame) | objet A |
 | `coldopen-05-rue-pluie-s700{,-cale}.png` | cold-open (Paris nuit) | `--cale-noir` |
 | `coldopen-02-presence-s303-patch{,-dark}.png` | cold-open (Ajar/Gary) | négatif B (patché) |
 

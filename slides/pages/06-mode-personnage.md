@@ -2,8 +2,8 @@
 layout: cold-open
 ---
 
-<!-- Section 6 — LE MODE PERSONNAGE (script docs/scripts/05-…).
-     5 minutes. Le compte à rebours approche de zéro : c’est lui qui donne
+<!-- Section 5 — LE MODE PERSONNAGE (script docs/scripts/05-…).
+     Environ 3 minutes, culmination collée au dernier mur. Le compte à rebours approche de zéro : c’est lui qui donne
      l’urgence. INTERDIT : tout rapprochement explicite avec Pavlowitch —
      la salle a déjà tous les fils. -->
 
@@ -41,9 +41,9 @@ intitule: La fiche du personnage
 commentaire: Quand une scène résiste, je ne la réécris pas. Je vais lui parler.
 ---
 
-<!-- C’EST JUDITH — décision du 31 août, et c’est la même qu’à la section 5.
-     Elle y était l’OBJET de l’échec ; elle est ici le SUJET qu’on interroge.
-     La salle a son nom depuis quatre minutes : ne pas le représenter comme
+<!-- C’EST JUDITH — décision du 31 août, et c’est la même qu’au dernier mur de la fabrique (section 4).
+     Elle y était l’OBJET de l’accusation ; elle est ici le SUJET qu’on interroge.
+     La salle a son nom depuis quelques minutes : ne pas le représenter comme
      une nouveauté. Aucun spoiler du dispositif du roman : la ligne
      d’identité dit le métier et le rituel, jamais ce qu’elle ignore. -->
 
@@ -56,7 +56,7 @@ souvient bien.
 [Slide : la fiche du personnage.]
 
 Vous la connaissez déjà. Judith, correctrice, quinze ans de métier. Celle
-dont je vous montrais la fiche il y a quatre minutes.
+dont je vous montrais la fiche il y a quelques minutes.
 
 Chaque soir, elle relit l’entrée de la veille de son carnet, pour vérifier
 qu’elle se souvient bien.
@@ -64,7 +64,7 @@ qu’elle se souvient bien.
 Depuis quelques mois, quand une scène résiste, je ne la réécris pas. Je vais
 lui parler.
 
-[NE PAS la présenter comme nouvelle : la salle a son nom depuis la section 5.
+[NE PAS la présenter comme nouvelle : la salle a son nom depuis le dernier mur de la fabrique.
 Le « vous la connaissez déjà » fait le lien et vaut mieux qu’une
 re-présentation. La ligne d’identité dit le métier et le rituel, jamais ce
 qu’elle ignore — le dispositif du roman ne se spoile pas ici.]
@@ -78,7 +78,7 @@ clicks: 2
 <!-- BEAT 2 — L’ENTRETIEN. 1’30. Rejeu d’une session réelle, question par
      question. LE REJEU N’EST PLUS UN CHOIX : la page de roleplay et la
      génération partagent le même modèle de 13 Go, /chat répond 409 pendant
-     toute la génération, et la section 6 tombe dans cet intervalle.
+     toute la génération, et le mode personnage tombe dans cet intervalle.
      DEUX questions, pas trois : « celle qui déraille » a été retirée,
      aucune session n’en a produit une qui tienne. -->
 
@@ -116,7 +116,7 @@ Question 2 — interprétative : on l’interroge sur un autre personnage, sur u
 salle comprend que ce n’est plus une base de données qui répond.
 
 [REJEU ET NON DIRECT — ce n’est plus un choix : le modèle de 13 Go est
-occupé par la génération, /chat répond 409, et la section 6 tombe entre le
+occupé par la génération, /chat répond 409, et le mode personnage tombe entre le
 lancement et la récolte. Physiquement impossible en direct.]
 -->
 
@@ -155,9 +155,9 @@ Tout ce qui est bon dans ce livre a été composé. Rien n’a poussé tout seul
 [SLOT FERMÉ — le run xp-resolution du 31 août a tranché H3-brief (12/12).
 H4 existe mais reste faible : l’identité de verdict affleure sans jamais
 conclure. Le verbatim qui le montre (« mon réflexe de correctrice… mais
-pour l’instant, je reste là ») est utilisé au dernier mur de la section 5,
+pour l’instant, je reste là ») est utilisé au dernier mur de la fabrique (section 4),
 où il porte le renversement. Il ne se redit PAS ici : la même citation à
-cinq minutes d’intervalle userait les deux. La section 6 garde son aveu et
+cinq minutes d’intervalle userait les deux. Le mode personnage garde son aveu et
 rien de plus.]
 -->
 

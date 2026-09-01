@@ -1,5 +1,14 @@
 # Tasks
 
+> **Refonte de trame (fusion), 31-08 — après coup.** Les groupes 1 à 6
+> ci-dessous décrivent la **passe pré-fusion** (retrait de Vian, figures ↔ murs
+> en plante/récolte, recoupe des strates). Ils restent `[x]` en historique mais
+> sont **supersédés** par le **groupe 8** : la galerie autonome et le
+> plante/récolte sont abandonnés au profit d'une descente unique où chaque
+> figure ouvre son mur, le renversement « pas de seuil » et le vote sont
+> supprimés, le mode personnage devient la culmination collée au dernier mur, et
+> la chute devient sèche. Implémenter le groupe 8 via `/opsx:apply`.
+
 ## 1. Document d'intention (à faire en premier — règle 1 du workflow)
 
 - [x] 1.1 `CLAUDE.md`, section « Trame » : point 4, six stations → **cinq**,
@@ -104,3 +113,38 @@
       retrait
 - [ ] 7.2 Jouer le dernier mur à voix haute — l'étage 2 doit être crédible sans
       ironie, sinon l'étage 3 ne renverse rien
+
+## 8. Refonte fusion (delta) — supersède les groupes 1-6
+
+- [x] 8.1 `CLAUDE.md`, section « Trame » : fusionner sections 4 et 5 en « La
+      fabrique » ; retirer les cinq stations autonomes, le renversement « il
+      n'existe pas de seuil », le pont, et le vote à main levée ; noter que
+      chaque figure ouvre son mur (dite une fois) ; Racter au verdict de la
+      chute
+- [x] 8.2 `CLAUDE.md` : recadrer le mode personnage en **culmination collée** au
+      dernier mur (Judith objet de l'accusation → sujet interrogé) ; chute
+      **sèche**, retirer « dernier vote à main levée » ; conserver l'accroche
+      mains-levées unique d'ouverture
+- [x] 8.3 Fusionner `docs/scripts/03-section-4-jeu-du-seuil.md` et
+      `04-section-5-descente-fabrique.md` en un script de descente unique :
+      chaque mur ouvre sur sa figure, retrait du renversement « pas de seuil »,
+      du pont et du vote, Racter déplacé vers la chute
+- [x] 8.4 `docs/scripts/05-section-6-mode-personnage.md` : recadrer en
+      culmination collée, retirer toute référence au vote ; entretien à deux
+      questions et aveu conservés
+- [x] 8.5 `docs/scripts/06-sections-7-8-recolte-chute.md` : chute sèche, retirer
+      le vote final ; garder Racter au verdict
+- [x] 8.6 Fusionner `slides/pages/04-jeu-du-seuil.md` et
+      `05-descente-technique.md` : chaque mur ouvre sur sa figure, retrait des
+      slides de vote et de la slide « pas de seuil »
+- [x] 8.7 `slides/pages/06-mode-personnage.md` : culmination collée, pas de
+      vote ; `08-cloture.md` : chute sèche, pas de vote final
+- [x] 8.8 **Trancher la renumérotation des fichiers** : garder les numéros
+      04/05 (fusion sous un numéro) ou renuméroter le deck en 7 sections. Reporter
+      la décision dans `CLAUDE.md` et `docs/scripts/00-README.md`
+- [x] 8.9 **Recombler le trou de chrono (~4'40)** : approfondir Malley (veine
+      mesure) et le dernier mur (verbatims datés, fiche), pas étirer les
+      transitions. Mettre à jour la table de `00-README.md`
+- [x] 8.10 `openspec validate refonte-trame-figures-murs --strict`, build vert,
+      export PNG relu, recherche textuelle : plus aucune occurrence de vote à
+      main levée par cas ni de « il n'existe pas de seuil »

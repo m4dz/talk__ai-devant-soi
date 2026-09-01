@@ -2,34 +2,29 @@
 layout: exergue
 ---
 
-<!-- Section 5 — LA DESCENTE DANS LA FABRIQUE (script docs/scripts/04-…).
-     16’30, 4 strates. Battement de chaque strate :
-     ce qu’on a tenté → le mur → ce que le mur a forcé à construire.
-     EXCEPTION VOULUE : la strate 4 ne résout pas — son aphorisme constate
-     qu’il a fallu EMPÊCHER le modèle, il ne célèbre aucune construction.
-     Cette exception est attachée à la strate 4 et la suit en permutation.
+<!-- Section 4 — LA FABRIQUE (fusion de l’ancien « jeu du seuil » et de la
+     descente ; script docs/scripts/04-…). Chaque figure OUVRE le mur qu’elle
+     nomme, dite une seule fois — plus de galerie, plus de vote par cas, plus
+     de renversement « il n’existe pas de seuil », plus de pont. ~20’, 4 murs.
+     TROU DE CHRONO ~4’40 contre les 28’ du décompte : à recombler par
+     approfondissement (Malley, dernier mur), pas par étirement.
+     Battement de chaque mur : la figure → ce qu’on a tenté → le mur → ce que
+     le mur a forcé à construire.
+     EXCEPTION VOULUE : le mur 4 ne résout pas — son aphorisme constate qu’il a
+     fallu EMPÊCHER le modèle. Et il ne s’OUVRE pas sur sa figure : Lish le
+     REFERME (l’ouvrir sur « le style par soustraction » télégraphierait le
+     piège).
      Registre : la langue de l’atelier ; le terme technique une seule fois,
      entre parenthèses.
+     Racter ne descend plus ici : il revient au verdict de la chute.
+     La clause « produite par l’auteur, non par une machine » ne se pulvérise
+     plus ici : sa réfutation se paie au verdict de la chute.
+     LA CONTRAINTE LOCALE est le CADRE, posée à l’entrée et reprise à la
+     remontée. Le mur 4 n’y fait qu’un rappel d’une phrase. -->
 
-     PERMUTATION DES STRATES — le pattern ternaire (preuve / mur / aphorisme)
-     est insensible à l’ordre, mais trois attaches restent à défaire à la
-     main si l’ordre change :
-       1. le champ `n:` des quatre murs (badge « MUR n / 4 ») ;
-       2. les ordinaux parlés en tête de note (« Voilà le premier mur »,
-          « Deuxième mur, quelques soirs plus tard », « Troisième mur ») ;
-       3. l’ouverture de la strate 4 (« On a pris un modèle plus gros »)
-          qui répond à l’objection d’économie née du mur QUALITÉ : si la
-          strate 4 passe avant qualité, cette ouverture perd son amorce.
-     LA CONTRAINTE LOCALE n’est plus portée par une strate : elle est le
-     CADRE, posée à l’entrée de la section et reprise à la remontée. La
-     strate 4 n’y fait qu’un rappel d’une phrase.
-     Le pont Gary voyage avec la strate QUALITÉ (il dépend de la fiche de
-     style) ; la devise de fin appartient à la section, pas à une strate. -->
-
-<!-- L’ENTRÉE — LE CADRE. 15”. La contrainte locale se pose ici et se
-     reprend à la remontée. Nulle part entre les deux : le compte à rebours
-     est une machine locale qui travaille sous leurs yeux, il fait le rappel
-     tout seul. Elle ne s’argumente pas ici — elle se paie à la remontée. -->
+<!-- L’ENTRÉE — LE CADRE. La contrainte locale se pose ici et se reprend à la
+     remontée. Nulle part entre les deux : le compte à rebours est une machine
+     locale qui travaille sous leurs yeux, il fait le rappel tout seul. -->
 
 Rien de ce que vous allez voir ne sort de cette pièce.
 
@@ -43,10 +38,77 @@ Ce n’est pas une posture. C’est ce qui a construit tout ce qu’il y a en ba
 -->
 
 ---
+layout: propos
+variant: question
+---
+
+<!-- L’ACCROCHE MAINS-LEVÉES — UNE SEULE FOIS de toute la soirée, sur la
+     question centrale. Plus de vote par cas ensuite : la fabrique répond
+     seule. -->
+
+# À partir de quand l’œuvre n’est-elle plus la vôtre ?
+
+Une fois. De **vraies** mains levées. Qui pense qu’il existe un tel seuil ?
+
+<!--
+Et une dernière chose avant d’ouvrir. La question que je vous ai posée tout à
+l’heure — à partir de quand une œuvre cesse-t-elle d’appartenir à son auteur —
+je veux votre réponse, maintenant, à main levée. Qui pense qu’il existe un tel
+seuil ? Une vraie ligne, quelque part, qu’on peut franchir.
+
+[Mains. Regarder, compter, dire ce qu’on VOIT, jamais ce qu’on espérait voir.
+Une seule fois de toute la soirée : après, la fabrique répond seule, sans vote.
+Si la salle ne joue pas, le silence après la question fait le même travail.]
+
+Gardez votre réponse en tête. On descend la vérifier.
+-->
+
+---
+layout: case-card
+name: Dumas / Maquet
+work: Les Trois Mousquetaires, 1844
+figure: /images/cas-01-dumas-maquet-s500.png
+balance: Auteur █████████░ Dispositif
+---
+
+<!-- MUR 1 — LE LORE s’ouvre sur sa figure. Le procès de 1858 est le fait clé.
+     Plus de vote : la figure ouvre le mur, elle ne le met plus au vote. -->
+
+Auguste Maquet documente, structure, rédige des premiers jets entiers.
+Dumas réécrit par-dessus : le rythme, les dialogues, la voix.
+Une vingtaine de romans comme ça, *Monte-Cristo* compris.
+
+**1858. Maquet attaque en justice** pour obtenir son nom sur la couverture.
+Il perd. Le tribunal lui accorde de l’argent. Jamais le nom.
+
+Ce soir, dans ma fabrique, celui qui fournit la matière, c’est la machine.
+**Je suis Dumas.**
+
+<!--
+1844. *Les Trois Mousquetaires* paraissent en feuilleton. La France entière
+dévore. Derrière Dumas, un homme : Auguste Maquet, professeur d’histoire. Il
+documente, il structure, il rédige des premiers jets entiers. Dumas réécrit
+par-dessus : le rythme, les dialogues, la voix. Une vingtaine de romans,
+*Monte-Cristo* compris.
+
+1858. Maquet attaque en justice. Il veut son nom sur la couverture. Il perd.
+Le tribunal lui accorde de l’argent. Jamais le nom. La justice française vient
+de trancher : l’œuvre appartient à la voix, pas à la fabrique. L’un fournit la
+matière, l’autre tient la voix.
+
+Ce soir, dans ma fabrique, celui qui fournit la matière, c’est la machine.
+
+Je suis Dumas.
+
+[Ne rien ajouter. Enchaîner. Cette phrase ne se commente pas — commentée elle
+devient vantardise, nue elle tient toute la descente.]
+-->
+
+---
 layout: cold-open
 ---
 
-<!-- STRATE 1 — LE LORE. Ce qu’on a tenté. -->
+<!-- MUR 1 — LE LORE. Ce qu’on a tenté. -->
 
 Premier soir. Premier essai. On fait ce que tout le monde fait : on demande.
 
@@ -55,7 +117,7 @@ Premier soir. Premier essai. On fait ce que tout le monde fait : on demande.
 Et la machine obéit. Elle écrit vite. Elle écrit proprement.
 
 <!--
-[STRATE 1 — LE LORE. 3’.]
+[MUR 1 — LE LORE.]
 
 Premier soir. Premier essai. On fait ce que tout le monde fait : on demande.
 
@@ -141,10 +203,48 @@ se contredisent, c’est le papier qui a raison.
 
 [Temps.]
 
-Tout à l’heure je vous ai dit que dans ma fabrique, la machine était mon
-Maquet. Un Maquet, ça ne s’improvise pas : le vrai passait ses journées dans
-les archives avant d’écrire une ligne. Le mien a besoin qu’on les lui
-apporte.
+Un Maquet, ça ne s’improvise pas : le vrai passait ses journées dans les
+archives avant d’écrire une ligne. Le mien a besoin qu’on les lui apporte.
+-->
+
+---
+layout: case-card
+name: Oulipo
+work: Cent mille milliards de poèmes, 1961
+figure: /images/cas-05-oulipo-s46.png
+balance: Auteur ██░░░░░░░░ Dispositif
+---
+
+<!-- MUR 2 — L’INTENTION s’ouvre sur Queneau. Le livre est apporté et
+     manipulé face à la salle : l’objet physique est la vraie pièce à
+     conviction. Prévoir l’exemplaire accessible sans fouiller, main libre. -->
+
+Dix sonnets, découpés vers par vers en bandelettes. Chaque vers
+interchangeable : cent mille milliards de combinaisons. Deux cents millions
+d’années pour tout lire.
+
+**Queneau n’a écrit aucun de ces poèmes.** Il a écrit la machine qui les
+génère. Le générateur, c’est le livre. L’exécutant, c’est le lecteur.
+
+<!--
+[SORTIR L’EXEMPLAIRE de *Cent mille milliards de poèmes*. Le manipuler face à
+la salle : c’est la vraie pièce à conviction. Répéter la manipulation des
+bandelettes — plus capricieuse qu’il n’y paraît. Main libre obligatoire.]
+
+1961. Raymond Queneau publie ceci. Dix sonnets découpés vers par vers en
+bandelettes. Cent mille milliards de combinaisons. Deux cents millions
+d’années pour tout lire.
+
+Queneau n’a écrit aucun de ces poèmes. Il a écrit la machine qui les génère.
+Le générateur, c’est ce livre. L’exécutant, c’est le lecteur.
+
+[Feuilleter, composer une combinaison devant la salle.]
+
+Son ami Perec écrira tout un roman sans la lettre e, par pure contrainte
+algorithmique. La France a mis ces gens au programme scolaire. Personne n’a
+exigé de bannir l’Oulipo des prix littéraires.
+
+[Reposer le livre.]
 -->
 
 ---
@@ -153,8 +253,8 @@ intitule: Pièce à conviction n°2 — l’intention
 commentaire: Elle sait tout, et elle ne sait pas où elle va.
 ---
 
-<!-- STRATE 2 — L’INTENTION. GABARIT : extrait raté n°2, une scène qui
-     dérive, qui meuble, qui conclut au milieu, qui perd son objectif. -->
+<!-- MUR 2 — L’INTENTION. GABARIT : extrait raté n°2, une scène qui dérive,
+     qui meuble, qui conclut au milieu, qui perd son objectif. -->
 
 <div class="gabarit-bloc">
 <span class="gabarit">GABARIT</span>
@@ -164,8 +264,6 @@ alors que le lore est respecté.
 </div>
 
 <!--
-[STRATE 2 — L’INTENTION. 3’.]
-
 Deuxième mur, quelques soirs plus tard. La machine sait tout, maintenant.
 Elle n’oublie plus qui est mort. Elle ne rebaptise plus mes rues.
 
@@ -196,38 +294,36 @@ accomplir, ce qu’elle révèle, ce qu’elle retient. Puis scène par scène :
 écrire, relire, vérifier contre les fiches, recommencer si ça casse.
 
 Ce n’est plus une demande. C’est un atelier, avec des postes de travail qui
-s’enchaînent (un graphe d’orchestration, LangGraph pour les intimes). Et dans
-cet atelier, deux rôles seulement. L’auteur, qui écrit. Et l’acteur.
-L’acteur, je vous le présente plus tard.
+s’enchaînent (un graphe d’orchestration, LangGraph pour les intimes). Deux
+rôles seulement : l’auteur, qui écrit. Et l’acteur, je vous le présente
+plus tard.
 
 [PLACEHOLDER TOOLS : si la stack utilise des outils délégués le jour J, une
 phrase ici, pas plus. Sinon supprimer. À trancher au gel du script.]
 
 [Temps.]
 
-Queneau n’a écrit aucun de ses cent mille milliards de poèmes. Il a écrit la
-machine qui les fabrique, et il a laissé quelqu’un d’autre tourner les
-bandelettes. Ce plan de scènes, ces postes de travail : ce sont mes
+Ce plan de scènes, ces postes de travail : ce sont mes bandelettes. Queneau a
+écrit la machine, pas les poèmes, et il a laissé quelqu’un d’autre tourner les
 bandelettes. L’exécutant, ce soir, c’est elle.
 
 [Geste vers l’écran, vers le compte à rebours.]
 
-Et ce plan de scènes que je vous ai montré tout à l’heure, avant de lancer la
-machine ? C’est cet atelier qui l’exécute. Là. Maintenant. Poste par poste.
+Et ce plan de scènes que je vous ai montré avant de lancer la machine ? C’est
+cet atelier qui l’exécute. Là. Maintenant. Poste par poste.
 -->
 
 ---
 layout: exergue
 ---
 
-<!-- APHORISME de la strate INTENTION. Était le TITRE du mur : la
-     conclusion arrivait avant l’histoire. -->
+<!-- APHORISME du mur INTENTION. Était le TITRE du mur : la conclusion
+     arrivait avant l’histoire. -->
 
 La mémoire ne remplace pas le dessein.
 
 <!--
-[L’aphorisme de la strate, seul. Il était en titre de mur — donc donné
-avant que la solution soit montrée.]
+[L’aphorisme du mur, seul.]
 
 Elle sait tout, et elle ne sait pas où elle va. Elle remplit la scène au
 lieu de la servir.
@@ -236,12 +332,44 @@ La mémoire ne remplace pas le dessein.
 -->
 
 ---
+layout: case-card
+name: Ern Malley
+work: The Darkening Ecliptic, 1943
+figure: /images/cas-04-ern-malley-s45.png
+balance: Auteur ████░░░░░░ Dispositif
+---
+
+<!-- MUR 3 — LA QUALITÉ s’ouvre sur le canular. « Ses poèmes passaient TOUS
+     les critères » est l’amorce de « compter n’est pas lire », qui se paie
+     plus loin dans le mur (piece « grille verte »). -->
+
+Deux poètes conservateurs détestent l’avant-garde. En un après-midi, avec
+un dictionnaire et un rapport sur le drainage des marécages, ils fabriquent
+l’œuvre complète d’un poète mort inventé.
+
+La revue d’avant-garde tombe amoureuse. Numéro spécial. **Ces poèmes
+passaient tous ses critères.** Puis la révélation : canular.
+
+<!--
+1943, Australie. Deux poètes conservateurs détestent l’avant-garde. Un
+après-midi, avec un dictionnaire, un recueil de citations et un rapport sur le
+drainage des marécages, ils fabriquent l’œuvre complète d’un poète mort
+inventé : Ern Malley. Plus sa biographie, plus une sœur fictive qui envoie les
+manuscrits.
+
+La revue d’avant-garde tombe amoureuse. Numéro spécial. Ces poèmes passent
+tous ses critères. Tous. Puis la révélation : canular. Humiliation nationale.
+
+[Gardez-les de côté, ces deux poètes. On les retrouve dans trois minutes.]
+-->
+
+---
 layout: piece-a-conviction
 intitule: Pièce à conviction n°3 — la qualité
 commentaire: Pas faux, cette fois. Mauvais.
 ---
 
-<!-- STRATE 3 — LA QUALITÉ, le mur le plus cruel. GABARIT : extrait
+<!-- MUR 3 — LA QUALITÉ, le mur le plus cruel. GABARIT : extrait
      factuellement juste, structurellement propre, littérairement plat. -->
 
 <div class="gabarit-bloc">
@@ -252,8 +380,8 @@ et littérairement plat.
 </div>
 
 <!--
-[STRATE 3 — LA QUALITÉ. 3’30. Seule strate autorisée à déborder, en
-mangeant la remontée : c’est elle qui porte le plus de sens par minute.]
+[MUR 3 — LA QUALITÉ. Seul mur autorisé à déborder, en mangeant la remontée :
+c’est lui qui porte le plus de sens par minute.]
 
 Troisième mur. Le plus cruel.
 
@@ -317,9 +445,10 @@ intitule: La grille verte, et le texte mort
 commentaire: Le correcteur ne mesurait pas le geste. Il mesurait sa propre présence.
 ---
 
-<!-- VEINE MESURE, absorbée par la strate QUALITÉ. Deux gifles de 20 s.
+<!-- VEINE MESURE, absorbée par le mur QUALITÉ. Deux gifles de 20 s.
      GABARIT : la grille tout au vert + l’extrait qu’elle a laissé passer,
-     puis les deux chiffres du chronomètre. -->
+     puis les deux chiffres du chronomètre. Malley PAIE ici, en callback
+     (il a été planté à l’ouverture du mur, pas re-raconté). -->
 
 <div class="gabarit-bloc">
 <span class="gabarit">GABARIT</span>
@@ -345,9 +474,8 @@ J’ai passé des jours à optimiser une lenteur qui n’existait pas.
 
 [Temps.]
 
-1943. Deux poètes fabriquent Ern Malley un après-midi, avec un dictionnaire
-et un rapport sur le drainage des marécages. Ces poèmes passent tous les
-critères de la revue d’avant-garde. Tous. Ils sont publiés en numéro spécial.
+Nos deux faussaires de 1943, maintenant. Leurs poèmes fabriqués sans intention
+passaient tous les critères de la revue. Tous.
 
 Personne n’avait mal compté. Ils avaient mal lu.
 -->
@@ -356,7 +484,7 @@ Personne n’avait mal compté. Ils avaient mal lu.
 layout: exergue
 ---
 
-<!-- APHORISME de la veine MESURE. Voyage avec la strate QUALITÉ. -->
+<!-- APHORISME de la veine MESURE. Voyage avec le mur QUALITÉ. -->
 
 Compter n’est pas lire.
 
@@ -382,14 +510,14 @@ devenir reconnaissable entre mille.
 layout: exergue
 ---
 
-<!-- APHORISME de la strate QUALITÉ. Le pont Gary le suit immédiatement :
-     il est ATTACHÉ à cette strate et voyage avec elle. -->
+<!-- APHORISME du mur QUALITÉ. Le pont Gary le suit immédiatement :
+     il est ATTACHÉ à ce mur et voyage avec lui. -->
 
 Le style n’est pas dans le modèle.
 
 <!--
-[L’aphorisme de la strate, seul. C’est la leçon la plus importante de
-toute la descente.]
+[L’aphorisme du mur, seul. C’est la leçon la plus importante de toute la
+descente.]
 
 Le style n’est pas dans le modèle. Le modèle contient tous les styles,
 c’est-à-dire aucun.
@@ -400,7 +528,7 @@ layout: exergue
 ---
 
 <!-- LE PONT GARY IMPLICITE. La phrase seule. Ne rien ajouter :
-     la salle fait le lien (2ᵉ et dernière allusion avant la section 6). -->
+     la salle fait le lien (dernière allusion avant le mode personnage). -->
 
 On a déjà rencontré quelqu’un, ce soir, qui a fabriqué une voix jusqu’à ce
 qu’elle devienne reconnaissable entre mille.
@@ -409,8 +537,8 @@ qu’elle devienne reconnaissable entre mille.
 On a déjà rencontré quelqu’un, ce soir, qui a fabriqué une voix jusqu’à ce
 qu’elle devienne reconnaissable entre mille.
 
-[NE RIEN AJOUTER. La salle fait le lien. Deuxième et dernière allusion à
-Gary avant la section 6. Ne jamais prononcer les noms ici.]
+[NE RIEN AJOUTER. La salle fait le lien. Dernière allusion à Gary avant le
+mode personnage. Ne jamais prononcer les noms ici.]
 
 [CHARNIÈRE — dérouler l’objection complètement AVANT le temps :]
 
@@ -428,9 +556,10 @@ intitule: Pièce à conviction n°4 — le muscle
 commentaire: La machine est tombée à genoux.
 ---
 
-<!-- STRATE 4 — LE MUR QU’ON NE PEUT PAS ACHETER. 5’30, trois étages.
-     Fusion des anciennes strates PUISSANCE et SEUIL : elles répondaient à
-     la même objection d’économie à deux étages.
+<!-- MUR 4 — LE MUR QU’ON NE PEUT PAS ACHETER. Trois étages. Fusion des
+     anciennes strates PUISSANCE et SEUIL : elles répondaient à la même
+     objection d’économie à deux étages. Ce mur ne s’ouvre PAS sur sa figure
+     (Lish le referme).
      ÉTAGE 1 — il ne rentre pas. GABARIT : chiffres réels des runs de test. -->
 
 <div class="gabarit-bloc">
@@ -441,7 +570,7 @@ projetée de génération d’un chapitre.
 </div>
 
 <!--
-[STRATE 4, ÉTAGE 1 — IL NE RENTRE PAS. 2’.]
+[MUR 4, ÉTAGE 1 — IL NE RENTRE PAS.]
 
 On a pris un modèle plus gros.
 
@@ -450,19 +579,19 @@ s’effondre, le chapitre qui passerait de X minutes à X heures.] Ce compte à
 rebours, là-bas ? Avec le gros modèle, il afficherait encore des heures au
 moment où on se dirait au revoir.
 
-Et la sortie de secours, vous la connaissez tous. Elle tient en une ligne :
-une clé d’API, et tout devient facile.
+Et la sortie de secours, vous la connaissez tous : une clé d’API, et tout
+devient facile.
 
 Je vous ai dit en entrant ce qu’il en était.
 
-[NE PAS DÉVELOPPER. La contrainte locale a été posée à l’entrée de la
-section, elle se paie à la remontée. Ici, un rappel d’une phrase, pas un
-argument. Si la répétition revient à la rédaction, c’est cet étage qui coupe.]
+[NE PAS DÉVELOPPER. La contrainte locale a été posée à l’entrée, elle se paie
+à la remontée. Ici, un rappel d’une phrase, pas un argument. Si la répétition
+revient à la rédaction, c’est cet étage qui coupe.]
 
 [Temps.]
 
-Alors la question honnête, celle que vous êtes en train de vous poser : est-ce
-que j’aurais eu le roman avec le gros modèle ?
+Alors la question honnête : est-ce que j’aurais eu le roman avec le gros
+modèle ?
 -->
 
 ---
@@ -471,8 +600,8 @@ intitule: Trois semaines, cinq architectures, la même phrase
 commentaire: 9 août, premier soir, sans mémoire. 31 août, tout l’outillage branché.
 ---
 
-<!-- ÉTAGE 2 — ET S’IL RENTRAIT ? 2’30. NON GABARIT : ces deux verbatims
-     sont acquis et ne dépendent d’AUCUNE issue du run. « Je n’ai pas rêvé »
+<!-- ÉTAGE 2 — ET S’IL RENTRAIT ? NON GABARIT : ces deux verbatims sont
+     acquis et ne dépendent d’AUCUNE issue du run. « Je n’ai pas rêvé »
      récidive dans quatre entrées du journal des murs, sur toutes les
      sessions (ch2 → S4 → S6 → ch7). Attracteur stable, pas coïncidence. -->
 
@@ -515,8 +644,8 @@ droite: Ce qu’elle écrit
      de bible/fiche-judith.md (chunk 1 « Voix » L23-27 ; chunk 5 « Le métier
      dans l’œil » L122 et « Les verdicts » L124 ; valeurs ch. 2 L181).
      Sortie modèle : journal des murs, entrée 2 du chapitre 7.
-     LE PERSONNAGE EST NOMMÉ — décision du 31 août. L’interdit de nom propre
-     vaut pour le roman avant le chapitre 8, pas pour le deck. -->
+     LE PERSONNAGE EST NOMMÉ — décision du 31 août. C’est la SEULE occurrence
+     du nom avant le mode personnage. -->
 
 ::gauche::
 
@@ -558,8 +687,7 @@ J’étais très content de moi. J’avais mon coupable.
 
 [À PLAT. Sans ironie, sans clin d’œil. La salle doit croire qu’on est arrivé
 à la conclusion, sinon le renversement de la slide suivante n’a rien à
-renverser. C’est la seule mise en scène du talk qui demande au speaker de
-jouer sa propre erreur au présent.]
+renverser.]
 -->
 
 ---
@@ -568,7 +696,7 @@ intitule: L’expérience — 12 tirages, 12 fois le doute tient
 commentaire: On lui a retiré trois phrases. Pas le personnage. Trois phrases.
 ---
 
-<!-- ÉTAGE 3 — LE RENVERSEMENT. 2'. Run `xp-resolution` du 31 août :
+<!-- ÉTAGE 3 — LE RENVERSEMENT. Run `xp-resolution` du 31 août :
      C5 complet (consigne de verdict retirée du beat, squelette de voix non
      servi, chute « Constat » non posée, identité du personnage CONSERVÉE),
      modèle nu, BEATS_N=1, quatre conditions.
@@ -639,6 +767,74 @@ Deux fois j’ai accusé la machine. Deux fois c’était ma main.
 -->
 
 ---
+layout: case-card
+name: Carver / Lish
+work: Tais-toi, je t’en prie, 1981
+figure: /images/cas-02-carver-lish-s43.png
+balance: Auteur ███████░░░ Dispositif
+---
+
+<!-- MUR 4 se REFERME sur Lish (exception : la figure ferme, elle n’ouvre
+     pas). Introduit ICI, après le renversement — quand le thème « le style
+     par soustraction » ne peut plus télégraphier le piège. Le diptyque suit,
+     puis l’aphorisme « ma voix, ce sont mes retraits ». -->
+
+Raymond Carver, le minimaliste le plus imité d’Amérique. Son style a un
+deuxième père : **Gordon Lish**, son éditeur, qui coupait ses nouvelles
+jusqu’à la moitié et réécrivait les fins — contre l’auteur qui le suppliait
+de refermer.
+
+**Lish n’a rien ajouté à Carver. Il a coupé.**
+
+<!--
+On a rencontré son maître ce soir sans le nommer. Raymond Carver, le
+minimaliste le plus imité d’Amérique. Son style a un deuxième père : Gordon
+Lish, son éditeur. Il coupait les nouvelles jusqu’à la moitié, réécrivait les
+fins, contre l’auteur qui le suppliait de refermer. On le sait avec certitude
+depuis 2007 : le New Yorker a publié une nouvelle dans les deux versions,
+côte à côte.
+
+Lish n’a rien ajouté à Carver. Il a coupé.
+-->
+
+---
+layout: diptyque
+titre: La même fin, deux versions
+gauche: Version Carver
+droite: Version Lish
+---
+
+<!-- GABARIT : les deux extraits réels restent à sourcer.
+     Référence : « Beginners » (manuscrit Carver) devenu « What We Talk
+     About When We Talk About Love » (version Lish) — publiées côte à côte
+     par le New Yorker en 2007. La voix par soustraction : illustration de
+     « ma voix, ce sont mes retraits ». -->
+
+<template #gauche>
+<div class="gabarit-bloc">
+<span class="gabarit">GABARIT</span>
+
+Extrait à sourcer : fin de nouvelle, manuscrit *Beginners*.
+</div>
+</template>
+
+<template #droite>
+<div class="gabarit-bloc">
+<span class="gabarit">GABARIT</span>
+
+Extrait à sourcer : la même fin, version publiée.
+</div>
+</template>
+
+La voix la plus imitée d’Amérique est, pour partie, celle de son éditeur —
+faite de ce qu’il a jeté.
+
+<!--
+[La voix par soustraction. Mon correctif à moi : trois phrases en moins.
+La même opération, à mon échelle.]
+-->
+
+---
 layout: wall
 n: 4
 problem: Le mur qu’on ne peut pas acheter
@@ -649,30 +845,25 @@ réparer chez lui.
 
 Le mur n’était pas dans la machine. Il était dans ce que je lui servais.
 
-Ce correctif, au fait : **trois phrases en moins**.
+Ce correctif, au fait : **trois phrases en moins**. Ma voix, ce sont mes
+retraits.
 
 <!--
-Ce correctif, au fait : trois phrases en moins.
-
-Gordon Lish n’a rien ajouté aux nouvelles de Carver. Il a coupé. Le style de
-Carver, c’est ce que Lish a jeté.
+Ce correctif, au fait : trois phrases en moins. Comme Lish : le style, c’est
+ce qu’on a jeté.
 
 Ma voix, ce sont mes retraits.
-
-[LISH est désormais ancré au RETRAIT, plus au best-of-N — le fix racine peut
-faire disparaître ce dernier, l’ancrage tient quand même.]
 -->
 
 ---
 layout: exergue
 ---
 
-<!-- APHORISME de la strate 4 — L’EXCEPTION AU PATTERN TERNAIRE.
-     Il ne célèbre AUCUNE construction : la strate se referme sur un aveu, et
-     sa cible est le speaker. Un talk dont la thèse est que résoudre est le
+<!-- APHORISME du mur 4 — L’EXCEPTION AU PATTERN TERNAIRE.
+     Il ne célèbre AUCUNE construction : le mur se referme sur un aveu, et sa
+     cible est le speaker. Un talk dont la thèse est que résoudre est le
      défaut de la machine ne peut pas offrir quatre résolutions de forme sur
-     quatre. Attaché à la strate 4, la suit en permutation.
-     FIGÉ depuis le run xp-resolution du 31 août (H3-brief, 12/12). -->
+     quatre. FIGÉ depuis le run xp-resolution du 31 août (H3-brief, 12/12). -->
 
 Le doute tenait depuis le début. C’est moi qui le franchissais.
 
@@ -682,8 +873,8 @@ Le doute tenait depuis le début. C’est moi qui le franchissais.
 Le doute tenait depuis le début. C’est moi qui le franchissais.
 
 [NE PAS CONCLURE. Ne pas remonter d’un ton, ne pas marquer de silence de
-conclusion. Enchaîner directement sur la remontée : cette strate est la seule
-qui ne se referme pas.]
+conclusion. Enchaîner directement sur la remontée : ce mur est le seul qui ne
+se referme pas.]
 -->
 
 ---
@@ -752,15 +943,15 @@ Elle est partout où je suis passé.</p>
 </div>
 
 <!--
-[LA REMONTÉE. 2’ — ramenée à 1’30 si la strate 3 a débordé.]
+[LA REMONTÉE.]
 
 Remontons. Regardez le chemin.
 
-Quatre murs. Le lore, l’intention, la qualité, la puissance. Et à chaque
-étage, la même sortie de secours nous tendait les bras : sous-traiter,
-prendre la clé magique, ne rien comprendre. On ne l’a jamais prise. Pas par
-vertu. Parce que la contrainte était le voyage : chaque mur nous a forcés à
-comprendre une chose qu’on aurait payée pour ignorer.
+Quatre murs — le lore, l’intention, la qualité, le mur qu’on ne peut pas
+acheter. Et à chaque étage, la même sortie de secours nous tendait les bras :
+sous-traiter, prendre la clé magique, ne rien comprendre. On ne l’a jamais
+prise. Pas par vertu. Parce que la contrainte était le voyage : chaque mur
+nous a forcés à comprendre une chose qu’on aurait payée pour ignorer.
 
 Alors maintenant, rouvrez la boîte noire. Celle du début, celle qui faisait
 peur à l’Académie. Qu’est-ce qu’il y a dedans ?
@@ -779,7 +970,7 @@ passé.
 layout: cold-open
 ---
 
-<!-- Relance vers la section 6 (le mode personnage). -->
+<!-- Relance vers la section 5 (le mode personnage). -->
 
 Alors, la question du début : une fabrique qu’on tient à ce point,
 **qui en est l’auteur ?**

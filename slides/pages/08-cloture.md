@@ -4,46 +4,29 @@ variant: question
 noCountdown: true
 ---
 
-<!-- Section 8 — LA CHUTE. BEAT 1 — LE DERNIER VOTE.
-     Septième station du jeu du seuil : même variante que les six autres
-     questions posées à la salle. -->
+<!-- Section 7 — LA CHUTE. BEAT 1 — SANS VOTE.
+     La chute est sèche : la question tombe une fois, sans mains levées.
+     Le chapitre lu EST la réponse — plus de « dernier vote ». -->
 
 # Est-ce que c’est mon œuvre ?
 
 Ce chapitre. Écrit par un atelier que j’ai construit, dans une voix que j’ai
-réglée, sur un monde que j’ai inventé, avec des personnages que j’interroge,
+réglée, sur un monde que j’ai inventé, avec un personnage que j’interroge,
 lu par ma propre voix sans moi.
 
 <!--
-[BEAT 1 — LE DERNIER VOTE. 45".]
-
-Alors, une dernière fois. Le jeu du seuil, dernière station.
+[BEAT 1 — SANS VOTE. 30".]
 
 Ce chapitre. Écrit par un atelier que j’ai construit, dans une voix que j’ai
-réglée, sur un monde que j’ai inventé, avec des personnages que j’interroge,
+réglée, sur un monde que j’ai inventé, avec un personnage que j’interroge,
 lu par ma propre voix sans moi.
 
 Est-ce que c’est mon œuvre ?
 
-Les mains.
-
-[Compter. Dire ce qu’on voit, quoi qu’on voie. Si la salle est coupée en
-deux : « Regardez-vous. » Si elle vote massivement oui ou non : « Il y a une
-heure, vous n’auriez pas hésité. »]
--->
-
----
-layout: exergue
-noCountdown: true
----
-
-<!-- L’hésitation nommée comme démonstration. -->
-
-Votre hésitation, là, maintenant. C’est ça, la démonstration.
-
-<!--
-Votre hésitation, là, maintenant. C’est ça, la démonstration. Le seuil
-n’existe pas, et vous venez de le chercher une sixième fois.
+[Ne pas demander les mains. Plus de vote — vous venez de l’écouter trois
+minutes sans me chercher derrière, la réponse est déjà tombée. Laisser un
+silence, enchaîner sur le verdict. Le chapitre lu EST la réponse, on ne
+tourne pas autour.]
 -->
 
 ---
@@ -61,14 +44,16 @@ noCountdown: true
 
 L’Académie a déjà perdu. **Elle ne le sait pas encore.**
 
-Elle n’a pas perdu contre les machines. Elle a perdu contre sa propre
-histoire : elle a couronné Dumas et sa fabrique, Ajar et son fantôme, et
-elle a gardé le prix quand tout s’est su.
+Elle n’a pas perdu contre les machines, mais contre sa propre histoire : elle
+a couronné Dumas et sa fabrique, Ajar et son fantôme, et gardé le prix quand
+tout s’est su.
 
-Et en 1984, la seule accusation portée contre un livre de machine, c’était
-d’avoir **trop sélectionné, trop assemblé, trop édité**.
+Leur clause — *produite par l’auteur, non par une machine* — ne décrit aucun
+de ces livres. Maquet produisait. Lish coupait. Le lecteur de Queneau génère.
 
-Cette accusation-là, je la revendique.
+Et en 1984, la seule accusation contre un livre de machine — **Racter** —,
+c’était d’avoir **trop sélectionné, trop assemblé, trop édité**. Je la
+revendique.
 
 <!--
 [BEAT 2 — LE VERDICT. 1’. Slide noire : on termine comme on a commencé.]
@@ -87,17 +72,27 @@ Elle n’a pas perdu contre les machines. Elle a perdu contre sa propre
 histoire. Elle a couronné Dumas et sa fabrique. Elle a couronné Ajar et son
 fantôme.
 
-Et en 1984, quand un programme a publié un livre, la seule accusation qu’on
-ait trouvée, c’était d’avoir trop sélectionné, trop assemblé, trop édité les
-sorties. On accusait un livre de machine d’être trop humain.
+Cette clause qu’ils écrivent — produite par l’auteur, et non par une machine —
+ne tient devant aucun d’eux. Maquet produisait. Lish coupait jusqu’à la
+moitié. Le lecteur de Queneau génère. Elle ne décrit aucun des livres qu’on
+aime.
+
+Et en 1984, un programme a publié un livre — Racter, sur un micro-ordinateur.
+La seule accusation qu’on ait trouvée, c’était d’avoir trop sélectionné, trop
+assemblé, trop édité les sorties. On accusait un livre de machine d’être trop
+humain.
 
 Cette accusation-là, je la revendique. C’est exactement ce que j’ai fait ce
 soir devant vous.
 
-[RACTER. L’accusation a été plantée sans commentaire à la station 5 de la
-section 4 ; elle se paie ici, et c’est le speaker qui plaide coupable. Ne
-pas rappeler qui était Racter — la salle a le nom depuis quarante minutes.
-Coût ≈ 20 s, repris sur le beat 3.]
+[CLAUSE. « Produite par l’auteur, non par une machine » (posée en section 2,
+retenue toute la soirée) se paie ICI, à la place de l’ancien renversement
+supprimé. Bookend section 2 → chute.]
+
+[RACTER est INTRODUIT ici, plus rappelé : la galerie a disparu, la salle n’a
+plus le nom. Le poser en une phrase (1984, un programme, « trop humain »), le
+speaker plaide coupable. Rester compact — chute sèche. Le Littératron
+d’Escarpit sort du talk avec la galerie. Coût ≈ 25 s, repris sur le beat 3.]
 
 Elle a gardé le prix quand tout s’est su, parce qu’au fond, elle a toujours
 su ce qu’elle refuse d’admettre aujourd’hui :

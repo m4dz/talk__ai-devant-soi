@@ -44,7 +44,7 @@ clonée du speaker) sur une slide dédiée en fin de présentation.
 
 ## Trame
 
-8 sections, structure « descente par strates ». **Les scripts de la
+7 sections, structure « descente par strates ». **Les scripts de la
 keynote sont la source de vérité du contenu** : ils sont versionnés dans
 [`docs/scripts/`](docs/scripts/) (un fichier par section, texte mot à mot
 + indications scéniques + notes de préparation). En cas d'écart entre une
@@ -57,32 +57,37 @@ slide et le script, le script gagne. Le deck suit :
    d'originalité des éditeurs, la question centrale du talk, signature.
 3. **L'allumage** — le roman, le lancement de la génération, le contrat du
    compte à rebours.
-4. **Jeu du seuil** — interaction mains levées, **5 stations** par
-   intervention humaine décroissante : Dumas/Maquet, Carver/Lish, Ern
-   Malley, Oulipo (livre physique apporté sur scène), Racter — puis le
-   **renversement** (« il n'existe pas de seuil ») et le pont vers la
-   fabrique. *Vian/Vernon Sullivan a été retiré* : Gary fait le même
-   travail en mieux pendant six minutes de cold open, et Vian cassait le
-   gradient (il écrit 100 % du texte lui-même — l'intervention humaine y
-   est maximale, seule l'attribution est fausse).
-   **Chaque figure nomme un mur de la section 5** et y est reprise
-   nominativement — sauf Racter, repris au verdict de la section 8. La
-   galerie plante, la descente récolte.
-5. **La descente dans la fabrique** (~16 min) — 4 strates, chacune sur le
-   battement *ce qu'on a tenté → le mur → ce que le mur a forcé à
-   construire* : le lore (Maquet → bibliothèque indexée), l'intention
-   (Queneau → atelier orchestré, plan de scènes), la qualité **et la
-   mesure** (Malley → fiche de style + correcteur, et l'aveu *compter
-   n'est pas lire*), puis **le mur qu'on ne peut pas acheter** (Lish) —
-   fusion des anciennes strates *puissance* et *seuil*, qui répondaient à
-   la même objection à deux étages : le gros modèle ne rentre pas, et s'il
-   rentrait il ne tiendrait pas davantage le doute qu'il faut tenir.
-   Puis la remontée : « la fabrique reste à notre main ».
+4. **La fabrique** — fusion de l'ancien *jeu du seuil* et de la descente.
+   **Entrée** : l'accroche mains levées, **une seule fois** (elle installe
+   la salle en jury — aucune mécanique de vote ensuite), puis la contrainte
+   locale posée en cadre. Puis **quatre murs**, chacun **ouvert par la
+   figure qui le nomme**, dite une fois, sur le battement *la figure → ce
+   qu'on a tenté → le mur → ce que le mur a forcé à construire* :
+   - le lore (Dumas/Maquet → bibliothèque indexée, plan de scènes),
+   - l'intention (Queneau/Oulipo, livre physique apporté sur scène → les
+     nœuds qui composent, les beats bornés par le code),
+   - la qualité **et la mesure** (Ern Malley → fiche de style + correcteur,
+     l'aveu *compter n'est pas lire*),
+   - **le mur qu'on ne peut pas acheter** (Carver/Lish) — fusion des
+     anciennes strates *puissance* et *seuil*, qui répondaient à la même
+     objection à deux étages : le gros modèle ne rentre pas, et s'il
+     rentrait il ne tiendrait pas davantage le doute qu'il faut tenir.
 
-   **La contrainte locale n'est pas une strate, c'est le cadre.** Sans
-   elle aucun de ces murs n'existe : avec une clé d'API on ne construit ni
+   Puis la remontée : « la fabrique reste à notre main ». *Vian/Vernon
+   Sullivan est retiré* : Gary fait le même travail en mieux pendant six
+   minutes de cold open, et Vian cassait le gradient (il écrit 100 % du
+   texte lui-même). *Racter n'ouvre aucun mur : il revient au verdict de la
+   chute.*
+   **Plus de galerie séparée, plus de renversement « il n'existe pas de
+   seuil », plus de vote par station** : chaque figure est dite une fois, à
+   son mur, et le fait éclaire la tentative dans le même souffle. La fusion
+   raccourcit le milieu — un **trou de chrono (~4'40)** est à recombler par
+   approfondissement (Malley, dernier mur), pas par étirement.
+
+   **La contrainte locale n'est pas un mur, c'est le cadre.** Sans elle
+   aucun de ces murs n'existe : avec une clé d'API on ne construit ni
    bibliothèque, ni fiche de style, ni sélection en code. Elle est énoncée
-   à l'entrée de la descente et reprise à la remontée, jamais comme l'un
+   à l'entrée de la fabrique et reprise à la remontée, jamais comme l'un
    des murs. Le rappel pendant les quinze minutes est assuré sans une
    phrase : le compte à rebours *est* une machine locale qui travaille
    sous les yeux de la salle.
@@ -99,30 +104,33 @@ slide et le script, le script gagne. Le deck suit :
    se joue donc en trois temps — l'accusation (les verbatims, la fiche du
    personnage : la salle conclut que le modèle est incapable), puis
    l'expérience qui casse cette conclusion (12 tirages sur 12 tiennent),
-   puis l'aveu. C'est la seule strate du talk qui piège la salle, et elle
-   le fait avec l'erreur du speaker.
-6. **Le mode personnage** (~3'20) — l'acteur : on ne demande plus à la
-   machine d'écrire *sur* le personnage mais de le *devenir*. Le personnage
-   est **Judith**, la même qu'à l'étage 2 du dernier mur : elle y était
-   l'objet de l'échec, elle est ici le sujet qu'on interroge. Entretien
-   rejoué à **deux** questions (factuelle, interprétative), puis **l'aveu**
-   — rien n'a émergé, tout a été composé — puis le retournement sur la
-   question de Le Tellier.
+   puis l'aveu. C'est le seul mur du talk qui piège la salle, et il le fait
+   avec l'erreur du speaker.
+5. **Le mode personnage** (~3'20) — **culmination collée au dernier mur** :
+   c'est le mécanisme du mur Lish révélé. On ne demande plus à la machine
+   d'écrire *sur* le personnage mais de le *devenir*. Le personnage est
+   **Judith**, la même qu'à l'étage 2 du dernier mur : elle y était l'objet
+   de l'accusation, elle est ici le sujet qu'on interroge. Entretien rejoué
+   à **deux** questions (factuelle, interprétative), puis **l'aveu** — rien
+   n'a émergé, tout a été composé — puis le retournement sur la question de
+   Le Tellier.
    **Aucune émergence n'est affirmée, ici ni ailleurs dans le deck** :
    aucune n'est documentée. Le candidat le plus cité, la « seconde
    assiette », figurait en *matériau imposé* dans le brief de calibration
    du chapitre 2 servi au modèle — la machine ne l'a pas inventée, elle
    l'a exécutée. Ce que la machine apporte se présente comme **composé et
    sélectionné**, jamais comme émergent.
-7. **La récolte** — le compte à rebours atteint zéro, le chapitre naît,
+6. **La récolte** — le compte à rebours atteint zéro, le chapitre naît,
    lecture à voix haute qui bascule vers la voix clonée.
-8. **La chute** — dernier vote à main levée, verdict, sortie sur « Je me
-   suis bien amusé. Au revoir et merci. » (derniers mots écrits de Gary).
+7. **La chute** — **sèche : plus de vote final** (le chapitre lu *est* la
+   réponse). Verdict — dont Racter, « trop sélectionné, trop assemblé, trop
+   édité » — et sortie sur « Je me suis bien amusé. Au revoir et merci. »
+   (derniers mots écrits de Gary).
 
 Le **compte à rebours** est de **28 minutes, gravé** : lancé en section 3
-(~minute 13), il atteint zéro au début de la section 7 (~minute 41). Il
-reste visible (en grand au lancement, puis en rappel discret) des sections
-3 à 7.
+(~minute 13), il atteint zéro au début de la section 6 — la récolte
+(~minute 41). Il reste visible (en grand au lancement, puis en rappel
+discret) des sections 3 à 6.
 
 ## Stack du deck
 
@@ -214,9 +222,9 @@ Composants à développer :
   avancer). **Porte les étapes en direct** : étape, sous-étape et récit des
   événements marquants de la machine, pour que la salle la voie travailler
   et se corriger. En grand : étape + récit. Dans la pilule : l'étiquette
-  seule — les sections 4 à 6 portent l'argumentation, un récit défilant dans
+  seule — les sections 4 et 5 portent l'argumentation, un récit défilant dans
   le coin y ferait concurrence au propos.
-- **`<ChapterReader>`** (section 7) : affiche le texte du chapitre
+- **`<ChapterReader>`** (section 6) : affiche le texte du chapitre
   récupéré, pilote la lecture audio (voir TTS), avec défilement suivant
   la lecture.
 
@@ -225,7 +233,7 @@ et la génération du chapitre **partagent le même modèle de 13 GB**, et la
 machine n'en tient qu'un (les deux demanderaient 17,8 Go sur 19,3).
 `POST /chat` répond `409` pendant toute la génération. Une démo d'acteur en
 direct ne peut donc se jouer qu'**avant le lancement** (section 3) ou
-**après la récolte** (section 7), jamais entre les deux. La section 6
+**après la récolte** (section 6), jamais entre les deux. La section 5
 tombant dans l'intervalle, son entretien **doit** rester un rejeu : ce
 n'était qu'un choix de prudence dans son script, c'est désormais la seule
 option physiquement possible.
@@ -263,7 +271,7 @@ Principes d'implémentation :
 - **Le repli s'arme sans se montrer** : un échec en début de talk ne fait
   pas passer le compte à rebours en « chapitre prêt » pendant vingt-cinq
   minutes ; le chapitre embarqué se matérialise à zéro du décompte, ou à
-  l'entrée en section 7.
+  l'entrée en section 6.
 - **Relance unique en fenêtre haute** : un échec survenu à moins de
   3 minutes de décompte écoulé déclenche **un seul** nouveau
   `POST /generate`, silencieux (cycle complet ~21 min, budget 28 min).
@@ -274,7 +282,7 @@ Principes d'implémentation :
   état d'échec ne produit de texte à l'écran, y compris sur le bouton de
   lancement.
 
-## Slide TTS (section 7)
+## Slide TTS (section 6)
 
 - **Modèle : Qwen3-TTS** (open source, Apache 2.0, tourne en local via
   le package `qwen-tts` ou vLLM ; variantes 0.6B / 1.7B ; clonage de
@@ -283,7 +291,7 @@ Principes d'implémentation :
 - La voix clonée du speaker est préparée **en amont** (l'échantillon et
   le profil de voix ne se calculent pas en live).
 - **La synthèse du chapitre live est lancée dès la fin de génération du
-  texte**, pas au moment de la slide 7 : la 1.7B est lente sur la
+  texte**, pas au moment de la slide de récolte : la 1.7B est lente sur la
   narration longue, on ne fait pas attendre la salle. Le deck récupère
   un fichier audio prêt (ou un flux) au moment de la lecture.
 - **La lecture clonée est bornée à 2'45** (`AUDIO_SECONDES=165` côté
@@ -299,7 +307,7 @@ Principes d'implémentation :
   contre 28 au compteur, ~9 min de marge.
 - **Deux marqueurs, posés par le code du pipeline** (jamais par le
   modèle) : `<!-- BASCULE -->` (relais speaker → voix clonée) et
-  `<!-- FIN AUDIO -->` (fin de la portion sonorisée). La section 7 ne rend
+  `<!-- FIN AUDIO -->` (fin de la portion sonorisée). La section 6 ne rend
   que `début → FIN AUDIO` ; le reste du chapitre n'entre pas dans la
   slide, ce qui aligne le défilement sur le périmètre sonore. Un chapitre
   distant sans ses deux marqueurs est traité comme non prêt → repli.

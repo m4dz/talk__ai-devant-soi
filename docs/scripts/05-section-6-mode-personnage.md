@@ -1,8 +1,10 @@
-# L'IA devant soi — Section 6 : habiter les personnages (premier jet)
+# L'IA devant soi — Section 5 : le mode personnage (script)
 
 Enchaînement direct sur « Il me reste quelqu'un à vous présenter. »
 Durée cible : 3'20. Le compte à rebours approche de zéro pendant toute la section : c'est lui qui donne l'urgence.
-Statut : deuxième jet. L'exigence d'émergence a été retirée — aucune n'est documentée.
+**Culmination collée au dernier mur** : ce n'est pas un pont autonome, c'est le mécanisme du mur Lish révélé. Judith, objet de l'accusation à la fabrique, devient ici le sujet qu'on interroge.
+Statut : l'exigence d'émergence a été retirée — aucune n'est documentée.
+(Fichier conservé sous son ancien numéro — voir `00-README.md` pour le mapping.)
 
 ---
 
@@ -12,9 +14,9 @@ Tout à l'heure, dans l'atelier, je vous ai dit qu'il n'y avait que deux rôles.
 
 Même fabrique. Même bibliothèque, mêmes fiches, même mémoire. Une seule chose change : on ne demande plus à la machine d'écrire sur le personnage. On lui demande de le devenir.
 
-[Slide : la fiche du personnage. C'est **Judith** — la même qu'à la section 5, où elle était l'objet de l'échec ; elle est ici le sujet qu'on interroge.]
+[Slide : la fiche du personnage. C'est **Judith** — la même qu'au dernier mur de la fabrique, où elle était l'objet de l'accusation ; elle est ici le sujet qu'on interroge.]
 
-Vous la connaissez déjà. Judith, correctrice, quinze ans de métier. Celle dont je vous montrais la fiche il y a quatre minutes.
+Vous la connaissez déjà. Judith, correctrice, quinze ans de métier. Celle dont je vous montrais la fiche il y a quelques minutes.
 
 Chaque soir, elle relit l'entrée de la veille de son carnet, pour vérifier qu'elle se souvient bien.
 
@@ -24,7 +26,7 @@ Depuis quelques mois, quand une scène résiste, je ne la réécris pas. Je vais
 
 ## Beat 2 — L'entretien (1'30")
 
-[Écran : rejeu d'une session réelle, affichée comme elle s'est déroulée, question par question. PLACEHOLDER : l'échange verbatim, à extraire d'une session authentique dès que le mode acteur tourne. Trois questions suffisent, dans cet ordre de montée :]
+[Écran : rejeu d'une session réelle, affichée comme elle s'est déroulée, question par question. PLACEHOLDER : l'échange verbatim, à extraire d'une session authentique dès que le mode acteur tourne. Deux questions, dans cet ordre de montée :]
 
 [Question 1 — factuelle. Le personnage connaît son monde : un détail précis, vérifiable dans les fiches. La salle comprend que la mémoire tient.]
 
@@ -62,17 +64,17 @@ Après ce que vous venez de voir, je crois que la question est mal posée. Je ne
 
 Et pendant que je vous parlais, là-bas, quelqu'un a fini d'écrire.
 
-[Transition directe vers la section 7, la récolte.]
+[Transition directe vers la section 6, la récolte.]
 
 ---
 
 ## Notes de préparation
 
-- **Live ou rejeu : rejeu, et ce n'est plus un choix.** La page de roleplay et la génération du chapitre partagent le même modèle de 13 Go, et la machine n'en tient qu'un. `POST /chat` répond 409 pendant toute la génération. La section 6 tombant entre le lancement et la récolte, l'entretien **doit** être un rejeu. C'était de la prudence dans le premier jet ; c'est désormais la seule option physiquement possible.
+- **Live ou rejeu : rejeu, et ce n'est plus un choix.** La page de roleplay et la génération du chapitre partagent le même modèle de 13 Go, et la machine n'en tient qu'un. `POST /chat` répond 409 pendant toute la génération. La section 5 tombant entre le lancement et la récolte, l'entretien **doit** être un rejeu. C'était de la prudence dans le premier jet ; c'est désormais la seule option physiquement possible.
 - **L'aveu du beat 3 est une exigence, pas une concession.** Vérification faite candidat par candidat : la seconde assiette était matériau imposé (`briefs/protocole-calibration-ch2.md` §1) ; « Romane » et « Judith » sont des noms de la bible, donc des violations d'interdit, pas des inventions ; la percée du 31-08 a été obtenue par rejet en code, pas par le modèle. **Rien n'a émergé, nulle part.** Ne jamais reconstruire une émergence pour combler ce beat — c'est explicitement interdit par la spec `deck-content`.
-- **Le personnage est Judith — tranché le 31 août.** C'est la même qu'à l'étage 2 du dernier mur : elle y était l'objet de l'échec, elle est ici le sujet qu'on interroge. L'arc est meilleur que deux personnages distincts, et il économise une présentation. **Ne pas la présenter comme nouvelle** : « vous la connaissez déjà » fait le lien. Sa ligne d'identité dit le métier et le rituel, jamais ce qu'elle ignore — le dispositif du roman ne se spoile pas ici.
+- **Le personnage est Judith — tranché le 31 août.** C'est la même qu'à l'étage 2 du dernier mur : elle y était l'objet de l'accusation, elle est ici le sujet qu'on interroge. L'arc est meilleur que deux personnages distincts, et il économise une présentation. **Ne pas la présenter comme nouvelle** : « vous la connaissez déjà » fait le lien. Sa ligne d'identité dit le métier et le rituel, jamais ce qu'elle ignore — le dispositif du roman ne se spoile pas ici.
 - **Les deux questions doivent rester lisibles sans le roman** : la factuelle sur son monde, l'interprétative sur son biais. Le critère n'a pas changé, seul le personnage est fixé.
-- **Slot fermé.** Le run `xp-resolution` du 31 août a tranché H3-brief (12/12) : la machine tenait le doute, c'est le brief qui la poussait. H4 existe mais reste faible — l'identité de verdict affleure sans conclure. Le verbatim qui le prouve (« mon réflexe de correctrice… mais pour l'instant, je reste là ») vit au dernier mur de la section 5, où il porte le renversement. **Il ne se redit pas ici** : la même citation à cinq minutes d'intervalle userait les deux. La section 6 garde son aveu et rien de plus.
+- **Slot fermé.** Le run `xp-resolution` du 31 août a tranché H3-brief (12/12) : la machine tenait le doute, c'est le brief qui la poussait. H4 existe mais reste faible — l'identité de verdict affleure sans conclure. Le verbatim qui le prouve (« mon réflexe de correctrice… mais pour l'instant, je reste là ») vit au dernier mur de la fabrique (section 4), où il porte le renversement. **Il ne se redit pas ici** : la même citation à cinq minutes d'intervalle userait les deux. La section 5 garde son aveu et rien de plus.
 - **Interdit maintenu** : aucun rapprochement explicite avec Pavlowitch. Le mot « incarner » du beat 1 (« on lui demande de le devenir ») et la mécanique de l'entretien suffisent : la salle a déjà tous les fils.
 - **Le compte à rebours comme partenaire de jeu** : c'est la seule section où on le regarde deux fois (beat 4, et implicitement pendant l'entretien). L'urgence de fin de section doit être physique : « quelqu'un a fini d'écrire » se dit en marchant vers l'écran.
-- **Chrono** : 1' + 1'30 + 20" + 30" = 3'20. La section a perdu 1'40 par rapport au premier jet ; ce temps est passé à la section 5.
+- **Chrono** : 1' + 1'30 + 20" + 30" = 3'20. La section a perdu 1'40 par rapport au premier jet ; ce temps est passé à la fabrique (section 4).

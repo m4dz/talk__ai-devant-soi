@@ -33,10 +33,6 @@ src: ./pages/03-lancement.md
 ---
 
 ---
-src: ./pages/04-jeu-du-seuil.md
----
-
----
 src: ./pages/05-descente-technique.md
 ---
 

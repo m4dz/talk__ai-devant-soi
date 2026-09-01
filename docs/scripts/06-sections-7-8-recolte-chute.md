@@ -1,12 +1,12 @@
 # L'IA devant soi — Sections 7 et 8 : la récolte et la chute (script)
 
 Enchaînement direct sur « Et pendant que je vous parlais, là-bas, quelqu'un a fini d'écrire. »
-Durées cibles : section 7 = 6', section 8 = 3'. Fin du talk à 50'.
+Durées cibles : section 6 (récolte) = 6', section 7 (chute) = 3'. Fin du talk à 50'.
 Le point de bascule (chapitre live ou chapitre de secours) a été tranché en silence à la fin de la section 6. Ce script est écrit pour être identique dans les deux scénarios.
 
 ---
 
-## Section 7 — La récolte (6')
+## Section 6 — La récolte (6')
 
 ### Beat 1 — Zéro (45")
 
@@ -60,21 +60,15 @@ Vous écoutiez une voix. Vous ignoriez la fabrique.
 
 ---
 
-## Section 8 — La chute (3')
+## Section 7 — La chute (3')
 
-### Beat 1 — Le dernier vote (45")
+### Beat 1 — Sans vote (30")
 
-Alors, une dernière fois. Le jeu du seuil, dernière station.
-
-Ce chapitre. Écrit par un atelier que j'ai construit, dans une voix que j'ai réglée, sur un monde que j'ai inventé, avec des personnages que j'interroge, lu par ma propre voix sans moi.
+Ce chapitre. Écrit par un atelier que j'ai construit, dans une voix que j'ai réglée, sur un monde que j'ai inventé, avec un personnage que j'interroge, lu par ma propre voix sans moi.
 
 Est-ce que c'est mon œuvre ?
 
-Les mains.
-
-[Compter. Dire ce qu'on voit, quoi qu'on voie. Si la salle est coupée en deux : « Regardez-vous. » Si elle vote massivement oui, ou massivement non : « Il y a une heure, vous n'auriez pas hésité. » Dans tous les cas, la phrase suivante tombe :]
-
-Votre hésitation, là, maintenant. C'est ça, la démonstration. Le seuil n'existe pas, et vous venez de le chercher une sixième fois.
+[Ne pas demander les mains. Plus de vote — vous venez de l'écouter trois minutes sans me chercher derrière, la réponse est déjà tombée. Laisser un silence, enchaîner sur le verdict. C'est la règle de la chute sèche : le chapitre lu *est* la réponse, on ne tourne pas autour.]
 
 ### Beat 2 — Le verdict (1')
 
@@ -88,7 +82,9 @@ L'Académie a déjà perdu. Elle ne le sait pas encore.
 
 Elle n'a pas perdu contre les machines. Elle a perdu contre sa propre histoire. Elle a couronné Dumas et sa fabrique. Elle a couronné Ajar et son fantôme.
 
-Et en 1984, quand un programme a publié un livre, la seule accusation qu'on ait trouvée, c'était d'avoir trop sélectionné, trop assemblé, trop édité les sorties. On accusait un livre de machine d'être trop humain.
+Cette clause qu'ils écrivent — produite par l'auteur, et non par une machine — ne tient devant aucun d'eux. Maquet produisait. Lish coupait jusqu'à la moitié. Le lecteur de Queneau génère. Elle ne décrit aucun des livres qu'on aime.
+
+Et en 1984, un programme a publié un livre — Racter, sur un micro-ordinateur. La seule accusation qu'on ait trouvée, c'était d'avoir trop sélectionné, trop assemblé, trop édité les sorties. On accusait un livre de machine d'être trop humain.
 
 Cette accusation-là, je la revendique. C'est exactement ce que j'ai fait ce soir devant vous.
 
@@ -118,7 +114,9 @@ Je me suis bien amusé. Au revoir et merci.
 - **La couture vocale** : c'est le geste le plus répété du talk. Le déclenchement doit être invisible — **un « next » de télécommande, jamais un raccourci clavier** (règle projet : toute action scénique passe par un pas de clic Slidev) —, la phrase de reprise enchaînée sans respiration anormale, le retrait du micro exécuté deux ou trois secondes APRÈS le début de l'audio, pas au moment du déclenchement. Répéter avec le WAV de secours jusqu'à ce que la couture soit indétectable pour quelqu'un qui sait où elle est.
 - **Le texte à l'écran pendant la lecture** : il reste affiché, défilement calé sur l'audio. C'est lui qui permet à la salle de vérifier que la voix ne triche pas, et c'est lui qui rend le retrait du micro visible : on voit un texte continuer d'être lu par personne.
 - **Le choix du passage lu** : le marqueur de bascule doit tomber dans un passage à tension moyenne, pas au climax du chapitre : la salle doit pouvoir écouter la voix au lieu de l'intrigue au moment de la couture. À vérifier sur le chapitre de secours, et à imposer au plan de scènes si besoin.
-- **Racter au verdict** : l'accusation de 1984 a été plantée sans commentaire à la station 5 de la section 4 ; elle se paie ici, et c'est le speaker qui plaide coupable. Ne pas rappeler qui était Racter — la salle a le nom depuis quarante minutes. Coût ≈ 20 s, à reprendre sur le beat 3.
+- **Chute sèche, sans vote** : la galerie et ses votes ont disparu, la chute aussi. Beat 1 pose la question une fois, sans mains levées — le chapitre lu *est* la réponse. Ne pas rejouer « le seuil n'existe pas » (le renversement est supprimé du talk).
+- **La clause se paie ici.** « Produite par l'auteur, et non par une machine » (posée en section 2, retenue toute la soirée) trouve sa réfutation au verdict, avec les figures de la fabrique (Maquet, Lish, Queneau) en une ligne chacune. C'est le bookend section 2 → chute, à la place de l'ancien renversement.
+- **Racter est introduit ici, plus rappelé.** Comme la galerie a disparu, la salle n'a plus le nom : le verdict le pose (1984, un programme, l'accusation « trop humain ») en une phrase, et le speaker plaide coupable. Rester compact — c'est une chute sèche, pas une nouvelle station. Le *Littératron* d'Escarpit sort du talk avec la galerie.
 - **Beat 2 de la chute** : « une voix qui tienne, et un lecteur qui tremble » est la seule phrase lyrique autorisée du talk. Elle tient parce que tout ce qui précède est sec. Si la rédaction finale ajoute du lyrisme ailleurs, celle-ci tombe.
 - **La sortie** : les derniers mots de Gary se prononcent face salle, sans regarder l'écran, sans guillemets dans la voix. La salle du cold open les reconnaîtra seule. Vérifier une dernière fois le verbatim exact de la fin de *Vie et mort d'Émile Ajar* avant le gel.
 - **Pas de « merci » après** : le talk se termine sur celui de Gary. Saluer après le noir, sans reprendre le micro.
