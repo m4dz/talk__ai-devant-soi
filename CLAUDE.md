@@ -50,6 +50,12 @@ keynote sont la source de vérité du contenu** : ils sont versionnés dans
 + indications scéniques + notes de préparation). En cas d'écart entre une
 slide et le script, le script gagne. Le deck suit :
 
+0. **Slide d'attente** — hors trame, avant le premier beat. Un tracé :
+   ligne plate au tiers inférieur, **un seul battement**. Elle tourne
+   pendant l'installation de la salle et couvre l'entrée du speaker. Le
+   battement s'arrête sur un pas de clic, la ligne s'aplatit, et le talk
+   commence sur la mort de Gary. **Ce n'est pas une slide de titre** : elle
+   ne porte ni titre, ni nom, ni bonjour. Il n'y en a qu'une.
 1. **Cold open** — l'affaire Gary/Ajar racontée en thriller noir, in
    medias res, 7 beats. Pas de slide de titre : le titre tombe au beat 7,
    sur le pivot vers l'IA.
@@ -186,8 +192,21 @@ peuvent porter une illustration façon couverture pulp.
 > sérigraphique) et le nommage sont documentés dans
 > [`docs/visuels-pulp.md`](docs/visuels-pulp.md). Principe : **on ne génère
 > qu'en crème** (source canonique) ; les modes sont des dérivations.
-> Composant : `slides/components/PulpFigure.vue`. Outil :
-> `tools/inverser_mode.py`.
+> Composant : `slides/components/PulpFigure.vue`. Outils :
+> `tools/pulp/` (génération) et `tools/inverser_mode.py` (dérivations).
+
+**Deux familles de format, deux prompts figés chacune.** Les assets affichés
+en **objet crème** (galerie des cas, portrait du speaker) sont tirés en
+portrait 4:5 ; les assets affichés en **fond perdu** sont tirés **nativement
+au 16:9 du canvas**, avec une variante wide du prompt. Un asset portrait
+rendu en fond perdu se fait recadrer par le milieu et perd sa composition —
+c'est ce qui est arrivé aux deux ambiances du cold open.
+
+**Tout ce qui est illustré n'est pas généré.** La slide d'attente est un
+tracé SVG tokenisé (ligne + battement), pas un asset : Flux ne trace pas une
+ligne fine exacte, l'objet n'appartient pas au génome pulp, et les tokens
+donnent les deux modes sans second fichier. Le registre austère est déjà
+assumé ailleurs (Racter, slide d'encre sans portrait).
 
 **Sources : mix, au cas par cas.**
 
@@ -328,8 +347,9 @@ repo. `theme/` et `public/` restent à la racine, rattachés via
 ```
 slides/
   slides.md               # headmatter global + imports src des sections
-  pages/                  # sections 1-8 en fichiers séparés
-  components/             # GenerationTrigger, Countdown, ChapterReader
+  pages/                  # sections 1-8 en fichiers séparés (+ 00-attente)
+  components/             # GenerationTrigger, Countdown, ChapterReader,
+                          #   Cardiogramme (slide d'attente, SVG)
   lib/                    # session.ts (store), genClient.ts (mock/réel)
   global-bottom.vue       # layer persistant : countdown discret 3→6
   vite.config.ts          # publicDir → ../public
@@ -342,6 +362,15 @@ docs/
   scripts/                # SCRIPTS DE LA KEYNOTE = source de vérité du contenu
   visuels-pulp.md         # prompt de style figé + workflow des illustrations
 tools/
+  pulp/                   # OUTILLAGE DE GÉNÉRATION (ex-~/.cache, versionné)
+    bootstrap.sh          #   venv + mflux + pull du modèle, idempotent
+    generer.sh            #   tirage piloté par jobs.tsv, reprenable
+    jobs.tsv              #   mémoire du chantier : jobs, seeds, {SUJET}
+    tails/                #   les 4 prompts figés — source de vérité
+    recadrer.py           #   retire le bord de feuille (assets fond perdu)
+    eteindre.py           #   éteint les rouges surnuméraires (patch §4bis)
+    sources/              #   images de référence — IGNORÉ PAR GIT
+    tirages/              #   brouillons avant sélection — IGNORÉ PAR GIT
   inverser_mode.py        # dérivations dark des visuels (inversion / calage noir)
 CREDITS.md                # source et licence de chaque asset
 .env.example              # VITE_GEN_HOST, VITE_MOCK, VITE_COUNTDOWN_MINUTES

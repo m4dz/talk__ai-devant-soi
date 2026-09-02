@@ -21,3 +21,8 @@ components.d.ts
 
 # worktrees temporaires de Claude Code
 .claude/worktrees/
+
+# Outillage pulp : entrées personnelles et brouillons de tirage.
+# L'artefact canonique est le PNG retenu, dans public/images/.
+tools/pulp/sources/
+tools/pulp/tirages/

@@ -20,7 +20,12 @@ fonts:
   sans: Atkinson Hyperlegible
   serif: Sinzano
   local: Atkinson Hyperlegible, Sinzano
-# La première section (cold open) est importée ici : pas de slide de titre.
+# Slide 1 = la slide d'attente, importée ici. Ce n'est PAS une slide de
+# titre : le deck n'en a toujours aucune, le titre tombe au beat 7.
+src: ./pages/00-attente.md
+---
+
+---
 src: ./pages/01-cold-open.md
 ---
 

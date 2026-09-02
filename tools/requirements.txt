@@ -1,4 +1,6 @@
-# Dépendances de tools/inverser_mode.py (outil hors build du deck).
+# Dépendances des outils images (hors build du deck) :
+#   tools/inverser_mode.py, tools/pulp/recadrer.py, tools/pulp/eteindre.py.
+# L'environnement mflux (tools/pulp/bootstrap.sh) les embarque déjà.
 # Usage : python -m venv .venv && source .venv/bin/activate && pip install -r tools/requirements.txt
 pillow
 numpy

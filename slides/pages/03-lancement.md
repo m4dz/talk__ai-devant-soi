@@ -29,11 +29,17 @@ poids réel à la récolte.]
 -->
 
 ---
-layout: propos
-variant: plain
+layout: ambiance
+variant: colonne
+light: /images/fabrique-04-usine-machine-s930.png
+dark: /images/fabrique-04-usine-machine-s930-dark.png
 ---
 
-<!-- Suite du beat 1 : la fabrique. -->
+<!-- Suite du beat 1 : la fabrique. Fond perdu, même génome que le cold open
+     (prompt 2a-wide, motif 4 « l'objet-figure »). Le ruban encreur rouge est
+     l'unique élément rouge : tout ce que la fabrique imprime passe par lui —
+     la main cachée, comme partout ailleurs dans la série. Le texte occupe le
+     tiers gauche que le prompt wide laisse vide par construction. -->
 
 # Pas écrit seul
 
@@ -47,7 +53,10 @@ sans que rien ne sorte de la pièce.
 Et ce soir, elle est ici.</p>
 
 <style scoped>
-.muted { color: var(--color-muted); font-size: var(--text-lg); margin-top: var(--space-md); }
+/* Pas de font-size ici : en layout `ambiance colonne` c'est le layout qui
+   gouverne le corps. Forcer --text-lg faisait de la ligne la PLUS grosse de
+   la slide alors que c'est la moins appuyée — hiérarchie inversée. */
+.muted { color: var(--color-muted); margin-top: var(--space-md); }
 </style>
 
 <!--

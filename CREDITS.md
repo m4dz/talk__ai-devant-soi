@@ -56,22 +56,37 @@ Assets dans `public/images/` :
 > (changement `refonte-trame-figures-murs`, 2026-08-31). Le prompt de tirage
 > reste consigné dans `docs/visuels-pulp.md` comme trace du workflow.
 >
-> `cas-06-racter-s47.png` n'est plus référencé depuis la **fusion de trame**
-> (2026-09-01) : Racter est nommé en texte au verdict de la chute, resté
-> délibérément austère (slide d'encre, sans portrait). Le fichier est
-> **conservé** — Vian a été coupé du talk, Racter y reste, sans illustration —
-> au cas où une passe visuelle lui trouverait une place hors du verdict.
+> Les deux ambiances du cold open ont été **re-tirées en 16:9 natif**
+> (changement `visuels-16-9-portrait-attente`, 2026-09-02). Les versions 4:5
+> (`coldopen-02-presence-s303-patch*`, `coldopen-05-rue-pluie-s700*`) sont
+> retirées : rendues en fond perdu dans un canvas 16:9, elles étaient
+> recadrées par le milieu et perdaient leur composition.
 
+| fichier | cas / beat | obtention | dérivation dark |
+|---|---|---|---|
+| `cas-01-dumas-maquet-s500.png` | Dumas / Maquet | prompt `2a`, 768×960 | objet A |
+| `cas-02-carver-lish-s43.png` | Carver / Lish | prompt `2a`, 768×960 | objet A |
+| `cas-04-ern-malley-s45.png` | Ern Malley | prompt `2a`, 768×960 | objet A |
+| `cas-05-oulipo-s46.png` | Oulipo | prompt `2a`, 768×960 | objet A |
+| `cas-06-racter-s47.png` | Racter | prompt `2a`, 768×960 | objet A |
+| `ident-01-m4dz-s822.png` | signature du speaker | prompt `2a`, **mode `edit`** conditionné par une photo du speaker, 768×960 | aucune (objet crème) |
+| `coldopen-02-presence-s801{,-dark}.png` | cold-open (Ajar/Gary) | prompt `2a-wide`, 1280×720 → recadré 1180×664 | négatif B, `--puissance 14` |
+| `coldopen-05-rue-pluie-s913-patch{,-cale}.png` | cold-open (Paris nuit) | prompt `2b-wide`, 1280×720 → recadré → 28 rouges éteints | `--cale-noir` |
+| `fabrique-04-usine-machine-s930{,-dark}.png` | section 3, « Pas écrit seul » | prompt `2a-wide`, 1280×720 → recadré 1253×705 | négatif B, `--puissance 14` |
 
-| fichier | cas / beat | dérivation dark |
-|---|---|---|
-| `cas-01-dumas-maquet-s500.png` | Dumas / Maquet | objet A |
-| `cas-02-carver-lish-s43.png` | Carver / Lish | objet A |
-| `cas-04-ern-malley-s45.png` | Ern Malley | objet A |
-| `cas-05-oulipo-s46.png` | Oulipo | objet A |
-| `cas-06-racter-s47.png` | Racter — **non référencé** (fusion de trame) | objet A |
-| `coldopen-05-rue-pluie-s700{,-cale}.png` | cold-open (Paris nuit) | `--cale-noir` |
-| `coldopen-02-presence-s303-patch{,-dark}.png` | cold-open (Ajar/Gary) | négatif B (patché) |
+**Portrait du speaker.** `ident-01-m4dz-s822.png` est produit par génération
+conditionnée à partir d'une photographie personnelle du speaker. La photo
+source **n'est pas versionnée** (`tools/pulp/sources/`, ignoré par git) :
+l'artefact canonique est le PNG stylisé, la source n'a pas à voyager dans un
+repo public.
 
-Note : `presence` a été retouchée numériquement (patch du bandeau de
-chapeau rouge surnuméraire, cf. doc §4bis) avant dérivation dark.
+**Slide d'attente — non générée.** Le cardiogramme
+(`slides/components/Cardiogramme.vue`) est un tracé SVG composé de tokens du
+thème, pas un asset image. Aucun modèle n'intervient : Flux ne trace pas une
+ligne fine exacte, et les tokens donnent les deux modes sans second fichier.
+
+Note : les patchs numériques (extinction de rouges surnuméraires) et les
+recadrages de bord de feuille sont documentés dans `docs/visuels-pulp.md`
+§4bis et §4ter, et outillés par `tools/pulp/eteindre.py` et
+`tools/pulp/recadrer.py`. Ils s'appliquent toujours à la source crème, avant
+dérivation des modes.

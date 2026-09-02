@@ -117,11 +117,13 @@ La question, c’est la limite. Où elle passe. Si elle passe quelque part.
 -->
 
 ---
-layout: propos
-variant: plain
+layout: signature
+figure: /images/ident-01-m4dz-s822.png
 ---
 
-<!-- BEAT 3 — La signature. Minimale. -->
+<!-- BEAT 3 — La signature. Le portrait pulp entre dans la galerie des cas :
+     même génome, même règle de l'unique rouge (les verres cachent le regard
+     — la main cachée). Ça ne se commente JAMAIS sur scène. -->
 
 # Matthias « m4dz » Dugué
 

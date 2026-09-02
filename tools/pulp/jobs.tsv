@@ -1,0 +1,16 @@
+# Mémoire du chantier visuel — un job par asset.
+# Le prompt se compose de tails/prefixe.txt + {SUJET} + tails/<tail>.txt.
+# Les tails sont FIGÉS (docs/visuels-pulp.md §2) : corriger par le {SUJET}
+# ou par la sélection des tirages, jamais par un prompt ad hoc.
+#
+# mode  : txt2img (mflux-generate-flux2) | edit (mflux-generate-flux2-edit)
+# tail  : 2a / 2b (objet crème 4:5) | 2a-wide / 2b-wide (fond perdu 16:9)
+# seeds : « 800-803 » ou « 800,801 » — traçabilité, PAS reproductibilité :
+#         un seed ne rejoue un tirage qu'à résolution ET paramètres
+#         identiques (docs/visuels-pulp.md §0bis).
+# ref   : chemin relatif à tools/pulp/, pour le mode edit uniquement.
+name	mode	tail	w	h	seeds	ref	sujet
+coldopen-02-presence	txt2img	2a-wide	1280	720	800-803	-	a giant looming silhouette of a man in a plain black fedora with a black hatband, wearing a single red scarf, towering over a small ordinary man walking below who does not notice him, flat cream sky
+coldopen-05-rue-pluie	txt2img	2b-wide	1280	720	910-913	-	a rain-slicked Paris street at night seen from a low angle, tall haussmannian facades as flat black silhouettes, two or three windows glowing pale cream, a black vintage car parked along the curb with dark unlit tail-lights, one single lit street lantern glowing red, every other street lamp dark and unlit, its reflection in the wet pavement
+ident-01-m4dz	edit	2a	768	960	820-823	sources/m4dz-ref.jpg	a man in his thirties in a plain black t-shirt, bust portrait in three-quarter view, short undercut hair with a dark textured top, a full dark moustache and short beard, a single pair of black leather aviator goggles pushed up on his head, only one pair of goggles, a small dark stud earring, black wire-framed round sunglasses whose mirrored lenses are the single blood-red element, hiding his eyes completely, impassive expression, plain background
+fabrique-04-usine-machine	txt2img	2a-wide	1280	720	930-933	-	a factory built from typewriter parts, its chimneys are black typewriter hammers, black iron gantries and pipes, a conveyor belt of blank pale cream pages leaving the building, seen from ground level, a single red inked ribbon threading through the whole factory like a vein, all other machine parts in black iron, plain background

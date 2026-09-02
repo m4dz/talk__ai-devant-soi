@@ -1,7 +1,17 @@
-<!-- Ambiance cold-open en fond perdu — motifs récit plein cadre.
+<!-- Ambiance en fond perdu — motifs récit plein cadre.
      Source mode-swap : `light` (crème canonique) / `dark` (négatif B ou
-     variante calée). Le texte vit dans un bandeau papier, lisible dans les
-     deux modes. Voir docs/visuels-pulp.md §6-7. -->
+     variante calée). Voir docs/visuels-pulp.md §6-7.
+
+     Deux placements du texte (`variant` en frontmatter) :
+
+     bande    (défaut) bandeau papier en bas, pleine largeur. Dimensionné
+              pour trois lignes de récit — c'est le cold open.
+     colonne  colonne de texte dans le TIERS GAUCHE. C'est la place que le
+              prompt `2a-wide` réserve explicitement (« the left third left
+              as quiet aged cream space ») : sur ces tirages, le sujet
+              occupe la moitié droite et la gauche est vide par
+              construction. Pour les slides qui portent un titre et
+              plusieurs blocs, là où le bandeau déborderait. -->
 <script setup>
 import { computed } from 'vue'
 import { useSlideContext, useDarkMode } from '@slidev/client'
@@ -16,7 +26,10 @@ const src = computed(() =>
 </script>
 
 <template>
-  <div class="slidev-layout ambiance">
+  <div
+    class="slidev-layout ambiance"
+    :class="`ambiance--${$frontmatter.variant || 'bande'}`"
+  >
     <img class="ambiance__bg" :src="src" alt="" />
     <div v-if="$slots.default" class="ambiance__band">
       <slot />
@@ -38,18 +51,61 @@ const src = computed(() =>
   height: 100%;
   object-fit: cover;
 }
-/* Bandeau papier translucide : porte le texte, lisible sur n'importe quelle
+/* Fond papier translucide : porte le texte, lisible sur n'importe quelle
    image, dans les deux modes (couleurs = tokens). */
 .ambiance__band {
   position: absolute;
+  background: color-mix(in srgb, var(--color-paper) 88%, transparent);
+  color: var(--color-ink);
+  line-height: 1.3;
+  backdrop-filter: blur(2px);
+}
+
+/* ── bande (défaut) : le cold open ─────────────────────────────────── */
+.ambiance--bande .ambiance__band {
   left: 0;
   right: 0;
   bottom: 0;
   padding: var(--space-md) var(--space-xl);
-  background: color-mix(in srgb, var(--color-paper) 88%, transparent);
-  color: var(--color-ink);
   font-size: var(--text-xl);
-  line-height: 1.3;
+}
+
+/* ── colonne : le tiers gauche que le prompt wide laisse vide ──────── */
+/* 38 % et non 33 % : le tiers du prompt est une consigne de composition
+   picturale, pas une garantie au pixel. La marge absorbe un sujet qui
+   déborde un peu vers la gauche sans que le texte lui monte dessus. */
+.ambiance--colonne .ambiance__band {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 38%;
+  padding: var(--space-lg) var(--space-md) var(--space-lg) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--text-base);
+}
+.ambiance--colonne .ambiance__band :deep(h1) {
+  font-size: var(--title-3);
+  margin-bottom: var(--space-md);
+}
+.ambiance--colonne .ambiance__band :deep(p) {
+  margin-bottom: var(--space-sm);
+}
+/* Le dégradé mange la couture verticale : sans lui, le bord droit de la
+   colonne coupe l'image sur une ligne nette qui se voit en projection. */
+.ambiance--colonne .ambiance__band::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -3rem;
+  width: 3rem;
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--color-paper) 88%, transparent),
+    transparent
+  );
   backdrop-filter: blur(2px);
 }
 </style>

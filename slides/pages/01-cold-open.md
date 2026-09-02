@@ -1,7 +1,7 @@
 ---
 layout: ambiance
-light: /images/coldopen-05-rue-pluie-s700.png
-dark: /images/coldopen-05-rue-pluie-s700-cale.png
+light: /images/coldopen-05-rue-pluie-s913-patch.png
+dark: /images/coldopen-05-rue-pluie-s913-patch-cale.png
 ---
 
 <!-- Section 1 — COLD OPEN, 7 beats (script keynote). Registre polar,
@@ -105,8 +105,8 @@ Et tout Paris se pose la même question : qui écrit ?
 
 ---
 layout: ambiance
-light: /images/coldopen-02-presence-s303-patch.png
-dark: /images/coldopen-02-presence-s303-patch-dark.png
+light: /images/coldopen-02-presence-s801.png
+dark: /images/coldopen-02-presence-s801-dark.png
 ---
 
 <!-- BEAT 4 — La fabrique. Ambiance « la présence derrière » : le géant
