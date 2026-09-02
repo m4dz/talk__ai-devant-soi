@@ -220,3 +220,45 @@ donnés pour lever toute ambiguïté.
 > demi-heure. Pendant que je vous parlais de Dumas, il écrivait la première.
 > Pendant la descente, il vérifiait ses fiches. Pendant que j'interrogeais [NOM
 > DU PERSONNAGE], il relisait. *(« de Dumas » obsolète)*
+
+---
+
+# Passe 1b (2026-09-02, après rebase sur main)
+
+## [planche rebase 41] — « À quel moment avez-vous cessé de m'entendre ? » (récolte, retour micro)
+
+- **Fichier** : `slides/pages/07-lecture.md`
+- **Layout** : `propos` variant `question`, `clicks: 2`
+- **Fonction narrative** : LE beat du **miroir 1975 ↔ 2026** et de la
+  **révélation de la voix clonée** — la salle a écouté une voix sans savoir
+  qu'elle sortait de la machine, exactement comme l'Académie en 1975 avec Ajar.
+  C'est le paiement du fil « la salle qui n'entend pas le clone ».
+- **Impact du retrait** : **majeur** — la révélation explicite « c'était ma voix
+  clonée » et le rapprochement 1975 disparaissent de la récolte. Le miroir
+  Gary/salle n'est plus énoncé ici. **À rejouer impérativement ailleurs** si
+  l'arc garde le miroir (candidat : la chute, ou fondu dans la lecture). Décision
+  à prendre à la reconstruction de l'arc.
+
+### Texte à l'écran
+
+> # À quel moment, exactement, avez-vous cessé de m'entendre ?
+>
+> *(v-click)* Cette voix, c'est la mienne. Enregistrée, apprise, clonée par la
+> fabrique. Elle a lu ce chapitre pendant qu'on parlait, dans la marge du compte
+> à rebours.
+>
+> *(v-click, chute)* Et pendant près de trois minutes, vous étiez exactement là
+> où l'Académie était en 1975. Vous écoutiez une voix. **Vous ignoriez la fabrique.**
+
+### Notes de speaker
+
+> [Revenir au micro. Lentement.] Question.
+> À quel moment, exactement, avez-vous cessé de m'entendre ?
+> [Temps. Laisser la salle se le demander vraiment. Certains sauront à la phrase
+> près. La plupart, non.]
+> Cette voix, c'est la mienne. Enregistrée, apprise, clonée par la fabrique.
+> Elle a lu ce chapitre pendant qu'on parlait, dans la marge du compte à rebours.
+> Le texte, la voix : tout ce que vous venez d'entendre est sorti de la machine.
+> Et pendant près de trois minutes, vous étiez exactement là où l'Académie était
+> en 1975. Vous écoutiez une voix. Vous ignoriez la fabrique.
+> [Transition SANS PAUSE vers la section 8.]
