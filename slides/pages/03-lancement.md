@@ -16,16 +16,15 @@ Quelqu’un pourtant écrit dans ces pages. Quelqu’un qui la connaît mieux
 qu’elle ne consent à se connaître.
 
 <!--
-[Slide : le titre du roman.]
+**le roman, objet de désir : un journal où quelqu'un écrit à la place d'Élise.**
 
-Ce roman existe. Il s’appelle *L’Involontaire*.
+- L'Involontaire : dans le journal d'Élise, des entrées que personne n'a voulues.
+- elle a vérifié, compté, relu — quelqu'un écrit pourtant, qui la connaît mieux qu'elle ne consent.
+- la salle doit avoir envie de lire la suite (ça donnera son poids à la récolte).
 
-Dans le journal d’Élise, il y a des entrées que personne n’a voulues. Elle a
-vérifié, compté, relu. Quelqu’un pourtant écrit dans ces pages. Quelqu’un
-qui la connaît mieux qu’elle ne consent à se connaître.
+← qui parle    → la fabrique (pas seul)
 
-[La salle doit avoir envie de connaître la suite : c’est ce qui donnera un
-poids réel à la récolte.]
+⚠ l'objet de désir du talk : le vendre, pas le résumer. (⚠ nom : Élise ici vs Judith en §4-5 — à trancher.)
 -->
 
 ---
@@ -60,13 +59,15 @@ Et ce soir, elle est ici.</p>
 </style>
 
 <!--
-Plusieurs chapitres sont écrits. Pas par moi seul, pas par une machine
-seule : par une fabrique. Une architecture complète qui tourne sur une
-machine locale, chez moi, sans cloud, sans API, sans que rien ne sorte de la
-pièce.
+**pas écrit seul, pas par une machine seule : par une fabrique locale.**
 
-Cette fabrique connaît mes personnages mieux que moi certains soirs. Elle
-connaît le monde, l’histoire, les voix. Et ce soir, elle est ici.
+- plusieurs chapitres existent, produits par une architecture complète, sur une machine locale.
+- sans cloud, sans API : rien ne sort de la pièce.
+- « elle connaît mes personnages mieux que moi, certains soirs. Et ce soir, elle est ici. »
+
+← le roman    → le plan de scènes
+
+⚠ pose la contrainte locale (⟳ reprise en cadre à la descente, slide 18).
 -->
 
 ---
@@ -83,13 +84,14 @@ L’anniversaire qu’elle a décidé de ne pas fêter : plus elle efface les
 traces de ce jour, plus la maison s’obstine à le célébrer.
 
 <!--
-[Bascule d’écran : le plan de scènes du chapitre suivant.]
+**une vraie sortie de la fabrique : le plan du prochain chapitre, généré.**
 
-Voici le plan de scènes du prochain chapitre. Il a été généré par la
-fabrique, à partir de tout ce qui précède.
+- plan de scènes du chapitre 7, généré par la fabrique à partir de tout ce qui précède.
+- l'anniversaire qu'elle refuse de fêter : plus elle efface les traces, plus la maison le célèbre.
 
-L’anniversaire qu’elle a décidé de ne pas fêter : plus elle efface les
-traces de ce jour, plus la maison s’obstine à le célébrer.
+← la fabrique    → on lance
+
+⚠ pièce à conviction (une sortie machine), pas un slide d'argument.
 -->
 
 ---
@@ -128,14 +130,14 @@ Quand il atteindra zéro, un chapitre sera né — que personne n’a jamais lu.
 </style>
 
 <!--
-Et maintenant, on va faire une chose simple.
+**on lance, et on passe un contrat : à zéro, un chapitre naît, découvert ensemble.**
 
-[GESTE DE LANCEMENT : physique et visible, pas un alt-tab. Le « next »
-déclenche. La salle doit voir que ça part.]
+- geste de lancement PHYSIQUE et visible (le « next » déclenche) : la salle doit voir que ça part.
+- le compte à rebours (28 min) apparaît et ne quitte plus l'écran.
+- contrat : à zéro, un chapitre inédit que personne n'a lu → on le découvrira ensemble.
 
-On vient de lancer l’écriture. En ce moment même, sur cette machine, des
-scènes s’écrivent.
+← le plan    → démystifier la fabrique
 
-[Le compte à rebours apparaît. Il ne quittera plus l’écran.]
+⚠ « pas même moi » : bonus live, jamais scripté. Le décompte EST une machine locale qui tourne (rappel muet de la contrainte).
 -->
 

@@ -14,12 +14,15 @@ reference: Télérama n°3981 — 29 avril 2026
 Un grand prix écrit avec une IA ? « Désormais inévitable. »
 
 <!--
-[Slide : la citation d’Assouline, sourcée. Rien d’autre.]
+**la même Académie a peur : elle sait qu'elle ne verra pas.**
 
-Ces mots sont réels. Pierre Assouline, juré Goncourt depuis 2012, dans
-Télérama, en avril dernier. L’IA s’est invitée aux discussions mensuelles de
-l’Académie, et l’Académie a peur. Pas de l’IA : d’elle-même. De ne pas voir.
-De couronner, encore une fois, un auteur qui n’existe pas.
+- Assouline (juré depuis 2012, Télérama avr. 2026) : « on n'est pas à l'abri de se faire piéger ».
+- un grand prix écrit avec une IA ? « désormais inévitable ».
+- la peur n'est pas de l'IA : d'elle-même, de ne pas voir, de couronner encore un auteur qui n'existe pas.
+
+← le titre    → la clause des éditeurs
+
+⚠ propos réels, sourcés. Rien d'autre à l'écran.
 -->
 
 ---
@@ -33,15 +36,14 @@ reference: Télérama n°3981 — 29 avril 2026
 L’œuvre cédée doit être « produite par l’auteur, et non par une machine ».
 
 <!--
-Les plus grands éditeurs français renforcent leurs clauses d’originalité.
-L’œuvre doit être produite par l’auteur, et non par une machine.
+**LA phrase du talk : l'œuvre doit être « produite par l'auteur, non par une machine ».**
 
-[Temps.]
+- les plus grands éditeurs français (Madrigall : Gallimard, Flammarion, P.O.L, Minuit) renforcent leurs clauses d'originalité.
+- on va passer la soirée sur cette phrase.
 
-Retenez cette phrase. On va passer la soirée dessus.
+← la peur de l'Académie    → le procès en tricherie
 
-[FIL ROUGE : clause rappelée station 1 de la section 4, pulvérisée au
-renversement.]
+⚠ temps après la phrase. (⟳ réfutée au verdict, slide 44 : elle ne décrit aucun livre couronné.)
 -->
 
 ---
@@ -55,14 +57,14 @@ reference: franceinfo — janvier 2024
 « Tromperie sur la marchandise. » « Tricherie. »
 
 <!--
-Et quand la lauréate du prix Akutagawa, l’équivalent japonais du Goncourt,
-révèle avoir utilisé une IA pour environ cinq pour cent des phrases de son
-roman, un lauréat du Goncourt réagit dans la presse française. Ses mots :
-tromperie sur la marchandise. Tricherie.
+**un lauréat Goncourt tranche : « tromperie sur la marchandise. Tricherie. »**
 
-[Temps.]
+- réaction au cas Rie Kudan (prix Akutagawa) : ~5 % de phrases générées par IA, avouées.
+- Jean-Baptiste Andrea (franceinfo, janv. 2024).
 
-Tricherie. Le mot est intéressant, venant de cette maison.
+← la clause    → la question du talk
+
+⚠ « tricherie », venant de cette maison, est savoureux. (⟳ Maquet / Lish / le lecteur de Queneau : ces maisons ont couronné des fabriques.)
 -->
 
 ---
@@ -74,20 +76,15 @@ layout: exergue
 Peut-on tracer la limite entre une œuvre et sa fabrique ?
 
 <!--
-Je ne suis pas là pour me moquer de l’Académie. Enfin, pas seulement.
+**la question du talk : peut-on tracer la limite entre une œuvre et sa fabrique ?**
 
-Je suis là parce que cette peur, et cette clause, posent une question que
-personne ne peut plus éviter, et qui est beaucoup plus vieille que les IA
-génératives :
+- pas « pour ou contre l'IA » (débat stérile, déjà tranché : tout le monde écrit avec).
+- la vraie question : la limite — où elle passe, si elle passe quelque part.
+- question plus vieille que l'IA générative.
 
-Peut-on tracer la limite entre une œuvre et sa fabrique ?
+← la tricherie    → qui parle (la signature)
 
-Entre le texte que vous lisez, et tout ce qui l’a produit : les outils, les
-mains, les voix, les machines.
-
-Ce soir, on ne va pas débattre « pour ou contre l’IA ». Ce débat-là est
-stérile, et il est déjà tranché dans les faits : tout le monde écrit avec.
-La question, c’est la limite. Où elle passe. Si elle passe quelque part.
+⚠ seule sur sa slide. (⟳ temps 1 de la question ; reposée à la descente, slide 19.)
 -->
 
 ---
@@ -116,11 +113,13 @@ Mes nuits sur ce dont on va parler ce soir.
 </style>
 
 <!--
-Deux mots sur moi, puisqu’il paraît que ça se fait. Head of Engineering
-chez Zenika. Je passe mes journées sur des systèmes d’IA en production, et
-mes nuits sur ce dont on va parler ce soir.
+**qui parle : un ingénieur, pas un critique. Un rapport d'expérience.**
 
-Parce que ce talk n’est pas une opinion. C’est un rapport d’expérience.
+- Head of Engineering chez Zenika ; jours = IA en prod, nuits = ce roman.
+- « ce talk n'est pas une opinion, c'est un rapport d'expérience ».
+- « j'écris un roman. Et je ne l'écris pas seul. » → lance l'allumage.
 
-J’écris un roman. Et je ne l’écris pas seul.
+← la question    → le roman (l'allumage)
+
+⚠ le portrait pulp ne se commente JAMAIS (verres qui cachent le regard = la main cachée).
 -->
