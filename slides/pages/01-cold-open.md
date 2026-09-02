@@ -39,35 +39,6 @@ critique littéraire française.
 layout: cold-open
 ---
 
-<!-- BEAT 2 — La gloire, puis la chute. -->
-
-Aviateur de la France libre. Compagnon de la Libération. Consul de France.
-
-Prix Goncourt 1956, pour *Les Racines du ciel*.
-
-Puis Paris décide qu’il est fini. La critique l’exécute, livre après livre.
-
-Il lit ses propres nécrologies. De son vivant.
-
-<!--
-Revenons en arrière. Parce qu’il faut mesurer qui est cet homme.
-
-Aviateur de la France libre. Compagnon de la Libération. Diplomate, consul
-de France à Los Angeles. Mari de Jean Seberg. Et romancier, immense : en
-1956, il reçoit le prix Goncourt pour *Les Racines du ciel*.
-
-Puis les années 70 arrivent. Et Paris décide que Gary est fini.
-
-La critique l’exécute, livre après livre. Gary radote. Gary se répète. Gary
-appartient au passé.
-
-L’homme lit ses propres nécrologies d’écrivain. De son vivant.
--->
-
----
-layout: cold-open
----
-
 <!-- BEAT 3 — Ajar. -->
 
 1974. Un manuscrit arrive chez Gallimard, posté du Brésil.
@@ -146,34 +117,6 @@ La fabrique se défend en produisant davantage de littérature.
 
 [BEAT D’INVESTISSEMENT : Pavlowitch doit être raconté avec assez de relief
 pour que la salle y repense seule en section 6. Aucun lien explicite ici.]
--->
-
----
-layout: cold-open
----
-
-<!-- BEAT 5 — La cruauté. -->
-
-Les mêmes critiques qui l’enterrent sous son nom le sacrent sous l’autre.
-
-Certains écrivent, noir sur blanc : *Gary ? Il en serait bien incapable.*
-
-Il découpe les articles. Il les garde.
-
-L’écrivain le plus démodé de Paris est aussi le plus célébré —
-et il est seul au monde à le savoir.
-
-<!--
-Et pendant ce temps, il lit la presse.
-
-Les mêmes critiques qui l’enterrent sous son nom le sacrent sous l’autre.
-Certains écrivent, noir sur blanc : Gary ? Il en serait bien incapable. Ajar
-a le talent que Gary n’a plus.
-
-Il découpe les articles. Il les garde.
-
-L’écrivain le plus démodé de Paris est aussi le plus célébré. Et il est seul
-au monde à le savoir.
 -->
 
 ---

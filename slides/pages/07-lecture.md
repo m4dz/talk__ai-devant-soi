@@ -20,35 +20,6 @@ l’inconfort.]
 -->
 
 ---
-layout: piece-a-conviction
-intitule: Le chapitre
-commentaire: Il est né.
----
-
-<!-- GABARIT : titre, nombre de mots, scènes du plan cochées une à une —
-     à remplir depuis le run réel (ou le chapitre de secours). -->
-
-<div class="gabarit-bloc">
-<span class="gabarit">GABARIT</span>
-
-Titre du chapitre · nombre de mots · les scènes du plan, cochées une à une.
-</div>
-
-<!--
-[Bascule d’écran : le chapitre. Titre, nombre de mots, les scènes du plan
-cochées une à une.]
-
-Il est né.
-
-[Temps.]
-
-Un chapitre. [X] mots. [X] scènes, celles du plan que vous avez vu il y a une
-demi-heure. Pendant que je vous parlais de Dumas, il écrivait la première.
-Pendant la descente, il vérifiait ses fiches. Pendant que j’interrogeais [NOM
-DU PERSONNAGE], il relisait.
--->
-
----
 layout: propos
 variant: plain
 clicks: 1

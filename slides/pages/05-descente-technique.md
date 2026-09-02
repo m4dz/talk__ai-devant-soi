@@ -127,38 +127,6 @@ La grille ne voit pas la différence. Elle compte. Compter n'est pas lire.
 -->
 
 ---
-layout: propos
----
-
-<!-- GESTE 1 — MALLEY, l'aparté « gros modèle », UNE phrase. Ni mur, ni étage :
-     un rappel de la contrainte-cadre. Si la répétition déborde, c'est ce beat
-     qui coupe. -->
-
-Et un modèle plus gros ? Il ne rentre pas dans la machine. Et s'il rentrait,
-il ferait le même juste-mais-mort — en plus gros.
-
-<!--
-« Prends un modèle plus gros », me direz-vous. Il ne rentre pas dans la
-machine — je vous ai dit la règle en entrant. Et même s'il rentrait : plus de
-paramètres ne réparent pas ça. Il ferait le même juste-mais-mort, en plus gros.
-Le problème n'est pas la taille.
--->
-
----
-layout: exergue
----
-
-<!-- APHORISME du geste Malley. La leçon de mesure : compter n'est pas lire. -->
-
-Compter n'est pas lire.
-
-<!--
-[L'aphorisme, seul.]
-
-Compter n'est pas lire.
--->
-
----
 layout: case-card
 name: Dumas / Maquet
 work: Les Trois Mousquetaires, 1844

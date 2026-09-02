@@ -23,32 +23,6 @@ De couronner, encore une fois, un auteur qui n’existe pas.
 -->
 
 ---
-layout: propos
-variant: inventaire
-clicks: 3
----
-
-<!-- Le fait, énoncé en creux : l’absence de position.
-     Anaphore en trois temps, révélée une entrée à la fois — la troisième
-     est la chute et ne doit pas être lue avant d’être dite. -->
-
-<div v-click class="entree">Elle n’a rien interdit.</div>
-
-<div v-click class="entree">Elle n’a rien annoncé.</div>
-
-<div v-click class="entree">Elle attend.</div>
-
-<p class="chute">Pendant ce temps, d’autres écrivent la frontière —
-dans les contrats.</p>
-
-<!--
-Elle n’a rien interdit. Elle n’a rien annoncé. Elle attend.
-
-Mais pendant qu’elle attend, d’autres écrivent la frontière. Noir sur blanc,
-dans les contrats.
--->
-
----
 layout: citation-sourcee
 author: Alban Cerisier, groupe Madrigall — Gallimard, Flammarion, P.O.L, Minuit
 reference: Télérama n°3981 — 29 avril 2026
