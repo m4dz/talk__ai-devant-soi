@@ -110,6 +110,9 @@ noCountdown: true
 
 En ce moment même, sur cette machine, des scènes s’écrivent.
 
+Quand il atteindra zéro, un chapitre sera né — que personne n’a jamais lu.
+**On le découvrira ensemble.**
+
 <div class="launch-controls">
   <GenerationTrigger />
   <Countdown />

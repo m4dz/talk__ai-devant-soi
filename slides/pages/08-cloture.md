@@ -1,6 +1,6 @@
 ---
 layout: propos
-variant: question
+variant: plain
 noCountdown: true
 ---
 
@@ -8,11 +8,12 @@ noCountdown: true
      La chute est sèche : la question tombe une fois, sans mains levées.
      Le chapitre lu EST la réponse — plus de « dernier vote ». -->
 
-# Est-ce que c’est mon œuvre ?
+# C’est mon œuvre.
 
-Ce chapitre. Écrit par un atelier que j’ai construit, dans une voix que j’ai
-réglée, sur un monde que j’ai inventé, avec un personnage que j’interroge,
-lu par ma propre voix sans moi.
+Ce chapitre : un atelier que j’ai construit, une voix que j’ai réglée, un monde
+que j’ai inventé, un personnage que j’interroge — lu par ma propre voix.
+
+La fabrique est de ma main. **L’œuvre est mienne.**
 
 <!--
 [BEAT 1 — SANS VOTE. 30".]

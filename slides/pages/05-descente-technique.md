@@ -1,4 +1,26 @@
 ---
+layout: cold-open
+---
+
+<!-- [NOUVELLE — refonte arc] DÉMYSTIFIER LA FABRIQUE. La porte de la descente :
+     la boîte noire qu'on ouvre couche par couche. Reprend la note du contrat
+     retiré (élagage passe 1). Wording provisoire. -->
+
+Ce qui tourne derrière moi, vous ne savez pas ce que c'est.
+
+Une **boîte noire** qui écrit de la fiction. C'est exactement ce que
+l'Académie appelle « tricherie ».
+
+Alors on va l'ouvrir. **Couche par couche.**
+
+<!--
+- ce qui tourne = une boîte noire, angoissante vue du dehors
+- = ce que l'Académie redoute / nomme « tricherie »
+- promesse : on l'ouvre, couche par couche → la descente commence
+- raccroche : vient du lancement, ouvre les 5 gestes
+-->
+
+---
 layout: exergue
 ---
 
@@ -33,23 +55,22 @@ layout: propos
 variant: question
 ---
 
-<!-- L'ACCROCHE MAINS-LEVÉES — UNE SEULE FOIS. Elle installe la salle en jury
-     et OUVRE la question qui court : chaque geste la rejoue en sourdine, elle
-     n'est énoncée qu'au geste Carver, et répondue à la remontée. -->
+<!-- [REFRAME] LA QUESTION EST ANCIENNE (temps 1 : poser). Plus de vote
+     mains-levées : on arme les 5 figures comme des récurrences de la même
+     question. Wording provisoire. -->
 
-# À partir de quand l'œuvre n'est-elle plus la vôtre ?
+# La littérature s'est déjà posé la question.
 
-Une fois. De **vraies** mains levées. Qui pense qu'il existe un tel seuil ?
+Pas une fois. **Plusieurs.**
+
+Chaque fois qu'un auteur a délégué une part de sa fabrique — et gardé son nom.
 
 <!--
-La question que je vous ai posée tout à l'heure — à partir de quand une œuvre
-cesse-t-elle d'appartenir à son auteur — je veux votre réponse, à main levée.
-Qui pense qu'il existe un tel seuil ? Une vraie ligne, quelque part, qu'on peut
-franchir.
-
-[Mains. Une seule fois de toute la soirée. Après, la fabrique répond seule,
-sans vote. La question, elle, va courir : gardez-la en tête. On descend la
-vérifier — cinq fois.]
+- la question œuvre/fabrique n'est pas nouvelle, ni née avec l'IA
+- la littérature l'a affrontée plusieurs fois → les 5 figures qui suivent
+- à chaque fois : un auteur délègue une part de la fabrique, garde le nom
+- pose la question (temps 1) ; réponse à la remontée
+- raccroche : suit le cadre local, ouvre Malley
 -->
 
 ---
@@ -124,6 +145,30 @@ personne.
 seule » qui ouvre le gouffre.
 
 La grille ne voit pas la différence. Elle compte. Compter n'est pas lire.
+-->
+
+---
+layout: propos
+---
+
+<!-- [NOUVELLE — refonte arc] MALLEY : LE GROS MODÈLE. Reprend l'aparté préservé
+     + la leçon approfondie : tout le savoir = plus moyen. Wording provisoire. -->
+
+# « Prenez un modèle plus gros. »
+
+Il ne rentre pas dans la machine. Et s'il rentrait, ce serait **pire**.
+
+Il contient tout le savoir, tous les styles — la moyenne de tout ce qui a été
+écrit. Composer à partir de tout, ce n'est pas la garantie du bon.
+C'est la garantie du **moyen**.
+
+<!--
+- objection classique : prends un plus gros modèle
+- 1) il ne rentre pas (rappel contrainte locale)
+- 2) surtout : plus gros = plus de tout = plus moyen
+- tout le savoir de l'IA ≠ un bon texte, au contraire
+- « compter n'est pas lire » se dit ici, à l'oral
+- raccroche : prolonge le diptyque Malley, avant Maquet
 -->
 
 ---

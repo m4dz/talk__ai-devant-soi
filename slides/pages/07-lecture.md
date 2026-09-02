@@ -29,13 +29,13 @@ clicks: 1
 
 # Personne dans cette salle ne l’a jamais lu
 
-Tout à l’heure, on a passé un contrat : quand ce compteur atteindrait zéro,
-on découvrirait le chapitre ensemble.
+La fabrique l’a écrit sous vos yeux : la bibliothèque a nourri chaque scène,
+l’atelier a repris ce qui cassait, la fiche de style a coupé le reste.
 
 <div v-click>
 
-<p class="chute">Alors on va faire ce que les écrivains font depuis toujours
-avec un texte qui vient de naître. On va le lire à voix haute.</p>
+<p class="chute">Voici ce qu’elle a produit — et comment.
+On va le lire à voix haute.</p>
 
 </div>
 
