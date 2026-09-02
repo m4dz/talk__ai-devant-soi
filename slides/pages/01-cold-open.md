@@ -9,11 +9,7 @@ dark: /images/coldopen-05-rue-pluie-s913-patch-cale.png
      présent de narration. Pas de slide de titre : le titre tombe au beat 7.
      BEAT 1 — Le corps. Ambiance rue nocturne en fond perdu. -->
 
-2 décembre 1980. Rue du Bac.
-
-Il rentre chez lui, enfile une robe de chambre rouge, s’allonge.
-
-Et il se tire une balle.
+**Gary**. 2 décembre 1980. Rue du Bac. Paris.
 
 <!--
 **un géant se donne la mort, et laisse un dernier texte qui fera tout sauter.**
@@ -33,13 +29,11 @@ layout: cold-open
 
 <!-- BEAT 3 — Ajar. -->
 
-1974. Un manuscrit arrive chez Gallimard, posté du Brésil.
+1974 — un manuscrit anonyme.
 
-Signé d’un inconnu : **Émile Ajar**.
+1975 — **Goncourt** : *La Vie devant soi*.
 
-1975, deuxième roman : *La Vie devant soi*. **Prix Goncourt.**
-
-Un seul problème : l’auteur est introuvable.
+**Émile Ajar** — un auteur introuvable.
 
 <!--
 **un fantôme rafle le Goncourt ; personne ne sait qui écrit.**
@@ -64,10 +58,7 @@ dark: /images/coldopen-02-presence-s801-dark.png
 
 Ajar, c’est **Romain Gary**.
 
-Et le règlement est formel : on ne reçoit le Goncourt qu’une fois.
-
-Alors il construit. La presse veut un visage : il en fabrique un.
-**Paul Pavlowitch**, son petit-cousin, recruté pour incarner Ajar.
+Et on ne reçoit le Goncourt qu’une seule fois.
 
 <!--
 **Ajar, c'est Gary : le mort a fabriqué un auteur de toutes pièces.**
@@ -89,20 +80,17 @@ clicks: 2
 <!-- BEAT 6 — La révélation. Le [Temps] avant « Rien. » est le silence
      le plus important du cold open : la chute se révèle. -->
 
-Été 1981. *Vie et mort d’Émile Ajar* paraît. Tout est vrai.
-
-Et l’Académie, face au plus grand canular de son histoire ?
+**Vie et mort d’Émile Ajar.**
 
 <div v-click>
 
-**Rien.**
+Goncourt 1975, toujours attribué à Émile Ajar.
 
 </div>
 
 <div v-click>
 
-Le prix est toujours attribué à Émile Ajar, aujourd’hui.
-On ne rend pas un Goncourt.
+**On ne rend pas un Goncourt.**
 
 </div>
 
@@ -115,7 +103,7 @@ On ne rend pas un Goncourt.
 
 ← Ajar = Gary    → 2026 : la même peur
 
-⚠ tenir le silence AVANT « Rien. » (clic 1), le plus important du cold open ; clic 2 : le prix maintenu.
+⚠ 3 pas (v-click) ; tenir le silence entre chaque, le poids tombe sur le 3e (« on ne rend pas un Goncourt »).
 -->
 
 ---
@@ -146,6 +134,7 @@ Il redoute une « affaire Ajar 2.0 ».
 ← l'Académie n'a rien fait en 1975    → le titre
 
 ⚠ GARDE-FOU : jamais « l'Académie annonce/interdit ». Propos attribués + sourcés. Tenir le temps entre les 2 citations.
+⚠ style des slides de citation : à revoir en phase suivante.
 -->
 
 ---
