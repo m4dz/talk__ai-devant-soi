@@ -9,22 +9,22 @@ variant: plain
 
 # L’Involontaire
 
-Dans le journal d’Élise, il y a des entrées que personne n’a voulues.
+Dans le journal d’Judith, il y a des entrées que personne n’a voulues.
 Elle a vérifié, compté, relu.
 
 Quelqu’un pourtant écrit dans ces pages. Quelqu’un qui la connaît mieux
 qu’elle ne consent à se connaître.
 
 <!--
-**le roman, objet de désir : un journal où quelqu'un écrit à la place d'Élise.**
+**le roman, objet de désir : un journal où quelqu'un écrit à la place d'Judith.**
 
-- L'Involontaire : dans le journal d'Élise, des entrées que personne n'a voulues.
+- L'Involontaire : dans le journal d'Judith, des entrées que personne n'a voulues.
 - elle a vérifié, compté, relu — quelqu'un écrit pourtant, qui la connaît mieux qu'elle ne consent.
 - la salle doit avoir envie de lire la suite (ça donnera son poids à la récolte).
 
 ← qui parle    → la fabrique (pas seul)
 
-⚠ l'objet de désir du talk : le vendre, pas le résumer. (⚠ nom : Élise ici vs Judith en §4-5 — à trancher.)
+⚠ l'objet de désir du talk : le vendre, pas le résumer. La salle doit vouloir la suite.
 -->
 
 ---

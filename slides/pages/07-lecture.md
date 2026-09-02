@@ -12,11 +12,13 @@ noCountdown: true
 <Countdown :feed="false" />
 
 <!--
-[BEAT 1 — ZÉRO. 45".]
+**le compteur meurt seul à l'écran. Silence.**
 
-[Le compte à rebours atteint zéro. Le laisser mourir seul à l’écran, SANS
-PARLER. C’est le silence le plus long du talk : le tenir jusqu’à
-l’inconfort.]
+- le plus long silence du talk : le tenir jusqu'à l'inconfort. Ne pas parler.
+
+← je dirige un atelier    → ce que la fabrique a produit
+
+⚠ ne rien dire. Laisser le zéro exister seul.
 -->
 
 ---
@@ -40,18 +42,15 @@ On va le lire à voix haute.</p>
 </div>
 
 <!--
-[BEAT 2 — LE CONTRAT. 45".]
+**voici ce que la fabrique a produit — et comment. Personne ne l'a lu.**
 
-Tout à l’heure, on a passé un contrat : quand ce compteur atteindrait zéro,
-on découvrirait le chapitre ensemble. Personne dans cette salle ne l’a jamais
-lu.
+- la fabrique l'a écrit sous vos yeux : bibliothèque → chaque scène, atelier → ce qui cassait, fiche de style → coupé le reste.
+- ce qui compte : ce qu'on a réussi à faire produire, et comment (pas des stats).
+- on va faire ce que les écrivains font : le lire à voix haute.
 
-Alors on va faire ce que les écrivains font depuis toujours avec un texte qui
-vient de naître.
+← le zéro    → la lecture
 
-On va le lire à voix haute.
-
-[Prendre place.]
+⚠ le « comment » = rappel condensé des gestes. Puis prendre place.
 -->
 
 ---
@@ -70,24 +69,14 @@ clicks: 1
 <ChapterReader />
 
 <!--
-[BEAT 3 — LA LECTURE. 3’30.]
+**la lecture : voix nue, puis la voix clonée prend le relais. Preuve de capacité.**
 
-[Lire. À voix nue, sans commentaire, sans ironie de conférencier : on lit de
-la fiction à une salle, on la lit pour de vrai. LES DEUX PREMIÈRES PHRASES,
-pas davantage — jusqu’au point de couture.]
+- lire les 2 premières phrases pour de vrai, jusqu'au marqueur de bascule.
+- au marqueur : « next » invisible → l'audio cloné enchaîne ; s'écarter du micro 2-3 s APRÈS le début.
+- la voix continue seule (~2'45), va au bout. Rester immobile, face salle. Le texte défile.
 
-[AU MARQUEUR DE BASCULE (posé après la deuxième phrase) : déclencher l’audio
-d’un « next » invisible, enchaîner une phrase avec la voix clonée, puis
-s’écarter du micro DEUX OU TROIS SECONDES APRÈS le début de l’audio — pas au
-moment du déclenchement. Ne pas la regarder. Regarder la salle.]
+← ce que la fabrique a produit    → la chute
 
-[La voix continue seule, 2’45 : elle va jusqu’au bout de
-l’extrait, ce n’est plus un fragment qu’on coupe. Rester immobile, face à la
-salle. Le texte défile toujours. Laisser le temps du soupçon, puis de la
-certitude, se propager dans les rangs — et laisser passer le moment où la
-salle cesse de guetter la voix pour écouter l’histoire.]
-
-[La lecture s’arrête d’elle-même à la fin de l’extrait. FILET si le temps
-manque : avancer d’une slide coupe l’audio — en fin de phrase, sans fondu.]
+⚠ jamais de raccourci ni timecode : un pas de clic. Regarder la salle. Filet : avancer d'une slide coupe l'audio.
 -->
 

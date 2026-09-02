@@ -42,12 +42,14 @@ layout: exergue
 Rien de ce que vous allez voir ne sort de cette pièce.
 
 <!--
-Avant de descendre, une règle. Rien de ce que vous allez voir ne sort de
-cette pièce. Pas un appel, pas une clé d'API, pas un octet.
+**le cadre : rien ne sort de cette pièce. C'est ce qui a tout construit.**
 
-Ce n'est pas une posture. C'est ce qui a construit tout ce qu'il y a en bas.
+- pas un appel, pas une clé d'API, pas un octet.
+- pas une posture : la contrainte qui a forcé chaque geste qui suit.
 
-[Descendre.]
+← démystifier    → la question est ancienne
+
+⚠ poser, puis descendre. (⟳ payée à la remontée, slide 32.)
 -->
 
 ---
@@ -92,14 +94,15 @@ La revue d'avant-garde tombe amoureuse. Numéro spécial. **Ces poèmes
 passaient tous ses critères.** Puis la révélation : canular.
 
 <!--
-1943, Australie. Deux poètes conservateurs détestent l'avant-garde. Un
-après-midi, avec un dictionnaire et un rapport sur le drainage des marécages,
-ils fabriquent l'œuvre complète d'un poète mort inventé : Ern Malley.
+**Ern Malley : un canular passe TOUS les critères de la revue.**
 
-La revue d'avant-garde tombe amoureuse. Numéro spécial. Ces poèmes passent tous
-ses critères. Tous. Puis la révélation : canular.
+- 1943, Australie : 2 poètes fabriquent en un après-midi l'œuvre d'un poète mort inventé (dico + rapport sur le drainage).
+- la revue d'avant-garde tombe amoureuse, numéro spécial. Puis : canular.
+- conforme à tous les critères, et vide.
 
-Conformes à tous les critères, et vides. Retenez ça — je l'ai revu de mes yeux.
+← la question est ancienne    → grille verte, texte mort
+
+⚠ garder les 2 faussaires en tête : le diptyque paie juste après.
 -->
 
 ---
@@ -133,18 +136,15 @@ droite: Un humain
 **Les deux passent chaque contrôle de la grille. Un seul est vivant.**
 
 <!--
-Voici deux textes. La même scène. Ma grille de style les valide tous les deux :
-pas de lexique pastiche, pas de tic d'IA, pas d'exclamation, rien d'interdit.
-Tout au vert.
+**deux textes, la même scène : la grille les valide tous les deux. Un seul est vivant.**
 
-[Gauche.] Celui-ci, la machine l'a écrit. Correct. Propre. Et sans visage —
-« vérifier par moi-même », « s'y trouvaient bien » : n'importe qui, donc
-personne.
+- gauche = la machine : correct, propre, sans visage (n'importe qui = personne).
+- droite = un humain : l'accumulation qui monte, le « sauf une, une seule ».
+- la grille compte, elle ne lit pas.
 
-[Droite.] Celui-là, non. L'accumulation qui monte, et le « sauf une, une
-seule » qui ouvre le gouffre.
+← Malley (le canular)    → le gros modèle
 
-La grille ne voit pas la différence. Elle compte. Compter n'est pas lire.
+⚠ laisser lire les deux avant de trancher. « compter n'est pas lire » se dit ici.
 -->
 
 ---
@@ -195,17 +195,15 @@ Ce soir, celui qui documente et fournit toute la matière — **c'est moi.**
 Comme Maquet. Et Maquet a perdu le nom.
 
 <!--
-1844. Derrière Dumas, un homme : Auguste Maquet. Il documente, il structure,
-il rédige des premiers jets entiers. Une vingtaine de romans, Monte-Cristo
-compris.
+**Maquet fournit la matière ; Dumas garde le nom. Ce soir, le Maquet, c'est moi.**
 
-1858. Maquet attaque en justice pour son nom sur la couverture. Il perd. De
-l'argent, jamais le nom.
+- 1844 : Maquet documente, structure, rédige les premiers jets (une vingtaine de romans, Monte-Cristo compris).
+- 1858 : il attaque pour son nom → il perd. De l'argent, jamais le nom.
+- ce soir, celui qui documente et fournit toute la matière, c'est moi. Et Maquet a perdu le nom.
 
-Ce soir, dans ma fabrique, celui qui documente et fournit toute la matière,
-c'est moi. Comme Maquet. Et Maquet a perdu le nom.
+← le gros modèle    → la matière (l'arbre bible/)
 
-[Ne rien ajouter. Laisser la question travailler. On y répondra en remontant.]
+⚠ laisser la question de paternité travailler, ne pas conclure : réponse à la remontée.
 -->
 
 ---
@@ -266,13 +264,15 @@ mouvements-chapitres.md      ██             35
 </style>
 
 <!--
-Voilà ma matière. Douze fichiers. Onze cent trente et une lignes. Écrites à la
-main, avant que la machine n'écrive un mot. Une bible : les personnages, les
-lieux, les objets, la chronologie. Et ça — [zoom] — le lexique d'un métier. Pas
-inventé : la correction, c'est un vrai métier, avec ses fautes qui ont des noms.
-Comme Maquet documentait ses sources. Je l'ai documenté.
+**ma matière : 1131 lignes documentées à la main, avant que la machine n'écrive un mot.**
 
-Maquet en a écrit dix fois plus. Et il a perdu le nom.
+- 12 fichiers : personnages, lieux, objets, chronologie…
+- zoom : le lexique du métier de correctrice — documenté (pas inventé : la correction est un vrai métier).
+- comme Maquet documentait ses sources.
+
+← Maquet (la figure)    → Queneau
+
+⚠ le volume EST l'argument (le sentir, pas le lire). « Maquet en a écrit 10× plus, et a perdu le nom. »
 -->
 
 ---
@@ -294,19 +294,15 @@ d'années pour tout lire.
 génère. Le générateur, c'est le livre. L'exécutant, c'est le lecteur.
 
 <!--
-[SORTIR L'EXEMPLAIRE de Cent mille milliards de poèmes. Le manipuler face à la
-salle.]
+**Queneau écrit la MACHINE, pas les poèmes.**
 
-1961. Dix sonnets découpés en bandelettes. Cent mille milliards de
-combinaisons. Deux cents millions d'années pour tout lire.
+- Cent mille milliards de poèmes (1961) : 10 sonnets en bandelettes → 10^14 combinaisons, 200 M d'années pour tout lire.
+- Queneau n'a écrit aucun poème : il a écrit le générateur. L'exécutant, c'est le lecteur.
+- la France les met au programme ; personne n'exige de les bannir des prix.
 
-Queneau n'a écrit aucun de ces poèmes. Il a écrit la machine qui les génère.
-Le générateur, c'est ce livre. L'exécutant, c'est le lecteur.
+← la matière    → le DAG (la machine que j'ai écrite)
 
-[Composer une combinaison devant la salle. Reposer le livre.]
-
-La France a mis ces gens au programme scolaire. Personne n'a exigé de les
-bannir des prix.
+⚠ SORTIR le livre, manipuler les bandelettes face salle (main libre). Reposer.
 -->
 
 ---
@@ -387,13 +383,15 @@ g.add_conditional_edges("glisse", route_after_write, ["write", "review"])
 </style>
 
 <!--
-Ce que j'ai écrit, ce n'est pas le chapitre. C'est ça. Un atelier avec des
-postes : un plan, l'écriture, la relecture contre les fiches, la correction,
-l'assemblage. Et surtout — [pointer la boucle rouge] — quand ça casse, ça
-recommence. Tout seul.
+**j'ai écrit l'atelier, pas le chapitre.**
 
-Une ligne de code fait cette boucle. Comme Queneau : j'ai écrit la machine,
-pas les poèmes.
+- un atelier avec des postes : plan → écrire → relire → corriger → assembler.
+- surtout : la boucle rouge — quand ça casse, ça recommence, tout seul.
+- une seule ligne de code fait cette boucle.
+
+← Queneau (la figure)    → Carver
+
+⚠ pointer la boucle rouge. Comme Queneau : la machine, pas les poèmes.
 -->
 
 ---
@@ -415,12 +413,15 @@ de refermer.
 **Lish n'a rien ajouté à Carver. Il a coupé.**
 
 <!--
-Raymond Carver, le minimaliste le plus imité d'Amérique. Son style a un
-deuxième père : Gordon Lish, son éditeur. Il coupait les nouvelles jusqu'à la
-moitié, réécrivait les fins, contre l'auteur qui le suppliait de refermer. On
-le sait avec certitude depuis 2007 : deux versions publiées côte à côte.
+**la voix de Carver a un second père : son éditeur Lish, qui coupait.**
 
-Lish n'a rien ajouté à Carver. Il a coupé.
+- Lish coupait les nouvelles jusqu'à la moitié, réécrivait les fins — contre l'auteur qui suppliait.
+- prouvé depuis 2007 (deux versions publiées côte à côte).
+- Lish n'a rien ajouté. Il a coupé.
+
+← le DAG    → les interdits (la qualité par retrait)
+
+⚠ pose le geste du retrait avant l'artefact et le seuil.
 -->
 
 ---
@@ -451,13 +452,14 @@ commentaire: Ma fiche de style ne dit pas comment écrire. Elle dit quoi barrer.
 </style>
 
 <!--
-Comment j'ai réglé la voix ? Pas en disant à la machine comment bien écrire.
-En lui disant tout ce qu'elle n'a pas le droit d'écrire. Voici ma fiche de
-style. Ce n'est pas une liste de recettes. C'est une liste de choses barrées.
+**ma fiche de style ne dit pas comment écrire. Elle dit quoi barrer.**
 
-[Laisser lire.]
+- pas une liste de recettes : une liste d'interdits (rayés rouge = le crayon de Lish).
+- le style, ce n'est pas ce que j'ajoute, c'est ce que je raye.
 
-Le style, ce n'est pas ce que j'ajoute. C'est ce que je raye. Comme Lish.
+← Carver (la figure)    → le seuil
+
+⚠ laisser lire la liste rayée. Comme Lish.
 -->
 
 ---
@@ -472,13 +474,14 @@ Ma voix, ce sont mes retraits.
 À force de retraits — à qui est la voix ?
 
 <!--
-Lish a tant coupé Carver que la moitié du style est de lui. On appelle ça du
-Carver.
+**le seuil, dit une seule fois : à force de retraits, à qui est la voix ?**
 
-Ma voix, ce sont mes retraits. Alors — à force de retraits, à qui est la voix ?
+- Lish a tant coupé Carver que la moitié du style est de lui — on appelle ça du Carver.
+- ma voix, ce sont mes retraits.
 
-[NE PAS RÉPONDRE. C'est la seule fois où la question est dite tout haut. On la
-laisse ouverte. La réponse est en haut de l'escalier.]
+← les interdits    → la remontée
+
+⚠ NE PAS répondre. Seule fois où la question est dite tout haut. (⟳ temps 2 : aiguiser ; réponse à la remontée.)
 -->
 
 ---
@@ -490,9 +493,13 @@ layout: exergue
 La fabrique reste à notre main.
 
 <!--
-[La règle, seule.]
+**la fabrique reste à notre main.**
 
-La fabrique reste à notre main.
+- la règle, seule à l'écran.
+
+← le seuil    → rouvrez la boîte noire
+
+⚠ bascule vers la remontée : le ton remonte.
 -->
 
 ---
@@ -522,23 +529,14 @@ La fabrique est à moi.</p>
 </div>
 
 <!--
-[LA REMONTÉE.]
+**rouvrez la boîte noire : elle est pleine de mes gestes.**
 
-Rouvrez la boîte noire du début, celle qui faisait peur à l'Académie.
-Qu'est-ce qu'il y a dedans ?
+- inventaire, révélé une entrée à la fois : une matière documentée, un atelier monté, une voix réglée par ses retraits, une mesure qui ne lit pas à ma place.
+- où est l'intelligence ? partout où je suis passé. (= la réponse au seuil, temps 3)
 
-Une matière que j'ai documentée, fiche par fiche — comme Maquet. Un atelier que
-j'ai monté, poste par poste — comme Queneau. Une voix que j'ai réglée par ses
-retraits — comme Lish. Et une mesure dont je sais qu'elle ne lit pas à ma
-place — Malley me l'a appris.
+← la fabrique reste    → le hand-off vers le mode personnage
 
-À main levée, tout à l'heure, je vous ai demandé où était le seuil. Il n'existe
-pas. J'ai conçu cet atelier comme un atelier d'écriture. La fabrique est à moi.
-
-Et l'Académie ? Elle n'a pas de réponse simple à m'opposer. La créativité n'en
-a pas.
-
-[Temps.]
+⚠ la boîte noire du début (celle qui faisait peur) → vidée sous leurs yeux. Pont dev IMPLICITE ici.
 -->
 
 ---
@@ -555,8 +553,12 @@ Ne répondez pas tout de suite.
 Il me reste quelqu'un à vous présenter.
 
 <!--
-Alors, la question du début : une fabrique qu'on tient à ce point, qui en
-est l'auteur ?
+**le hand-off : une fabrique qu'on tient à ce point — qui en est l'auteur ?**
 
-Ne répondez pas tout de suite. Il me reste quelqu'un à vous présenter.
+- « ne répondez pas tout de suite : il me reste quelqu'un à vous présenter ».
+- ce n'est pas re-poser la question (pas de vote) : c'est différer vers le mode personnage.
+
+← rouvrez la boîte    → Racter / le mode personnage
+
+⚠ ton de bascule, pas de re-question. (⟳ affirmation finale à la chute, slide 43.)
 -->

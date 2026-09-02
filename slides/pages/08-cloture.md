@@ -16,18 +16,14 @@ que j’ai inventé, un personnage que j’interroge — lu par ma propre voix.
 La fabrique est de ma main. **L’œuvre est mienne.**
 
 <!--
-[BEAT 1 — SANS VOTE. 30".]
+**C'est mon œuvre — affirmation, plus une question.**
 
-Ce chapitre. Écrit par un atelier que j’ai construit, dans une voix que j’ai
-réglée, sur un monde que j’ai inventé, avec un personnage que j’interroge,
-lu par ma propre voix sans moi.
+- ce chapitre : un atelier construit, une voix réglée, un monde inventé, un personnage interrogé, lu par ma voix.
+- la fabrique est de ma main → l'œuvre est mienne.
 
-Est-ce que c’est mon œuvre ?
+← la lecture    → le verdict (l'Académie a perdu)
 
-[Ne pas demander les mains. Plus de vote — vous venez de l’écouter trois
-minutes sans me chercher derrière, la réponse est déjà tombée. Laisser un
-silence, enchaîner sur le verdict. Le chapitre lu EST la réponse, on ne
-tourne pas autour.]
+⚠ pas de mains, pas de vote : la lecture EST la réponse. Silence, puis enchaîner.
 -->
 
 ---
@@ -57,46 +53,15 @@ c’était d’avoir **trop sélectionné, trop assemblé, trop édité**. Je la
 revendique.
 
 <!--
-[BEAT 2 — LE VERDICT. 1’. Slide noire : on termine comme on a commencé.]
+**l'Académie a déjà perdu — pas contre les machines, contre sa propre histoire.**
 
-L’Académie Goncourt a peur d’une affaire Ajar 2.0. Son juré le plus ancien
-avoue qu’aucun d’entre eux n’est armé pour la repérer. Les éditeurs écrivent
-dans les contrats qu’une œuvre doit être produite par l’auteur, et non par une
-machine, et personne, dans cette salle ni ailleurs, ne sait faire tenir cette
-phrase debout.
+- elle a couronné Dumas et sa fabrique, Ajar et son fantôme, et gardé le prix quand tout s'est su.
+- la clause « produite par l'auteur, non par une machine » ne décrit aucun livre aimé : Maquet produisait, Lish coupait, le lecteur de Queneau génère.
+- 1984, Racter : seule accusation, « trop sélectionné, trop édité » → trop humain. Je la revendique.
 
-Alors je vais le dire pour eux.
+← c'est mon œuvre    → la phrase lyrique
 
-L’Académie a déjà perdu. Elle ne le sait pas encore.
-
-Elle n’a pas perdu contre les machines. Elle a perdu contre sa propre
-histoire. Elle a couronné Dumas et sa fabrique. Elle a couronné Ajar et son
-fantôme.
-
-Cette clause qu’ils écrivent — produite par l’auteur, et non par une machine —
-ne tient devant aucun d’eux. Maquet produisait. Lish coupait jusqu’à la
-moitié. Le lecteur de Queneau génère. Elle ne décrit aucun des livres qu’on
-aime.
-
-Et en 1984, un programme a publié un livre — Racter, sur un micro-ordinateur.
-La seule accusation qu’on ait trouvée, c’était d’avoir trop sélectionné, trop
-assemblé, trop édité les sorties. On accusait un livre de machine d’être trop
-humain.
-
-Cette accusation-là, je la revendique. C’est exactement ce que j’ai fait ce
-soir devant vous.
-
-[CLAUSE. « Produite par l’auteur, non par une machine » (posée en section 2,
-retenue toute la soirée) se paie ICI, à la place de l’ancien renversement
-supprimé. Bookend section 2 → chute.]
-
-[RACTER est INTRODUIT ici, plus rappelé : la galerie a disparu, la salle n’a
-plus le nom. Le poser en une phrase (1984, un programme, « trop humain »), le
-speaker plaide coupable. Rester compact — chute sèche. Le Littératron
-d’Escarpit sort du talk avec la galerie. Coût ≈ 25 s, repris sur le beat 3.]
-
-Elle a gardé le prix quand tout s’est su, parce qu’au fond, elle a toujours
-su ce qu’elle refuse d’admettre aujourd’hui :
+⚠ slide noire, chute sèche. Racter INTRODUIT ici (⟳ posé §5, la salle n'a pas le nom) : une phrase, plaider coupable. Bookend clause §2.
 -->
 
 ---
@@ -115,11 +80,13 @@ Une œuvre n’a jamais eu besoin d’un auteur pur.
 Elle a besoin d’une **voix qui tienne**, et d’un **lecteur qui tremble**.
 
 <!--
-Une œuvre n’a jamais eu besoin d’un auteur pur. Elle a besoin d’une voix
-qui tienne, et d’un lecteur qui tremble.
+**une œuvre n'a jamais eu besoin d'un auteur pur : d'une voix qui tienne, et d'un lecteur qui tremble.**
 
-[SEULE phrase lyrique autorisée du talk. Elle tient parce que tout ce qui
-précède est sec.]
+- la seule phrase lyrique autorisée du talk.
+
+← le verdict    → la sortie (Gary)
+
+⚠ elle tient parce que tout ce qui précède est sec. Ne pas la charger.
 -->
 
 ---
@@ -136,24 +103,12 @@ noCountdown: true
 Je me suis bien amusé. Au revoir et merci.
 
 <!--
-[BEAT 3 — LA SORTIE. 1’15.]
+**la sortie : les derniers mots écrits de Gary.**
 
-Le roman avance. Chapitre après chapitre, soir après soir, dans une pièce
-d’où rien ne sort. Un jour il sera fini. Peut-être qu’il sera bon. Peut-être
-qu’un jury le lira sans savoir ce que vous savez maintenant.
+- le roman avance, dans une pièce d'où rien ne sort ; un jour un jury le lira sans savoir ce que la salle sait.
+- « Je me suis bien amusé. Au revoir et merci. » — les mots d'un homme qui a gagné deux fois le prix qu'on ne gagne qu'une fois.
 
-[Temps.]
+← la phrase lyrique    → (noir)
 
-Et si ce jour arrive, je sais déjà ce que j’écrirai en dernière page. Les mots
-d’un homme qui a gagné deux fois le prix qu’on ne gagne qu’une fois.
-
-[Temps.]
-
-Je me suis bien amusé. Au revoir et merci.
-
-[Face salle, sans regarder l’écran, sans guillemets dans la voix. La salle du
-cold open les reconnaîtra seule.]
-
-[Noir. Ne pas revenir saluer avant que le noir ait duré. C’est lui, le point
-final. PAS de « merci » après : le talk se termine sur celui de Gary.]
+⚠ face salle, sans guillemets dans la voix, sans regarder l'écran. Noir. PAS de « merci » après : le talk finit sur celui de Gary.
 -->
