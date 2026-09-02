@@ -4,7 +4,8 @@ light: /images/coldopen-05-rue-pluie-s913-patch.png
 dark: /images/coldopen-05-rue-pluie-s913-patch-cale.png
 ---
 
-<!-- Section 1 — COLD OPEN, 7 beats (script keynote). Registre polar,
+<!-- Section 1 — COLD OPEN, 5 beats (bio Gary + ironie en delivery, plus en slides).
+     Registre polar,
      présent de narration. Pas de slide de titre : le titre tombe au beat 7.
      BEAT 1 — Le corps. Ambiance rue nocturne en fond perdu. -->
 
@@ -15,24 +16,15 @@ Il rentre chez lui, enfile une robe de chambre rouge, s’allonge.
 Et il se tire une balle.
 
 <!--
-[Noir. Pas de titre, pas de bonjour. On entre en parlant.]
+**un géant se donne la mort, et laisse un dernier texte qui fera tout sauter.**
 
-2 décembre 1980. Rue du Bac, Paris.
+- 2 déc 1980, rue du Bac : robe de chambre rouge, une balle. Mot : « aucun rapport avec Seberg ».
+- qui c'est (à dire ici) : aviateur France libre, Compagnon de la Libération, consul, Goncourt 1956 — un monument que Paris a déclaré fini ; il lisait ses nécrologies de son vivant.
+- le mot annonce un texte posthume → 6 mois plus tard, il fait sauter 50 ans de critique.
 
-Romain Gary passe une dernière fois chez son éditeur. Il rentre chez lui. Il
-enfile une robe de chambre rouge. On raconte qu’il l’a choisie pour que le
-sang ne se voie pas.
+← slide d'attente    → le fantôme Ajar
 
-Il s’allonge. Et il se tire une balle.
-
-Sur la table, un mot. Le mot dit, en substance : aucun rapport avec Jean
-Seberg. Les fervents du cœur brisé sont priés de s’adresser ailleurs.
-
-Et le mot annonce autre chose. Un texte. Un dernier texte, à publier après
-sa mort.
-
-Six mois plus tard, ce texte paraît. Et il fait sauter cinquante ans de
-critique littéraire française.
+⚠ noir, pas de titre, pas de bonjour : on entre en parlant.
 -->
 
 ---
@@ -50,28 +42,15 @@ Signé d’un inconnu : **Émile Ajar**.
 Un seul problème : l’auteur est introuvable.
 
 <!--
-1974. Un manuscrit arrive chez Gallimard, posté depuis le Brésil. Un
-premier roman : *Gros-Câlin*. L’histoire d’un homme seul qui vit avec un
-python.
+**un fantôme rafle le Goncourt ; personne ne sait qui écrit.**
 
-Signé d’un inconnu : Émile Ajar.
+- 1974 : manuscrit posté du Brésil, signé Émile Ajar (Gros-Câlin). Triomphe.
+- 1975 : La Vie devant soi → Goncourt. Auteur introuvable (pas de photo, pas d'interview).
+- l'Académie couronne un fantôme. Tout Paris : qui écrit ?
 
-La critique s’enflamme. Enfin du neuf. Enfin une voix. Le livre est un
-triomphe.
+← la mort de Gary    → Ajar = Gary
 
-1975, deuxième roman : *La Vie devant soi*. Momo, madame Rosa, Belleville.
-Prix Goncourt.
-
-Un seul problème : l’auteur est introuvable. Pas de photo. Pas d’interview.
-Personne ne l’a jamais vu. Ajar fait même savoir qu’il refuse le prix.
-
-Réponse de l’Académie, authentique : le Goncourt ne se refuse pas. Il ne se
-rend pas non plus.
-
-Le prix le plus prestigieux de la littérature française vient d’être
-attribué à un fantôme.
-
-Et tout Paris se pose la même question : qui écrit ?
+⚠ registre polar, présent. Laisser monter le « qui ? ».
 -->
 
 ---
@@ -91,32 +70,15 @@ Alors il construit. La presse veut un visage : il en fabrique un.
 **Paul Pavlowitch**, son petit-cousin, recruté pour incarner Ajar.
 
 <!--
-La réponse, certains d’entre vous la connaissent. C’est l’homme qu’on
-vient d’enterrer.
+**Ajar, c'est Gary : le mort a fabriqué un auteur de toutes pièces.**
 
-Ajar, c’est Gary.
+- règle : on n'a le Goncourt qu'une fois (Gary l'a eu en 56) → interdit d'y toucher.
+- il construit : Pavlowitch, petit-cousin, recruté pour incarner Ajar ; il nie à la télé ; il écrit même Pseudo.
+- la cruauté (à dire ici) : les mêmes critiques qui l'enterrent sous son nom le sacrent sous l'autre — « Gary ? incapable ». Il découpe les articles, les garde. Seul à savoir.
 
-Et là, mesurez le vertige. Le règlement du Goncourt est formel : un auteur
-ne le reçoit qu’une fois dans sa vie. Gary l’a eu en 56. Ce prix, il n’a pas
-le droit d’y toucher.
+← le fantôme    → Vie et mort / l'Académie ne fait rien
 
-Alors il construit.
-
-Une voix sur le papier, ça ne suffit plus. La presse veut un visage. Il lui
-en fabrique un : Paul Pavlowitch, son petit-cousin, recruté pour incarner
-Ajar. Interviews. Photos. Apparitions publiques.
-
-Les journalistes traquent. Ils remontent la piste familiale, jusqu’à Gary.
-Ils posent la question, frontalement. Gary nie. À la télévision, droit dans
-les yeux.
-
-Mieux : il écrit *Pseudo*. Un faux journal intime signé Ajar, le récit d’un
-homme qui devient fou parce qu’on l’accuse d’être quelqu’un d’autre.
-
-La fabrique se défend en produisant davantage de littérature.
-
-[BEAT D’INVESTISSEMENT : Pavlowitch doit être raconté avec assez de relief
-pour que la salle y repense seule en section 6. Aucun lien explicite ici.]
+⚠ Pavlowitch doit marquer (rappel muet au mode personnage). Aucun lien explicite.
 -->
 
 ---
@@ -145,24 +107,15 @@ On ne rend pas un Goncourt.
 </div>
 
 <!--
-Été 1981. Six mois après la rue du Bac. Le texte posthume paraît : *Vie et
-mort d’Émile Ajar*.
+**tout est révélé ; face au plus grand canular de son histoire, l'Académie ne fait RIEN.**
 
-Tout y est. La supercherie. Pavlowitch. *Pseudo*. Les années de double vie.
-Tout est vrai.
+- 1981, texte posthume Vie et mort d'Émile Ajar : tout est vrai.
+- dernière ligne : « Je me suis bien amusé. Au revoir et merci. » (⟳ ferme le talk, slide 46).
+- l'Académie ? Rien. Prix toujours attribué à Ajar aujourd'hui. On ne rend pas un Goncourt.
 
-La dernière ligne dit : « Je me suis bien amusé. Au revoir et merci. »
+← Ajar = Gary    → 2026 : la même peur
 
-Et l’Académie Goncourt ? Face au plus grand canular de son histoire, que
-fait-elle ?
-
-[Temps. Le tenir pleinement.]
-
-Rien.
-
-Le prix reste. Il est toujours attribué à Émile Ajar, aujourd’hui.
-
-On ne rend pas un Goncourt.
+⚠ tenir le silence AVANT « Rien. » (clic 1), le plus important du cold open ; clic 2 : le prix maintenu.
 -->
 
 ---
@@ -185,21 +138,14 @@ Il redoute une « affaire Ajar 2.0 ».
 </div>
 
 <!--
-[Temps long. On laisse la salle avec ça.]
+**50 ans plus tard, la même Académie a peur : « affaire Ajar 2.0 ».**
 
-Cinquante ans plus tard. L’intelligence artificielle s’invite aux
-discussions mensuelles de la même Académie.
+- Assouline, juré depuis 2012 (Télérama, avr. 2026) : « aucun de nous n'est armé pour repérer ChatGPT ».
+- il redoute une « affaire Ajar 2.0 ».
 
-[Temps.]
+← l'Académie n'a rien fait en 1975    → le titre
 
-Son juré le plus ancien redoute publiquement, ce sont ses mots, une
-« affaire Ajar 2.0 ». Et il avoue : « Aucun d’entre nous n’est armé pour
-repérer une utilisation de ChatGPT. »
-
-[Temps. Tenir entre les deux citations.]
-
-[GARDE-FOU : ne jamais dire que l’Académie annonce / refuse / interdit.
-Rien de tel n’existe. La pièce à conviction, c’est la peur et l’aveu.]
+⚠ GARDE-FOU : jamais « l'Académie annonce/interdit ». Propos attribués + sourcés. Tenir le temps entre les 2 citations.
 -->
 
 ---
@@ -213,7 +159,11 @@ variant: titre
 L’IA devant soi
 
 <!--
-[Le titre tombe à l’écran. Lumière.]
+**le titre tombe : le talk commence.**
 
-Bonsoir.
+- lumière, titre à l'écran. « Bonsoir. »
+
+← le pont 1975→2026    → le pivot (Assouline, la clause)
+
+⚠ le titre domine, ce n'est pas un aphorisme. Un seul dans le deck.
 -->
