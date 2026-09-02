@@ -63,63 +63,62 @@ slide et le script, le script gagne. Le deck suit :
    d'originalité des éditeurs, la question centrale du talk, signature.
 3. **L'allumage** — le roman, le lancement de la génération, le contrat du
    compte à rebours.
-4. **La fabrique** — fusion de l'ancien *jeu du seuil* et de la descente.
+4. **La fabrique** — cinq **gestes d'auteur**, chacun noué à une figure
+   historique et prouvé par un **artefact du dispositif** lisible sans le
+   roman ni l'historique des expérimentations. Fil directeur : *on fait
+   comme les autres auteurs, avec d'autres outils.* (Refonte
+   `refonte-arc-figures-gestes` : les quatre murs à pattern ternaire sont
+   remplacés par cinq gestes ; voir la spec `deck-content`.)
    **Entrée** : l'accroche mains levées, **une seule fois** (elle installe
-   la salle en jury — aucune mécanique de vote ensuite), puis la contrainte
-   locale posée en cadre. Puis **quatre murs**, chacun **ouvert par la
-   figure qui le nomme**, dite une fois, sur le battement *la figure → ce
-   qu'on a tenté → le mur → ce que le mur a forcé à construire* :
-   - le lore (Dumas/Maquet → bibliothèque indexée, plan de scènes),
-   - l'intention (Queneau/Oulipo, livre physique apporté sur scène → les
-     nœuds qui composent, les beats bornés par le code),
-   - la qualité **et la mesure** (Ern Malley → fiche de style + correcteur,
-     l'aveu *compter n'est pas lire*),
-   - **le mur qu'on ne peut pas acheter** (Carver/Lish) — fusion des
-     anciennes strates *puissance* et *seuil*, qui répondaient à la même
-     objection à deux étages : le gros modèle ne rentre pas, et s'il
-     rentrait il ne tiendrait pas davantage le doute qu'il faut tenir.
+   la salle en jury — aucune mécanique de vote ensuite), sur la question
+   centrale, puis la contrainte locale posée en cadre. La **question du
+   seuil court** ensuite comme fil rouge rhétorique : énoncée **une seule
+   fois** (au geste Carver), implicite ailleurs, et **répondue** à la
+   remontée. Les cinq gestes, dans l'ordre — chacun sur le battement *la
+   figure → notre geste → l'artefact → (au besoin) le seuil* :
+   - **Malley** (juste n'est pas bon ; *compter n'est pas lire*) → diptyque
+     d'un extrait machine creux et d'un étalon humain, les deux passant la
+     grille au vert. Porte l'**aparté « gros modèle »** en une phrase : il
+     ne rentre pas, et s'il rentrait il ferait du juste-mais-mort en plus
+     gros.
+   - **Maquet** (je fournis la matière, documentée) → l'arbre `bible/`
+     (barres texturées) + le lexique du métier de correctrice ; Maquet a
+     fourni la matière et **perdu le nom** en 1858.
+   - **Queneau** (j'ai écrit la machine, pas le texte) → le DAG LangGraph
+     glosé, boucle de reprise en héros + une ligne de code.
+   - **Carver/Lish** (la qualité vient en retranchant) → la liste des
+     interdits rayée rouge. **C'est ici que le seuil s'énonce**, en
+     question, non résolu : à force de retraits, à qui est la voix ?
+   - **Racter** (machine « auteur », en fait curée par l'humain) →
+     charnière vers le mode personnage ; sa référence et son illustration
+     sont réintroduites.
 
-   Puis la remontée : « la fabrique reste à notre main ». *Vian/Vernon
-   Sullivan est retiré* : Gary fait le même travail en mieux pendant six
-   minutes de cold open, et Vian cassait le gradient (il écrit 100 % du
-   texte lui-même). *Racter n'ouvre aucun mur : il revient au verdict de la
-   chute.*
-   **Plus de galerie séparée, plus de renversement « il n'existe pas de
-   seuil », plus de vote par station** : chaque figure est dite une fois, à
-   son mur, et le fait éclaire la tentative dans le même souffle. La fusion
-   raccourcit le milieu — un **trou de chrono (~4'40)** est à recombler par
-   approfondissement (Malley, dernier mur), pas par étirement.
+   Puis la remontée : inventaire des gestes (bibliothèque, plan, voix,
+   interdits — tous à ma main) et **réponse au seuil** — il n'existe pas de
+   seuil, j'ai *conçu l'atelier* comme un atelier d'écriture ; l'Académie
+   n'a aucune réponse simple à opposer, la créativité n'en a pas. *« La
+   fabrique reste à notre main. »*
 
-   **La contrainte locale n'est pas un mur, c'est le cadre.** Sans elle
-   aucun de ces murs n'existe : avec une clé d'API on ne construit ni
+   **La contrainte locale n'est pas un geste, c'est le cadre.** Sans elle
+   aucun de ces gestes n'existe : avec une clé d'API on ne construit ni
    bibliothèque, ni fiche de style, ni sélection en code. Elle est énoncée
-   à l'entrée de la fabrique et reprise à la remontée, jamais comme l'un
-   des murs. Le rappel pendant les quinze minutes est assuré sans une
-   phrase : le compte à rebours *est* une machine locale qui travaille
-   sous les yeux de la salle.
+   à l'entrée et reprise à la remontée. Le rappel pendant les quinze minutes
+   est assuré sans une phrase : le compte à rebours *est* une machine locale
+   qui travaille sous les yeux de la salle.
 
-   **Le dernier mur casse le pattern ternaire, et c'est voulu.** Son
-   troisième battement ne célèbre aucune construction : il constate qu'il
-   a fallu *empêcher* le modèle de résoudre. Un talk dont la thèse est que
-   résoudre est le défaut de la machine ne peut pas offrir quatre
-   résolutions de forme sur quatre.
-
-   **Le dernier mur est un renversement, et sa cible est le speaker.** Le
-   run de falsification (point 7 de « À trancher ») a tranché : la machine
-   tenait le doute ; c'est le brief qui la poussait à le franchir. Le mur
-   se joue donc en trois temps — l'accusation (les verbatims, la fiche du
-   personnage : la salle conclut que le modèle est incapable), puis
-   l'expérience qui casse cette conclusion (12 tirages sur 12 tiennent),
-   puis l'aveu. C'est le seul mur du talk qui piège la salle, et il le fait
-   avec l'erreur du speaker.
-5. **Le mode personnage** (~3'20) — **culmination collée au dernier mur** :
-   c'est le mécanisme du mur Lish révélé. On ne demande plus à la machine
-   d'écrire *sur* le personnage mais de le *devenir*. Le personnage est
-   **Judith**, la même qu'à l'étage 2 du dernier mur : elle y était l'objet
-   de l'accusation, elle est ici le sujet qu'on interroge. Entretien rejoué
-   à **deux** questions (factuelle, interprétative), puis **l'aveu** — rien
-   n'a émergé, tout a été composé — puis le retournement sur la question de
-   Le Tellier.
+   *Retiré à la refonte : le renversement du run `xp-resolution` (« c'est
+   moi qui franchissais ») et sa mise en scène en trois temps ; le pattern
+   ternaire des quatre murs ; l'ancien « mur qu'on ne peut pas acheter »
+   comme mur (son étage 1 survit en aparté chez Malley) ; le pont Gary
+   explicite (la salle refait le lien via Racter) ; Vian/Vernon Sullivan.*
+5. **Le mode personnage** (~3'20) — **culmination du geste Racter** : le
+   mécanisme révélé. On ne demande plus à la machine d'écrire *sur* le
+   personnage mais de le *devenir*. Le personnage est **Judith**.
+   **Entretien rejoué** — pré-généré et embarqué, **jamais joué en direct**
+   (le modèle 13 Go est partagé avec la génération, `POST /chat` répond
+   `409` pendant tout le run) — à **deux** questions (factuelle,
+   interprétative), puis **l'aveu** — rien n'a émergé, tout a été composé —
+   puis le retournement sur la question de Le Tellier.
    **Aucune émergence n'est affirmée, ici ni ailleurs dans le deck** :
    aucune n'est documentée. Le candidat le plus cité, la « seconde
    assiette », figurait en *matériau imposé* dans le brief de calibration
@@ -468,6 +467,26 @@ Questions à poser au speaker au démarrage — ne pas improviser :
    et deux fois c'était sa propre main. Le seul détecteur qui a « vu » une
    résolution dans le lot était un faux positif, corrigé par la lecture
    debout : deuxième occurrence de *compter n'est pas lire*.
+   **MàJ refonte `refonte-arc-figures-gestes`** : le *finding* reste vrai,
+   mais **sa mise en scène est coupée** — plus de renversement « c'est moi
+   qui franchissais » ni de slides `xp-resolution` à l'écran. La nouvelle
+   fabrique (cinq gestes) porte la thèse par le fil rouge du seuil et sa
+   réponse à la remontée, pas par un run de falsification exposé.
+
+## Décisions de la refonte (arc en cinq gestes)
+
+Tranché en exploration du 2026-09-01 (change `refonte-arc-figures-gestes`) :
+- **Queneau = LangGraph** (j'ai écrit la machine), pas best-of-N — même si
+  le best-of-N existe réellement dans le pipeline, ce n'est pas son geste.
+- **Maquet = nous** (on fournit la matière, documentée), valence sombre
+  assumée : Maquet a fait le travail et perdu le nom. Inverse de l'ancien
+  « je suis Dumas ».
+- **Seuil énoncé une seule fois** (au geste Carver), implicite ailleurs,
+  répondu à la remontée.
+- **Racter ouvre le mode personnage** (entretien rejoué, jamais live) et
+  est rappelé une ligne à la chute ; référence et illustration
+  réintroduites.
+- **Aparté « gros modèle » → Malley**.
 
 ## Jalons proposés
 

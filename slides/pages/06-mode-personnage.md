@@ -1,11 +1,44 @@
 ---
+layout: case-card
+name: Racter
+work: The Policeman’s Beard Is Half Constructed, 1984
+figure: /images/cas-06-racter-s47.png
+balance: Auteur ███░░░░░░░ Dispositif
+---
+
+<!-- Section 5 — LE MODE PERSONNAGE. Refonte : GESTE 5 — RACTER ouvre la
+     section (référence + illustration RÉINTRODUITES), puis la démo devient
+     l'artefact. Culmination du geste Racter (plus « collée au dernier mur »,
+     le mur a disparu). Le compte à rebours approche de zéro : il donne
+     l'urgence. INTERDIT : tout rapprochement explicite avec Pavlowitch. -->
+
+Premier livre revendiqué comme **écrit par un programme**, sur un
+micro-ordinateur. Pas de tribunal, pas de clause, pas de commission : de la
+curiosité.
+
+Et la seule controverse portait sur l'inverse : on soupçonnait l'auteur du
+programme d'avoir **trop sélectionné, trop édité** les sorties.
+
+**On accusait un livre de machine d'être trop humain.**
+
+<!--
+1984. Le premier livre revendiqué comme écrit par un programme, sur un
+micro-ordinateur. La réaction du monde littéraire : de la curiosité amusée.
+Pas de tribunal, pas de clause, pas de commission.
+
+Et la seule controverse de l'époque portait sur l'inverse : on soupçonnait
+l'auteur du programme d'avoir trop sélectionné, trop édité les sorties. On
+accusait un livre de machine d'être trop humain.
+
+[Garder Racter en tête : il revient au verdict, tout à l'heure.]
+-->
+
+---
 layout: cold-open
 ---
 
-<!-- Section 5 — LE MODE PERSONNAGE (script docs/scripts/05-…).
-     Environ 3 minutes, culmination collée au dernier mur. Le compte à rebours approche de zéro : c’est lui qui donne
-     l’urgence. INTERDIT : tout rapprochement explicite avec Pavlowitch —
-     la salle a déjà tous les fils. -->
+<!-- BEAT 1 — L’acteur, l'artefact du geste Racter : la machine « auteur »,
+     en fait curée par l'humain. -->
 
 <!-- BEAT 1 — L’acteur. -->
 
@@ -41,11 +74,11 @@ intitule: La fiche du personnage
 commentaire: Quand une scène résiste, je ne la réécris pas. Je vais lui parler.
 ---
 
-<!-- C’EST JUDITH — décision du 31 août, et c’est la même qu’au dernier mur de la fabrique (section 4).
-     Elle y était l’OBJET de l’accusation ; elle est ici le SUJET qu’on interroge.
-     La salle a son nom depuis quelques minutes : ne pas le représenter comme
-     une nouveauté. Aucun spoiler du dispositif du roman : la ligne
-     d’identité dit le métier et le rituel, jamais ce qu’elle ignore. -->
+<!-- C’EST JUDITH. Son nom a affleuré en section 4 (le fichier `fiche-judith.md`
+     en tête de l'arbre `bible/` du geste Maquet), mais la salle ne la connaît
+     pas vraiment : on l'introduit proprement, sans en faire une nouveauté
+     spectaculaire. Aucun spoiler du dispositif du roman : la ligne d'identité
+     dit le métier et le rituel, jamais ce qu'elle ignore. -->
 
 **Judith**, correctrice. Quinze ans de métier.
 
@@ -124,13 +157,11 @@ lancement et la récolte. Physiquement impossible en direct.]
 layout: exergue
 ---
 
-<!-- BEAT 3 — L’AVEU. 20”. Remplace l’ancien beat « émergence », retiré :
-     AUCUNE émergence n’est documentée, et la spec deck-content interdit
-     d’en affirmer une. Vérification faite candidat par candidat — la
-     seconde assiette était MATÉRIAU IMPOSÉ dans le brief de calibration du
-     chapitre 2 ; « Romane » et « Judith » sont des noms de la bible, donc
-     des violations d’interdit ; la percée du 31-08 vient d’un rejet en
-     code. Ne jamais reconstruire une émergence pour combler ce beat. -->
+<!-- BEAT 3 — L’AVEU. 20”. AUCUNE émergence n’est documentée, et la spec
+     deck-content interdit d’en affirmer une. Vérification faite candidat par
+     candidat — la seconde assiette était MATÉRIAU IMPOSÉ dans le brief de
+     calibration du chapitre 2. Ne jamais reconstruire une émergence pour
+     combler ce beat. -->
 
 Rien n’a émergé. Tout a été composé.
 
@@ -152,13 +183,9 @@ Tout ce qui est bon dans ce livre a été composé. Rien n’a poussé tout seul
 
 [Temps. Ne pas rattraper, ne pas adoucir, ne pas enchaîner trop vite.]
 
-[SLOT FERMÉ — le run xp-resolution du 31 août a tranché H3-brief (12/12).
-H4 existe mais reste faible : l’identité de verdict affleure sans jamais
-conclure. Le verbatim qui le montre (« mon réflexe de correctrice… mais
-pour l’instant, je reste là ») est utilisé au dernier mur de la fabrique (section 4),
-où il porte le renversement. Il ne se redit PAS ici : la même citation à
-cinq minutes d’intervalle userait les deux. Le mode personnage garde son aveu et
-rien de plus.]
+[L'aveu se suffit : rien n'a émergé, tout a été composé et sélectionné. Ne rien
+ajouter, ne pas rouvrir le labo. C'est ce que Racter a fait en 1984, et ce que
+le verdict reprendra tout à l'heure — « trop sélectionné, trop édité ».]
 -->
 
 ---
