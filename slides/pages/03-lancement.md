@@ -9,11 +9,7 @@ variant: plain
 
 # L’Involontaire
 
-Dans le journal d’Judith, il y a des entrées que personne n’a voulues.
-Elle a vérifié, compté, relu.
-
-Quelqu’un pourtant écrit dans ces pages. Quelqu’un qui la connaît mieux
-qu’elle ne consent à se connaître.
+Depuis que l’autre est partie, Judith relit chaque soir ce qu’elle a écrit la veille. Correctrice, elle sait traquer l’erreur. Mais l’écart n’est pas dans le texte : il est entre la page et son souvenir, et chaque vérification donne un peu plus tort à sa mémoire. Elle voulait seulement tourner la page, mais chaque soir, le cahier la ramène en arrière.
 
 <!--
 **le roman, objet de désir : un journal où quelqu'un écrit à la place d'Judith.**
@@ -40,16 +36,12 @@ dark: /images/fabrique-04-usine-machine-s930-dark.png
      la main cachée, comme partout ailleurs dans la série. Le texte occupe le
      tiers gauche que le prompt wide laisse vide par construction. -->
 
-# Pas écrit seul
+# Un atelier d’écriture
 
 Plusieurs chapitres existent. Pas par moi seul, pas par une machine seule :
 **par une fabrique.**
 
-Une architecture complète, sur une machine locale. Sans cloud, sans API,
-sans que rien ne sorte de la pièce.
-
-<p class="muted">Elle connaît mes personnages mieux que moi, certains soirs.
-Et ce soir, elle est ici.</p>
+Une architecture complète, sur une machine locale.
 
 <style scoped>
 /* Pas de font-size ici : en layout `ambiance colonne` c'est le layout qui
@@ -67,21 +59,45 @@ Et ce soir, elle est ici.</p>
 
 ← le roman    → le plan de scènes
 
-⚠ pose la contrainte locale (⟳ reprise en cadre à la descente, slide 18).
+⚠ pose la contrainte locale (⟳ reprise en cadre à la descente, slide 18). Passe de style à venir.
 -->
 
 ---
-layout: piece-a-conviction
-intitule: Le plan de scènes — chapitre 7
-commentaire: Généré par la fabrique, à partir de tout ce qui précède.
+layout: default
+class: plan-scenes
 ---
 
 <!-- BEAT 2 — Le chapitre à écrire. C’est une SORTIE de la fabrique,
      donc une pièce à conviction : même traitement que les extraits de la
      section 5. Casse aussi la série de plain dans la section. -->
 
-L’anniversaire qu’elle a décidé de ne pas fêter : plus elle efface les
-traces de ce jour, plus la maison s’obstine à le célébrer.
+# <span class="rouge">Chapitre 7 : l’anniversaire</span>
+
+<div class="plan-prompt">
+
+Deux entrées, un seul jour.<br>
+Elle a décidé que ce jour n’aura pas lieu.<br>
+Tout ce qu’elle efface revient.<br>
+Interdits : <span class="rouge">aucune explication</span>. Aucun personnage. Aucun nom.<br>
+La voix ne cède pas.
+
+</div>
+
+| Entrée | Moment | Forme | Ancre | Mouvement |
+|---|---|---|---|---|
+| 1 | Après-midi | 2 phrases max, sans citation | aucune (1re entorse au rituel) | résolution : elle efface le jour (photos, playlist, plat) |
+| 2 | Nuit | ~300-400 mots, 3 beats bornés (relève / découverte / doute) | [CIT-2] posée par le code | contrariété → vertige → capitulation |
+
+<style scoped>
+.plan-scenes { display: flex; flex-direction: column; justify-content: center; }
+.plan-scenes :deep(h1), .plan-scenes h1 { font-size: var(--title-2); margin-bottom: var(--space-md); }
+.plan-scenes .plan-prompt { font-size: var(--text-base); line-height: 1.5; border-left: 4px solid var(--color-accent); padding-left: var(--space-md); margin: var(--space-md) 0 var(--space-lg); }
+.plan-scenes .rouge { color: var(--color-accent); }
+.plan-scenes table { width: 100%; border-collapse: collapse; font-size: 12px; line-height: 1.3; }
+.plan-scenes th, .plan-scenes td { border: 1px solid var(--color-rule); padding: 4px 8px; text-align: left; vertical-align: top; }
+.plan-scenes th { color: var(--color-accent); font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.04em; font-size: 11px; }
+.plan-scenes td:first-child, .plan-scenes th:first-child { text-align: center; width: 3ch; }
+</style>
 
 <!--
 **une vraie sortie de la fabrique : le plan du prochain chapitre, généré.**

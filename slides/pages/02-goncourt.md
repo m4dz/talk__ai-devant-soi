@@ -96,16 +96,13 @@ figure: /images/ident-01-m4dz-s822.png
      même génome, même règle de l'unique rouge (les verres cachent le regard
      — la main cachée). Ça ne se commente JAMAIS sur scène. -->
 
-# Matthias « m4dz » Dugué
+# Matthias **m4dz** Dugué Cercy
 
-Head of Engineering chez Zenika.
+<p class="muted">Head of Engineering, Zenika<br>Reader Digest</p>
 
-Mes journées sur des systèmes d’IA en production.
-Mes nuits sur ce dont on va parler ce soir.
+Depuis 30 ans, j’essaie d’écrire.
 
-<p class="accent-line">Ce talk n’est pas une opinion. C’est un rapport d’expérience.</p>
-
-<p class="muted">J’écris un roman. Et je ne l’écris pas seul.</p>
+<p class="accent-line">Cette fois, je ne le fais pas seul.</p>
 
 <style scoped>
 .accent-line { color: var(--color-accent); margin-top: var(--space-md); }

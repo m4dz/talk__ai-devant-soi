@@ -43,3 +43,7 @@
 - [ ] 6.1 Delta `deck-content` : l'arc figé + l'arc de la question + le pont dev implicite.
 - [ ] 6.2 `pnpm build`, export PNG, planche contact régénérée (nouvelle base).
 - [ ] 6.3 `openspec validate refonte-arc-narratif --strict`.
+
+## 7. Passe de style — slides de citation (à faire)
+
+- [ ] 7.1 Revoir le style des slides de citation sourcée : cold open 6, pivot 8/9/10.
