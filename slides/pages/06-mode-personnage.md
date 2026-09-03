@@ -97,45 +97,46 @@ souvient bien.
 
 ---
 layout: entretien
-clicks: 2
+clicks: 3
 ---
 
-<!-- BEAT 2 — L’ENTRETIEN. 1’30. Rejeu d’une session réelle, question par
-     question. LE REJEU N’EST PLUS UN CHOIX : la page de roleplay et la
-     génération partagent le même modèle de 13 Go, /chat répond 409 pendant
-     toute la génération, et le mode personnage tombe dans cet intervalle.
-     DEUX questions, pas trois : « celle qui déraille » a été retirée,
-     aucune session n’en a produit une qui tienne. -->
+<!-- BEAT 2 — L’ENTRETIEN. Rejeu d’une session réelle (run INT-c, 2026-09-02),
+     3 questions (factuelle → interprétative → existentielle), décision du
+     2026-09-03 (récupérée de la session parallèle). Verbatim authentique ;
+     seul edit : fuite d’anglais « completely » coupée en fin de réponse 2
+     (leak NUM_CTX). REJEU obligé : modèle 13 Go partagé, /chat en 409. -->
 
 # L’entretien
 
 <div v-click class="echange">
 <p class="role">Question factuelle</p>
-<div class="gabarit-bloc"><span class="gabarit">GABARIT</span>
-
-Verbatim : un détail précis, vérifiable dans les fiches. La mémoire tient.
-</div>
+<p class="q"><span class="qui">Vous</span>Que faites-vous quand une phrase que vous avez écrite contredit votre souvenir ?</p>
+<p class="r"><span class="qui">Judith</span>Je relève la différence entre ce que dit le texte et ce que dit ma mémoire. Je pointe la coquille et je vérifie les faits pour rétablir la vérité.</p>
 </div>
 
 <div v-click class="echange">
 <p class="role">Question interprétative</p>
-<div class="gabarit-bloc"><span class="gabarit">GABARIT</span>
-
-Verbatim : le personnage répond avec son biais, sa mauvaise foi, son angle
-mort. Ce n’est plus une base de données qui répond.
+<p class="q"><span class="qui">Vous</span>Y a-t-il une entrée de votre carnet que vous n’avez jamais réussi à corriger ?</p>
+<p class="r"><span class="qui">Judith</span>Il y a en effet une entrée de mon carnet que je n’ai jamais réussi à corriger. C’est une phrase que j’ai lue il y a plusieurs années dans un manuscrit, qui m’a marquée et que je n’ai jamais pu oublier. Elle dit : « Le temps est une invention humaine, il n’existe pas vraiment. » Je ne sais pas si c’est une coquille, une faute de registre ou un fait établi, mais cette phrase m’a toujours perturbée et je n’ai jamais réussi à la corriger.</p>
 </div>
+
+<div v-click class="echange">
+<p class="role">Question existentielle</p>
+<p class="q"><span class="qui">Vous</span>Avez-vous déjà questionné la nature de votre réalité ?</p>
+<p class="r"><span class="qui">Judith</span>Je ne comprends pas cette question. Je suis une correctrice, je relève les fautes et je corrige les textes. Ma réalité, c’est ce que je lis sur la page. Le reste ne m’intéresse pas.</p>
 </div>
 
 <!--
-**l'entretien (rejeu) : la mémoire tient (Q1), puis le personnage répond avec son biais (Q2).**
+**l’entretien (rejeu) : elle classe tout — puis ne peut classer ni la phrase qui nie le temps, ni sa propre réalité. Tient sans conclure.**
 
-- Q1 factuelle : un détail vérifiable dans les fiches → la mémoire tient.
-- Q2 interprétative : elle répond avec son biais, sa mauvaise foi → ce n'est plus une base de données.
-- REJEU obligé (pas live) : modèle 13 Go partagé, /chat en 409 pendant la génération.
+- Q1 factuelle : geste de correctrice précis, vérifiable → la mémoire tient.
+- Q2 interprétative : la seule chose qu’elle n’a jamais pu classer (coquille ? registre ? fait ?) → le refus de résoudre, à l’écran.
+- Q3 existentielle : poussée au bord du dispositif, elle se replie sur la page (son ancre). Ne pas appuyer.
+- rejeu obligé (pas live) : modèle 13 Go partagé, /chat en 409 pendant la génération.
 
-← Judith    → l'aveu
+← Judith    → l’aveu
 
-⚠ commentaire sobre (2 phrases max), laisser lire. Un « next » par question. [verbatims à générer]
+⚠ 1 « next » par question, commentaire sobre (2 phrases max). NE JAMAIS pointer que c’est un rejeu. Verbatim authentique (run INT-c).
 -->
 
 ---
