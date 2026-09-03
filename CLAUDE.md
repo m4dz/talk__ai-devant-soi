@@ -50,12 +50,17 @@ keynote sont la source de vérité du contenu** : ils sont versionnés dans
 + indications scéniques + notes de préparation). En cas d'écart entre une
 slide et le script, le script gagne. Le deck suit :
 
-0. **Slide d'attente** — hors trame, avant le premier beat. Un tracé :
-   ligne plate au tiers inférieur, **un seul battement**. Elle tourne
-   pendant l'installation de la salle et couvre l'entrée du speaker. Le
-   battement s'arrête sur un pas de clic, la ligne s'aplatit, et le talk
-   commence sur la mort de Gary. **Ce n'est pas une slide de titre** : elle
-   ne porte ni titre, ni nom, ni bonjour. Il n'y en a qu'une.
+0. **Slide d'attente** — hors trame, avant le premier beat. Un
+   **oscilloscope** : un tracé fixe au tiers inférieur, **un seul
+   battement**, qu'un **spot lumineux** parcourt de gauche à droite en
+   laissant une courte traîne de phosphore — rien ne persiste devant ni
+   derrière le spot. Elle est **forcée en sombre** (instrument sur fond
+   d'encre), quel que soit le mode du deck. Elle tourne pendant
+   l'installation de la salle et couvre l'entrée du speaker. Au pas de clic,
+   le battement disparaît mais **le balayage continue** sur une ligne devenue
+   plate — l'oscilloscope tourne toujours, il n'écrit plus qu'un plat — et le
+   talk commence sur la mort de Gary. **Ce n'est pas une slide de titre** :
+   elle ne porte ni titre, ni nom, ni bonjour. Il n'y en a qu'une.
 1. **Cold open** — l'affaire Gary/Ajar racontée en thriller noir, in
    medias res, 7 beats. Pas de slide de titre : le titre tombe au beat 7,
    sur le pivot vers l'IA.
@@ -202,10 +207,12 @@ rendu en fond perdu se fait recadrer par le milieu et perd sa composition —
 c'est ce qui est arrivé aux deux ambiances du cold open.
 
 **Tout ce qui est illustré n'est pas généré.** La slide d'attente est un
-tracé SVG tokenisé (ligne + battement), pas un asset : Flux ne trace pas une
-ligne fine exacte, l'objet n'appartient pas au génome pulp, et les tokens
-donnent les deux modes sans second fichier. Le registre austère est déjà
-assumé ailleurs (Racter, slide d'encre sans portrait).
+tracé SVG tokenisé (oscilloscope : spot + traîne), pas un asset : Flux ne
+trace pas une ligne fine exacte, l'objet n'appartient pas au génome pulp, et
+un tracé animé se pilote en code. Elle est **mono-mode (sombre forcé)** — pas
+de trame halftone sur le tracé (le faisceau rayonne, il ne s'imprime pas ; le
+fond porte la sienne). Le registre austère est déjà assumé ailleurs (Racter,
+slide d'encre sans portrait).
 
 **Sources : mix, au cas par cas.**
 

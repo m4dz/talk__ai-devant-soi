@@ -2,6 +2,7 @@
 layout: scene
 plein: true
 clicks: 1
+class: sombre
 ---
 
 <!-- SLIDE D'ATTENTE — hors trame. Elle tourne pendant l'installation de la

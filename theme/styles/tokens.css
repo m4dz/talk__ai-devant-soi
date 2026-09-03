@@ -114,3 +114,21 @@ html.dark,
   --grain-opacity: var(--pal-sombre-grain-opacity);
   --pulp-shadow: var(--pal-sombre-shadow);
 }
+
+/* ---- Sombre ABSOLU (opt-in par classe de slide) ------------------------
+   Contrairement à `.negatif` (relatif : inverse le mode actif), ceci force la
+   palette sombre sur le sous-arbre de la slide, que le deck soit en clair ou
+   en sombre. Usage : l'écran d'attente (oscilloscope) est un instrument, il
+   s'affiche sur fond d'encre par principe ; le toggle du talk ne l'atteint
+   pas. Posé sur la racine de layout → hérité par `.pulp-bg` et les enfants. */
+.slidev-layout.sombre {
+  --color-paper: var(--pal-sombre-paper);
+  --color-ink: var(--pal-sombre-ink);
+  --color-muted: var(--pal-sombre-muted);
+  --color-accent: var(--pal-sombre-accent);
+  --color-rule: var(--pal-sombre-rule);
+  --texture-dot: var(--pal-sombre-dot);
+  --texture-opacity: var(--pal-sombre-dot-opacity);
+  --grain-opacity: var(--pal-sombre-grain-opacity);
+  --pulp-shadow: var(--pal-sombre-shadow);
+}
