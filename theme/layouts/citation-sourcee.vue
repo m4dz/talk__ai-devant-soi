@@ -12,8 +12,19 @@
      auteur plus petit, puis la référence dans la `.cartouche` PARTAGÉE (la
      même que l'exergue et la sortie de clôture). Tokens uniquement. -->
 <script setup>
+import { computed } from 'vue'
 import { useSlideContext } from '@slidev/client'
 const { $frontmatter } = useSlideContext()
+
+// L'auteur se coupe sur SA PREMIÈRE virgule : le nom sur une ligne, son titre
+// (juré, lauréat, maison…) sur la suivante. Les virgules suivantes (une maison
+// à plusieurs sceaux) restent sur la ligne du titre.
+const auteur = computed(() => {
+  const a = ($frontmatter.author || '').trim()
+  const i = a.indexOf(',')
+  if (i === -1) return { nom: a, titre: '' }
+  return { nom: a.slice(0, i + 1), titre: a.slice(i + 1).trim() }
+})
 </script>
 
 <template>
@@ -24,7 +35,9 @@ const { $frontmatter } = useSlideContext()
       </blockquote>
 
       <figcaption class="citation-sourcee__attribution">
-        <p class="citation-sourcee__author">{{ $frontmatter.author }}</p>
+        <p class="citation-sourcee__author">
+          {{ auteur.nom }}<template v-if="auteur.titre"><br>{{ auteur.titre }}</template>
+        </p>
         <p class="citation-sourcee__ref">
           <span class="cartouche">{{ $frontmatter.reference }}</span>
         </p>

@@ -87,17 +87,12 @@ noCountdown: true
 Je me suis bien amusé.<br>
 <span v-click>Au revoir</span> <span v-click>et merci.</span>
 
+<!-- Source Gary dans la cartouche PARTAGÉE (même encadré que les sources des
+     citations), gardée EN PLACE avec son v-click (3ᵉ clic) — le frontmatter
+     `source:` du layout la rendrait statique. Le style de `.sig-gary` vit dans
+     le thème (theme/styles/base.css) : un <style> ici casse le compilateur
+     Slidev (bloc HTML collé). -->
 <p v-click class="sig-gary"><span class="cartouche">Romain Gary, Vie et mort d'Émile Ajar, 1981</span></p>
-
-<!-- Cartouche PARTAGÉE : même encadré que les sources des citations (passe
-     passe-style-citations) → style de source homogène. On garde le v-click
-     (3ᵉ clic) : le frontmatter `source:` du layout la rendrait statique. -->
-<style scoped>
-/* font-size explicite : la cartouche est 0.7em de CE p ; sans taille, elle
-   hérite du grand corps de l'exergue et devient énorme. On la cale sur le
-   corps, comme les sources des citations. */
-.exergue--chute .sig-gary { margin-top: var(--space-lg); font-size: var(--text-base); }
-</style>
 
 <!--
 **la sortie : les derniers mots écrits de Gary.**

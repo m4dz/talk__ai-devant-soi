@@ -52,3 +52,15 @@
   width: 4rem;
   margin: var(--space-md) 0;
 }
+
+/* Sortie de clôture (slide 46, layout exergue variant chute) : la source Gary
+   est portée par la .cartouche PARTAGÉE (même encadré que les sources des
+   citations), gardée en place pour conserver son v-click. La règle vit ICI et
+   non dans un <style> de la slide : un bloc <style> collé à du HTML casse le
+   compilateur Slidev. font-size cale la cartouche sur le corps (sinon elle
+   hérite du grand corps de l'exergue) ; margin auto la recentre (le p hérite
+   d'une largeur contrainte et s'alignait à gauche). */
+.exergue--chute .sig-gary {
+  margin: var(--space-lg) auto 0;
+  font-size: var(--text-base);
+}
