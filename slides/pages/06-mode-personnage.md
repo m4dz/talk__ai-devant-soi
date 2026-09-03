@@ -52,7 +52,7 @@ Une fabrique, deux rôles.
 
 <div v-click>
 
-**Le personnage.** On ne lui demande plus d'écrire *sur* lui — mais de **le devenir**.
+**Le personnage.** On ne lui demande plus d'écrire *sur* lui, mais de **le devenir**.
 
 </div>
 
