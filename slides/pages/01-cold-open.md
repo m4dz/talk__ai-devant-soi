@@ -58,7 +58,11 @@ dark: /images/coldopen-02-presence-s801-dark.png
 
 Ajar, c’est **Romain Gary**.
 
+<div v-click>
+
 Et on ne reçoit le Goncourt qu’une seule fois.
+
+</div>
 
 <!--
 **Ajar, c'est Gary : le mort a fabriqué un auteur de toutes pièces.**
@@ -69,6 +73,9 @@ Et on ne reçoit le Goncourt qu’une seule fois.
 
 ← le fantôme    → Vie et mort / l'Académie ne fait rien
 
+⚠ 1 pas (v-click) : « Ajar, c'est Gary » à l'entrée, tenir un temps, la chute
+  « on ne reçoit le Goncourt qu'une seule fois » au clic — la règle cruelle
+  ne se lit pas avant d'être dite.
 ⚠ Pavlowitch doit marquer (rappel muet au mode personnage). Aucun lien explicite.
 -->
 

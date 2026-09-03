@@ -197,7 +197,7 @@ Ce soir, celui qui fournit toute la matière, **c’est moi.**
 
 ---
 layout: default
-class: artefact-slide
+class: artefact-slide pulp-bg
 ---
 
 <!-- GESTE 2 — MAQUET, l'artefact. La MATIÈRE écrite à la main : largeur (12
@@ -296,7 +296,7 @@ génère. Le générateur, c'est le livre. L'exécutant, c'est le lecteur.
 
 ---
 layout: default
-class: artefact-slide
+class: artefact-slide pulp-bg
 ---
 
 <!-- GESTE 3 — QUENEAU, l'artefact. Le DAG LangGraph glosé : un ATELIER avec
@@ -305,14 +305,15 @@ class: artefact-slide
      pas de Mermaid, pas de composant. Mise au propre visuelle au filage. -->
 
 <div class="dag">
-<svg viewBox="0 0 920 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graphe d'orchestration LangGraph">
+<p class="dag__label">Une orchestration</p>
+<svg viewBox="0 0 920 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graphe d'orchestration LangGraph">
   <defs>
-    <marker id="ah" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 Z" fill="var(--color-ink)"/></marker>
-    <marker id="ahr" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 Z" fill="var(--color-accent)"/></marker>
+    <marker id="ah" markerWidth="11" markerHeight="11" refX="6" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 Z" fill="var(--color-ink)"/></marker>
+    <marker id="ahr" markerWidth="11" markerHeight="11" refX="7" refY="5" orient="101" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 Z" fill="var(--color-accent)"/></marker>
   </defs>
 
   <!-- boucle de reprise : glisse -> write -->
-  <path d="M 604 94 C 590 24, 300 24, 254 46 L 254 94" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" marker-end="url(#ahr)"/>
+  <path d="M 604 96 C 604 30, 254 30, 254 96" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" marker-end="url(#ahr)"/>
   <text x="429" y="22" text-anchor="middle" class="dag__loop">recommence si ça casse</text>
 
   <!-- best-of-N sur ÉCRIRE -->
@@ -350,18 +351,17 @@ g.add_conditional_edges("glisse", route_after_write, ["write", "review"])
 
 </div>
 
-<p class="dag__caption">J'ai écrit l'atelier, pas le chapitre.</p>
 </div>
 
 <style>
+.artefact-slide .dag__label { font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.1em; font-size: var(--text-sm); color: var(--color-accent); margin-bottom: var(--space-xs); }
 .artefact-slide .dag svg { width: 100%; height: auto; max-height: 330px; }
 .artefact-slide .dag__node rect { fill: color-mix(in srgb, var(--color-ink) 5%, transparent); stroke: var(--color-ink); stroke-width: 1.5; }
 .artefact-slide .dag__node text { font-family: var(--font-body); font-size: 15px; text-anchor: middle; fill: var(--color-ink); }
 .artefact-slide .dag__loop { font-family: var(--font-body); font-size: 13px; fill: var(--color-accent); letter-spacing: 0.04em; }
 .artefact-slide .dag__note { font-family: var(--font-body); font-size: 12px; fill: var(--color-muted); }
 .artefact-slide .dag__end { font-size: 22px; fill: var(--color-accent); }
-.artefact-slide .dag__inset { margin-top: var(--space-sm); font-size: var(--text-sm); }
-.artefact-slide .dag__caption { margin-top: var(--space-md); font-family: var(--font-body); font-weight: 700; color: var(--color-accent); font-size: var(--text-xl); }
+.artefact-slide .dag__inset { margin-top: var(--space-xs); font-size: var(--text-sm); }
 </style>
 
 <!--
@@ -449,14 +449,15 @@ layout: exergue
 ---
 
 <!-- GESTE 4 — CARVER, LE SEUIL ÉNONCÉ (unique du talk), posé EN QUESTION, NON
-     RÉSOLU. La réponse tombe à la remontée. Formulation provisoire, à éprouver
-     au filage. Le cadrage Lish est dans les notes ; la slide porte le pivot. -->
+     RÉSOLU. La réponse tombe à la remontée. L'écran ne porte que l'APHORISME ;
+     la question du seuil se DIT à voix haute (voir notes) — plus imprimée, pour
+     que l'aphorisme frappe seul. Le cadrage Lish est dans les notes. -->
 
 La voix, c’est ce que j’ai coupé.
-Alors, à qui est la voix ?
 
 <!--
-**le seuil, dit une seule fois : à force de retraits, à qui est la voix ?**
+**Réplique à dire, juste après l'aphorisme (le seuil, énoncé UNE seule fois) :
+« Alors, à qui est la voix ? »** — à force de retraits, à qui est la voix ?
 
 - Lish a tant coupé Carver que la moitié du style est de lui — on appelle ça du Carver.
 - ma voix, ce sont mes retraits.

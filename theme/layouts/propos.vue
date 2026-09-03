@@ -116,7 +116,7 @@ const { $frontmatter } = useSlideContext()
   justify-content: center;
 }
 .propos--inventaire :deep(h1) {
-  font-size: var(--title-3);
+  font-size: var(--title-2);
   margin-bottom: var(--space-md);
 }
 /* Chaque entrée : même alignement, même poids, un filet qui les aligne. */

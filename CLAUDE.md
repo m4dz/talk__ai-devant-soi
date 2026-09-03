@@ -94,6 +94,9 @@ slide et le script, le script gagne. Le deck suit :
    - **Carver/Lish** (la qualité vient en retranchant) → la liste des
      interdits rayée rouge. **C'est ici que le seuil s'énonce**, en
      question, non résolu : à force de retraits, à qui est la voix ?
+     L'écran (slide 29) ne porte que l'**aphorisme** « La voix, c'est ce
+     que j'ai coupé. » ; la question du seuil se **dit à voix haute** (elle
+     n'est plus imprimée), pour que l'aphorisme frappe seul.
    - **Racter** (machine « auteur », en fait curée par l'humain) →
      charnière vers le mode personnage ; sa référence et son illustration
      sont réintroduites.

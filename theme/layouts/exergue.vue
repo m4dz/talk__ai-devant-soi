@@ -51,11 +51,12 @@ const { $frontmatter } = useSlideContext()
   font-size: var(--text-lg);
 }
 
-/* ── aphorisme (défaut) : le traitement historique, au trait près ───── */
-/* Ne PAS toucher : dix slides déjà réglées en dépendent, dont les quatre
-   aphorismes de strate de la section 5. */
+/* ── aphorisme (défaut) : la phrase à emporter d'une strate ─────────── */
+/* Passé en title-1 (change harmonie-titres) : l'aphorisme doit trancher sur
+   les titres de contenu (title-2) au lieu de leur être égal. Affecte les
+   slides 11, 18, 29, 30, 37. */
 .exergue--aphorisme .exergue__quote {
-  font-size: var(--title-2);
+  font-size: var(--title-1);
   max-width: 24ch;
 }
 

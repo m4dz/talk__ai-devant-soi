@@ -91,7 +91,7 @@ const src = computed(() =>
   backdrop-filter: none;
 }
 .ambiance--colonne .ambiance__band :deep(h1) {
-  font-size: var(--title-3);
+  font-size: var(--title-2);
   margin-bottom: var(--space-md);
 }
 .ambiance--colonne .ambiance__band :deep(p) {

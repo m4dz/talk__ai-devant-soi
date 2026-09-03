@@ -102,7 +102,11 @@ figure: /images/ident-01-m4dz-s822.png
 
 Depuis 30 ans, j’essaie d’écrire.
 
+<div v-click>
+
 <p class="accent-line">Cette fois, je ne le fais pas seul.</p>
+
+</div>
 
 <style scoped>
 .accent-line { color: var(--color-accent); margin-top: var(--space-md); }
@@ -118,5 +122,8 @@ Depuis 30 ans, j’essaie d’écrire.
 
 ← la question    → le roman (l'allumage)
 
+⚠ 1 pas (v-click) : identité + « depuis 30 ans j'essaie d'écrire » à l'entrée,
+  tenir un temps, la chute « cette fois, je ne le fais pas seul » au clic —
+  elle lance l'allumage, ne pas la laisser lire avant.
 ⚠ le portrait pulp ne se commente JAMAIS (verres qui cachent le regard = la main cachée).
 -->

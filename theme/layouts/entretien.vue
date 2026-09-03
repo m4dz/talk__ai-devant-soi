@@ -39,9 +39,10 @@
   padding: var(--space-md) var(--space-xl);
 }
 
-/* Le titre cède la place : il nomme la scène, il ne la domine pas. */
+/* Le titre nomme la scène. Harmonisé en title-2 sur la série des titres de
+   contenu (change harmonie-titres) — reste sous les 3 échanges, à surveiller. */
 .entretien :deep(h1) {
-  font-size: var(--title-3);
+  font-size: var(--title-2);
   margin-bottom: var(--space-sm);
 }
 

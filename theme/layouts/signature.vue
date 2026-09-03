@@ -72,8 +72,10 @@ const { $frontmatter } = useSlideContext()
   font-size: var(--title-2);
   margin-bottom: var(--space-md);
 }
+/* Harmonisé sur la suite 12→16 : title-2 comme les titres de contenu voisins.
+   Le nom long passe alors sur deux lignes — accepté (change harmonie-titres). */
 .signature--with-figure :deep(h1) {
-  font-size: var(--title-3);
+  font-size: var(--title-2);
   margin-bottom: var(--space-sm);
 }
 .signature :deep(p) {

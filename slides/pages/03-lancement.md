@@ -64,14 +64,14 @@ Une architecture complète, sur une machine locale.
 
 ---
 layout: default
-class: plan-scenes
+class: plan-scenes pulp-bg
 ---
 
 <!-- BEAT 2 — Le chapitre à écrire. C’est une SORTIE de la fabrique,
      donc une pièce à conviction : même traitement que les extraits de la
      section 5. Casse aussi la série de plain dans la section. -->
 
-# <span class="rouge">Chapitre 7 : l’anniversaire</span>
+# Chapitre 7 : l’anniversaire
 
 <div class="plan-prompt">
 
@@ -89,13 +89,16 @@ La voix ne cède pas.
 | 2 | Nuit | ~300-400 mots, 3 beats bornés (relève / découverte / doute) | [CIT-2] posée par le code | contrariété → vertige → capitulation |
 
 <style scoped>
-.plan-scenes { display: flex; flex-direction: column; justify-content: center; }
+/* Corps remonté : flex-start + un offset haut, le tableau ne tombe plus en bas. */
+.plan-scenes { display: flex; flex-direction: column; justify-content: flex-start; padding-top: var(--space-lg); }
 .plan-scenes :deep(h1), .plan-scenes h1 { font-size: var(--title-2); margin-bottom: var(--space-md); }
-.plan-scenes .plan-prompt { font-size: var(--text-base); line-height: 1.5; border-left: 4px solid var(--color-accent); padding-left: var(--space-md); margin: var(--space-md) 0 var(--space-lg); }
+/* Un seul rouge sur la slide : l'interdit « aucune explication » (.rouge dans
+   le prompt). Filet neutre, titre et th neutres. */
+.plan-scenes .plan-prompt { font-size: var(--text-base); line-height: 1.5; border-left: 4px solid var(--color-rule); padding-left: var(--space-md); margin: var(--space-md) 0 var(--space-lg); }
 .plan-scenes .rouge { color: var(--color-accent); }
 .plan-scenes table { width: 100%; border-collapse: collapse; font-size: 12px; line-height: 1.3; }
 .plan-scenes th, .plan-scenes td { border: 1px solid var(--color-rule); padding: 4px 8px; text-align: left; vertical-align: top; }
-.plan-scenes th { color: var(--color-accent); font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.04em; font-size: 11px; }
+.plan-scenes th { color: var(--color-ink); font-family: var(--font-body); text-transform: uppercase; letter-spacing: 0.04em; font-size: 11px; }
 .plan-scenes td:first-child, .plan-scenes th:first-child { text-align: center; width: 3ch; }
 </style>
 
