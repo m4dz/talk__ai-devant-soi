@@ -26,6 +26,16 @@ l'auteur en **plus petit, aligné à droite** ; puis la référence dans la
 des niveaux SHALL venir de tokens (taille, teinte), jamais de valeurs codées en
 dur.
 
+Le nom de l'auteur et son titre/rôle SHALL être portés sur **deux lignes** —
+césure sur la **première virgule** : le nom seul sur la première ligne, le
+titre (juré, lauréat, maison…) sur la suivante ; les virgules internes du titre
+(une maison à plusieurs sceaux) NE SHALL PAS provoquer d'autre césure.
+
+Le corps cité SHALL respecter la **typographie française** : une **espace fine
+insécable** accompagne les guillemets (après « et avant ») et la ponctuation
+haute (avant ? ! ;), pour éviter les guillemets détachés et les coupures de
+ligne parasites.
+
 La cartouche de source SHALL être la **même ornementation partagée** que celle
 des autres sources du deck — dont la source de la slide de clôture — pour un
 style de source homogène.
@@ -57,6 +67,19 @@ révélée au clic, sans casser la composition.
 - **WHEN** une slide de citation sourcée est affichée
 - **THEN** l'auteur apparaît en plus petit et aligné à droite sous le bloc, et
   la référence en cartouche partagée alignée à droite dessous
+
+#### Scenario: Auteur sur deux lignes, nom puis titre
+
+- **WHEN** une slide de citation sourcée affiche son auteur
+- **THEN** le nom est sur une première ligne et son titre/rôle sur la suivante,
+  la césure tombant sur la première virgule, les virgules internes du titre
+  restant sur la même ligne
+
+#### Scenario: Typographie française des citations
+
+- **WHEN** une citation contient des guillemets « » ou une ponctuation haute
+- **THEN** une espace fine insécable accompagne « (après), » (avant) et ? ! ;
+  (avant), sans guillemet détaché ni coupure de ligne parasite
 
 #### Scenario: Plusieurs répliques dans un même bloc
 

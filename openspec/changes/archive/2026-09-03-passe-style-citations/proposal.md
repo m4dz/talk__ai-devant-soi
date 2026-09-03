@@ -31,9 +31,13 @@ goncourt (8/9/10) est traité ensemble pour rester homogène.
   **alignée à gauche**.
 - **Attribution en hiérarchie, à droite** : l'auteur **plus petit, aligné à
   droite** sous le bloc ; puis la **référence dans la cartouche partagée**
-  (encadré), également alignée à droite.
+  (encadré), également alignée à droite. Le **nom** et son **titre** sont sur
+  **deux lignes** (césure sur la première virgule).
 - **Multi-répliques** : les slides à deux répliques (6, 8, 10 — dont un
   `v-click`) tiennent dans le même bloc sous **un seul** guillemet ouvrant.
+- **Typographie française** : espace fine insécable (U+202F) autour des
+  guillemets et avant la ponctuation haute (? ! ;) sur les citations ; `<br>`
+  forcé entre les deux répliques de la slide 10.
 
 ### Harmonisation de la source de clôture (slide 46)
 
@@ -41,8 +45,12 @@ La sortie Gary (`08-cloture`, `exergue variant: chute`) porte sa source dans un
 `<p class="sig-gary">` **custom**. On l'enveloppe dans la **`.cartouche`
 partagée** → encadré capitales, **style de source homogène** avec les citations.
 On la garde **en place** (pas via le frontmatter `source:` du layout) pour
-conserver le `v-click` du 3ᵉ clic ; une `font-size` de corps évite que la
-cartouche hérite du grand corps de l'exergue.
+conserver le `v-click` du 3ᵉ clic. La règle `.exergue--chute .sig-gary` vit dans
+**`theme/styles/base.css`** (pas dans un `<style>` de slide : un bloc `<style>`
+collé à du HTML casse le compilateur Slidev) : `font-size` de corps (sinon la
+cartouche hérite du grand corps de l'exergue) et **`margin-inline: auto`** pour
+la **recentrer horizontalement** (le `<p>` héritait d'une largeur contrainte et
+s'alignait à gauche).
 
 ## Impact
 
@@ -50,9 +58,10 @@ cartouche hérite du grand corps de l'exergue.
   police de corps, panneau + guillemet, attribution à droite, cartouche
   partagée) ; `deck-theme` — **MODIFIED** « Typographie pulp auto-hébergée »
   (Sinzano réservé aux titres et à l'exergue ; citations sourcées en corps).
-- Code : `theme/layouts/citation-sourcee.vue` + styles + tokens
-  (`--citation-panel`, `--citation-quote`) ; slides `01-cold-open.md`,
-  `02-goncourt.md`, `06-mode-personnage.md` (emplois), `08-cloture.md`
-  (frontmatter `source`).
+- Code : `theme/layouts/citation-sourcee.vue` (compo + césure auteur) + tokens
+  (`--citation-panel`, `--citation-quote`) ; `theme/styles/base.css` (règle
+  `.sig-gary` de la clôture) ; slides `01-cold-open.md`, `02-goncourt.md`,
+  `06-mode-personnage.md` (emplois + typo FR + `<br>` slide 10),
+  `08-cloture.md` (cartouche source en place).
 - `.cartouche` (globale, `pulp.css`) **inchangée** — réutilisée telle quelle.
 - Aucune dépendance bloquante ; indépendant des refontes d'arc (archivées).
