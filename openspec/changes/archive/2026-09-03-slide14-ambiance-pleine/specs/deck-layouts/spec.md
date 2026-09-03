@@ -32,7 +32,7 @@ contraste pas dans un mode est écarté du placement en colonne.
 - **THEN** le texte s'affiche dans un bandeau en bas, bloc semi-transparent à
   bord franc, lisible par-dessus l'image dans les deux modes
 
-#### Scenario: Colonne sans fond, texte sur l'image
+#### Scenario: Colonne pour une slide à plusieurs blocs
 
 - **WHEN** une slide d'ambiance porte un titre et plusieurs blocs de texte
 - **THEN** le texte s'affiche en colonne verticale à gauche, **sans fond ni
@@ -45,7 +45,7 @@ contraste pas dans un mode est écarté du placement en colonne.
 - **THEN** l'image reste pleine page, ininterrompue sous le texte — aucun
   panneau ni dégradé ne la délave ou ne la coupe
 
-#### Scenario: Double lisibilité vérifiée sur le tirage
+#### Scenario: Vérification de la zone calme avant intégration
 
 - **WHEN** un asset est destiné au placement en colonne
 - **THEN** le contraste de son tiers gauche avec le texte est vérifié dans les
