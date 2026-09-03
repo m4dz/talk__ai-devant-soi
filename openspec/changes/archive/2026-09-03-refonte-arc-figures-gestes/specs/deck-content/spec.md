@@ -4,6 +4,7 @@
 
 ### Requirement: Le dernier mur est un renversement dont la cible est le speaker
 
+
 **Raison du retrait** : le climax de falsification (run `xp-resolution` :
 accusation via la fiche du personnage, expérience « 12 tirages sur 12 »,
 aphorisme « c'est moi qui franchissais ») est **coupé**. Il exige tout
@@ -12,7 +13,40 @@ et jugé tel par le speaker. Le talk n'a plus de renversement de falsification ;
 la thèse est portée par le fil rouge du seuil (voir « La fabrique — cinq gestes
 d'auteur ») et sa réponse à la remontée.
 
+### Requirement: La fabrique — chaque figure ouvre son mur
+
+**Raison du retrait** : refonte de la section 4 en **cinq gestes d'auteur** (voir ADDED « La fabrique — cinq gestes d'auteur »). L'arc « quatre murs à pattern ternaire » est abandonné — scénarios et intitulé remplacés.
+
+### Requirement: Pas de vote à main levée par cas ; accroche unique
+
+**Raison du retrait** : renommée et resserrée autour du fil rouge du seuil (voir ADDED « …accroche unique, question qui court »).
+
+### Requirement: La contrainte locale est le cadre de la descente, pas une strate
+
+**Raison du retrait** : le vocabulaire « mur/strate » devient « geste » (voir ADDED « …pas un geste »).
+
+### Requirement: Le mode personnage, culmination collée au dernier mur
+
+**Raison du retrait** : recollée au **geste Racter** et portée à **trois questions** (voir ADDED « …culmination du geste Racter »).
+
 ## MODIFIED Requirements
+
+### Requirement: La contrainte locale se paie à la remontée
+
+La remontée SHALL énoncer que la contrainte locale est **ce qui a rendu la
+fabrique tenable à la main de l'auteur** : le modèle, le brief, la fiche et le
+code lui appartenaient tous, donc chaque geste est resté le sien.
+
+Cet énoncé SHALL rester à la remontée et NE SHALL PAS être déplacé dans un geste :
+c'est le paiement du cadre posé à l'entrée de la section.
+
+#### Scenario: Le cadre est payé, pas répété
+
+- **WHEN** on atteint la remontée
+- **THEN** elle relie la contrainte locale à la maîtrise de l'auteur sur chaque
+  geste, sans réénoncer l'argument posé à l'entrée
+
+## ADDED Requirements
 
 ### Requirement: La fabrique — cinq gestes d'auteur
 
@@ -131,21 +165,6 @@ clé d'API) SHALL être servi en une phrase à l'intérieur du geste **Malley**.
 - **WHEN** on parcourt les cinq gestes
 - **THEN** aucun n'a la contrainte locale pour thèse, et son matériau
   n'apparaît qu'en une phrase chez Malley
-
-### Requirement: La contrainte locale se paie à la remontée
-
-La remontée SHALL énoncer que la contrainte locale est **ce qui a rendu la
-fabrique tenable à la main de l'auteur** : le modèle, le brief, la fiche et le
-code lui appartenaient tous, donc chaque geste est resté le sien.
-
-Cet énoncé SHALL rester à la remontée et NE SHALL PAS être déplacé dans un geste :
-c'est le paiement du cadre posé à l'entrée de la section.
-
-#### Scenario: Le cadre est payé, pas répété
-
-- **WHEN** on atteint la remontée
-- **THEN** elle relie la contrainte locale à la maîtrise de l'auteur sur chaque
-  geste, sans réénoncer l'argument posé à l'entrée
 
 ### Requirement: Le mode personnage, culmination du geste Racter
 

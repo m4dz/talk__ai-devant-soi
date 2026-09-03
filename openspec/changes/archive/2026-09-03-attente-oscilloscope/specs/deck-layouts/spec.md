@@ -51,11 +51,12 @@ l'oscilloscope tourne toujours, il n'écrit plus qu'un plat.
 - **THEN** la première slide est la slide d'attente, et le premier beat du
   récit vient après elle
 
-#### Scenario: Sombre quel que soit le mode global
+#### Scenario: Deux modes sans second fichier
 
-- **WHEN** le deck est en mode clair comme en mode sombre
-- **THEN** la slide d'attente s'affiche sur fond d'encre (spot et traîne en
-  accent), sans ressource supplémentaire ni couleur codée en dur
+- **WHEN** le deck est basculé entre mode clair et mode sombre
+- **THEN** la slide d'attente reste sur fond d'encre dans les deux cas (sombre
+  absolu, voir deck-theme), sans ressource supplémentaire ni couleur codée en
+  dur — spot et traîne en accent, tracé et fond en tokens
 
 #### Scenario: Bouclage sans saut visible
 

@@ -58,196 +58,20 @@ démarré.
 - **THEN** un emplacement identifiable pour le déclencheur de génération
   et un pour le compte à rebours sont présents sur la slide
 
-### Requirement: La fabrique — chaque figure ouvre son mur
-
-La section 4, « La fabrique », fusionne l'ancien jeu du seuil et l'ancienne
-descente technique. Elle SHALL présenter quatre murs techniques, chacun
-**ouvert par la figure historique qui le nomme**, dite **une seule fois** à
-cet endroit : le modèle ignore le lore (Dumas/Maquet), il perd l'intention
-narrative (Queneau/Oulipo), la qualité littéraire est pauvre et les
-instruments qui la mesurent mentent (Ern Malley), et **le mur qu'on ne peut
-pas acheter** (Carver/Lish) — la machine s'effondre sous un modèle plus
-lourd, et un modèle plus lourd ne tiendrait pas davantage le doute qu'il
-faut tenir.
-
-Aucune figure NE SHALL être « plantée » dans une galerie préalable pour être
-« récoltée » plus tard : le fait historique et la tentative technique qu'il
-éclaire SHALL être joués dans le même mouvement. **Racter** n'ouvre aucun
-mur : il est réservé au verdict de la chute.
-
-Chaque mur SHALL suivre le même **pattern ternaire**, dans cet ordre :
-
-1. la **figure** et sa **pièce à conviction** — le cas historique qui nomme le
-   mur, puis l'extrait raté, la grille de vérification ou les mesures qui
-   prouvent le mur (marquée en gabarit tant que le contenu authentique
-   n'existe pas) ;
-2. le **mur**, dont l'intitulé NOMME LE PROBLÈME rencontré, suivi de ce que ce
-   mur a forcé à construire ;
-3. l'**aphorisme** du mur — sa phrase à emporter — **seul sur sa slide**.
-
-Ce pattern SHALL être identique pour les quatre murs et **indépendant de leur
-ordre** : permuter des murs NE SHALL PAS exiger de retoucher leur composition.
-L'intitulé d'un mur NE SHALL PAS livrer l'aphorisme du mur : la conclusion
-n'apparaît qu'après la solution.
-
-**Exception au pattern, portée par le dernier mur uniquement.** Le troisième
-battement du dernier mur NE SHALL PAS énoncer une construction victorieuse : il
-SHALL constater qu'il a fallu **empêcher** le modèle de résoudre. Un talk dont la
-thèse est que résoudre est le défaut de la machine ne peut pas offrir quatre
-résolutions de forme sur quatre. Cette exception SHALL rester attachée au dernier
-mur quel que soit l'ordre. Le dernier mur NE S'OUVRE PAS sur sa figure : Lish le
-**referme** (l'ouvrir sur « le style par soustraction » télégraphierait le
-piège).
-
-La **devise de la section** SHALL être portée par la section elle-même et non par
-l'un des murs, afin de rester en place quel que soit l'ordre. Elle SHALL être
-suivie d'une **remontée** qui rouvre la boîte noire et énumère ce qu'elle
-contient, avant de relancer vers la suite.
-
-Les éléments qui dépendent du contenu d'un mur SHALL rester attachés à lui et le
-suivre en cas de permutation — en particulier le rappel implicite à l'affaire
-Gary, qui n'a de sens qu'après le mur de la qualité.
-
-#### Scenario: Chaque mur ouvre sur sa figure
-
-- **WHEN** on entre dans un mur de la fabrique
-- **THEN** sa figure historique est nommée à l'ouverture, une seule fois, et
-  n'est pas reprise dans une galerie séparée
-
-#### Scenario: Quatre murs au même pattern
-
-- **WHEN** on parcourt la fabrique
-- **THEN** chacun des quatre murs présente successivement sa figure et sa pièce
-  à conviction, son mur et son aphorisme seul
-
-#### Scenario: Chaque mur montre sa pièce à conviction
-
-- **WHEN** un mur est présenté
-- **THEN** une slide affiche la preuve du mur (extrait raté, grille ou mesures),
-  authentique ou marquée en gabarit si elle n'existe pas encore
-
-#### Scenario: L'intitulé du mur ne livre pas la conclusion
-
-- **WHEN** un mur est affiché
-- **THEN** son intitulé nomme le problème rencontré, et l'aphorisme du mur
-  n'apparaît qu'ensuite, sur sa propre slide
-
-#### Scenario: Le dernier mur ne résout pas
-
-- **WHEN** on atteint le troisième battement du dernier mur
-- **THEN** il énonce que le doute ne tient que parce que le code a interdit au
-  modèle de le résoudre, et n'affirme aucune victoire du modèle
-
-#### Scenario: Permutation sans retouche
-
-- **WHEN** l'ordre des murs est modifié
-- **THEN** chaque mur conserve sa composition et ses éléments attachés (figure
-  comprise), et la devise de section reste en fin de section
-
-#### Scenario: Devise puis remontée
-
-- **WHEN** on atteint la fin de la fabrique
-- **THEN** la devise de la section est énoncée, puis la remontée détaille le
-  contenu de la boîte noire et relance vers la suite
-
-### Requirement: Pas de vote à main levée par cas ; accroche unique
-
-Le deck NE SHALL PAS déclencher de vote à main levée par figure, par mur ou en
-clôture (« est-ce encore l'œuvre de… ? », « alors, verdict ? »). La mécanique de
-vote répété est retirée : elle rejouait la même question et prenait la salle pour
-juge à répétition.
-
-Une **accroche mains-levées unique** SHALL être posée une seule fois, tôt dans le
-talk (à l'entrée de la fabrique, sur la question centrale), pour installer la
-salle en position de jury. La chute SHALL être **sèche** : le chapitre lu à voix
-haute est la réponse, et aucun vote final ne le suit.
-
-#### Scenario: Aucun vote répété
-
-- **WHEN** on parcourt le deck de bout en bout
-- **THEN** aucune slide ne déclenche de vote à main levée hormis l'accroche
-  unique du début, et la chute n'en porte aucun
-
-#### Scenario: Accroche unique en ouverture
-
-- **WHEN** on atteint l'accroche mains-levées
-- **THEN** elle apparaît une seule fois, tôt dans le talk, et n'est pas rejouée
-  par la suite
-
-### Requirement: La contrainte locale est le cadre de la descente, pas une strate
-
-Le deck SHALL énoncer la contrainte « rien ne sort de cette pièce » à
-**l'entrée** de la fabrique et la reprendre à la **remontée**, comme ce qui a
-**produit** les quatre murs — et non comme l'un d'eux.
-
-Aucun mur NE SHALL porter cette contrainte comme thèse propre. Le matériau qui
-l'illustrait (les chiffres du crash, la sortie de secours par clé d'API) SHALL
-être servi à l'intérieur du dernier mur, comme premier étage de l'objection
-« prenez un modèle plus gros ».
-
-#### Scenario: Cadre à l'entrée et à la remontée
-
-- **WHEN** on entre dans la fabrique, puis quand on atteint la remontée
-- **THEN** la contrainte locale est énoncée aux deux endroits, présentée comme la
-  cause des murs
-
-#### Scenario: Aucun mur ne porte la contrainte
-
-- **WHEN** on parcourt les quatre murs
-- **THEN** aucun n'a la contrainte locale pour aphorisme ou pour intitulé de mur
-
-### Requirement: Le dernier mur est un renversement dont la cible est le speaker
-
-Le dernier mur SHALL se jouer en trois temps et NE SHALL PAS présenter la
-résolution comme un défaut de la machine :
-
-1. **l'accusation** — les verbatims datés et la fiche du personnage, servis de
-   sorte que la salle conclue que le modèle est incapable de tenir le doute ;
-2. **le renversement** — l'expérience qui casse cette conclusion : les trois
-   sources de la consigne de verdict retirées, le personnage conservé, et le
-   doute qui tient sur la totalité des tirages ;
-3. **l'aveu** — le constat que le mur était dans ce que l'auteur servait à la
-   machine, pas dans la machine.
-
-Le deuxième temps SHALL montrer que l'identité du personnage **affleure sans
-conclure** — le réflexe de trancher, visible et refusé — c'est-à-dire le geste
-même que l'œuvre demande.
-
-Le premier temps SHALL être joué **sans ironie ni signal** : la salle doit
-adhérer à la conclusion fausse, sinon le renversement n'a rien à renverser.
-
-#### Scenario: Les trois temps dans l'ordre
-
-- **WHEN** on parcourt le dernier mur
-- **THEN** les pièces d'accusation précèdent la pièce d'expérience, qui précède
-  l'aphorisme, et aucune slide antérieure n'annonce le renversement
-
-#### Scenario: Aucune imputation à la machine
-
-- **WHEN** le dernier mur se termine
-- **THEN** son aphorisme impute le franchissement du seuil à l'auteur, et non au
-  modèle
-
-#### Scenario: Le réflexe visible et refusé
-
-- **WHEN** la pièce d'expérience est affichée
-- **THEN** elle montre une sortie où le réflexe de trancher est nommé puis non
-  suivi d'effet
-
 ### Requirement: La contrainte locale se paie à la remontée
 
 La remontée SHALL énoncer que la contrainte locale est **ce qui a rendu la
-découverte possible** : l'auteur n'a pu établir que la faute venait de lui que
-parce que le modèle, le brief, la fiche et le code lui appartenaient tous.
+fabrique tenable à la main de l'auteur** : le modèle, le brief, la fiche et le
+code lui appartenaient tous, donc chaque geste est resté le sien.
 
-Cet énoncé SHALL rester à la remontée et NE SHALL PAS être déplacé dans un mur :
+Cet énoncé SHALL rester à la remontée et NE SHALL PAS être déplacé dans un geste :
 c'est le paiement du cadre posé à l'entrée de la section.
 
 #### Scenario: Le cadre est payé, pas répété
 
 - **WHEN** on atteint la remontée
-- **THEN** elle relie la contrainte locale à la possibilité même du renversement
-  du dernier mur, sans réénoncer l'argument posé à l'entrée
+- **THEN** elle relie la contrainte locale à la maîtrise de l'auteur sur chaque
+  geste, sans réénoncer l'argument posé à l'entrée
 
 ### Requirement: Slot de lecture du chapitre
 
@@ -344,49 +168,6 @@ d'univers, puis lancer la génération, puis énoncer le **contrat du compte
 - **WHEN** le compte à rebours est lancé
 - **THEN** la slide suivante énonce ce qui existera à zéro (un chapitre
   inédit, non lu)
-
-### Requirement: Le mode personnage, culmination collée au dernier mur
-
-La section 5, le mode personnage, SHALL suivre immédiatement le dernier mur de
-la fabrique, comme sa **culmination** et non comme un pont ornemental autonome :
-il révèle le mécanisme du mur Lish — on ne demande plus à la machine d'écrire
-*sur* le personnage, on lui demande de le **devenir**. Judith, objet de
-l'accusation au dernier mur, devient ici le sujet qu'on interroge.
-
-Il SHALL montrer un **entretien** avec ce personnage, question par question, en
-progression : une question factuelle, puis une question interprétative.
-
-Il NE SHALL PAS rapporter d'**émergence** — aucun élément né d'un entretien et
-entré dans le roman n'est documenté, et la section ne SHALL PAS en présenter un
-reconstruit ou emprunté à une autre partie du dispositif. À la place, elle SHALL
-énoncer que rien n'a émergé et que tout a été composé.
-
-Il SHALL se clore par un retournement sur une question d'auteur **attribuée et
-sourcée**.
-
-#### Scenario: L'acteur en culmination du dernier mur
-
-- **WHEN** on entre dans le mode personnage
-- **THEN** il suit le dernier mur et présente la bascule d'écrire *sur* à
-  *devenir* le personnage comme le mécanisme du mur qui précède
-
-#### Scenario: Entretien à deux questions
-
-- **WHEN** l'entretien est montré
-- **THEN** deux questions apparaissent successivement, la factuelle puis
-  l'interprétative, et aucune troisième question n'est présentée
-
-#### Scenario: Aucune émergence affirmée
-
-- **WHEN** on parcourt le mode personnage
-- **THEN** aucune slide n'affirme qu'un élément produit par la machine est entré
-  dans le roman, et une slide énonce que rien n'a émergé
-
-#### Scenario: Retournement sourcé
-
-- **WHEN** le mode personnage se termine
-- **THEN** la question d'auteur affichée est attribuée à une personne nommée avec
-  sa source
 
 ### Requirement: Aucune émergence affirmée nulle part dans le deck
 
@@ -503,3 +284,268 @@ La révélation SHALL être pilotée par l'avancée normale de la présentation
 
 - **WHEN** le speaker avance la présentation
 - **THEN** la révélation suivante se déclenche, sans autre commande
+
+### Requirement: Passe d'élagage 1 — sept slides retirées, contenu préservé
+
+Le deck SHALL avoir retiré, à la passe d'élagage 1 (2026-09-02), les sept slides
+listées ci-dessous, choisies par le speaker sur la planche contact commune. Le
+contenu de chacune (texte à l'écran et notes de speaker) SHALL être **conservé**
+hors du deck, dans `openspec/changes/elagage-passe-1/slides-retirees.md`, pour
+être réutilisé lors de la reconstruction de l'arc narratif. Aucune de ces slides
+NE SHALL être supprimée sans que son contenu soit préservé.
+
+Slides retirées (numéro de la planche commune 52 slides) :
+
+1. bio Gary — cold open beat 2 ;
+2. l'ironie critique — cold open beat 5 ;
+3. « Elle n'a rien interdit / annoncé / attend » — pivot Goncourt ;
+4. « Ce compteur, c'est notre contrat » — allumage beat 3 ;
+5. aparté « gros modèle » — geste Malley ;
+6. aphorisme « Compter n'est pas lire » — geste Malley ;
+7. « Le chapitre / Il est né » — récolte, révélation chiffrée.
+
+Après cette passe, la numérotation de référence SHALL être celle de la
+**nouvelle planche contact (44 slides)** régénérée depuis le deck élagué.
+
+#### Scenario: Les sept slides sont absentes du deck
+
+- **WHEN** on parcourt le deck élagué de bout en bout
+- **THEN** aucune des sept slides listées n'apparaît, et le deck compte
+  44 slides
+
+#### Scenario: Le contenu retiré reste disponible
+
+- **WHEN** on prépare la reconstruction de l'arc narratif
+- **THEN** le texte et les notes de chacune des sept slides retirées sont
+  disponibles dans `slides-retirees.md`, avec leur fonction narrative et
+  l'impact de leur retrait
+
+#### Scenario: La numérotation commune est rebasée
+
+- **WHEN** on désigne une slide pour le travail slide par slide
+- **THEN** le numéro renvoie à la nouvelle planche contact de 44 slides, et non
+  à l'ancienne
+
+### Requirement: Arc narratif figé — l'intention prime sur le wording
+
+Le deck SHALL suivre la trame narrative figée dans
+`openspec/changes/refonte-arc-narratif/design.md`. Cette trame est la **source
+de vérité de l'intention** de chaque slide : le texte à l'écran pourra être
+simplifié, mais l'**intention et le sens sous-jacent** de chaque slide SHALL
+rester conformes à la trame.
+
+La colonne vertébrale SHALL porter quatre fils : (1) la thèse — *on ne peut pas
+différencier l'auteur de sa fabrique quand elle est de sa main* ; (2) le seuil
+de la paternité ; (3) la contrainte locale ; (4) le pont dev, qui SHALL rester
+**implicite** — jamais énoncé, jamais « vous les devs ».
+
+#### Scenario: L'intention prime sur le texte
+
+- **WHEN** le wording d'une slide est simplifié
+- **THEN** son intention reste celle fixée par la trame `design.md`
+
+#### Scenario: Le pont dev reste implicite
+
+- **WHEN** on parcourt le deck de bout en bout
+- **THEN** aucune slide n'énonce explicitement l'adresse aux développeurs ; le
+  rapprochement craft/fabrique/auteur est seulement suggéré
+
+### Requirement: La question de la paternité progresse, sans rebond
+
+Le deck NE SHALL PAS rejouer la question « qui est l'auteur / est-ce mon
+œuvre ? » en boucle. La question SHALL être traitée en **quatre temps distincts,
+une seule fois chacun** :
+
+1. **posée** — la question est ancienne, la littérature se l'est déjà posée ;
+2. **aiguisée** — au geste Carver : « à force de retraits, à qui est la voix ? » ;
+3. **répondue** — à la remontée : pas de seuil, la fabrique est de ma main ;
+4. **affirmée** — à la chute : l'œuvre est mienne parce que la fabrique est
+   mienne (affirmation, pas question).
+
+#### Scenario: Quatre temps, une fois chacun
+
+- **WHEN** on suit la question de la paternité dans le deck
+- **THEN** elle est posée, puis aiguisée, puis répondue, puis affirmée, sans
+  être re-posée en question à la chute
+
+### Requirement: Deux slides ajoutées à la trame
+
+Le deck SHALL comporter deux slides ajoutées par la refonte de l'arc :
+
+1. **démystifier la fabrique** — entre le lancement et la descente : ce qui
+   tourne est une boîte noire qu'on ouvre couche par couche ;
+2. **le gros modèle** — au geste Malley : le modèle contient tout le savoir et
+   tous les styles, et c'est **pour cela** que le résultat est moyen (composer à
+   partir de tout n'est pas gage de qualité, au contraire).
+
+#### Scenario: Les deux slides sont présentes
+
+- **WHEN** on parcourt l'allumage puis le geste Malley
+- **THEN** la slide « démystifier la fabrique » ouvre la descente, et la slide
+  « le gros modèle » figure dans le geste Malley
+
+### Requirement: La fabrique — cinq gestes d'auteur
+
+La section 4 SHALL présenter la fabrique comme **cinq gestes d'auteur**, chacun
+noué à une **figure historique** et prouvé par un **artefact du dispositif**
+lisible **sans connaître le roman ni l'historique des expérimentations**. Le fil
+directeur SHALL être : *on fait comme les autres auteurs, avec d'autres outils.*
+
+Les cinq figures SHALL être, dans cet ordre par défaut : **Ern Malley** (juste
+n'est pas bon ; mesurer n'est pas lire), **Maquet** (fournir la matière brute),
+**Queneau/Oulipo** (écrire la machine, pas le texte), **Carver/Lish** (la qualité
+vient en retranchant), **Racter** (la machine « créditée auteur », en fait curée
+par l'humain). Racter SHALL faire la charnière vers le mode acteur (section 5).
+
+Chaque geste SHALL suivre le battement : **la figure (anecdote) → notre geste,
+montré par un artefact → (au besoin) un battement de seuil**. Le deck NE SHALL
+PAS rejouer le pattern ternaire figure/pièce/mur/aphorisme des quatre murs, ni
+présenter les figures comme des échecs de la machine : chaque anecdote SHALL
+décrire un geste que **l'auteur** a posé.
+
+L'artefact de chaque geste SHALL être un élément réel du dispositif : pour
+Malley une grille de vérification **tout au vert** posée à côté d'un extrait
+plat ; pour Maquet l'arborescence de la bible écrite à la main et une fiche ;
+pour Queneau le graphe d'orchestration ; pour Carver la liste des interdits de
+style (rayée) ; pour Racter l'entretien rejoué. Chaque artefact SHALL rester
+compréhensible sans le contexte du roman, **hormis l'entretien Racter** dont le
+contenu touche au roman ; cet entretien SHALL être **pré-généré et embarqué dans
+les slides**, jamais joué en direct (contrainte matérielle : modèle partagé avec
+la génération, `POST /chat` répond `409` pendant tout le run).
+
+L'**aparté « gros modèle »** — il ne rentre pas dans la machine locale, et s'il
+rentrait il produirait du juste-mais-mort en plus gros — SHALL être servi en une
+phrase à l'intérieur du geste **Malley**, et NE SHALL PAS constituer un geste ni
+un étage à part entière.
+
+La **remontée** SHALL faire l'inventaire des gestes (bibliothèque, plan, voix,
+interdits — tous à la main de l'auteur) puis **répondre à la question du seuil** :
+il n'existe pas de seuil, l'auteur a **conçu l'atelier** comme un atelier
+d'écriture, et l'Académie n'a **aucune réponse simple** à opposer parce que la
+créativité n'en a pas.
+
+#### Scenario: Cinq gestes reliés à un artefact
+
+- **WHEN** on parcourt la fabrique
+- **THEN** chacun des cinq gestes nomme sa figure, énonce le geste d'auteur
+  correspondant, et montre un artefact réel du dispositif
+
+#### Scenario: Pas de pattern ternaire ni d'échec de machine
+
+- **WHEN** un geste est affiché
+- **THEN** il ne rejoue pas la séquence figure/pièce/mur/aphorisme, et son
+  anecdote décrit un geste de l'auteur, pas un ratage de la machine
+
+#### Scenario: Artefacts lisibles hors contexte
+
+- **WHEN** un artefact de geste est à l'écran
+- **THEN** il se comprend sans le roman ni l'historique des expérimentations,
+  sauf la démo Racter réservée au live
+
+#### Scenario: Aparté gros modèle chez Malley
+
+- **WHEN** le geste Malley est présenté
+- **THEN** l'objection du modèle plus gros y est traitée en une phrase, et
+  aucun autre geste ne la porte
+
+#### Scenario: La remontée répond au seuil
+
+- **WHEN** on atteint la remontée
+- **THEN** elle inventorie les gestes de l'auteur et affirme qu'il n'existe pas
+  de seuil, l'atelier étant sa conception
+
+### Requirement: Pas de vote à main levée par cas ; accroche unique, question qui court
+
+Le deck NE SHALL PAS déclencher de vote à main levée par figure, par geste ou en
+clôture. Une **accroche mains-levées unique** SHALL être posée une seule fois, à
+l'entrée de la fabrique, sur la question centrale (« à partir de quand l'œuvre
+n'est-elle plus la vôtre ? »), pour installer la salle en jury.
+
+Cette question SHALL ensuite **courir comme fil rouge rhétorique**, sans jamais
+redevenir un vote : elle est **énoncée une seule fois** au cours des gestes (au
+geste Carver, le plus fort), reste implicite ailleurs, et est **répondue** à la
+remontée. La chute SHALL rester **sèche** : le chapitre lu est la réponse, aucun
+vote final ne le suit.
+
+#### Scenario: Aucun vote répété
+
+- **WHEN** on parcourt le deck de bout en bout
+- **THEN** aucune slide ne déclenche de vote à main levée hormis l'accroche
+  unique du début, et la chute n'en porte aucun
+
+#### Scenario: Le seuil court sans revoter
+
+- **WHEN** la question du seuil réapparaît après l'accroche
+- **THEN** elle est énoncée une seule fois (au geste Carver) puis répondue à la
+  remontée, sans jamais redemander de mains levées
+
+### Requirement: La contrainte locale est le cadre de la descente, pas un geste
+
+Le deck SHALL énoncer la contrainte « rien ne sort de cette pièce » à
+**l'entrée** de la fabrique et la **payer** à la remontée : elle est le cadre qui
+**rend les gestes possibles** — sans elle, une clé d'API dispenserait de
+construire la bibliothèque, l'atelier, la fiche de style et le correcteur.
+
+Aucun geste NE SHALL porter cette contrainte comme thèse propre. Le matériau qui
+l'illustrait (l'impossibilité du gros modèle en local, la sortie de secours par
+clé d'API) SHALL être servi en une phrase à l'intérieur du geste **Malley**.
+
+#### Scenario: Cadre à l'entrée et à la remontée
+
+- **WHEN** on entre dans la fabrique puis qu'on atteint la remontée
+- **THEN** la contrainte locale est posée à l'entrée comme cadre et payée à la
+  remontée comme ce qui a rendu les gestes possibles
+
+#### Scenario: Aucun geste ne porte la contrainte
+
+- **WHEN** on parcourt les cinq gestes
+- **THEN** aucun n'a la contrainte locale pour thèse, et son matériau
+  n'apparaît qu'en une phrase chez Malley
+
+### Requirement: Le mode personnage, culmination du geste Racter
+
+La section 5, le mode personnage, SHALL suivre immédiatement le geste **Racter**
+de la fabrique, comme sa **culmination** : Racter y ouvre la référence (machine
+« créditée auteur », en fait curée par l'humain) avec **son illustration
+réintroduite**, puis l'**entretien rejoué** — pré-généré et embarqué, jamais
+live — **est** l'artefact de ce geste. On ne
+demande plus à la machine d'écrire *sur* le personnage, on lui demande de le
+**devenir**. Le personnage interrogé SHALL être **Judith**.
+
+Il SHALL montrer un **entretien** avec ce personnage, en progression : une
+question factuelle, puis une question interprétative, puis une question
+existentielle. (Décision 2026-09-03, run INT-c : la paire d'origine est étendue
+à trois questions, la troisième — sur la nature de sa réalité — recevant un
+refus de comprendre, qui est lui-même un geste de non-résolution.)
+
+Il NE SHALL PAS rapporter d'**émergence** — aucun élément né d'un entretien et
+entré dans le roman n'est documenté. À la place, il SHALL énoncer que rien n'a
+émergé et que tout a été **composé et sélectionné**.
+
+Il SHALL se clore par un retournement sur une question d'auteur **attribuée et
+sourcée**.
+
+#### Scenario: L'acteur en culmination du geste Racter
+
+- **WHEN** on entre dans le mode personnage
+- **THEN** il suit le geste Racter, réintroduit sa référence et son
+  illustration, et présente la bascule d'écrire *sur* à *devenir* le personnage
+
+#### Scenario: Entretien à trois questions
+
+- **WHEN** l'entretien est montré
+- **THEN** trois questions apparaissent successivement, la factuelle puis
+  l'interprétative puis l'existentielle, et aucune quatrième n'est présentée
+
+#### Scenario: Aucune émergence affirmée
+
+- **WHEN** on parcourt le mode personnage
+- **THEN** aucune slide n'affirme qu'un élément produit par la machine est entré
+  dans le roman, et une slide énonce que rien n'a émergé, tout composé
+
+#### Scenario: Retournement sourcé
+
+- **WHEN** le mode personnage se termine
+- **THEN** la question d'auteur affichée est attribuée à une personne nommée avec
+  sa source
+
