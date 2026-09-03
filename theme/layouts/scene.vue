@@ -29,6 +29,9 @@ const { $frontmatter } = useSlideContext()
   display: flex;
   align-items: center;
   justify-content: center;
+  /* Moitié du padding global `.slidev-layout` (--space-xl) : ces slides
+     « dispositif seul » (compteur, lecteur) gagnent à moins d'air autour. */
+  padding: calc(var(--space-xl) / 2);
   /* Rien d'autre : pas de titre, pas de chrome. Le silence est le sujet. */
 }
 .scene--plein {
