@@ -92,20 +92,8 @@ const src = computed(() =>
 .ambiance--colonne .ambiance__band :deep(p) {
   margin-bottom: var(--space-sm);
 }
-/* Le dégradé mange la couture verticale : sans lui, le bord droit de la
-   colonne coupe l'image sur une ligne nette qui se voit en projection. */
-.ambiance--colonne .ambiance__band::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: -3rem;
-  width: 3rem;
-  background: linear-gradient(
-    to right,
-    color-mix(in srgb, var(--color-paper) 88%, transparent),
-    transparent
-  );
-  backdrop-filter: blur(2px);
-}
+/* Bord FRANC, pas de dégradé : même parti que le bandeau du cold open — un bloc
+   semi-transparent posé net sur l'image pleine page. Le fondu de couture a été
+   retiré (change slide14-ambiance-pleine) : il délavait la gauche. La
+   semi-transparence + blur du bloc suffisent à adoucir le raccord. */
 </style>
