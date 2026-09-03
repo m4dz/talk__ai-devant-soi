@@ -8,12 +8,7 @@ noCountdown: true
      La chute est sèche : la question tombe une fois, sans mains levées.
      Le chapitre lu EST la réponse — plus de « dernier vote ». -->
 
-# C’est mon œuvre.
-
-Ce chapitre : un atelier que j’ai construit, une voix que j’ai réglée, un monde
-que j’ai inventé, un personnage que j’interroge — lu par ma propre voix.
-
-La fabrique est de ma main. **L’œuvre est mienne.**
+# C'est mon œuvre.
 
 <!--
 **C'est mon œuvre — affirmation, plus une question.**
@@ -39,18 +34,7 @@ noCountdown: true
      layout `noir` imposait un noir absolu et devenait donc invisible en
      mode sombre — le verdict n'existait qu'en mode clair. -->
 
-L’Académie a déjà perdu. **Elle ne le sait pas encore.**
-
-Elle n’a pas perdu contre les machines, mais contre sa propre histoire : elle
-a couronné Dumas et sa fabrique, Ajar et son fantôme, et gardé le prix quand
-tout s’est su.
-
-Leur clause — *produite par l’auteur, non par une machine* — ne décrit aucun
-de ces livres. Maquet produisait. Lish coupait. Le lecteur de Queneau génère.
-
-Et en 1984, la seule accusation contre un livre de machine — **Racter** —,
-c’était d’avoir **trop sélectionné, trop assemblé, trop édité**. Je la
-revendique.
+L'Académie a déjà perdu. **Elle ne le sait pas encore.**
 
 <!--
 **l'Académie a déjà perdu — pas contre les machines, contre sa propre histoire.**
@@ -92,7 +76,7 @@ Elle a besoin d’une **voix qui tienne**, et d’un **lecteur qui tremble**.
 ---
 layout: exergue
 variant: chute
-source: Romain Gary
+clicks: 3
 noCountdown: true
 ---
 
@@ -100,7 +84,14 @@ noCountdown: true
      guillemets dans la voix. La salle du cold open les reconnaîtra seule.
      Noir après : ne pas revenir saluer avant que le noir ait duré. -->
 
-Je me suis bien amusé. Au revoir et merci.
+Je me suis bien amusé.<br>
+<span v-click>Au revoir</span> <span v-click>et merci.</span>
+
+<p v-click class="sig-gary">Romain Gary, <em>Vie et mort d'Émile Ajar</em>, 1981</p>
+
+<style scoped>
+.exergue--chute .sig-gary { font-family: var(--font-body); font-size: var(--text-lg); color: var(--color-muted); margin-top: var(--space-lg); }
+</style>
 
 <!--
 **la sortie : les derniers mots écrits de Gary.**

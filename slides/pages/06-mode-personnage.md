@@ -184,17 +184,20 @@ reference: Télérama n°3981 — 29 avril 2026
 
 ---
 layout: cold-open
+clicks: 1
 ---
 
 <!-- La réponse, puis le regard au compte à rebours. -->
 
-Après ce que vous venez de voir, je crois que la question est mal posée.
+**Je dirige un atelier.**
+J'interroge mes personnages.
+Je tranche ce qui entre au roman et ce qui n'y entrera pas.
 
-Je ne rédige pas des instructions. **Je dirige un atelier.**
-J’interroge mes personnages. Je tranche ce qui entre au roman et ce qui n’y
-entrera jamais.
+<div v-click>
 
-Et pendant que je vous parlais, là-bas, **quelqu’un a fini d’écrire.**
+Et pendant qu'on parlait, **quelqu'un a fini d'écrire.**
+
+</div>
 
 <!--
 **la réponse : la question est mal posée. Je ne prompte pas — je dirige un atelier.**

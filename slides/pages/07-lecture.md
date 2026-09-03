@@ -24,22 +24,14 @@ noCountdown: true
 ---
 layout: propos
 variant: plain
-clicks: 1
 ---
 
 <!-- BEAT 2 — LE CONTRAT. -->
 
-# Personne dans cette salle ne l’a jamais lu
+# Personne ne le connaît, pas même moi
 
 La fabrique l’a écrit sous vos yeux : la bibliothèque a nourri chaque scène,
 l’atelier a repris ce qui cassait, la fiche de style a coupé le reste.
-
-<div v-click>
-
-<p class="chute">Voici ce qu’elle a produit — et comment.
-On va le lire à voix haute.</p>
-
-</div>
 
 <!--
 **voici ce que la fabrique a produit — et comment. Personne ne l'a lu.**
