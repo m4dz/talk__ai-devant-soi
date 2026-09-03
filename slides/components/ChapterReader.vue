@@ -115,11 +115,6 @@ watch(
         preload="auto"
         @timeupdate="onTimeUpdate"
       />
-
-      <p class="reader__hint">
-        <span v-if="$clicks < 1">Je lis la première phrase… puis « next ».</span>
-        <span v-else>La voix clonée prend le relais.</span>
-      </p>
     </template>
   </div>
 </template>
@@ -152,14 +147,10 @@ watch(
   /* Cadre : délimite le lecteur du fond de la slide. */
   border: 1px solid var(--color-rule);
   border-radius: 4px;
-  padding: var(--space-md);
+  padding: var(--space-sm);
 }
 /* Portion lue par le speaker : discrète (déjà dite / à dire à voix haute). */
 .reader__spoken { color: var(--color-muted); }
 /* Portion prise par la voix clonée : pleine encre. */
 .reader__cloned { color: var(--color-ink); }
-.reader__hint {
-  color: var(--color-muted);
-  font-size: var(--text-base);
-}
 </style>

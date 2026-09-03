@@ -1,6 +1,5 @@
 ---
-layout: propos
-variant: plain
+layout: exergue
 noCountdown: true
 ---
 
@@ -8,7 +7,7 @@ noCountdown: true
      La chute est sèche : la question tombe une fois, sans mains levées.
      Le chapitre lu EST la réponse — plus de « dernier vote ». -->
 
-# C'est mon œuvre.
+C'est mon œuvre.
 
 <!--
 **C'est mon œuvre — affirmation, plus une question.**
