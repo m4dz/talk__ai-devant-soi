@@ -494,7 +494,7 @@ clicks: 4
 <!-- LA REMONTÉE — l'inventaire des gestes (tous à ma main), puis la RÉPONSE au
      seuil : pas de seuil, j'ai conçu l'atelier. -->
 
-# Rouvrez la boîte noire
+# Rouvrez la boîte
 
 <div v-click class="entree">Une <strong>matière</strong> que j'ai documentée, fiche par fiche.</div>
 
