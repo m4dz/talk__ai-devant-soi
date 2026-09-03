@@ -27,9 +27,9 @@
 
 ## 4. Exploser la trame dans chaque slide
 
-- [ ] 4.1 Par slide : porter l'intention figée (design.md) à l'écran, texte
+- [x] 4.1 Par slide : porter l'intention figée (design.md) à l'écran, texte
       large et simple ; accroches implicites vers les voisines.
-- [ ] 4.2 Pont dev **implicite** posé à `32` et signé à `43`, jamais énoncé.
+- [x] 4.2 Pont dev **implicite** posé à `32` et signé à `43`, jamais énoncé.
 
 ## 5. Notes de speaker en bullets
 
@@ -40,10 +40,11 @@
 
 ## 6. Spec & recette
 
-- [ ] 6.1 Delta `deck-content` : l'arc figé + l'arc de la question + le pont dev implicite.
-- [ ] 6.2 `pnpm build`, export PNG, planche contact régénérée (nouvelle base).
-- [ ] 6.3 `openspec validate refonte-arc-narratif --strict`.
+- [x] 6.1 Delta `deck-content` : l'arc figé + l'arc de la question + le pont dev implicite.
+- [x] 6.2 `pnpm build`, export PNG, planche contact régénérée (faite en sessions antérieures, base 44→46 slides).
+- [x] 6.3 `openspec validate refonte-arc-narratif --strict` : **OK (vert)**.
 
-## 7. Passe de style — slides de citation (à faire)
+## 7. Passe de style — slides de citation
 
-- [ ] 7.1 Revoir le style des slides de citation sourcée : cold open 6, pivot 8/9/10.
+- [x] 7.1 **DÉPLACÉ** → change dédié `passe-style-citations` (polish encore à
+      concevoir, sorti pour ne pas retenir l'archivage de cette refonte).

@@ -26,15 +26,17 @@ Depuis quelques mois, quand une scène résiste, je ne la réécris pas. Je vais
 
 ## Beat 2 — L'entretien (1'30")
 
-[Écran : rejeu d'une session réelle, affichée comme elle s'est déroulée, question par question. PLACEHOLDER : l'échange verbatim, à extraire d'une session authentique dès que le mode acteur tourne. Deux questions, dans cet ordre de montée :]
+[Écran : rejeu d'une session réelle (run INT-c), affichée comme elle s'est déroulée, question par question — verbatim authentique, un « next » par question. Trois questions, dans cet ordre de montée :]
 
-[Question 1 — factuelle. Le personnage connaît son monde : un détail précis, vérifiable dans les fiches. La salle comprend que la mémoire tient.]
+[Question 1 — factuelle. « Que faites-vous quand une phrase que vous avez écrite contredit votre souvenir ? » → « Je relève la différence entre ce que dit le texte et ce que dit ma mémoire. Je pointe la coquille et je vérifie les faits pour rétablir la vérité. » Geste de correctrice précis, vérifiable : la mémoire tient.]
 
-[Question 2 — interprétative. Le personnage a un point de vue : on l'interroge sur un autre personnage, sur un événement, et il répond avec son biais, sa mauvaise foi, son angle mort. La salle comprend que ce n'est plus une base de données qui répond.]
+[Question 2 — interprétative. « Y a-t-il une entrée de votre carnet que vous n'avez jamais réussi à corriger ? » → elle cite la phrase « Le temps est une invention humaine, il n'existe pas vraiment. » qu'elle n'a jamais pu classer (coquille ? registre ? fait ?). Le refus de résoudre, à l'écran.]
 
-[Deux questions, pas trois. La troisième — « celle qui déraille » — a été retirée : aucune session n'en a produit une qui tienne, et une question spectaculaire reconstruite se sent à la seconde.]
+[Question 3 — existentielle. « Avez-vous déjà questionné la nature de votre réalité ? » → « Je ne comprends pas cette question. Je suis une correctrice… Ma réalité, c'est ce que je lis sur la page. » Poussée au bord du dispositif, elle se replie sur son ancre. Ne pas appuyer.]
 
-[Commentaire en direct pendant le rejeu : sobre, deux phrases maximum, laisser l'échange se lire.]
+[Trois questions — tranché le 2026-09-03, run INT-c. Le premier jet avait retiré la troisième (aucune session n'en produisait une qui tienne) ; INT-c en a produit une qui tient sans être spectaculaire — c'est le repli sur la page, pas un déraillement. C'est ce repli qui fait la question, pas une révélation.]
+
+[Commentaire en direct pendant le rejeu : sobre, deux phrases maximum, laisser l'échange se lire. NE JAMAIS pointer que c'est un rejeu.]
 
 ---
 
@@ -73,7 +75,7 @@ Et pendant que je vous parlais, là-bas, quelqu'un a fini d'écrire.
 - **Live ou rejeu : rejeu, et ce n'est plus un choix.** La page de roleplay et la génération du chapitre partagent le même modèle de 13 Go, et la machine n'en tient qu'un. `POST /chat` répond 409 pendant toute la génération. La section 5 tombant entre le lancement et la récolte, l'entretien **doit** être un rejeu. C'était de la prudence dans le premier jet ; c'est désormais la seule option physiquement possible.
 - **L'aveu du beat 3 est une exigence, pas une concession.** Vérification faite candidat par candidat : la seconde assiette était matériau imposé (`briefs/protocole-calibration-ch2.md` §1) ; « Romane » et « Judith » sont des noms de la bible, donc des violations d'interdit, pas des inventions ; la percée du 31-08 a été obtenue par rejet en code, pas par le modèle. **Rien n'a émergé, nulle part.** Ne jamais reconstruire une émergence pour combler ce beat — c'est explicitement interdit par la spec `deck-content`.
 - **Le personnage est Judith — tranché le 31 août.** C'est la même qu'à l'étage 2 du dernier mur : elle y était l'objet de l'accusation, elle est ici le sujet qu'on interroge. L'arc est meilleur que deux personnages distincts, et il économise une présentation. **Ne pas la présenter comme nouvelle** : « vous la connaissez déjà » fait le lien. Sa ligne d'identité dit le métier et le rituel, jamais ce qu'elle ignore — le dispositif du roman ne se spoile pas ici.
-- **Les deux questions doivent rester lisibles sans le roman** : la factuelle sur son monde, l'interprétative sur son biais. Le critère n'a pas changé, seul le personnage est fixé.
+- **Les trois questions doivent rester lisibles sans le roman** : la factuelle sur son monde, l'interprétative sur son biais, l'existentielle sur son ancre (le repli sur la page). Le critère n'a pas changé ; la 3e a été réintégrée le 2026-09-03 (run INT-c) parce qu'une session en a enfin produit une qui tient.
 - **Slot fermé.** Le run `xp-resolution` du 31 août a tranché H3-brief (12/12) : la machine tenait le doute, c'est le brief qui la poussait. H4 existe mais reste faible — l'identité de verdict affleure sans conclure. Le verbatim qui le prouve (« mon réflexe de correctrice… mais pour l'instant, je reste là ») vit au dernier mur de la fabrique (section 4), où il porte le renversement. **Il ne se redit pas ici** : la même citation à cinq minutes d'intervalle userait les deux. La section 5 garde son aveu et rien de plus.
 - **Interdit maintenu** : aucun rapprochement explicite avec Pavlowitch. Le mot « incarner » du beat 1 (« on lui demande de le devenir ») et la mécanique de l'entretien suffisent : la salle a déjà tous les fils.
 - **Le compte à rebours comme partenaire de jeu** : c'est la seule section où on le regarde deux fois (beat 4, et implicitement pendant l'entretien). L'urgence de fin de section doit être physique : « quelqu'un a fini d'écrire » se dit en marchant vers l'écran.

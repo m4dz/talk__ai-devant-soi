@@ -63,9 +63,11 @@ Cible : ~16 slides. Réutiliser les layouts `exergue`, `case-card`,
       parqués : voir `design.md` § « Racter »). Conserver **l'aveu** (rien n'a
       émergé, tout composé/sélectionné) et le **retournement Le Tellier**.
 - [x] 4.3 Retirer toute reprise du renversement `xp-resolution` si présente.
-- [ ] 4.4 **BLOQUÉ** — générer en amont les sessions d'interview, choisir la paire,
-      remplacer les gabarits d'entretien par les verbatims. Hors périmètre apply
-      immédiat.
+- [x] 4.4 **FAIT** — sessions d'interview générées, run **INT-c** retenu,
+      gabarits remplacés par les verbatims authentiques (commit `2985f3d`).
+      Décision 2026-09-03 : **trois** questions (factuelle, interprétative,
+      existentielle), la 3e reçue en refus de comprendre. Delta `deck-content`
+      et `CLAUDE.md` alignés sur trois questions.
 
 ## 5. Section 7 — la chute (`slides/pages/08-cloture.md`)
 
@@ -82,6 +84,5 @@ Cible : ~16 slides. Réutiliser les layouts `exergue`, `case-card`,
 - [x] 6.3 Export PNG + planche contact, relecture des deux modes (dark/light).
 - [x] 6.4 Mettre à jour `CREDITS.md` si de nouveaux extraits d'artefacts
       (grille, fiche, graphe, interdits) entrent à l'écran.
-- [ ] 6.5 `openspec validate --strict` : **OK (vert)**. **ARCHIVE DIFFÉRÉ** — le
-      change reste actif tant que 4.4 (verbatims d'entretien Racter) n'est pas
-      fait ; on archive après génération des sessions.
+- [x] 6.5 `openspec validate --strict` : **OK (vert)**. Blocage 4.4 levé
+      (entretien finalisé, run INT-c) → **prêt à archiver**.

@@ -23,7 +23,7 @@
 ## 4. Renumérotation commune
 
 - [x] 4.1 Régénérer la planche contact numérotée 1-44 (nouvelle base commune).
-- [ ] 4.2 Diffuser la nouvelle planche comme référentiel de numérotation
+- [x] 4.2 Diffuser la nouvelle planche comme référentiel de numérotation
       partagé (fait dans la conversation ; à archiver avec le deck si besoin).
 
 ## 5. Spec
@@ -34,5 +34,6 @@
 
 ## 6. Étape suivante (hors périmètre de ce changement)
 
-- [ ] 6.1 Reconstruction de l'arc narratif + mise à jour des scripts et notes de
-      speaker, en réutilisant `slides-retirees.md`. Changement dédié.
+- [x] 6.1 Reconstruction de l'arc narratif + scripts/notes → **changements dédiés**
+      `refonte-arc-narratif` et `refonte-arc-figures-gestes` (en archivage). Hors
+      périmètre de ce change ; pointeur seulement.

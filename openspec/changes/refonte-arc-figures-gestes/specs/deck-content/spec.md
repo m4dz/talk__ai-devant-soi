@@ -158,7 +158,10 @@ demande plus à la machine d'écrire *sur* le personnage, on lui demande de le
 **devenir**. Le personnage interrogé SHALL être **Judith**.
 
 Il SHALL montrer un **entretien** avec ce personnage, en progression : une
-question factuelle, puis une question interprétative.
+question factuelle, puis une question interprétative, puis une question
+existentielle. (Décision 2026-09-03, run INT-c : la paire d'origine est étendue
+à trois questions, la troisième — sur la nature de sa réalité — recevant un
+refus de comprendre, qui est lui-même un geste de non-résolution.)
 
 Il NE SHALL PAS rapporter d'**émergence** — aucun élément né d'un entretien et
 entré dans le roman n'est documenté. À la place, il SHALL énoncer que rien n'a
@@ -173,11 +176,11 @@ sourcée**.
 - **THEN** il suit le geste Racter, réintroduit sa référence et son
   illustration, et présente la bascule d'écrire *sur* à *devenir* le personnage
 
-#### Scenario: Entretien à deux questions
+#### Scenario: Entretien à trois questions
 
 - **WHEN** l'entretien est montré
-- **THEN** deux questions apparaissent successivement, la factuelle puis
-  l'interprétative, et aucune troisième n'est présentée
+- **THEN** trois questions apparaissent successivement, la factuelle puis
+  l'interprétative puis l'existentielle, et aucune quatrième n'est présentée
 
 #### Scenario: Aucune émergence affirmée
 

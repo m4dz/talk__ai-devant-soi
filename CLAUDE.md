@@ -121,9 +121,11 @@ slide et le script, le script gagne. Le deck suit :
    personnage mais de le *devenir*. Le personnage est **Judith**.
    **Entretien rejoué** — pré-généré et embarqué, **jamais joué en direct**
    (le modèle 13 Go est partagé avec la génération, `POST /chat` répond
-   `409` pendant tout le run) — à **deux** questions (factuelle,
-   interprétative), puis **l'aveu** — rien n'a émergé, tout a été composé —
-   puis le retournement sur la question de Le Tellier.
+   `409` pendant tout le run) — à **trois** questions (factuelle,
+   interprétative, existentielle — décision 2026-09-03, run INT-c ; la 3e, sur
+   la nature de sa réalité, reçoit un refus de comprendre), puis **l'aveu** —
+   rien n'a émergé, tout a été composé — puis le retournement sur la question
+   de Le Tellier.
    **Aucune émergence n'est affirmée, ici ni ailleurs dans le deck** :
    aucune n'est documentée. Le candidat le plus cité, la « seconde
    assiette », figurait en *matériau imposé* dans le brief de calibration
