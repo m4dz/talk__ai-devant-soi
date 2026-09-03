@@ -144,17 +144,20 @@ watch(
      pas directs dans onTimeUpdate. */
   font-size: var(--text-lg);
   line-height: 1.6;
-  /* Cadre habillé comme un objet pulp monté (cf. .pulp-figure__object) :
-     carton mat crème + ombre portée, façon photo épinglée. */
-  background: var(--pulp-mat);
+  /* Cadre façon objet pulp monté (cf. .pulp-figure__object) : carton + ombre
+     portée. Mode-aware : crème sur la slide claire, panneau d'encre en sombre. */
+  background: var(--color-paper);
   box-shadow: var(--pulp-shadow);
   padding: var(--space-xs);
 }
-/* Le mat `--pulp-mat` est crème FIXE dans les deux modes : le texte est donc
-   figé en encre sombre (palette claire), sinon il vire au clair en dark et
-   devient illisible sur le crème. */
+/* En sombre, `--color-paper` est l'encre pure = le fond de slide, et l'ombre
+   (noir sur noir) disparaît : on lève le panneau d'un voile d'encre pour qu'il
+   se détache. */
+html.dark .reader__text {
+  background: color-mix(in srgb, var(--color-ink) 10%, var(--color-paper));
+}
 /* Portion lue par le speaker : discrète (déjà dite / à dire à voix haute). */
-.reader__spoken { color: var(--pal-clair-muted); }
+.reader__spoken { color: var(--color-muted); }
 /* Portion prise par la voix clonée : pleine encre. */
-.reader__cloned { color: var(--pal-clair-ink); }
+.reader__cloned { color: var(--color-ink); }
 </style>
