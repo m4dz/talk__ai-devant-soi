@@ -49,24 +49,20 @@ function splitParas(s: string): string[] {
   return s.split(/\n{2,}/).map(p => p.replace(/\s+/g, ' ').trim()).filter(Boolean)
 }
 
-// Défilement suivant la lecture. L'audio ne couvre QUE la portion clonée : le
-// ratio se déroule donc de son sommet jusqu'au bas, pas depuis le haut du texte
-// (qui vient d'être lu à voix haute et n'est pas dans le WAV). Sans cet ancrage
-// il resterait un décalage constant, égal à la hauteur de la portion parlée.
+// Défilement CONTINU depuis le haut : le texte descend linéairement du sommet
+// (portion parlée visible) jusqu'au bas, calé sur l'avancement de l'audio —
+// comme une lecture humaine menée du début à la fin, sans saut d'ancrage.
+// `scrollTop`/`scrollHeight`/`clientHeight` sont tous en pixels de layout,
+// cohérents entre eux (jamais `getBoundingClientRect`, en pixels écran à cause
+// du scale du canvas).
 function onTimeUpdate() {
   const a = audio.value
   const el = scroller.value
   if (!a || !el || !a.duration) return
   const max = el.scrollHeight - el.clientHeight
   if (max <= 0) return
-  // Mesure par `offsetTop`, jamais par `getBoundingClientRect` : la slide est
-  // mise à l'échelle par un transform CSS, donc les rects sont en pixels écran
-  // tandis que `scrollTop` est en pixels de layout. Mélanger les deux fait
-  // dériver l'ancre avec la position de défilement. `offsetTop` est en pixels
-  // de layout et se rapporte au conteneur (`position: relative` ci-dessous).
-  const anchor = clonedBlock.value ? Math.min(clonedBlock.value.offsetTop, max) : 0
   const ratio = Math.min(1, a.currentTime / a.duration)
-  el.scrollTop = anchor + ratio * (max - anchor)
+  el.scrollTop = ratio * max
 }
 
 // Coupe propre en scène : quitter la slide arrête la lecture. Le chapitre
@@ -133,7 +129,7 @@ watch(
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
-  height: 100%;
+  align-items: center;
 }
 .reader__waiting {
   color: var(--color-muted);
@@ -141,14 +137,22 @@ watch(
   font-style: italic;
 }
 .reader__text {
-  /* Référent d'`offsetTop` pour le bloc cloné (ancrage du défilement). */
   position: relative;
   max-width: 60ch;
-  max-height: 60vh;
+  /* Bornage en px CANVAS, jamais en vh : le canvas Slidev est scalé par un
+     transform, vh résout contre la fenêtre réelle → débordement (overview
+     compris). À caler au filage. */
+  max-height: 400px;
   overflow-y: auto;
-  scroll-behavior: smooth;
+  /* Pas de scroll-behavior: smooth — il rejouait son animation à chaque
+     timeupdate (~4/s) et provoquait la saccade. Le calage se fait par petits
+     pas directs dans onTimeUpdate. */
   font-size: var(--text-lg);
   line-height: 1.6;
+  /* Cadre : délimite le lecteur du fond de la slide. */
+  border: 1px solid var(--color-rule);
+  border-radius: 4px;
+  padding: var(--space-md);
 }
 /* Portion lue par le speaker : discrète (déjà dite / à dire à voix haute). */
 .reader__spoken { color: var(--color-muted); }

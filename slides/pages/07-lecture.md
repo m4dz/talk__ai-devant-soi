@@ -47,7 +47,6 @@ l’atelier a repris ce qui cassait, la fiche de style a coupé le reste.
 
 ---
 layout: scene
-plein: true
 # Un pas de clic : le « next » lance la lecture clonée (télécommande OK).
 # Jamais de raccourci clavier. Départ de l’audio DEPUIS 0 (aucun timecode).
 clicks: 1

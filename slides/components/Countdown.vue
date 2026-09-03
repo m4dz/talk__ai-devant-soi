@@ -29,7 +29,7 @@ const done = computed(
 
 const note = computed(() => {
   if (!session.running) return 'Prêt à lancer'
-  if (session.status === 'ready') return 'Chapitre prêt — le temps a bien été tenu'
+  if (session.status === 'ready') return 'Chapitre prêt'
   if (session.remaining === 0) return 'Temps écoulé'
   return 'Génération en cours…'
 })
