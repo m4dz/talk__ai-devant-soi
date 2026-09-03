@@ -10,15 +10,19 @@ bas.
 
 ## What Changes
 
-- **Le placement `colonne` du layout `ambiance` adopte le traitement du bandeau
-  (`bande`)** : un bloc semi-transparent à **bord franc**, posé sur une image
-  **pleine page**, sans dégradé de couture.
-- **Suppression du dégradé de fondu** (`::after`) et de la contrainte « pas de
-  bord franc » : **BREAKING** au sens spec — c'est l'inverse de la règle
-  actuelle, assumé (le cold open a déjà un bord franc et tient en projection).
-- L'image reste **plein cadre** (`object-fit: cover`) ; le bloc gauche la
-  recouvre en partie mais la laisse lire dessous (semi-transparence), comme le
-  bandeau du cold open.
+- **Le placement `colonne` perd son fond ET son dégradé** : le texte se lit
+  **directement sur l'image** pleine page, dans le tiers gauche calme que
+  l'asset réserve. Ni panneau, ni fondu, ni couture — l'image porte le texte.
+- **Suppression du dégradé de fondu** (`::after`) — il délavait la gauche — et
+  du fond papier du bloc colonne : inutile vu l'image (gauche calme et
+  contrastée dans les deux modes). **BREAKING** au sens spec : l'ancienne règle
+  « pas de bord franc » (le dégradé) est retirée, et la colonne n'a plus de
+  bloc du tout.
+- L'image reste **plein cadre** (`object-fit: cover`), ininterrompue sous le
+  texte. La lisibilité vient de l'asset : gauche crème (texte encre) en clair,
+  gauche sombre du négatif (texte papier) en sombre.
+- Le **bandeau** (`bande`, cold open) garde son bloc semi-transparent : il
+  couvre une zone dense et en a besoin. Inchangé.
 - Périmètre réel : **slide 14 seule** (unique usage de `variant: colonne`).
 
 ## Capabilities

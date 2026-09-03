@@ -2,16 +2,13 @@
 
 - [x] 1.1 Retirer le bloc `.ambiance--colonne .ambiance__band::after` (dégradé
       de couture) et son commentaire.
-- [x] 1.2 Aligner le fond du panneau colonne sur celui de `bande` : même
-      `color-mix(in srgb, var(--color-paper) 88%, transparent)` + `blur(2px)`
-      (déjà porté par `.ambiance__band`), bord droit **franc**.
-- [x] 1.3 Conserver géométrie et centrage vertical du bloc (`width: 38%`,
-      `justify-content: center`, paddings) — seule la couture change.
-- [x] 1.4 Mettre à jour le commentaire du layout : la colonne est un bloc à bord
-      franc sur image pleine page (parti du cold open), plus de dégradé.
-- [x] 1.5 Abaisser l'opacité du panneau colonne à `paper 70%` (le bandeau garde
-      88 %) : sur le tiers gauche CALME, 88 % lisait comme une marge opaque. À
-      70 % le grain du papier transparaît → bloc translucide sur l'image.
+- [x] 1.2 Colonne **sans fond ni blur** (`background: none; backdrop-filter:
+      none`) : le texte se lit directement sur l'image ; le bandeau garde son
+      fond 88 %.
+- [x] 1.3 Conserver géométrie et centrage vertical (`width: 38%`,
+      `justify-content: center`, paddings) — seul le fond change.
+- [x] 1.4 Mettre à jour le commentaire du layout : colonne sans fond sur image
+      pleine page, plus de dégradé ni de panneau.
 
 ## 2. Slide 14
 
@@ -21,10 +18,11 @@
 
 ## 3. Vérification
 
-- [x] 3.1 Rendu slide 14 dans les **deux modes** : image pleine page lisible
-      sous le bloc, bord franc, texte lisible, sujet (ruban rouge) non recouvert.
-- [~] 3.2 Contrôle projection de la couture verticale (risque design.md) ; si
-      elle accroche, appliquer le repli (filet ou fondu ≤ 1rem) et le noter.
+- [x] 3.1 Rendu slide 14 dans les **deux modes** : image pleine page
+      ininterrompue, texte lisible directement dessus (encre/crème en clair,
+      crème/noir du négatif en sombre), sujet (ruban rouge) non recouvert.
+- [~] 3.2 Contrôle **projecteur** du contraste réel du texte sur les zones
+      calmes, deux modes (risque : lisibilité portée par l'asset, pas de fond).
 
 ## 4. Spec
 
