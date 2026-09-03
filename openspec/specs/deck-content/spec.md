@@ -512,11 +512,13 @@ live — **est** l'artefact de ce geste. On ne
 demande plus à la machine d'écrire *sur* le personnage, on lui demande de le
 **devenir**. Le personnage interrogé SHALL être **Judith**.
 
-Il SHALL montrer un **entretien** avec ce personnage, en progression : une
-question factuelle, puis une question interprétative, puis une question
-existentielle. (Décision 2026-09-03, run INT-c : la paire d'origine est étendue
-à trois questions, la troisième — sur la nature de sa réalité — recevant un
-refus de comprendre, qui est lui-même un geste de non-résolution.)
+Il SHALL montrer un **entretien** avec ce personnage comprenant trois questions
+**dans l'ordre** : une question factuelle, puis une question interprétative,
+puis une question existentielle. Les trois échanges SHALL être **affichés
+ensemble à l'entrée de la slide** (pas de dévoilement au pas de clic). (Décision
+2026-09-03, run INT-c : la paire d'origine est étendue à trois questions, la
+troisième — sur la nature de sa réalité — recevant un refus de comprendre, qui
+est lui-même un geste de non-résolution.)
 
 Il NE SHALL PAS rapporter d'**émergence** — aucun élément né d'un entretien et
 entré dans le roman n'est documenté. À la place, il SHALL énoncer que rien n'a
@@ -534,8 +536,9 @@ sourcée**.
 #### Scenario: Entretien à trois questions
 
 - **WHEN** l'entretien est montré
-- **THEN** trois questions apparaissent successivement, la factuelle puis
-  l'interprétative puis l'existentielle, et aucune quatrième n'est présentée
+- **THEN** les trois questions sont présentées **ensemble à l'entrée de la
+  slide**, dans l'ordre factuelle puis interprétative puis existentielle, et
+  aucune quatrième n'est présentée
 
 #### Scenario: Aucune émergence affirmée
 

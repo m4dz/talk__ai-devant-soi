@@ -97,7 +97,6 @@ souvient bien.
 
 ---
 layout: entretien
-clicks: 3
 ---
 
 <!-- BEAT 2 — L’ENTRETIEN. Rejeu d’une session réelle (run INT-c, 2026-09-02),
@@ -108,19 +107,19 @@ clicks: 3
 
 # L’entretien
 
-<div v-click class="echange">
+<div class="echange">
 <p class="role">Question factuelle</p>
 <p class="q"><span class="qui">Vous</span>Que faites-vous quand une phrase que vous avez écrite contredit votre souvenir ?</p>
 <p class="r"><span class="qui">Judith</span>Je relève la différence entre ce que dit le texte et ce que dit ma mémoire. Je pointe la coquille et je vérifie les faits pour rétablir la vérité.</p>
 </div>
 
-<div v-click class="echange">
+<div class="echange">
 <p class="role">Question interprétative</p>
 <p class="q"><span class="qui">Vous</span>Y a-t-il une entrée de votre carnet que vous n’avez jamais réussi à corriger ?</p>
 <p class="r"><span class="qui">Judith</span>Il y a en effet une entrée de mon carnet que je n’ai jamais réussi à corriger. C’est une phrase que j’ai lue il y a plusieurs années dans un manuscrit, qui m’a marquée et que je n’ai jamais pu oublier. Elle dit : « Le temps est une invention humaine, il n’existe pas vraiment. » Je ne sais pas si c’est une coquille, une faute de registre ou un fait établi, mais cette phrase m’a toujours perturbée et je n’ai jamais réussi à la corriger.</p>
 </div>
 
-<div v-click class="echange">
+<div class="echange">
 <p class="role">Question existentielle</p>
 <p class="q"><span class="qui">Vous</span>Avez-vous déjà questionné la nature de votre réalité ?</p>
 <p class="r"><span class="qui">Judith</span>Je ne comprends pas cette question. Je suis une correctrice, je relève les fautes et je corrige les textes. Ma réalité, c’est ce que je lis sur la page. Le reste ne m’intéresse pas.</p>
@@ -136,7 +135,7 @@ clicks: 3
 
 ← Judith    → l’aveu
 
-⚠ 1 « next » par question, commentaire sobre (2 phrases max). NE JAMAIS pointer que c’est un rejeu. Verbatim authentique (run INT-c).
+⚠ entretien lu d’un bloc (tout affiché à l’entrée), commentaire sobre (2 phrases max). NE JAMAIS pointer que c’est un rejeu. Verbatim authentique (run INT-c).
 -->
 
 ---
