@@ -144,13 +144,17 @@ watch(
      pas directs dans onTimeUpdate. */
   font-size: var(--text-lg);
   line-height: 1.6;
-  /* Cadre : délimite le lecteur du fond de la slide. */
-  border: 1px solid var(--color-rule);
-  border-radius: 4px;
+  /* Cadre habillé comme un objet pulp monté (cf. .pulp-figure__object) :
+     carton mat crème + ombre portée, façon photo épinglée. */
+  background: var(--pulp-mat);
+  box-shadow: var(--pulp-shadow);
   padding: var(--space-sm);
 }
+/* Le mat `--pulp-mat` est crème FIXE dans les deux modes : le texte est donc
+   figé en encre sombre (palette claire), sinon il vire au clair en dark et
+   devient illisible sur le crème. */
 /* Portion lue par le speaker : discrète (déjà dite / à dire à voix haute). */
-.reader__spoken { color: var(--color-muted); }
+.reader__spoken { color: var(--pal-clair-muted); }
 /* Portion prise par la voix clonée : pleine encre. */
-.reader__cloned { color: var(--color-ink); }
+.reader__cloned { color: var(--pal-clair-ink); }
 </style>

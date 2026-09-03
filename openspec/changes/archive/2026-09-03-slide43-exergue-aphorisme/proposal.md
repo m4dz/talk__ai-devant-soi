@@ -1,10 +1,12 @@
 ## Why
 
-Slide 43, l'ouverture de la chute (« C'est mon œuvre. »), est en `layout:
-propos / variant: plain` : titre `--title-2` calé à gauche dans la colonne
-58ch. C'est l'**affirmation** de la thèse (temps 4 : l'œuvre est mienne parce
-que la fabrique est mienne) — elle mérite le traitement des **aphorismes de
-strate** (slides 11, 18, 29…), centré et dominant, pour trancher comme eux.
+Slide 43, l'ouverture de la chute, est en `layout: propos / variant: plain` :
+titre `--title-2` calé à gauche dans la colonne 58ch. C'est l'**affirmation**
+de la thèse (temps 4 : l'œuvre est mienne parce que la fabrique est mienne) —
+elle mérite le traitement des **aphorismes de strate** (slides 11, 18, 29…),
+centré et dominant, pour trancher comme eux. Correction du speaker : le mot
+final devient **« ouvrage »** (le terme du métier, la chose fabriquée), avec
+**« ouvrage » en rouge** pour porter l'accent.
 
 ## What Changes
 
@@ -13,10 +15,14 @@ strate** (slides 11, 18, 29…), centré et dominant, pour trancher comme eux.
   slides 11 et 18 : phrase centrée, `--title-1`, blockquote, `pulp-bg`.
   - `layout: propos` → `layout: exergue`
   - retirer `variant: plain`
-  - `# C'est mon œuvre.` → `C'est mon œuvre.` (l'exergue rend le contenu en
+  - `# C'est mon œuvre.` → `C'est mon ouvrage.` (l'exergue rend le contenu en
     blockquote, pas en `<h1>` — comme les autres slides aphorisme)
   - conserver `noCountdown: true`
-- Le **texte est inchangé** (« C'est mon œuvre. ») ; seul le layout change.
+- **Correction du mot final** : « œuvre » → **« ouvrage »**, avec « ouvrage »
+  **en rouge** (`<span style="color: var(--color-accent)">`, s'adapte
+  clair/sombre). L'affirmation (temps 4) est préservée ; « ouvrage » renforce
+  le cadrage métier/fabrique. Les notes scéniques gardent « œuvre » comme glose
+  conceptuelle.
 
 ## Capabilities
 
@@ -26,11 +32,12 @@ Aucune.
 
 ### Modified Capabilities
 
-Aucune. Changement de **layout d'une slide** (mise en forme) : le texte et
-l'intention (l'affirmation de la chute, temps 4 « affirmée ») ne changent pas.
-Le deck choisit volontairement ses layouts par archétype de slide ; il n'existe
-pas de règle spec qui fige le layout d'une slide donnée. Style pur →
-`skip_specs: true`.
+Aucune. Changement de **layout + wording d'une slide** : l'**intention**
+(l'affirmation de la chute, temps 4 « affirmée » : l'œuvre/ouvrage est mienne)
+ne change pas — « ouvrage » reste l'affirmation, dans le registre métier. Le
+deck choisit volontairement ses layouts par archétype ; aucune règle spec ne
+fige le layout ou le mot exact d'une slide (cf. `deck-content` « l'intention
+prime sur le texte »). Style + wording, intention préservée → `skip_specs: true`.
 
 ## Impact
 
