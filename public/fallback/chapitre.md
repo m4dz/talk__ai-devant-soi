@@ -1,17 +1,34 @@
-Les autres domestiques vont bien cependant, mais j’ai grand-peur d’être repris, moi.
+Samedi 14. Beau temps.
+
+Je sais quel jour on est, mais j'ai décidé que cette journée n'existerait pas. Je range les photos dans un tiroir, j'efface la playlist de mon téléphone, je fais mes courses comme si c'était un jour comme les autres. Je ne prononce pas ce mot qui me brûle les lèvres.
+
+Je rentre à la maison, je prépare le déjeuner, je mange seule à table. Je ne regarde pas la chaise vide en face de moi. Je ne pense pas à elle.
+
+L'après-midi s'étire, lent et pesant.
 
 <!-- BASCULE -->
 
-4 juillet. – Décidément, je suis repris. Mes cauchemars anciens reviennent. Cette nuit, j’ai senti quelqu’un accroupi sur moi, et qui, sa bouche sur la mienne, buvait ma vie entre mes lèvres. Oui, il la puisait dans ma gorge, comme aurait fait une sangsue. Puis il s’est levé, repu, et moi je me suis réveillé, tellement meurtri, brisé, anéanti, que je ne pouvais plus remuer. Si cela continue encore quelques jours, je repartirai certainement.
+Samedi 14. Beau temps.
 
-5 juillet. – Ai-je perdu la raison ? Ce qui s’est passé, ce que j’ai vu la nuit dernière est tellement étrange, que ma tête s’égare quand j’y songe !
+« Neuf ans aujourd'hui que je t'ai dit oui. J'ai mis deux couverts, exprès cette fois, et j'ai redit oui tout haut dans la cuisine. Je t'aime toujours. »
 
-Comme je le fais maintenant chaque soir, j’avais fermé ma porte à clef ; puis, ayant soif, je bus un demi-verre d’eau, et je remarquai par hasard que ma carafe était pleine jusqu’au bouchon de cristal.Je me couchai ensuite et je tombai dans un de mes sommeils épouvantables, dont je fus tiré au bout de deux heures environ par une secousse plus affreuse encore.
+Le soir, le cahier ouvert : la phrase relue, l'écart entre ce que je lis et ce dont je me souviens, la chaise repoussée.
 
-Figurez-vous un homme qui dort, qu’on assassine, et qui se réveille, avec un couteau dans le poumon, et qui râle, couvert de sang, et qui ne peut plus respirer, et qui va mourir, et qui ne comprend pas – voilà.
+19 h 30. La table du séjour. La boîte en carton, ouverte, les photos étalées. Des sourires, des regards complices, des moments heureux capturés sur le papier glacé. Je les avais rangées hier, j'en suis certaine. Pourtant, elles sont là, éparpillées sur la table, comme si quelqu'un les avait sorties exprès. Je les rassemble, les remets dans la boîte, mais ne peux m'empêcher de les regarder une dernière fois avant de la refermer.
+20 h 00. Le salon. L'enceinte Bluetooth allumée, la musique qui s'échappe des haut-parleurs.
 
-Ayant enfin reconquis ma raison, j’eus soif de nouveau ; j’allumai une bougie et j’allai vers la table où était posée ma carafe. Je la soulevai en la penchant sur mon verre ; rien ne coula. – Elle était vide ! Elle était vide complètement ! D’abord, je n’y compris rien ; puis, tout à coup, je ressentis une émotion si terrible, que je dus m’asseoir, ou plutôt, que je tombai sur une chaise ! puis, je me redressai d’un saut pour regarder autour de moi ! puis je me rassis, éperdu d’étonnement et de peur, devant le cristal transparent ! Je le contemplais avec des yeux fixes, cherchant à deviner. Mes mains tremblaient ! On avait donc bu cette eau ? Qui ? Moi ? moi, sans doute ? Ce ne pouvait être que moi ? Alors, j’étais somnambule, je vivais, sans le savoir, de cette double vie mystérieuse qui fait douter s’il y a deux êtres en nous, ou si un être étranger, inconnaissable et invisible, anime, par moments, quand notre âme est engourdie, notre corps captif qui obéit à cet autre, comme à nous-mêmes, plus qu’à nous-mêmes.
+J'aurais dû demander, le jour où elle… Le plat est au four.
 
-Ah ! qui comprendra mon angoisse abominable ? Qui comprendra l’émotion d’un homme, sain d’esprit, bien éveillé, plein de raison et qui regarde épouvanté, à travers le verre d’une carafe, un peu d’eau disparue pendant qu’il a dormi ! Et je restai là jusqu’au jour, sans oser regagner mon lit.
+La playlist qui tourne encore.
+
+Le constat est sans appel : la journée a été exactement comme je l'avais décidé de ne pas la vivre. Chaque geste d'effacement que j'avais décidé a été contredit par l'état de la maison. Les photos étaient sur la table, la musique jouait, le plat des anniversaires était dans le four, et deux couverts étaient mis. Plus j'essayais de m'en éloigner, plus le souvenir s'accrochait.
+
+Ma main était froide.
+
+Verdict : coquille.
+
+Le coup de couteau : je n'ai pas rêvé.
 
 <!-- FIN AUDIO -->
+
+Constat : anniversaire.
