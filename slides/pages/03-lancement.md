@@ -124,12 +124,9 @@ noCountdown: true
      idempotent + countdown autonome. Le rappel discret persistant 3→6 vit
      dans slides/global-bottom.vue. -->
 
-# On lance l’écriture
+# On lance ?
 
-En ce moment même, sur cette machine, des scènes s’écrivent.
-
-Quand il atteindra zéro, un chapitre sera né — que personne n’a jamais lu.
-**On le découvrira ensemble.**
+La machine va rédiger le chapitre. On le découvrira ensemble, à la fin.
 
 <div class="launch-controls">
   <GenerationTrigger />

@@ -6,12 +6,10 @@ layout: cold-open
      la boîte noire qu'on ouvre couche par couche. Reprend la note du contrat
      retiré (élagage passe 1). Wording provisoire. -->
 
-Ce qui tourne derrière moi, vous ne savez pas ce que c'est.
-
-Une **boîte noire** qui écrit de la fiction. C'est exactement ce que
+Un **atelier d’écriture** qui écrit de la fiction. C'est exactement ce que
 l'Académie appelle « tricherie ».
 
-Alors on va l'ouvrir. **Couche par couche.**
+Alors entrons dans l’atelier.
 
 <!--
 - ce qui tourne = une boîte noire, angoissante vue du dehors
@@ -65,7 +63,7 @@ variant: question
 
 Pas une fois. **Plusieurs.**
 
-Chaque fois qu'un auteur a délégué une part de sa fabrique — et gardé son nom.
+Chaque fois qu’un auteur a délégué une part de sa fabrique, et gardé son nom.
 
 <!--
 - la question œuvre/fabrique n'est pas nouvelle, ni née avec l'IA
@@ -109,7 +107,7 @@ passaient tous ses critères.** Puis la révélation : canular.
 layout: diptyque
 titre: 'Grille de style : tout au vert'
 gauche: La machine
-droite: Un humain
+droite: L’auteur
 ---
 
 <!-- GESTE 1 — MALLEY, l'artefact. DIPTYQUE : les deux passent CHAQUE contrôle
@@ -131,9 +129,7 @@ droite: Un humain
 > garage, la porte de la buanderie, et à chaque étape je me suis revue avec une
 > netteté parfaite, sauf une, une seule, un trou de quelques secondes.
 
-::default::
 
-**Les deux passent chaque contrôle de la grille. Un seul est vivant.**
 
 <!--
 **deux textes, la même scène : la grille les valide tous les deux. Un seul est vivant.**
@@ -149,18 +145,13 @@ droite: Un humain
 
 ---
 layout: propos
+clicks: 1
 ---
 
 <!-- [NOUVELLE — refonte arc] MALLEY : LE GROS MODÈLE. Reprend l'aparté préservé
      + la leçon approfondie : tout le savoir = plus moyen. Wording provisoire. -->
 
-# « Prenez un modèle plus gros. »
-
-Il ne rentre pas dans la machine. Et s'il rentrait, ce serait **pire**.
-
-Il contient tout le savoir, tous les styles — la moyenne de tout ce qui a été
-écrit. Composer à partir de tout, ce n'est pas la garantie du bon.
-C'est la garantie du **moyen**.
+# <span v-mark="{ at: 1, type: 'strike-through', color: '#b3141c', strokeWidth: 4 }">« Prenez un modèle plus gros. »</span>
 
 <!--
 - objection classique : prends un plus gros modèle
@@ -184,15 +175,13 @@ balance: Auteur █████████░ Dispositif
      Maquet a perdu le nom. Le seuil affleure, on le LAISSE (réponse à la
      remontée). -->
 
-Auguste Maquet documente, structure, rédige des premiers jets entiers.
-Dumas réécrit par-dessus : le rythme, les dialogues, la voix.
-Une vingtaine de romans comme ça, *Monte-Cristo* compris.
+Maquet documente, structure, écrit les premiers jets. Dumas réécrit
+par-dessus : le rythme, la voix. Une vingtaine de romans, *Monte-Cristo* compris.
 
-**1858. Maquet attaque en justice** pour obtenir son nom sur la couverture.
-Il perd. Le tribunal lui accorde de l'argent. Jamais le nom.
+**1858 — Maquet réclame son nom sur la couverture. Il perd.** De l’argent,
+jamais le nom.
 
-Ce soir, celui qui documente et fournit toute la matière — **c'est moi.**
-Comme Maquet. Et Maquet a perdu le nom.
+Ce soir, celui qui fournit toute la matière, **c’est moi.**
 
 <!--
 **Maquet fournit la matière ; Dumas garde le nom. Ce soir, le Maquet, c'est moi.**
@@ -219,7 +208,7 @@ class: artefact-slide
 <div class="maquet">
 
 <div class="maquet__arbre">
-<p class="maquet__label">bible/ — écrite à la main</p>
+<p class="maquet__label">Bible/ écrite main</p>
 <pre>
 fiche-judith.md              ████████████  200
 chronologie-partie-double.md ██████████    166
@@ -238,7 +227,7 @@ mouvements-chapitres.md      ██             35
 </div>
 
 <div class="maquet__zoom">
-<p class="maquet__label">un fichier sur douze — le métier, <em>documenté</em></p>
+<p class="maquet__label">Fiche métier</p>
 <ul>
 <li><strong>la coquille</strong> — faute locale, lettre ou mot</li>
 <li><strong>le bourdon</strong> — mot, ligne ou passage sautés</li>
@@ -251,7 +240,7 @@ mouvements-chapitres.md      ██             35
 
 </div>
 
-<p class="maquet__caption">1131 lignes, documentées à la main, avant que la machine n'écrive un mot.</p>
+
 
 <style>
 .artefact-slide .maquet { display: grid; grid-template-columns: 1.15fr 1fr; gap: var(--space-lg); align-items: start; }
@@ -277,7 +266,7 @@ mouvements-chapitres.md      ██             35
 
 ---
 layout: case-card
-name: Oulipo
+name: Raymond Queneau
 work: Cent mille milliards de poèmes, 1961
 figure: /images/cas-05-oulipo-s46.png
 balance: Auteur ██░░░░░░░░ Dispositif
@@ -316,51 +305,44 @@ class: artefact-slide
      pas de Mermaid, pas de composant. Mise au propre visuelle au filage. -->
 
 <div class="dag">
-<svg viewBox="0 0 920 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graphe d'orchestration LangGraph">
+<svg viewBox="0 0 920 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Graphe d'orchestration LangGraph">
   <defs>
-    <marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L7,3 L0,6 Z" fill="var(--color-ink)"/>
-    </marker>
-    <marker id="ahr" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
-      <path d="M0,0 L7,3 L0,6 Z" fill="var(--color-accent)"/>
-    </marker>
+    <marker id="ah" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 Z" fill="var(--color-ink)"/></marker>
+    <marker id="ahr" markerWidth="11" markerHeight="11" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,1 L9,5 L0,9 Z" fill="var(--color-accent)"/></marker>
   </defs>
 
-  <!-- boucle de reprise : glisse -> write, le héros -->
-  <path d="M 604 96 C 604 30, 254 30, 254 96" fill="none" stroke="var(--color-accent)" stroke-width="2.5" marker-end="url(#ahr)"/>
-  <text x="429" y="24" text-anchor="middle" class="dag__loop">recommence si ça casse</text>
+  <!-- boucle de reprise : glisse -> write -->
+  <path d="M 604 94 C 590 24, 300 24, 254 46 L 254 94" fill="none" stroke="var(--color-accent)" stroke-width="2.5" stroke-linecap="round" marker-end="url(#ahr)"/>
+  <text x="429" y="22" text-anchor="middle" class="dag__loop">recommence si ça casse</text>
 
-  <!-- rangée 1 -->
-  <g class="dag__node"><rect x="20"  y="96" width="128" height="46" rx="6"/><text x="84"  y="118">PLAN</text><text x="84"  y="134" class="dag__code">plan</text></g>
-  <g class="dag__node"><rect x="190" y="96" width="128" height="46" rx="6"/><text x="254" y="118">ÉCRIRE</text><text x="254" y="134" class="dag__code">write</text></g>
-  <g class="dag__node"><rect x="360" y="96" width="128" height="46" rx="6"/><text x="424" y="118">ACCUMULER</text><text x="424" y="134" class="dag__code">accumulate</text></g>
-  <g class="dag__node"><rect x="540" y="96" width="128" height="46" rx="6"/><text x="604" y="118">GLISSER</text><text x="604" y="134" class="dag__code">glisse</text></g>
-  <g class="dag__node"><rect x="720" y="96" width="128" height="46" rx="6"/><text x="784" y="118">RELIRE</text><text x="784" y="134" class="dag__code">review</text></g>
+  <!-- best-of-N sur ÉCRIRE -->
+  <path d="M 236 142 C 224 186, 284 186, 272 144" fill="none" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="254" y="206" text-anchor="middle" class="dag__note">N essais, le meilleur gagne</text>
 
-  <!-- rangée 2 (R→L) -->
-  <g class="dag__node"><rect x="720" y="256" width="128" height="46" rx="6"/><text x="784" y="278">CORRIGER</text><text x="784" y="294" class="dag__code">repair</text></g>
-  <g class="dag__node"><rect x="540" y="256" width="128" height="46" rx="6"/><text x="604" y="278">ASSEMBLER</text><text x="604" y="294" class="dag__code">assemble</text></g>
-  <g class="dag__node"><rect x="360" y="256" width="128" height="46" rx="6"/><text x="424" y="278">GESTES</text><text x="424" y="294" class="dag__code">poser_gestes</text></g>
-  <g class="dag__node"><rect x="180" y="256" width="128" height="46" rx="6"/><text x="244" y="278">COHÉRENCE</text><text x="244" y="294" class="dag__code">coherence</text></g>
+  <g class="dag__node"><rect x="20" y="96" width="128" height="46" rx="6"/><text x="84" y="125">PLAN</text></g>
+  <g class="dag__node"><rect x="190" y="96" width="128" height="46" rx="6"/><text x="254" y="125">ÉCRIRE</text></g>
+  <g class="dag__node"><rect x="360" y="96" width="128" height="46" rx="6"/><text x="424" y="125">ACCUMULER</text></g>
+  <g class="dag__node"><rect x="540" y="96" width="128" height="46" rx="6"/><text x="604" y="125">GLISSER</text></g>
+  <g class="dag__node"><rect x="720" y="96" width="128" height="46" rx="6"/><text x="784" y="125">RELIRE</text></g>
 
-  <!-- flèches rangée 1 -->
-  <line x1="148" y1="119" x2="184" y2="119" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
-  <line x1="318" y1="119" x2="354" y2="119" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
-  <line x1="488" y1="119" x2="534" y2="119" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
-  <line x1="668" y1="119" x2="714" y2="119" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
-  <!-- descente RELIRE -> CORRIGER -->
-  <line x1="784" y1="142" x2="784" y2="250" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
-  <!-- flèches rangée 2 (R→L) -->
-  <line x1="720" y1="279" x2="674" y2="279" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
-  <line x1="540" y1="279" x2="494" y2="279" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
-  <line x1="360" y1="279" x2="314" y2="279" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
-  <!-- COHÉRENCE -> ✓ -->
-  <line x1="180" y1="279" x2="120" y2="279" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
-  <text x="96" y="284" text-anchor="middle" class="dag__end">✓</text>
+  <g class="dag__node"><rect x="720" y="256" width="128" height="46" rx="6"/><text x="784" y="285">CORRIGER</text></g>
+  <g class="dag__node"><rect x="540" y="256" width="128" height="46" rx="6"/><text x="604" y="285">ASSEMBLER</text></g>
+  <g class="dag__node"><rect x="360" y="256" width="128" height="46" rx="6"/><text x="424" y="285">GESTES</text></g>
+  <g class="dag__node"><rect x="180" y="256" width="128" height="46" rx="6"/><text x="244" y="285">COHÉRENCE</text></g>
+
+  <line x1="148" y1="119" x2="190" y2="119" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="318" y1="119" x2="360" y2="119" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="488" y1="119" x2="540" y2="119" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="668" y1="119" x2="720" y2="119" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="784" y1="142" x2="784" y2="256" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="720" y1="279" x2="668" y2="279" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="540" y1="279" x2="488" y2="279" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="360" y1="279" x2="308" y2="279" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <line x1="180" y1="279" x2="114" y2="279" stroke="var(--color-ink)" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="94" y="286" text-anchor="middle" class="dag__end">✓</text>
 </svg>
 
 <div class="dag__inset">
-<p>Une seule ligne fait la boucle :</p>
 
 ```python
 g.add_conditional_edges("glisse", route_after_write, ["write", "review"])
@@ -372,14 +354,14 @@ g.add_conditional_edges("glisse", route_after_write, ["write", "review"])
 </div>
 
 <style>
-.artefact-slide .dag svg { width: 100%; height: auto; max-height: 300px; }
+.artefact-slide .dag svg { width: 100%; height: auto; max-height: 330px; }
 .artefact-slide .dag__node rect { fill: color-mix(in srgb, var(--color-ink) 5%, transparent); stroke: var(--color-ink); stroke-width: 1.5; }
 .artefact-slide .dag__node text { font-family: var(--font-body); font-size: 15px; text-anchor: middle; fill: var(--color-ink); }
-.artefact-slide .dag__node .dag__code { font-size: 10px; fill: var(--color-muted); letter-spacing: 0.02em; }
 .artefact-slide .dag__loop { font-family: var(--font-body); font-size: 13px; fill: var(--color-accent); letter-spacing: 0.04em; }
+.artefact-slide .dag__note { font-family: var(--font-body); font-size: 12px; fill: var(--color-muted); }
 .artefact-slide .dag__end { font-size: 22px; fill: var(--color-accent); }
-.artefact-slide .dag__inset { margin-top: var(--space-sm); font-size: var(--text-sm); color: var(--color-muted); }
-.artefact-slide .dag__caption { margin-top: var(--space-sm); font-family: var(--font-title); font-size: var(--text-xl); }
+.artefact-slide .dag__inset { margin-top: var(--space-sm); font-size: var(--text-sm); }
+.artefact-slide .dag__caption { margin-top: var(--space-md); font-family: var(--font-body); font-weight: 700; color: var(--color-accent); font-size: var(--text-xl); }
 </style>
 
 <!--
@@ -407,7 +389,7 @@ balance: Auteur ███████░░░ Dispositif
 
 Raymond Carver, le minimaliste le plus imité d'Amérique. Son style a un
 deuxième père : **Gordon Lish**, son éditeur, qui coupait ses nouvelles
-jusqu'à la moitié et réécrivait les fins — contre l'auteur qui le suppliait
+jusqu’à la moitié et réécrivait les fins, contre l’auteur qui le suppliait
 de refermer.
 
 **Lish n'a rien ajouté à Carver. Il a coupé.**
@@ -427,7 +409,7 @@ de refermer.
 ---
 layout: piece-a-conviction
 intitule: Fiche de style — les interdits
-commentaire: Ma fiche de style ne dit pas comment écrire. Elle dit quoi barrer.
+commentaire: ''
 ---
 
 <!-- GESTE 4 — CARVER, l'artefact. Render A : la liste des interdits RAYÉE
@@ -470,8 +452,8 @@ layout: exergue
      RÉSOLU. La réponse tombe à la remontée. Formulation provisoire, à éprouver
      au filage. Le cadrage Lish est dans les notes ; la slide porte le pivot. -->
 
-Ma voix, ce sont mes retraits.
-À force de retraits — à qui est la voix ?
+La voix, c’est ce que j’ai coupé.
+Alors, à qui est la voix ?
 
 <!--
 **le seuil, dit une seule fois : à force de retraits, à qui est la voix ?**
@@ -505,7 +487,7 @@ La fabrique reste à notre main.
 ---
 layout: propos
 variant: inventaire
-clicks: 5
+clicks: 4
 ---
 
 <!-- LA REMONTÉE — l'inventaire des gestes (tous à ma main), puis la RÉPONSE au
@@ -519,14 +501,7 @@ clicks: 5
 
 <div v-click class="entree">Une <strong>voix</strong> que j'ai réglée par ses retraits.</div>
 
-<div v-click class="entree">Une <strong>mesure</strong> dont je sais qu'elle ne lit pas à ma place.</div>
-
-<div v-click>
-
-<p class="chute">Il n'existe pas de seuil. J'ai conçu l'atelier.
-La fabrique est à moi.</p>
-
-</div>
+<div v-click class="entree">Une <strong>mesure</strong> qui ne garantit pas le bon.</div>
 
 <!--
 **rouvrez la boîte noire : elle est pleine de mes gestes.**
@@ -541,16 +516,19 @@ La fabrique est à moi.</p>
 
 ---
 layout: cold-open
+clicks: 1
 ---
 
 <!-- Relance vers la section 5 (Racter → le mode personnage). -->
 
-Alors, la question du début : une fabrique qu'on tient à ce point,
-**qui en est l'auteur ?**
+Une fabrique qu'on tient de bout en bout,
+**qui est l'auteur de ce qui en sort ?**
 
-Ne répondez pas tout de suite.
+<div v-click>
 
-Il me reste quelqu'un à vous présenter.
+Encore un aspect.
+
+</div>
 
 <!--
 **le hand-off : une fabrique qu'on tient à ce point — qui en est l'auteur ?**

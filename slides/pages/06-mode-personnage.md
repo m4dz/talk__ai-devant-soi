@@ -13,11 +13,10 @@ balance: Auteur ███░░░░░░░ Dispositif
      l'urgence. INTERDIT : tout rapprochement explicite avec Pavlowitch. -->
 
 Premier livre revendiqué comme **écrit par un programme**, sur un
-micro-ordinateur. Pas de tribunal, pas de clause, pas de commission : de la
-curiosité.
+micro-ordinateur.
 
 Et la seule controverse portait sur l'inverse : on soupçonnait l'auteur du
-programme d'avoir **trop sélectionné, trop édité** les sorties.
+programme d'avoir trop sélectionné, trop édité les sorties.
 
 **On accusait un livre de machine d'être trop humain.**
 
@@ -35,21 +34,27 @@ programme d'avoir **trop sélectionné, trop édité** les sorties.
 
 ---
 layout: cold-open
+clicks: 2
 ---
 
-<!-- BEAT 1 — L’acteur, l'artefact du geste Racter : la machine « auteur »,
+<!-- BEAT 1 — L'acteur, l'artefact du geste Racter : la machine « auteur »,
      en fait curée par l'humain. -->
 
 <!-- BEAT 1 — L’acteur. -->
 
-Dans l’atelier, je vous ai dit qu’il n’y avait que deux rôles.
+Une fabrique, deux rôles.
 
-L’auteur, vous venez de le voir travailler pendant un quart d’heure.
-**Voici l’acteur.**
+<div v-click>
 
-Même fabrique. Même bibliothèque, mêmes fiches, même mémoire.
-Une seule chose change : on ne demande plus à la machine d’écrire *sur* le
-personnage. On lui demande de **le devenir**.
+**L'auteur.** Vous venez de le voir travailler.
+
+</div>
+
+<div v-click>
+
+**Le personnage.** On ne lui demande plus d'écrire *sur* lui — mais de **le devenir**.
+
+</div>
 
 <!--
 **même fabrique, autre usage : on ne demande plus d'écrire SUR le personnage, mais de le DEVENIR.**
@@ -65,7 +70,7 @@ personnage. On lui demande de **le devenir**.
 ---
 layout: piece-a-conviction
 intitule: La fiche du personnage
-commentaire: Quand une scène résiste, je ne la réécris pas. Je vais lui parler.
+commentaire: ''
 ---
 
 <!-- C’EST JUDITH. Son nom a affleuré en section 4 (le fichier `fiche-judith.md`
