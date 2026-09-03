@@ -527,7 +527,7 @@ Une fabrique qu'on tient de bout en bout,
 
 <div v-click>
 
-Encore un aspect.
+Un dernier exemple.
 
 </div>
 
