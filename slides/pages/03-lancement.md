@@ -113,10 +113,13 @@ La voix ne cède pas.
 ---
 layout: propos
 variant: plain
+# Corps centré sur la largeur de la slide : le bouton porte le timer et doit
+# tomber au centre, pas au tiers gauche de la colonne 58ch.
+center: true
 # Un pas de clic : le « next » lance la génération (télécommande OK).
 # Le bouton reste cliquable en secours (souris, répétition).
 clicks: 1
-# Cette slide porte le compte à rebours EN GRAND → pas de rappel discret.
+# Le timer est porté par le bouton de lancement → pas de rappel discret ici.
 noCountdown: true
 ---
 
@@ -130,15 +133,17 @@ La machine va rédiger le chapitre. On le découvrira ensemble, à la fin.
 
 <div class="launch-controls">
   <GenerationTrigger />
-  <Countdown />
 </div>
 
 <style scoped>
+/* Le bouton porte le timer (plus de Countdown autonome ici). Le centrage
+   horizontal est assuré par `center: true` (frontmatter → `propos--centered`
+   dans le layout) : le corps 58ch est ramené au centre de la slide, donc le
+   bouton aussi. Ici, on ne règle que l'espace au-dessus du bouton. */
 .launch-controls {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-lg);
 }
 </style>
 

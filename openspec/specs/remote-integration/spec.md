@@ -4,9 +4,7 @@
 Contrat d'intégration réelle entre le deck et la machine de génération du
 réseau local, et protocole de fallback silencieux garantissant que la
 démo reste indistinguable de son repli embarqué.
-
 ## Requirements
-
 ### Requirement: Déclenchement de la génération
 
 Le deck SHALL déclencher la génération par un appel réseau au lancement
@@ -100,9 +98,15 @@ pleine présentation.
 
 ### Requirement: Étapes de génération en direct
 
-Le deck SHALL afficher, pendant la génération, l'étape courante annoncée par
-la machine et le récit des événements marquants qu'elle rapporte, afin que la
-salle voie la machine travailler et se corriger.
+Le deck SHALL afficher, pendant la génération, l'**étape courante** annoncée
+par la machine (dans le rappel discret de coin, l'étiquette seule), et SHALL
+**accumuler** le récit des événements marquants qu'elle rapporte.
+
+L'affichage du **récit complet** (la liste des derniers événements) est
+optionnel : il n'a pas de surface obligatoire. Son absence est un état
+normal et NE SHALL PAS être signalée. La capacité d'affichage reste
+disponible là où un compteur complet est placé, mais aucune slide n'est
+tenue de la porter.
 
 Cet affichage SHALL être un **enrichissement** : sa source d'information NE
 SHALL PAS être nécessaire au déroulé. Sa perte — à tout instant, y compris dès
@@ -125,8 +129,8 @@ afin que l'écran répété soit celui du jour J.
 #### Scenario: Étapes en direct pendant la génération
 
 - **WHEN** la machine rapporte ses étapes et ses événements
-- **THEN** le compteur affiche l'étape courante et les derniers événements, le
-  plus récent mis en avant
+- **THEN** l'étape courante est affichée dans le rappel discret, et le récit
+  est accumulé (affiché uniquement là où un compteur complet est placé)
 
 #### Scenario: Source d'étapes perdue en cours de génération
 
@@ -138,14 +142,14 @@ afin que l'écran répété soit celui du jour J.
 
 - **WHEN** la source d'étapes ne répond pas dès le lancement
 - **THEN** le déroulé est identique à celui du chemin nominal, sans message, et
-  les étapes issues de l'interrogation périodique restent affichées si elle
+  les étapes issues de l'interrogation périodique restent disponibles si elle
   répond
 
 #### Scenario: Fenêtre d'événements reçue deux fois
 
 - **WHEN** la même fenêtre d'événements est reçue à nouveau après une
   reconnexion
-- **THEN** le récit affiché ne repart pas en arrière et ne se répète pas
+- **THEN** le récit accumulé ne repart pas en arrière et ne se répète pas
 
 ### Requirement: Relance unique en fenêtre haute
 
@@ -244,3 +248,4 @@ distinct des actions scéniques (il PEUT être un raccourci clavier).
 - **WHEN** l'opérateur active le raccourci de forçage
 - **THEN** le deck bascule immédiatement sur les assets embarqués, sans
   signal visible pour la salle
+

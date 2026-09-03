@@ -10,6 +10,7 @@ import {
   type Chapter,
   type GenStatus,
 } from './session'
+import { timelineFor, type MockScenario } from './mockTimeline'
 
 // Client de génération : generate / status / chapter / audio, plus un flux
 // d'étapes SSE (`/events`) qui n'est qu'un enrichissement.
@@ -50,11 +51,14 @@ const RETRY_GRACE_POLLS = 3
 // console. Le sondage fait le travail, étapes comprises.
 const STREAM_MAX_FAILURES = 5
 
-// Progression mock du statut, sur une échelle courte et INDÉPENDANTE de la
-// durée d'affichage du countdown (design D2) : on veut voir tout le flux
-// generating → tts → ready en quelques secondes en répétition.
-const MOCK_TTS_DELAY_MS = 4000
-const MOCK_READY_DELAY_MS = 8000
+// Cadence du replay mock, sur une échelle courte et INDÉPENDANTE de la durée
+// d'affichage du countdown (design D2) : on veut voir tout le flux
+// generating → tts → ready en quelques secondes en répétition. Chaque snapshot
+// de la timeline est joué à `(i+1) * MOCK_STEP_MS`.
+const MOCK_STEP_MS = 1000
+
+// Scénario mock rejoué (nominal | error | idle), défaut nominal.
+const MOCK_SCENARIO = (import.meta.env.VITE_MOCK_SCENARIO ?? 'nominal') as MockScenario
 
 // Fixtures embarquées (jalon 3B) — servies same-origin depuis public/.
 const FIXTURE_TEXT_URL = '/fallback/chapitre.md'
@@ -91,39 +95,42 @@ async function loadFallbackChapter(): Promise<Chapter> {
   return { text, audioUrl: FIXTURE_AUDIO_URL }
 }
 
-// Récit scripté du mode mock. Il n'est PAS décoratif : sans lui, la répétition
-// hors ligne ne montrerait jamais les étapes, donc ni le rendu du feed ni sa
-// lisibilité en projection ne seraient répétables. Vocabulaire repris de celui
-// que la machine émet réellement (`label` observables du contrat).
-const MOCK_FEED: { at: number; label: string; detail?: string; note?: string }[] = [
-  { at: 300, label: 'Invariants de la bible' },
-  { at: 1400, label: 'Plan de scènes', note: '3 faits dérivés, ils contraignent le plan' },
-  { at: 2400, label: 'Contrôle du plan contre la bible' },
-  { at: 3200, label: 'Plan de scènes', note: 'PLAN REFUSÉ — contredit « la forge est froide ». Replanification.' },
-  { at: 4200, label: 'Écriture', detail: 'scène 1/4 (nemo)' },
-  { at: 5200, label: 'Écriture', detail: 'scène 3/4 (nemo)', note: 'nemo déchargé, Qwen prend la main' },
-  { at: 6200, label: 'Relecture' },
-  { at: 7200, label: 'Lecture en voix clonée' },
-]
-
+/**
+ * Mode mock : REJOUE la timeline réelle du contrat back (transcrite dans
+ * `mockTimeline.ts`), à zéro réseau, sur horloge compressée. But : la
+ * répétition hors ligne montre l'écran du jour J — mêmes labels, mêmes
+ * détails, même progression de phase, même vocabulaire de récit.
+ *
+ * On passe par `applySnapshot(s, 'stream')` pour les états non terminaux :
+ * c'est la VRAIE machine à états qui traite l'étape, le raccord de notes et la
+ * transition de phase — pas un chemin parallèle. Cette branche ne touche jamais
+ * le réseau (elle fait `setStep` + `pushNotes` + `applyStatus`).
+ *
+ * Les états terminaux sont traités à la main pour rester à zéro réseau :
+ *   · `ready` → charge le chapitre EMBARQUÉ (jamais `/chapter` distant) ;
+ *   · `error` → arme le repli directement (pas de `POST /generate` de relance,
+ *     qui sortirait sur le réseau) — observable identique au réel : rien ne
+ *     bouge à l'écran, le chapitre embarqué se pose à zéro du décompte.
+ */
 function mockGenerate(): void {
   clearMockTimers()
-  // generating (déjà posé par session.start) → tts → ready (avec fixtures)
-  mockTimers.push(setTimeout(() => applyStatus('tts'), MOCK_TTS_DELAY_MS))
-  for (const s of MOCK_FEED) {
+  const timeline = timelineFor(MOCK_SCENARIO)
+  timeline.forEach((snap, i) => {
     mockTimers.push(
-      setTimeout(() => {
-        setStep(s.label, s.detail)
-        if (s.note) pushNotes([s.note])
-      }, s.at),
+      setTimeout(async () => {
+        if (snap.phase === 'ready') {
+          const chapter = await loadFallbackChapter()
+          applyStatus('ready', chapter)
+        } else if (snap.phase === 'error') {
+          if (snap.error) console.warn('[gen:mock] échec simulé :', snap.error)
+          armFallback()
+        } else {
+          // generating | tts | idle : traités par la vraie machine à états.
+          await applySnapshot(snap, 'stream')
+        }
+      }, (i + 1) * MOCK_STEP_MS),
     )
-  }
-  mockTimers.push(
-    setTimeout(async () => {
-      const chapter = await loadFallbackChapter()
-      applyStatus('ready', chapter)
-    }, MOCK_READY_DELAY_MS),
-  )
+  })
 }
 
 // ---------------------------------------------------------------- réseau ---
@@ -367,7 +374,7 @@ function closeStream(): void {
   }
 }
 
-interface Snapshot {
+export interface Snapshot {
   phase?: GenStatus
   label?: string
   detail?: string

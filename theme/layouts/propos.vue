@@ -22,7 +22,10 @@ const { $frontmatter } = useSlideContext()
 <template>
   <div
     class="slidev-layout propos pulp-bg"
-    :class="`propos--${$frontmatter.variant || 'plain'}`"
+    :class="[
+      `propos--${$frontmatter.variant || 'plain'}`,
+      { 'propos--centered': $frontmatter.center },
+    ]"
   >
     <div class="propos__corps">
       <slot />
@@ -37,6 +40,15 @@ const { $frontmatter } = useSlideContext()
 }
 .propos__corps {
   max-width: 58ch;
+}
+
+/* Opt-in `center: true` (frontmatter) : centre le CORPS sur la largeur de la
+   slide. Le corps est un item flex sous `align-items: stretch` borné par
+   max-width, donc calé à gauche par défaut ; `align-items: center` le ramène
+   au centre. Sert la slide de lancement (bouton porteur du timer, centré). */
+.propos--centered {
+  align-items: center;
+  text-align: center;
 }
 
 /* ── plain : l'énoncé et son développement ─────────────────────────── */

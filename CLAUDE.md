@@ -141,8 +141,8 @@ slide et le script, le script gagne. Le deck suit :
 
 Le **compte à rebours** est de **28 minutes, gravé** : lancé en section 3
 (~minute 13), il atteint zéro au début de la section 6 — la récolte
-(~minute 41). Il reste visible (en grand au lancement, puis en rappel
-discret) des sections 3 à 6.
+(~minute 41). Il reste visible (porté par le bouton de lancement au
+lancement, puis en rappel discret) des sections 3 à 6.
 
 ## Stack du deck
 
@@ -247,14 +247,17 @@ Composants à développer :
 - **`<GenerationTrigger>`** (section 3) : bouton scénique qui déclenche
   la génération du chapitre. Feedback visuel immédiat (la salle doit
   *voir* que ça part). Idempotent : un double-clic ne relance pas.
-- **`<Countdown>`** : compte à rebours de 28 min, affiché en grand sur la
-  slide de lancement puis rappelable en discret (pilule de coin) sur les
-  sections suivantes. Autonome côté deck (ne dépend pas du réseau pour
-  avancer). **Porte les étapes en direct** : étape, sous-étape et récit des
-  événements marquants de la machine, pour que la salle la voie travailler
-  et se corriger. En grand : étape + récit. Dans la pilule : l'étiquette
-  seule — les sections 4 et 5 portent l'argumentation, un récit défilant dans
-  le coin y ferait concurrence au propos.
+- **`<Countdown>`** : compte à rebours de 28 min. Au lancement, le timer est
+  **porté par le bouton de lancement** (`<GenerationTrigger>` : son libellé
+  devient le décompte) — pas de grand chiffre autonome sur cette slide. Sur
+  les sections suivantes, rappelable en discret (pilule de coin). Autonome
+  côté deck (ne dépend pas du réseau pour avancer). **Suit les étapes en
+  direct** : l'étape courante s'affiche dans la pilule (l'étiquette seule —
+  les sections 4 et 5 portent l'argumentation, un récit défilant dans le coin
+  y ferait concurrence au propos) ; le récit des événements marquants est
+  **accumulé** dans le store mais n'a plus de surface d'affichage par défaut
+  (la capacité existe, `<Countdown :feed="true">`, mais n'est placée nulle
+  part). Le composant sert encore la slide de récolte (`:feed="false"`).
 - **`<ChapterReader>`** (section 6) : affiche le texte du chapitre
   récupéré, pilote la lecture audio (voir TTS), avec défilement suivant
   la lecture.

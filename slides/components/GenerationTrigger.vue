@@ -20,21 +20,22 @@ watch(
 const minutes = Number(import.meta.env.VITE_COUNTDOWN_MINUTES ?? 28) || 28
 const durationSeconds = minutes * 60
 
-// AUCUNE UI D'ERREUR. `error` porte le MÊME libellé que `generating` — pas une
-// chaîne vide, qui retomberait sur « En cours… » et changerait donc le texte à
-// l'écran. La fenêtre de relance (moins de 3 min de décompte écoulé) place
-// l'opérateur sur ou juste après cette slide : un échec suivi de sa reprise
-// silencieuse doit être rigoureusement invisible ici.
-const statusLabel: Record<string, string> = {
-  idle: '',
-  generating: 'Génération en cours…',
-  tts: 'Synthèse vocale…',
-  ready: 'Chapitre prêt',
-  error: 'Génération en cours…',
-}
+// Le bouton PORTE LE TIMER (décision speaker) : une fois lancé, son libellé
+// est le compte à rebours qui décompte. Pas de texte d'état
+// (`generating`/`tts`/`error`) : le timer seul rend l'échec silencieux
+// rigoureusement invisible — la fenêtre de relance place l'opérateur sur ou
+// juste après cette slide, et rien ne doit trahir la bascule. `ready` n'est de
+// toute façon jamais vu ici (28 min plus tard, autre slide).
+// Même formule que Countdown/global-bottom (source unique : session.remaining).
+const time = computed(() => {
+  const s = Math.max(0, session.remaining)
+  const mm = String(Math.floor(s / 60)).padStart(2, '0')
+  const ss = String(s % 60).padStart(2, '0')
+  return `${mm}:${ss}`
+})
 
 const label = computed(() =>
-  session.running ? statusLabel[session.status] || 'En cours…' : 'Lancer la génération',
+  session.running ? time.value : 'Lancer la génération',
 )
 
 async function onTrigger() {
@@ -73,6 +74,9 @@ async function onTrigger() {
   border-radius: 6px;
   cursor: pointer;
   transition: opacity 0.15s ease;
+  /* Le libellé porte le timer une fois lancé : chiffres à chasse fixe pour
+     éviter le jitter du bouton à chaque seconde. */
+  font-variant-numeric: tabular-nums;
 }
 .gen-trigger:hover { opacity: 0.9; }
 .gen-trigger.is-running {

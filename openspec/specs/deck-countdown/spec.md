@@ -58,11 +58,16 @@ fin), sans jamais laisser l'absence de statut le bloquer.
 - **THEN** le compte à rebours peut le refléter, mais son absence ne
   l'empêche jamais d'avancer
 
-### Requirement: Affichage plein écran puis rappel discret persistant
+### Requirement: Affichage au lancement puis rappel discret persistant
 
-Le compte à rebours SHALL s'afficher en grand sur la slide de lancement
-(section 3), puis rester rappelable en **discret et persistant** (coin de
-slide) tant qu'il tourne, jusqu'à la section 7 incluse.
+Au lancement (section 3), le compte à rebours SHALL être **porté par le
+contrôle de déclenchement** : le déclencheur affiche le temps restant dans
+son propre libellé une fois la génération lancée. Il N'Y SHALL PAS avoir de
+grand chiffre autonome distinct sur la slide de lancement.
+
+Sur les slides suivantes, le compte à rebours SHALL rester rappelable en
+**discret et persistant** (pilule de coin) tant qu'il tourne, jusqu'à la
+section 7 incluse.
 
 La fenêtre d'affichage du rappel discret NE SHALL PAS dépendre de numéros
 de slide : elle SHALL être déterminée par l'état de la session (le rappel
@@ -70,12 +75,12 @@ n'existe pas avant le lancement) et par une **exclusion explicite** portée
 par les slides qui ne doivent pas l'afficher. Ainsi, réécrire ou
 redimensionner une section NE SHALL PAS altérer l'affichage.
 
-#### Scenario: Affichage plein écran au lancement
+#### Scenario: Timer porté par le déclencheur au lancement
 
-- **WHEN** on est sur la slide de lancement et que le compte à rebours
-  tourne
-- **THEN** il est affiché en grand, et le rappel discret n'est pas affiché
-  sur cette slide
+- **WHEN** on est sur la slide de lancement et que la génération est
+  déclenchée
+- **THEN** le déclencheur affiche le temps restant qui décompte, et aucun
+  grand chiffre autonome ni rappel discret n'est affiché sur cette slide
 
 #### Scenario: Rappel discret persistant jusqu'à la récolte
 
