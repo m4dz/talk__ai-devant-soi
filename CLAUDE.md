@@ -172,7 +172,11 @@ peuvent porter une illustration façon couverture pulp.
   possibles en éléments de fond, avec parcimonie.
 - **Typographie de titrage : Sinzano** (Typodermic, Ray Larabie) — la
   Regular, serif élancée aux ligatures imbriquées, pour titres et
-  citations en exergue. **Attention licence : fonte commerciale**, achat
+  citations **en exergue**. Les **citations sourcées** (layout
+  `citation-sourcee`), elles, sont en **police de corps** : ce sont des
+  pièces à conviction, mises en exergue par un panneau et un grand guillemet
+  d'accent, pas par la voix Sinzano (change `passe-style-citations`).
+  **Attention licence : fonte commerciale**, achat
   desktop + webfont requis pour l'auto-hébergement (famille ~110 $ ; ne
   jamais utiliser une version « free download » non licenciée). L'achat
   et la licence sont tracés dans `CREDITS.md`. Plan B si l'achat est

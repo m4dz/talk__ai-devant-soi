@@ -82,6 +82,15 @@
 
   /* Pas de trame sur le pas de grille : indépendant du mode. */
   --texture-size: 9px;
+
+  /* Citation sourcée (layout citation-sourcee) — dérivés des tokens de MODE
+     via color-mix : une seule définition, les deux modes sortent tout seuls
+     puisque `--color-ink`/`--color-accent` sont rebranchés par mode et
+     substitués au point d'usage. Pas de hex ici, pas de second fichier.
+     - panneau : voile d'encre discret sous le bloc cité ;
+     - guillemet : gros guillemet ouvrant en accent, semi-transparent. */
+  --citation-panel: color-mix(in srgb, var(--color-ink) 6%, transparent);
+  --citation-quote: color-mix(in srgb, var(--color-accent) 20%, transparent);
 }
 
 /* ---- ÉTAGE 2 : les quatre mappings ------------------------------------- */
