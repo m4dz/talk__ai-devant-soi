@@ -3,9 +3,12 @@
 - [x] 1.1 `slides/pages/08-cloture.md`, 1re slide : frontmatter
       `layout: propos` → `layout: exergue` ; retirer `variant: plain` ;
       garder `noCountdown: true`.
-- [x] 1.2 Contenu : `# C'est mon œuvre.` → `C'est mon œuvre.` (sans `#` — le
+- [x] 1.2 Contenu : `# C'est mon œuvre.` → `C'est mon ouvrage.` (sans `#` — le
       layout exergue rend le texte en blockquote, comme slides 11/18).
 - [x] 1.3 Ne pas toucher aux notes scéniques (`<!-- -->`).
+- [x] 1.4 Correction wording + couleur : « œuvre » → « ouvrage », « ouvrage »
+      en rouge via `<span style="color: var(--color-accent)">ouvrage</span>`
+      (token accent, clair + sombre).
 
 ## 2. Vérification
 

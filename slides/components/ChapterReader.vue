@@ -148,7 +148,7 @@ watch(
      carton mat crème + ombre portée, façon photo épinglée. */
   background: var(--pulp-mat);
   box-shadow: var(--pulp-shadow);
-  padding: var(--space-sm);
+  padding: var(--space-xs);
 }
 /* Le mat `--pulp-mat` est crème FIXE dans les deux modes : le texte est donc
    figé en encre sombre (palette claire), sinon il vire au clair en dark et
