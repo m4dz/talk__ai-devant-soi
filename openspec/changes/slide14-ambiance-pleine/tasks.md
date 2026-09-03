@@ -9,6 +9,9 @@
       `justify-content: center`, paddings) — seule la couture change.
 - [x] 1.4 Mettre à jour le commentaire du layout : la colonne est un bloc à bord
       franc sur image pleine page (parti du cold open), plus de dégradé.
+- [x] 1.5 Abaisser l'opacité du panneau colonne à `paper 70%` (le bandeau garde
+      88 %) : sur le tiers gauche CALME, 88 % lisait comme une marge opaque. À
+      70 % le grain du papier transparaît → bloc translucide sur l'image.
 
 ## 2. Slide 14
 

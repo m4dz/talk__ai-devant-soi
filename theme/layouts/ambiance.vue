@@ -84,6 +84,13 @@ const src = computed(() =>
   flex-direction: column;
   justify-content: center;
   font-size: var(--text-base);
+  /* Plus transparent que le bandeau (88 %) : la colonne couvre le tiers gauche
+     CALME de l'image (vide par construction du prompt wide). À 88 % elle lisait
+     comme une marge crème opaque — « pas semi-transparente ». À 70 %, le grain
+     et le vieillissement du papier transparaissent : le bloc se pose SUR
+     l'image, comme le bandeau du cold open sur son contenu. Le bandeau, lui,
+     couvre une zone dense et garde 88 % pour la lisibilité. */
+  background: color-mix(in srgb, var(--color-paper) 70%, transparent);
 }
 .ambiance--colonne .ambiance__band :deep(h1) {
   font-size: var(--title-3);

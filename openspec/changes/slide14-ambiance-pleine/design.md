@@ -24,9 +24,13 @@ pas de dégradé : bord franc, et il tient. Seule la slide 14 emploie `colonne`.
   le parti du cold open (bloc net posé sur l'image), et le dégradé est ce qui
   « délave » la gauche. Alternative écartée : garder un fondu plus léger — mais
   ça reste un fondu, donc l'effet reproché.
-- **Réutiliser le fond du bloc `bande`** (`color-mix(paper 88%, transparent)`,
-  `backdrop-filter: blur(2px)`) tel quel pour la colonne : même token, même
-  semi-transparence, cohérence garantie entre les deux placements.
+- **Colonne plus transparente que le bandeau** : `color-mix(paper 70%,
+  transparent)` (le bandeau garde 88 %). Rationale : la colonne couvre le tiers
+  gauche CALME de l'image (vide par construction) ; à 88 % elle lisait comme une
+  marge crème opaque — le reproche « pas semi-transparente ». À 70 %, le grain et
+  le vieillissement du papier transparaissent, le bloc se pose sur l'image. Le
+  bandeau, lui, couvre une zone dense et a besoin de 88 % pour la lisibilité —
+  d'où l'opacité par placement, pas une valeur unique. `blur(2px)` conservé.
 - **Garder `width: 38%` et le centrage vertical** du bloc : seule la couture
   change, pas la géométrie du texte.
 
