@@ -104,18 +104,22 @@ passaient tous ses critères.** Puis la révélation : canular.
 -->
 
 ---
-layout: diptyque
+layout: diptyque-grille
 titre: 'Grille de style : tout au vert'
-gauche: L’auteur
-droite: La machine
+haut: L’auteur
+bas: La machine
+verdict: 'Lint de style ✓'
 ---
 
-<!-- GESTE 1 — MALLEY, l'artefact. DIPTYQUE : les deux passent CHAQUE contrôle
-     de la grille de lint. L'un est vivant, l'autre creux. Verbatims figés
-     (design.md § Diptyque Malley) : gauche = style-auteur.md:134 (Étalon 2) ;
-     droite = run C1 resserré aux phrases vertes. -->
+<!-- GESTE 1 — MALLEY, l'artefact. DIPTYQUE-GRILLE : les deux extraits empilés
+     à gauche (auteur au-dessus, machine en dessous), la grille de lint tout au
+     vert à droite. La même grille valide les deux — un seul est vivant. Verbatims
+     figés (design.md § Diptyque Malley) : auteur = style-auteur.md:134 (Étalon 2) ;
+     machine = run C1 resserré aux phrases vertes. Grille = bloc mécanique tout au
+     vert, retours de run réels (grille-lint-chapitre-7.md, run CH7 — mécanique
+     6/6 ✓). -->
 
-::gauche::
+::auteur::
 
 > Je me suis assise dans la cuisine et j'ai repris les faits dans l'ordre,
 > calmement, méthodiquement, le café de sept heures, le départ de sept heures
@@ -123,13 +127,22 @@ droite: La machine
 > garage, la porte de la buanderie, et à chaque étape je me suis revue avec une
 > netteté parfaite, sauf une, une seule, un trou de quelques secondes.
 
-::droite::
+::machine::
 
 > J'ai décidé de vérifier par moi-même. Dans la cuisine silencieuse,
 > l'égouttoir était là, deux assiettes s'y trouvaient bien. Je les ai comptées
 > à nouveau : deux.
 
+::grille::
 
+| Contrôle attendu | |
+|---|---|
+| Lexique pastiche (indicible, ténèbres, effroi…) | ✓ |
+| Tic d'IA (« une part de moi », « un mélange de »…) | ✓ |
+| Point d'exclamation hors dialogue | ✓ |
+| Incise adverbiale ou prépositionnelle (« d'un ton surpris ») | ✓ |
+| Élision manquante (« je te appelle ») | ✓ |
+| Passé simple | ✓ |
 
 <!--
 **deux textes, la même scène : la grille les valide tous les deux. Un seul est vivant.**
