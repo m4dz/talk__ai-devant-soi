@@ -11,4 +11,8 @@ import { fileURLToPath } from 'node:url'
 // servait qu'au typage.
 export default {
   publicDir: fileURLToPath(new URL('../public', import.meta.url)),
+  // Racine vite = slides/, mais le .env vit à la racine du repo (là où
+  // .env.example est versionné). Sans envDir, VITE_GEN_HOST/VITE_MOCK sont
+  // introuvables → USE_MOCK retombe à true et le build part en mock silencieux.
+  envDir: fileURLToPath(new URL('..', import.meta.url)),
 }
