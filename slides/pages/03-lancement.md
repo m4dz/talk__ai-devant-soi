@@ -132,7 +132,7 @@ noCountdown: true
 
 # On lance ?
 
-La machine va rédiger le chapitre. On le découvrira ensemble, à la fin.
+La machine va rédiger le chapitre.<br>On le découvrira ensemble, à la fin.
 
 <div class="launch-controls">
   <GenerationTrigger />

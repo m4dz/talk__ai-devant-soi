@@ -33,7 +33,7 @@ noCountdown: true
      layout `noir` imposait un noir absolu et devenait donc invisible en
      mode sombre — le verdict n'existait qu'en mode clair. -->
 
-L'Académie a déjà perdu. **Elle ne le sait pas encore.**
+L'Académie a déjà perdu.<br>**Elle ne le sait pas encore.**
 
 <!--
 **l'Académie a déjà perdu — pas contre les machines, contre sa propre histoire.**

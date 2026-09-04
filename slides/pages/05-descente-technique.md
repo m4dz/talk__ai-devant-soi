@@ -63,8 +63,6 @@ variant: question
 
 # La littérature s'est déjà posé la question.
 
-Pas une fois. **Plusieurs.**
-
 Chaque fois qu’un auteur a délégué une part de sa fabrique, et gardé son nom.
 
 <!--
