@@ -29,11 +29,11 @@ layout: cold-open
 
 <!-- BEAT 3 — Ajar. -->
 
-1974 — un manuscrit anonyme.
+1974 : un manuscrit anonyme.
 
-1975 — **Goncourt** : *La Vie devant soi*.
+1975 : **Goncourt**, *La Vie devant soi*.
 
-**Émile Ajar** — un auteur introuvable.
+**Émile Ajar**, l’auteur introuvable.
 
 <!--
 **un fantôme rafle le Goncourt ; personne ne sait qui écrit.**
@@ -60,7 +60,7 @@ Ajar, c’est **Romain Gary**.
 
 <div v-click>
 
-Et on ne reçoit le Goncourt qu’une seule fois.
+On ne reçoit le Goncourt qu’une seule fois.
 
 </div>
 
@@ -91,13 +91,13 @@ clicks: 2
 
 <div v-click>
 
-Goncourt 1975, toujours attribué à Émile Ajar.
+L’Académie l’attribue encore à Émile Ajar.
 
 </div>
 
 <div v-click>
 
-**On ne rend pas un Goncourt.**
+On ne rend pas un Goncourt.
 
 </div>
 
