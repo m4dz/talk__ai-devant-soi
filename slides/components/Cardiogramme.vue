@@ -175,10 +175,10 @@ const chemin = computed(() => (mort.value ? PLAT_ENTIER : FULL))
 /* L'animation n'existe QUE sur la slide active (cf. onSlideEnter). Elle tourne
    AUSSI après le clic : le faisceau continue, seule la géométrie s'aplatit. */
 .cardio--actif .cardio__faisceau {
-  animation: cardio-faisceau 6s linear infinite;
+  animation: cardio-faisceau 4s linear infinite;
 }
 .cardio--actif .cardio__curseur {
-  animation: cardio-curseur 6s linear infinite;
+  animation: cardio-curseur 4s linear infinite;
 }
 
 /* Sans mouvement : la traîne et son curseur figés au milieu du cadre. */
