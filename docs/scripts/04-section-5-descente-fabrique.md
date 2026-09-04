@@ -28,6 +28,8 @@ pièce. Pas un appel, pas une clé d'API, pas un octet.
 
 Ce n'est pas une posture. C'est ce qui a construit tout ce qu'il y a en bas.
 
+[Ordre filage (change reorder-slides-rythme) : ce cadre « rien ne sort » passe AVANT le beat boîte-noire de la §3 (script 02, fin) et juste après la réaction Andrea — Andrea → cadre → boîte-noire. NB : le corps de la §4 ci-dessous reste pré-refonte (quatre murs, vote), à réconcilier au filage.]
+
 [Descendre d'un ton. La règle se pose, elle ne se défend pas. Elle sera reprise
 à la remontée, et nulle part entre les deux : le compte à rebours est une
 machine locale qui travaille sous leurs yeux, il fait le rappel tout seul.]
@@ -438,18 +440,18 @@ c'était moi. Il a fallu que tout m'appartienne — le modèle, le brief, la fic
 le code — pour que je puisse le prouver. Derrière une API, on ne sait jamais que
 le coupable était son propre prompt.
 
-[Slide : la règle, seule.]
-
-La fabrique reste à notre main.
-
-[Temps.]
-
 Alors rouvrez la boîte noire. Celle du début, celle qui faisait peur à
 l'Académie. Une bibliothèque que j'ai écrite, fiche par fiche. Un plan que j'ai
 voulu, scène par scène. Une voix que j'ai réglée, trait par trait. Un correcteur
 qui applique mes règles, et seulement les miennes.
 
 Où est l'intelligence, dans cette fabrique ? Elle est partout où je suis passé.
+
+[Temps.]
+
+[Slide : la règle, seule. En rappel — la conséquence de tout l'inventaire.]
+
+La fabrique reste à notre main.
 
 [Temps.]
 

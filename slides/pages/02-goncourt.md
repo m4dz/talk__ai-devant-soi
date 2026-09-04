@@ -41,30 +41,9 @@ L’œuvre cédée doit être « produite par l’auteur, et non par une machi
 - les plus grands éditeurs français (Madrigall : Gallimard, Flammarion, P.O.L, Minuit) renforcent leurs clauses d'originalité.
 - on va passer la soirée sur cette phrase.
 
-← la peur de l'Académie    → le procès en tricherie
+← la peur de l'Académie    → la question du talk
 
 ⚠ temps après la phrase. (⟳ réfutée au verdict, slide 44 : elle ne décrit aucun livre couronné.)
--->
-
----
-layout: citation-sourcee
-author: Jean-Baptiste Andrea, lauréat du prix Goncourt
-reference: franceinfo — janvier 2024
----
-
-<!-- Réaction au cas Rie Kudan (prix Akutagawa) : ~5 % de phrases générées. -->
-
-« Tromperie sur la marchandise. »<br>« Tricherie. »
-
-<!--
-**un lauréat Goncourt tranche : « tromperie sur la marchandise. Tricherie. »**
-
-- réaction au cas Rie Kudan (prix Akutagawa) : ~5 % de phrases générées par IA, avouées.
-- Jean-Baptiste Andrea (franceinfo, janv. 2024).
-
-← la clause    → la question du talk
-
-⚠ « tricherie », venant de cette maison, est savoureux. (⟳ Maquet / Lish / le lecteur de Queneau : ces maisons ont couronné des fabriques.)
 -->
 
 ---
@@ -82,7 +61,7 @@ Peut-on tracer la limite entre une œuvre et sa fabrique ?
 - la vraie question : la limite — où elle passe, si elle passe quelque part.
 - question plus vieille que l'IA générative.
 
-← la tricherie    → qui parle (la signature)
+← la clause    → qui parle (la signature)
 
 ⚠ seule sur sa slide. (⟳ temps 1 de la question ; reposée à la descente, slide 19.)
 -->

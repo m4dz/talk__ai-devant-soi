@@ -25,12 +25,6 @@ Les plus grands éditeurs français renforcent leurs clauses d'originalité. L'�
 
 Retenez cette phrase. On va passer la soirée dessus.
 
-Et quand la lauréate du prix Akutagawa, l'équivalent japonais du Goncourt, révèle avoir utilisé une IA pour environ cinq pour cent des phrases de son roman, un lauréat du Goncourt réagit dans la presse française. Ses mots : tromperie sur la marchandise. Tricherie.
-
-[Temps.]
-
-Tricherie. Le mot est intéressant, venant de cette maison.
-
 ### Beat 2 — La question (1')
 
 Je ne suis pas là pour me moquer de l'Académie. Enfin, pas seulement.
@@ -90,6 +84,16 @@ Ce compteur, c'est notre contrat.
 Quand il atteindra zéro, un chapitre sera né. Un chapitre entier, inédit. Personne dans cette salle ne l'a jamais lu. Vous serez encore là. Et on le découvrira ensemble.
 
 D'ici là, il y a un problème à régler.
+
+[Slide : la réaction du lauréat — Jean-Baptiste Andrea, franceinfo, janvier 2024. Sourcée.]
+
+Et quand la lauréate du prix Akutagawa, l'équivalent japonais du Goncourt, révèle avoir utilisé une IA pour environ cinq pour cent des phrases de son roman, un lauréat du Goncourt réagit dans la presse française. Ses mots : tromperie sur la marchandise. Tricherie.
+
+[Temps.]
+
+Tricherie. Le mot est intéressant, venant de cette maison.
+
+[Ordre filage : sur les slides, la règle « rien ne sort de cette pièce » (l'entrée de la §4, script 04) tombe ENTRE cette réaction et le beat boîte-noire ci-dessous — Andrea → cadre → boîte-noire. Le mot « tricherie » est dit deux fois, volontairement.]
 
 Ce qui tourne derrière moi, là, maintenant : vous ne savez pas ce que c'est. Une boîte noire qui écrit de la fiction. Et une boîte noire qui écrit de la fiction, c'est exactement ce que l'Académie a en tête quand elle dit « tricherie ».
 

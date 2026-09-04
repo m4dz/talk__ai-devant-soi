@@ -157,8 +157,28 @@ La machine va rédiger le chapitre. On le découvrira ensemble, à la fin.
 - le compte à rebours (28 min) apparaît et ne quitte plus l'écran.
 - contrat : à zéro, un chapitre inédit que personne n'a lu → on le découvrira ensemble.
 
-← le plan    → démystifier la fabrique
+← le plan    → la tricherie (Andrea)
 
 ⚠ « pas même moi » : bonus live, jamais scripté. Le décompte EST une machine locale qui tourne (rappel muet de la contrainte).
 -->
 
+---
+layout: citation-sourcee
+author: Jean-Baptiste Andrea, lauréat du prix Goncourt
+reference: franceinfo — janvier 2024
+---
+
+<!-- Réaction au cas Rie Kudan (prix Akutagawa) : ~5 % de phrases générées. -->
+
+« Tromperie sur la marchandise. »<br>« Tricherie. »
+
+<!--
+**un lauréat Goncourt tranche : « tromperie sur la marchandise. Tricherie. »**
+
+- réaction au cas Rie Kudan (prix Akutagawa) : ~5 % de phrases générées par IA, avouées.
+- Jean-Baptiste Andrea (franceinfo, janv. 2024).
+
+← on lance    → le cadre local
+
+⚠ « tricherie », venant de cette maison, est savoureux. (⟳ Maquet / Lish / le lecteur de Queneau : ces maisons ont couronné des fabriques.)
+-->

@@ -1,24 +1,4 @@
 ---
-layout: cold-open
----
-
-<!-- [NOUVELLE — refonte arc] DÉMYSTIFIER LA FABRIQUE. La porte de la descente :
-     la boîte noire qu'on ouvre couche par couche. Reprend la note du contrat
-     retiré (élagage passe 1). Wording provisoire. -->
-
-Un **atelier d’écriture** qui écrit de la fiction. C'est exactement ce que
-l'Académie appelle « tricherie ».
-
-Alors entrons dans l’atelier.
-
-<!--
-- ce qui tourne = une boîte noire, angoissante vue du dehors
-- = ce que l'Académie redoute / nomme « tricherie »
-- promesse : on l'ouvre, couche par couche → la descente commence
-- raccroche : vient du lancement, ouvre les 5 gestes
--->
-
----
 layout: exergue
 ---
 
@@ -45,9 +25,31 @@ Rien de ce que vous allez voir ne sort de cette pièce.
 - pas un appel, pas une clé d'API, pas un octet.
 - pas une posture : la contrainte qui a forcé chaque geste qui suit.
 
-← démystifier    → la question est ancienne
+← la tricherie (Andrea)    → entrons dans l'atelier
 
-⚠ poser, puis descendre. (⟳ payée à la remontée, slide 32.)
+⚠ poser, puis descendre. (⟳ payée à la remontée.)
+-->
+
+---
+layout: cold-open
+---
+
+<!-- [NOUVELLE — refonte arc] DÉMYSTIFIER LA FABRIQUE (2e beat, après le cadre) :
+     la boîte noire qu'on ouvre couche par couche. Reprend la note du contrat
+     retiré (élagage passe 1). Wording provisoire. -->
+
+Un **atelier d’écriture** qui écrit de la fiction. C'est exactement ce que
+l'Académie appelle « tricherie ».
+
+Alors entrons dans l’atelier.
+
+<!--
+- ce qui tourne = une boîte noire, angoissante vue du dehors
+- = ce que l'Académie redoute / nomme « tricherie »
+- promesse : on l'ouvre, couche par couche → la descente commence
+- raccroche : vient du cadre local, ouvre les 5 gestes
+
+← le cadre local    → la question est ancienne
 -->
 
 ---
@@ -468,24 +470,6 @@ La voix, c’est ce que j’ai coupé.
 -->
 
 ---
-layout: exergue
----
-
-<!-- LA REMONTÉE — la règle, seule. -->
-
-La fabrique reste à notre main.
-
-<!--
-**la fabrique reste à notre main.**
-
-- la règle, seule à l'écran.
-
-← le seuil    → rouvrez la boîte noire
-
-⚠ bascule vers la remontée : le ton remonte.
--->
-
----
 layout: propos
 variant: inventaire
 clicks: 4
@@ -510,9 +494,27 @@ clicks: 4
 - inventaire, révélé une entrée à la fois : une matière documentée, un atelier monté, une voix réglée par ses retraits, une mesure qui ne lit pas à ma place.
 - où est l'intelligence ? partout où je suis passé. (= la réponse au seuil, temps 3)
 
-← la fabrique reste    → le hand-off vers le mode personnage
+← le seuil (la voix)    → la fabrique reste
 
 ⚠ la boîte noire du début (celle qui faisait peur) → vidée sous leurs yeux. Pont dev IMPLICITE ici.
+-->
+
+---
+layout: exergue
+---
+
+<!-- LA REMONTÉE — la règle, seule. -->
+
+La fabrique reste à notre main.
+
+<!--
+**la fabrique reste à notre main.**
+
+- la règle, seule à l'écran.
+
+← rouvrez la boîte    → le hand-off
+
+⚠ capstone de la remontée : la règle en rappel, juste avant le hand-off.
 -->
 
 ---
@@ -537,7 +539,7 @@ Un dernier exemple.
 - « ne répondez pas tout de suite : il me reste quelqu'un à vous présenter ».
 - ce n'est pas re-poser la question (pas de vote) : c'est différer vers le mode personnage.
 
-← rouvrez la boîte    → Racter / le mode personnage
+← la fabrique reste    → Racter / le mode personnage
 
 ⚠ ton de bascule, pas de re-question. (⟳ affirmation finale à la chute, slide 43.)
 -->
