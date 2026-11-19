@@ -38,9 +38,10 @@ export interface Session {
   /** Récit accumulé du dispositif. La machine ne renvoie que les 5 dernières
    *  notes à chaque instant : c'est ici qu'on garde l'historique complet. */
   notes: string[]
-  /** Plan du run lancé, tel que la machine le sert (`/runs/<id>/plan`) : le
-   *  texte de l'auteur, VERBATIM, jamais retouché. `null` = rien à montrer
-   *  (pré-lancement, run sans plan, route en échec, lancement refusé). */
+  /** Plan du run lancé, tel que la machine le sert (`/runs/<id>/plan`), ou
+   *  sa copie embarquée quand le deck se replie : le texte de l'auteur,
+   *  jamais retouché. `null` = rien à montrer (pré-lancement, run sans plan,
+   *  route en échec, lancement refusé sans repli). */
   plan: string | null
 }
 

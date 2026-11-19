@@ -75,6 +75,9 @@ const MOCK_SCENARIO = (import.meta.env.VITE_MOCK_SCENARIO ?? 'nominal') as MockS
 // Fixtures embarquées (jalon 3B) — servies same-origin depuis public/.
 const FIXTURE_TEXT_URL = '/fallback/chapitre.md'
 const FIXTURE_AUDIO_URL = '/fallback/chapitre.wav'
+/** Copie du plan préparé (le `plan.md` du run préparé la veille), montrée
+ *  quand le deck se replie : le repli ne se lit pas à l'écran. */
+const FIXTURE_PLAN_URL = '/fallback/plan.md'
 
 let mockTimers: ReturnType<typeof setTimeout>[] = []
 // Le run suivi : posé par la réponse `202` du lancement (ou de la relance),
@@ -108,6 +111,21 @@ async function loadFallbackChapter(): Promise<Chapter> {
     // Fixture illisible : on garde le texte de repli (le mock ne bloque jamais).
   }
   return { text, audioUrl: FIXTURE_AUDIO_URL }
+}
+
+/**
+ * Pose la copie embarquée du plan, si aucun plan n'est affiché. Appelé quand
+ * le repli s'arme ou se matérialise : plus aucun run ne sera lancé ensuite,
+ * donc la copie ne peut pas masquer un plan servi (`setPlan` est à écriture
+ * unique). Copie illisible → rien, comme pour le plan servi.
+ */
+async function showPlanCopy(): Promise<void> {
+  try {
+    const res = await fetch(FIXTURE_PLAN_URL)
+    if (res.ok) setPlan(await res.text())
+  } catch {
+    // Copie illisible : pas de plan, sans bruit.
+  }
 }
 
 /**
@@ -215,7 +233,8 @@ async function launch(): Promise<boolean> {
  * Le plan du run, posé tel quel dans le store. ENRICHISSEMENT PUR, comme le
  * flux d'étapes : `204` (run sans plan), statut non-2xx, transport en échec ou
  * texte vide → on ne pose rien, sans bruit, et le déroulé continue à
- * l'identique. Le texte est celui de l'auteur : jamais réécrit, jamais tronqué.
+ * l'identique. Le texte est celui de l'auteur : jamais réécrit (RunPlan borne
+ * l'affichage à 7 lignes).
  * La machine copie le plan dans le run à sa création : une seule lecture,
  * juste après le `202`, suffit.
  */
@@ -300,6 +319,7 @@ function armFallback(): void {
   fallbackArmed = true
   stopPolling()
   closeStream()
+  void showPlanCopy()
   if (session.remaining === 0) void materializeFallback()
 }
 
@@ -324,6 +344,7 @@ async function materializeFallback(tryRemoteFirst = false): Promise<void> {
     }
   }
   revokeBlob()
+  void showPlanCopy()
   applyStatus('ready', await loadFallbackChapter())
 }
 

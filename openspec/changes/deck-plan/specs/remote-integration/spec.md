@@ -5,12 +5,18 @@
 Après un lancement accepté, le deck SHALL lire le plan du run qu'il suit et
 SHALL l'afficher sur la slide de lancement, sous le contrôle de lancement. Le
 plan SHALL être affiché **tel que la machine le sert** : c'est le texte de
-l'auteur, il NE SHALL être ni réécrit, ni tronqué, ni réordonné. Seule la
-syntaxe de titre peut être consommée pour la mise en forme ; le plan NE SHALL
-PAS être interprété comme du HTML.
+l'auteur, il NE SHALL être ni réécrit, ni réordonné. L'affichage SHALL
+s'arrêter aux 7 premières lignes de texte (titre et lignes vides non comptés),
+la dernière terminée par « … ». Seule la syntaxe de titre peut être consommée pour la mise
+en forme ; le plan NE SHALL PAS être interprété comme du HTML.
+
+Quand le deck se replie sur le chapitre embarqué, il SHALL afficher à la
+place une **copie embarquée** du plan préparé, si aucun plan n'est déjà
+affiché ; la copie NE SHALL être posée qu'une fois le repli armé ou
+matérialisé, jamais avant.
 
 L'affichage du plan SHALL être un **enrichissement** : son absence (run sans
-plan, ressource indisponible, lancement refusé, machine injoignable) est un
+plan, ressource indisponible, copie illisible) est un
 état normal et NE SHALL produire aucun message, aucun cadre vide, aucune
 attente, aucun blocage. La lecture du plan NE SHALL PAS retarder le suivi du
 run.
@@ -39,7 +45,14 @@ du jour J. Ce gabarit NE SHALL PAS contenir de contenu de chapitre.
 #### Scenario: Lancement refusé
 
 - **WHEN** la machine refuse le lancement, y compris à la relance
-- **THEN** aucun plan n'apparaît et rien ne signale l'absence
+- **THEN** la copie embarquée du plan apparaît sous le contrôle de lancement,
+  comme un plan servi
+
+#### Scenario: Plan long
+
+- **WHEN** le plan compte plus de 7 lignes de texte
+- **THEN** seules les 7 premières s'affichent, la dernière terminée par
+  « … », et le plan tient dans le canvas
 
 #### Scenario: Relance après un échec
 

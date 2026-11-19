@@ -2,33 +2,46 @@
 import { computed } from 'vue'
 import { session } from '../lib/session'
 
-// Plan du run lancé (`/runs/<id>/plan`, lu par genClient au lancement).
+// Plan du run lancé (`/runs/<id>/plan`, lu par genClient au lancement), ou sa
+// copie embarquée quand le deck se replie.
 //
-// Le texte est celui de l'AUTEUR : affiché VERBATIM, jamais réécrit, jamais
-// tronqué. Seule la syntaxe de titre Markdown (`# `) est consommée pour la mise
-// en forme ; tout le reste — numéros de liste compris — est rendu caractère
-// pour caractère, en texte (jamais en HTML : le plan vient du réseau).
+// Le texte est celui de l'AUTEUR : affiché VERBATIM, jamais réécrit. Seule la
+// syntaxe de titre Markdown (`# `) est consommée pour la mise en forme ; tout
+// le reste — numéros de liste compris — est rendu caractère pour caractère, en
+// texte (jamais en HTML : le plan vient du réseau). Borne d'affichage : les 7
+// premières lignes de texte (titre et lignes vides non comptés), la dernière
+// terminée par « … » — au-delà, le plan déborderait sous le bouton.
 //
 // Enrichissement pur : sans plan (pré-lancement, run sans plan, route en échec,
-// lancement refusé), le composant ne rend RIEN — ni cadre vide, ni attente, ni
-// message. Une fois posé, le plan ne bouge plus (cf. `setPlan`).
+// lancement refusé sans repli), le composant ne rend RIEN — ni cadre vide, ni
+// attente, ni message. Une fois posé, le plan ne bouge plus (cf. `setPlan`).
 
 type Block = { kind: 'title' | 'line'; text: string } | { kind: 'gap' }
 
 const HEADING = /^#{1,6}\s+/
+const LINES_MAX = 7
 
 const blocks = computed<Block[]>(() => {
   const text = session.plan
   if (!text) return []
   const out: Block[] = []
+  let lines = 0
   for (const raw of text.replace(/\r\n?/g, '\n').trim().split('\n')) {
     const line = raw.trimEnd()
     if (!line.trim()) {
       if (out.length && out[out.length - 1].kind !== 'gap') out.push({ kind: 'gap' })
     } else if (HEADING.test(line)) {
       out.push({ kind: 'title', text: line.replace(HEADING, '') })
+    } else if (lines === LINES_MAX) {
+      // « … » au bout de la 7ᵉ ligne, pas sur une 8ᵉ : à 7 lignes et leurs
+      // blancs, le plan touche déjà le bas du canvas.
+      if (out[out.length - 1].kind === 'gap') out.pop()
+      const last = out[out.length - 1]
+      if (last.kind === 'line') last.text += ' …'
+      break
     } else {
       out.push({ kind: 'line', text: line })
+      lines++
     }
   }
   return out
