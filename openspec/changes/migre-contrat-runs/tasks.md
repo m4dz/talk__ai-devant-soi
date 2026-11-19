@@ -24,3 +24,21 @@
       relance suivie sur le run 2 et son chapitre lu ; échec double → embarqué,
       pas de 3ᵉ POST ; serveur coupé → embarqué.
 - [ ] 3.3 Contre la fabrique locale (répétition R1) : chapitre distant lu.
+      **Reste ouverte** : aucun run avec les vrais modèles (Ollama occupé).
+      Fait le 2026-11-19 contre le vrai serveur de la fabrique
+      (`factory.api.server` de `main` 8835d1c, non modifié), servi en
+      processus avec les doublures des tests de la fabrique (`tests/fakes` :
+      faux modèle, faux Chroma ; préflight machine et voix remplacés), runs
+      dans un dossier jetable, deck buildé en `VITE_MOCK=0` servi par la
+      fabrique (même origine), piloté par Playwright :
+      - nominal : plan préparé (`factory prepare`, faux modèle) →
+        `POST /generate {chapter: 7, prepared: "latest"}` `202` → run repris
+        suivi (statut, flux) → `ready` → `/chapter` et `/audio` `200` →
+        chapitre distant lu (audio en blob, texte ≠ embarqué) ;
+      - préflight refusé au 1er run : relance sur un nouveau `run_id`, suivie
+        jusqu'au chapitre distant ;
+      - préflight refusé deux fois : 2 POST, pas de 3ᵉ, embarqué à zéro ;
+      - aucun plan préparé : `400` ×2, embarqué à zéro.
+      Reste pour R1 : le même parcours sur la machine de scène, vrais
+      modèles — préflight réel, empreinte contre les vrais digests Ollama,
+      durée, voix clonée, marqueurs dans le chapitre réel.
