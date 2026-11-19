@@ -124,6 +124,8 @@ center: true
 clicks: 1
 # Le timer est porté par le bouton de lancement → pas de rappel discret ici.
 noCountdown: true
+# Marges verticales resserrées (cf. style) : le plan du run vient sous le bouton.
+class: lancement
 ---
 
 <!-- BEAT 2 (suite) — Le lancement. Composants live (jalon 3A) : trigger
@@ -138,7 +140,20 @@ La machine va rédiger le chapitre.<br>On le découvrira ensemble, à la fin.
   <GenerationTrigger />
 </div>
 
+<!-- Plan du run lancé (`/runs/<id>/plan`), texte de l'auteur verbatim.
+     Apparaît sous le bouton quand la machine l'a servi, sinon rien. Aucune
+     réplique du script ne le pointe : sur le chemin de repli il n'y en a pas. -->
+<RunPlan />
+
 <style scoped>
+/* Le plan du run (composant RunPlan) s'ajoute sous le bouton après le lancement : le
+   corps centré grandit d'autant. Les marges verticales du layout sont ramenées
+   à --space-lg pour qu'il tienne dans le canvas ; sans plan (avant lancement,
+   chemin de repli), le corps reste centré et rien ne bouge. */
+.lancement {
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
+}
 /* Le bouton porte le timer (plus de Countdown autonome ici). Le centrage
    horizontal est assuré par `center: true` (frontmatter → `propos--centered`
    dans le layout) : le corps 58ch est ramené au centre de la slide, donc le

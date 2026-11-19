@@ -298,6 +298,18 @@ Principes d'implémentation :
   étape ni récit, et le speaker ne sait pas sur quel chemin il est. Ce serait
   la seule phrase du talk capable de révéler la bascule. À commenter en
   improvisation ou pas du tout.
+- **Plan du run au lancement** (change `deck-plan`) : après le `202`, le deck
+  lit `/runs/<id>/plan` (le plan approuvé la veille, copié dans le run) et
+  l'affiche sous le bouton de lancement, **verbatim** — c'est le texte de
+  l'auteur, jamais réécrit ; l'affichage s'arrête à 7 lignes de texte, la
+  dernière terminée par « … ». **Au repli**, le deck montre la copie embarquée
+  `public/fallback/plan.md` : le repli ne se lit pas à l'écran. **La veille**,
+  après `factory prepare`, copier le `plan.md` du run préparé dans
+  `public/fallback/plan.md` (comme le chapitre de repli). Sans plan ni copie
+  (run sans plan, route en échec), rien ne s'affiche ; un plan affiché ne
+  bouge plus jusqu'au reset. Le mock pose un gabarit neutre, pas un plan
+  inventé. Comme pour les notes, **aucune réplique du script ne le
+  pointe**.
 - **Fallback silencieux** : à tout échec (trigger, statut, ressource non
   prête, marqueur manquant), le deck bascule sur le chapitre pré-généré
   embarqué (`public/fallback/chapitre.md` + `public/fallback/chapitre.wav`)
