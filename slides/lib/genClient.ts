@@ -13,13 +13,17 @@ import {
 import { timelineFor, type MockScenario } from './mockTimeline'
 
 // Client de génération : generate / status / chapter / audio, plus un flux
-// d'étapes SSE (`/events`) qui n'est qu'un enrichissement.
+// d'étapes SSE (`/runs/<id>/events`) qui n'est qu'un enrichissement.
+//
+// Contrat par run de la fabrique : `POST /generate {chapter, prepared}` crée un
+// run et répond `202 {run_id, …}` ; tout le reste se lit sur `/runs/<id>/…`.
+// Les anciennes routes singleton (`/status`, `/chapter`…) répondent `410`.
 //
 // Deux implémentations derrière la même signature :
 //   · MOCK (défaut, VITE_MOCK≠0) — zéro réseau, progression et récit d'étapes
 //     scriptés par timers, pour que la répétition montre l'écran du jour J ;
 //   · RÉELLE (VITE_MOCK=0) — HTTP vers la machine de génération du réseau
-//     local : sondage `/status` (source d'autorité de l'état), flux `/events`
+//     local : sondage du statut du run (source d'autorité de l'état), flux
 //     (étape + récit), relance unique en fenêtre haute, et fallback silencieux
 //     vers les assets embarqués.
 //
@@ -29,7 +33,13 @@ import { timelineFor, type MockScenario } from './mockTimeline'
 const USE_MOCK = import.meta.env.VITE_MOCK !== '0'
 const GEN_HOST = String(import.meta.env.VITE_GEN_HOST ?? '').replace(/\/+$/, '')
 
-// Timeouts / retries : `/status` et `/chapter` lisent un fichier ou un dict,
+// Chapitre généré sur scène, et plan préparé à reprendre. `latest` = le dernier
+// plan approuvé de ce chapitre (préparé la veille, cf. change `prepared-plan`
+// de la fabrique). Vide = génération complète, sans plan préparé.
+const GEN_CHAPTER = Number(import.meta.env.VITE_GEN_CHAPTER ?? 7)
+const GEN_PREPARED = String(import.meta.env.VITE_GEN_PREPARED ?? 'latest').trim()
+
+// Timeouts / retries : le statut et le chapitre du run lisent un fichier ou un dict,
 // jamais le modèle — ils répondent en millisecondes. 3 s est large.
 const TIMEOUT_MS = 3000
 const RETRIES = 2
@@ -65,6 +75,9 @@ const FIXTURE_TEXT_URL = '/fallback/chapitre.md'
 const FIXTURE_AUDIO_URL = '/fallback/chapitre.wav'
 
 let mockTimers: ReturnType<typeof setTimeout>[] = []
+// Le run suivi : posé par la réponse `202` du lancement (ou de la relance),
+// `null` tant qu'aucun lancement n'a abouti.
+let runId: string | null = null
 let pollId: ReturnType<typeof setInterval> | null = null
 let stream: EventSource | null = null
 // « Le flux vit » ≠ « un objet EventSource existe ». Un endpoint absent laisse un
@@ -107,7 +120,7 @@ async function loadFallbackChapter(): Promise<Chapter> {
  * le réseau (elle fait `setStep` + `pushNotes` + `applyStatus`).
  *
  * Les états terminaux sont traités à la main pour rester à zéro réseau :
- *   · `ready` → charge le chapitre EMBARQUÉ (jamais `/chapter` distant) ;
+ *   · `ready` → charge le chapitre EMBARQUÉ (jamais le chapitre distant) ;
  *   · `error` → arme le repli directement (pas de `POST /generate` de relance,
  *     qui sortirait sur le réseau) — observable identique au réel : rien ne
  *     bouge à l'écran, le chapitre embarqué se pose à zéro du décompte.
@@ -165,13 +178,40 @@ async function tryFetch(path: string, init?: RequestInit): Promise<Response | nu
   return null
 }
 
+/** Chemin d'une ressource du run (`status`, `events`, `chapter`, `audio`). */
+function runPath(id: string, leaf: string): string {
+  return `/runs/${encodeURIComponent(id)}/${leaf}`
+}
+
+/**
+ * Crée un run et le retient comme run suivi. `false` si la machine ne l'a pas
+ * accepté : transport en échec, statut non-2xx (`400` : chapitre inconnu,
+ * aucun plan préparé…), ou réponse sans `run_id` — tous traités comme un échec
+ * de lancement par l'appelant.
+ */
+async function launch(): Promise<boolean> {
+  const payload: Record<string, unknown> = { chapter: GEN_CHAPTER }
+  if (GEN_PREPARED) payload.prepared = GEN_PREPARED
+  const res = await tryFetch('/generate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  })
+  if (!res || !res.ok) return false
+  const data = await res.json().catch(() => null)
+  const id = data?.run_id
+  if (typeof id !== 'string' || !id) return false
+  runId = id
+  return true
+}
+
 /**
  * Le chapitre distant, ou `null` s'il n'est pas exploitable.
  * ATTENTION : `204` passe `res.ok` (tout 2xx le fait). Le tester AVANT, sinon
  * on rend une chaîne vide — un chapitre vide affiché au lieu d'un fallback.
  */
-async function fetchChapterText(): Promise<string | null> {
-  const res = await tryFetch('/chapter')
+async function fetchChapterText(id: string): Promise<string | null> {
+  const res = await tryFetch(runPath(id, 'chapter'))
   if (!res || res.status === 204 || !res.ok) return null
   const text = await res.text().catch(() => '')
   return text.trim() ? text : null
@@ -184,8 +224,8 @@ async function fetchChapterText(): Promise<string | null> {
  * voie — donc pas de son ET pas de bascule. Passer par fetch rend l'échec
  * visible au code, et met l'audio en mémoire avant la section 7.
  */
-async function fetchAudioBlobUrl(): Promise<string | null> {
-  const res = await tryFetch('/audio')
+async function fetchAudioBlobUrl(id: string): Promise<string | null> {
+  const res = await tryFetch(runPath(id, 'audio'))
   if (!res || res.status === 204 || !res.ok) return null
   const blob = await res.blob().catch(() => null)
   if (!blob || blob.size === 0) return null
@@ -215,7 +255,9 @@ function hasMarkers(text: string): boolean {
  * le repli complet. Si une seule pièce manque, on prend la paire embarquée.
  */
 async function loadRemoteChapter(): Promise<Chapter | null> {
-  const [text, audioUrl] = await Promise.all([fetchChapterText(), fetchAudioBlobUrl()])
+  if (!runId) return null
+  const id = runId
+  const [text, audioUrl] = await Promise.all([fetchChapterText(id), fetchAudioBlobUrl(id)])
   if (!text || !audioUrl || !hasMarkers(text)) {
     revokeBlob()
     return null
@@ -242,7 +284,7 @@ function armFallback(): void {
  * Pose le chapitre de repli. `tryRemoteFirst` = dernière chance côté distant :
  * à zéro du compte à rebours, le chapitre peut très bien être là alors que le
  * statut n'a jamais été concluant (flux jamais connecté, sondage en échec,
- * mauvaise URL de `/status`). Une tentative, puis l'embarqué.
+ * mauvaise URL du statut). Une tentative, puis l'embarqué.
  * L'escape hatch opérateur, lui, ne tente rien : il veut l'embarqué tout de
  * suite, pas trois secondes d'attente réseau.
  */
@@ -264,7 +306,7 @@ async function materializeFallback(tryRemoteFirst = false): Promise<void> {
 
 // Filet de dernier ressort, à zéro du compte à rebours : quel que soit l'état,
 // s'il n'y a pas de chapitre à cet instant, on pose l'embarqué. Le repli armé
-// n'est PAS la seule voie d'échec — un `/status` durablement injoignable (404,
+// n'est PAS la seule voie d'échec — un statut durablement injoignable (404,
 // mauvaise URL, service tombé) fait des cycles de polling ratés à l'infini, ce
 // qui est volontairement traité comme « pas encore une défaillance ». Sans ce
 // filet, la section 7 s'ouvrirait sur « le chapitre s'écrit… ».
@@ -313,7 +355,8 @@ function startPolling(): void {
 }
 
 async function pollOnce(): Promise<void> {
-  const res = await tryFetch('/status')
+  if (!runId) return
+  const res = await tryFetch(runPath(runId, 'status'))
   // Un cycle raté n'est PAS une défaillance : un trou réseau en milieu de talk
   // ne doit pas déclencher le repli. On continue à interroger.
   if (!res || !res.ok) return
@@ -325,7 +368,7 @@ async function pollOnce(): Promise<void> {
 
 /**
  * Ouvre le flux d'étapes. ENRICHISSEMENT PUR : rien de ce qui suit n'est
- * nécessaire au déroulé. Le sondage `/status` reste la colonne vertébrale de
+ * nécessaire au déroulé. Le sondage du statut reste la colonne vertébrale de
  * l'état (détection d'échec, règle de reprise, arrivée du chapitre) ; le flux
  * ne fait qu'apporter la même information plus vite, à la seconde, avec en plus
  * l'étape et le récit.
@@ -335,9 +378,9 @@ async function pollOnce(): Promise<void> {
  * avec lui à la première avance de la section 4.
  */
 function openStream(): void {
-  if (stream || typeof EventSource === 'undefined') return
+  if (stream || !runId || typeof EventSource === 'undefined') return
   try {
-    stream = new EventSource(`${GEN_HOST}/events`)
+    stream = new EventSource(`${GEN_HOST}${runPath(runId, 'events')}`)
   } catch {
     // Constructeur en échec (URL invalide) : on s'en passe, muettement.
     stream = null
@@ -375,7 +418,8 @@ function closeStream(): void {
 }
 
 export interface Snapshot {
-  phase?: GenStatus
+  // `queued` n'existe que côté machine : jamais recopié dans le store.
+  phase?: GenStatus | 'queued'
   label?: string
   detail?: string
   notes?: string[]
@@ -384,7 +428,7 @@ export interface Snapshot {
 
 /**
  * Point d'entrée UNIQUE de l'état distant, quelle que soit sa provenance —
- * sondage `/status` ou événement du flux. Les deux sources portent le même
+ * sondage du statut ou événement du flux. Les deux sources portent le même
  * snapshot absolu, donc une seule machine à états : pas de divergence possible
  * entre « ce que dit le poll » et « ce que dit le flux ».
  */
@@ -425,7 +469,8 @@ async function applySnapshot(s: Snapshot, source: 'poll' | 'stream'): Promise<vo
   // remettrait l'affichage à l'état « pas encore lancé » en pleine scène,
   // bouton de lancement réactivé compris. On continue simplement à sonder :
   // le filet de zéro posera le chapitre embarqué le moment venu.
-  if (phase === 'idle') return
+  // `queued` (run en file derrière un autre) : même traitement, rien à l'écran.
+  if (phase === 'idle' || phase === 'queued') return
 
   if (phase === 'generating' || phase === 'tts') {
     applyStatus(phase)
@@ -458,17 +503,18 @@ async function handleError(): Promise<void> {
   if (!retryConsumed && elapsedSeconds() < RETRY_WINDOW_S) {
     retryConsumed = true
     graceLeft = RETRY_GRACE_POLLS
-    const res = await tryFetch('/generate', { method: 'POST' })
-    if (res && res.ok) {
+    // La relance crée un NOUVEAU run : le flux de l'ancien est fermé avant
+    // que `launch` ne déplace le run suivi.
+    closeStream()
+    if (await launch()) {
       applyStatus('generating')
       // Indispensable quand c'est le TOUT PREMIER POST qui a échoué : le
       // polling n'a alors jamais démarré, et sans ça la reprise réussirait
       // dans le vide (aucun statut lu, aucun repli armé, lecteur figé sur
       // « le chapitre s'écrit… »). Idempotent dans tous les autres cas.
       startPolling()
-      // Le flux, lui, a bel et bien été fermé : la machine coupe la connexion
-      // après son événement terminal `error`. Sans réouverture, la reprise
-      // tournerait sans étapes à l'écran.
+      // Flux du nouveau run : sans réouverture, la reprise tournerait sans
+      // étapes à l'écran.
       openStream()
       return
     }
@@ -478,7 +524,7 @@ async function handleError(): Promise<void> {
 
 // ------------------------------------------------------------ API publique ---
 
-/** Déclenche la génération. Mock : progression par timers. Réel : POST + polling. */
+/** Déclenche la génération. Mock : progression par timers. Réel : POST + polling du run. */
 export async function generate(): Promise<void> {
   if (USE_MOCK) {
     mockGenerate()
@@ -488,11 +534,11 @@ export async function generate(): Promise<void> {
   graceLeft = 0
   fallbackArmed = false
   streamFailures = 0
-  const res = await tryFetch('/generate', { method: 'POST' })
-  // Le corps (`{accepted, started, state}`) est indicatif : un 202 dit la même
-  // chose que la génération démarre ou tourne déjà. Seul l'échec compte ici —
-  // il passe par la même règle de reprise que `phase: error`.
-  if (!res || !res.ok) {
+  runId = null
+  // Du corps `202 {run_id, …, state}`, seul le `run_id` compte : `queued` ou
+  // `generating`, le run suivi est le même. L'échec passe par la même règle de
+  // reprise que `phase: error`.
+  if (!(await launch())) {
     await handleError()
     return
   }
@@ -522,6 +568,7 @@ export function stop(): void {
   closeStream()
   revokeBlob()
   harvesting = false
+  runId = null
   streamFailures = 0
   retryConsumed = false
   graceLeft = 0
