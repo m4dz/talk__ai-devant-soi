@@ -4,16 +4,18 @@ import {
   elapsedSeconds,
   pushNotes,
   session,
+  setPlan,
   setStep,
   BASCULE,
   FIN_AUDIO,
   type Chapter,
   type GenStatus,
 } from './session'
-import { timelineFor, type MockScenario } from './mockTimeline'
+import { MOCK_PLAN, timelineFor, type MockScenario } from './mockTimeline'
 
-// Client de génération : generate / status / chapter / audio, plus un flux
-// d'étapes SSE (`/runs/<id>/events`) qui n'est qu'un enrichissement.
+// Client de génération : generate / status / chapter / audio, plus deux
+// enrichissements : le flux d'étapes SSE (`/runs/<id>/events`) et le plan du
+// run (`/runs/<id>/plan`), lu une fois au lancement.
 //
 // Contrat par run de la fabrique : `POST /generate {chapter, prepared}` crée un
 // run et répond `202 {run_id, …}` ; tout le reste se lit sur `/runs/<id>/…`.
@@ -127,6 +129,10 @@ async function loadFallbackChapter(): Promise<Chapter> {
  */
 function mockGenerate(): void {
   clearMockTimers()
+  // Le plan arrive juste après le lancement, quel que soit le scénario : en
+  // réel il est copié dans le run dès sa création, donc servi même si le run
+  // échoue ensuite au préflight. Gabarit neutre, pas un plan inventé.
+  mockTimers.push(setTimeout(() => setPlan(MOCK_PLAN), MOCK_STEP_MS / 2))
   const timeline = timelineFor(MOCK_SCENARIO)
   timeline.forEach((snap, i) => {
     mockTimers.push(
@@ -178,7 +184,7 @@ async function tryFetch(path: string, init?: RequestInit): Promise<Response | nu
   return null
 }
 
-/** Chemin d'une ressource du run (`status`, `events`, `chapter`, `audio`). */
+/** Chemin d'une ressource du run (`status`, `events`, `chapter`, `audio`, `plan`). */
 function runPath(id: string, leaf: string): string {
   return `/runs/${encodeURIComponent(id)}/${leaf}`
 }
@@ -203,6 +209,23 @@ async function launch(): Promise<boolean> {
   if (typeof id !== 'string' || !id) return false
   runId = id
   return true
+}
+
+/**
+ * Le plan du run, posé tel quel dans le store. ENRICHISSEMENT PUR, comme le
+ * flux d'étapes : `204` (run sans plan), statut non-2xx, transport en échec ou
+ * texte vide → on ne pose rien, sans bruit, et le déroulé continue à
+ * l'identique. Le texte est celui de l'auteur : jamais réécrit, jamais tronqué.
+ * La machine copie le plan dans le run à sa création : une seule lecture,
+ * juste après le `202`, suffit.
+ */
+async function loadPlan(id: string): Promise<void> {
+  const res = await tryFetch(runPath(id, 'plan'))
+  if (!res || res.status === 204 || !res.ok) return
+  const text = await res.text().catch(() => '')
+  // Réponse arrivée après un `stop()` (reset en répétition) : rien à poser.
+  if (runId !== id) return
+  setPlan(text)
 }
 
 /**
@@ -508,6 +531,9 @@ async function handleError(): Promise<void> {
     closeStream()
     if (await launch()) {
       applyStatus('generating')
+      // Plan du nouveau run : sans effet si celui du premier est déjà affiché
+      // (même plan préparé) ; le pose si le premier POST avait échoué.
+      if (runId) void loadPlan(runId)
       // Indispensable quand c'est le TOUT PREMIER POST qui a échoué : le
       // polling n'a alors jamais démarré, et sans ça la reprise réussirait
       // dans le vide (aucun statut lu, aucun repli armé, lecteur figé sur
@@ -544,6 +570,8 @@ export async function generate(): Promise<void> {
   }
   startPolling()
   openStream()
+  // Pas d'await : le plan ne retarde ni le sondage ni le flux.
+  if (runId) void loadPlan(runId)
 }
 
 /** Statut courant de la génération. */

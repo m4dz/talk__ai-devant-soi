@@ -15,6 +15,20 @@ import type { Snapshot } from './genClient'
 
 export type MockScenario = 'nominal' | 'error' | 'idle'
 
+// Plan du run en répétition (`/runs/<id>/plan`). GABARIT NEUTRE, pas un plan :
+// le vrai est le texte de l'auteur, écrit et approuvé la veille sur la machine
+// (`factory prepare`) — le deck ne l'embarque pas et ne l'invente pas. Même
+// forme que le vrai (un titre, des lignes, une liste) pour répéter la mise en
+// page.
+export const MOCK_PLAN = `# Plan du chapitre (répétition)
+
+Le plan approuvé s'affiche ici, tel qu'écrit.
+
+1. Première ligne du plan.
+2. Deuxième ligne du plan.
+3. Troisième ligne du plan.
+`
+
 export const TIMELINE_NOMINAL: Snapshot[] = [
   { phase: 'generating', label: 'Invariants de la bible', detail: '(Qwen)', notes: ['12 faits dérivés, ils contraignent le plan'] },
   { phase: 'generating', label: "Plan d'entrées", detail: '(nemo, tentative 1/3)', notes: ['12 faits dérivés, ils contraignent le plan'] },

@@ -38,6 +38,10 @@ export interface Session {
   /** Récit accumulé du dispositif. La machine ne renvoie que les 5 dernières
    *  notes à chaque instant : c'est ici qu'on garde l'historique complet. */
   notes: string[]
+  /** Plan du run lancé, tel que la machine le sert (`/runs/<id>/plan`) : le
+   *  texte de l'auteur, VERBATIM, jamais retouché. `null` = rien à montrer
+   *  (pré-lancement, run sans plan, route en échec, lancement refusé). */
+  plan: string | null
 }
 
 /** Borne d'affichage du récit — au-delà, les plus anciennes sortent. */
@@ -52,6 +56,7 @@ export const session = reactive<Session>({
   duration: 0,
   step: null,
   notes: [],
+  plan: null,
 })
 
 /** Secondes de compte à rebours écoulées depuis le lancement. */
@@ -75,6 +80,7 @@ export function start(durationSeconds: number, nowMs: number): void {
   session.duration = durationSeconds
   session.step = null
   session.notes = []
+  session.plan = null
 }
 
 /** Réinitialise la session (arrête tout, remet à idle). */
@@ -88,6 +94,7 @@ export function reset(): void {
   session.duration = 0
   session.step = null
   session.notes = []
+  session.plan = null
 }
 
 /** Applique un statut distant/mock. Peut livrer le chapitre quand `ready`. */
@@ -140,6 +147,17 @@ export function pushNotes(incoming: string[]): void {
   }
   const fresh = incoming.filter(n => !kept.includes(n))
   if (fresh.length) session.notes = [...kept, ...fresh].slice(-NOTES_MAX)
+}
+
+/**
+ * Pose le plan du run. UNE FOIS par session : un plan affiché ne change plus
+ * et ne disparaît plus jusqu'au reset — ni à la relance (nouveau run, même
+ * plan préparé), ni sur un échec. Le faire disparaître ou bouger à l'écran
+ * serait un signal visible d'un état de la machine. Un texte vide ne pose rien.
+ */
+export function setPlan(text: string): void {
+  if (session.plan !== null || !text.trim()) return
+  session.plan = text
 }
 
 /** Décrémente le compte à rebours d'une seconde (borné à 0). Piloté par le tick. */
